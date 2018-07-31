@@ -1,8 +1,8 @@
-# KCC Site Startup Template
+# KCC Foundation Site Development
 
 #### Jekyll + Gulp + Sass + Yarn + BrowserSync + ...
 
-Development of the new KCC Athletics site based off of design mockups
+Development of the new KCC Foundation site based off of design mockups
 
 ## Requirements
 	- Jekyll - `$ gem install jekyll bundler`
