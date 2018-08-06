@@ -32,7 +32,7 @@ gulp.task('build', function(done) { // This runs the following tasks (above): cl
 
 gulp.task('travisBuild', function(done) { // This runs the following tasks (above): clean (cleans _site/), jekyll-build (jekyll does its thing), SASS and JS tasks (compile them), copy (copies static assets like images to the site build)
 
-  sequence( 'clean', 'travisJekyllBuild', 'travisSitemap', ['travisSass', 'travisContentSass', 'travisScript', 'travisPlaylistScript'], 'travisCopy', done);
+  sequence( 'clean', 'travisJekyllBuild', 'travisSitemap', ['travisSass', 'travisContentSass', 'travisScript'], 'travisCopy', done);
 });
 
 // Default gulp task that does the following by running `$ gulp`:
