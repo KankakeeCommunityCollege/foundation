@@ -52,4 +52,3 @@ gulp.task('cleanFTP', function() {
       .pipe( conn.newer( remotePath ) ) // only upload newer files
       .pipe( conn.dest( remotePath ) );
   });
-});
