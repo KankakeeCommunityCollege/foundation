@@ -1,15 +1,15 @@
 #!/bin/bash
 
-echo 'Cleaning up Server Site'
+#echo 'Cleaning up Server Site'
 
-sleep 1
+#sleep 1
 
-gulp cleanFTP --user $FTP_USER --password $FTP_PASSWORD
+#gulp cleanFTP --user $FTP_USER --password $FTP_PASSWORD
 
-sleep 15
+#sleep 15
 
-#echo 'Sending Files to Server via FTP'
+echo 'Sending Files to Server via FTP'
 
-#sleep 5
+sleep 5
 
-#gulp newerFTP --user $FTP_USER --password $FTP_PASSWORD
+gulp newerFTP --user $FTP_USER --password $FTP_PASSWORD

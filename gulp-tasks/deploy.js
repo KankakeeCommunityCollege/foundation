@@ -9,31 +9,6 @@ gulp.task('deploy', function(done) {
   sequence( 'cleanFTP', 'newerFTP', done);
 });
 
-gulp.task('cleanFTP', function() {
-  var remotePath = '/';
-  var conn = ftp.create({
-    host: 'Web03.kcc.edu',
-    //user: args.user,
-    user: args.user,
-    //password: args.password,
-    parallel: 1,
-    password: args.password,
-    log: gutil.log
-  });
-  var globs = [
-    '/*.*',
-    '/!web.config',
-    '/**',
-    '/**/**',
-    '/**/**/**'
-  ];
-    // using base = '.' will transfer everything to /public_html correctly
-    // turn off buffering in gulp.src for best performance
-  return gulp.src( globs, './_site/', { base: '/', buffer: false } )
-    .pipe( conn.clean( remotePath ) )
-    .pipe( conn.dest( remotePath ) );
-} );
-
 gulp.task('newerFTP', function() {
   var remotePath = '/';
   var conn = ftp.create({
@@ -61,5 +36,6 @@ gulp.task('newerFTP', function() {
 
   return gulp.src( globs, { base: './_site/', buffer: false } )
     .pipe( conn.newer( remotePath ) ) // only upload newer files
-    .pipe( conn.dest( remotePath ) );
+    .pipe( conn.dest( remotePath ) )
+    .pipe( conn.clean( remotePath, './_site/' ) );
 } );
