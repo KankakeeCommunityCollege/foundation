@@ -31,8 +31,8 @@ gulp.task('cleanFTP', function() {
     '_site/**/**/**/*.*',
     '_site/index.html',
     '_site/*.sh',
-    '_/site/*.png',
-    '_/site/gulp-tasks/*.js'
+    '_site/*.png',
+    '_site/gulp-tasks/*.js'
   ];
     // using base = '.' will transfer everything to /public_html correctly
     // turn off buffering in gulp.src for best performance

@@ -8,8 +8,8 @@ gulp cleanFTP --user $FTP_USER --password $FTP_PASSWORD
 
 sleep 15
 
-echo 'Sending Files to Server via FTP'
+#echo 'Sending Files to Server via FTP'
 
-sleep 5
+#sleep 5
 
-gulp newerFTP --user $FTP_USER --password $FTP_PASSWORD
+#gulp newerFTP --user $FTP_USER --password $FTP_PASSWORD
