@@ -21,23 +21,16 @@ gulp.task('cleanFTP', function() {
     log: gutil.log
   });
   var globs = [
-    '_site/*.html',
-    '_site/*.htm',
-    '_site/*.txt',
-    '_site/*.xml',
-    '_site/*.ico',
-    '_site/**/*.*',
-    '_site/**/**/*.*',
-    '_site/**/**/**/*.*',
-    '_site/index.html',
-    '_site/*.sh',
-    '_site/*.png',
-    '_site/gulp-tasks/*.js'
+    '/*.*',
+    '/!web.config',
+    '/**',
+    '/**/**',
+    '/**/**/**'
   ];
     // using base = '.' will transfer everything to /public_html correctly
     // turn off buffering in gulp.src for best performance
-  return gulp.src( globs, { base: './_site/', buffer: false } )
-    .pipe( conn.clean( [ '*.html', '*.htm', '*.sh', '*.png', 'gulp-tasks/*.js', '*.ico', '*.xml', '*.txt', '**/*.*', '**/**/*.*', '**/**/**/*.*', '/**' ], '_site/', { base: '.' } ) )
+  return gulp.src( globs, './_site/', { base: '/', buffer: false } )
+    .pipe( conn.clean( remotePath ) )
     .pipe( conn.dest( remotePath ) );
 } );
 
