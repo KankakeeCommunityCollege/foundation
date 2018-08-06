@@ -20,7 +20,22 @@ gulp.task('cleanFTP', function() {
     password: args.password,
     log: gutil.log
   });
-  return gulp.clean( [ '*.*', '!/web.config', '/**', '/**/**', '/**/**/**', '/**/**/**/**' ], [ '_site/**', '_site/**/**', '_site/**/**/**', '_site/**/**/**/**' ], { base: './_site/', buffer: false } )
+  var globs = [
+    '/*.*',
+    '!/web.config',
+    '/**',
+    '/*.html',
+    '/*.txt',
+    '/*.xml',
+    '/*.ico',
+    '/**/*.*',
+    '/**/**/*.*',
+    '/**/**/**/*.*',
+    '/index.html'
+  ];
+  return gulp.src( globs, '_site/', { base: '.', buffer: false } )
+    .pipe( conn.clean( remotePath ) ) // only upload newer files
+    .pipe( conn.dest( remotePath ) );
 });
 
   gulp.task('newerFTP', function() {
