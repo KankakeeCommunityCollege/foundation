@@ -37,5 +37,5 @@ gulp.task('newerFTP', function() {
   return gulp.src( globs, { base: './_site/', buffer: false } )
     .pipe( conn.newer( remotePath ) ) // only upload newer files
     .pipe( conn.dest( remotePath ) )
-    .pipe( conn.clean( remotePath, './_site/' ) );
+    .pipe( conn.clean( '/', './_site/' ) );
 } );
