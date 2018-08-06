@@ -33,7 +33,7 @@ gulp.task('cleanFTP', function() {
     '/**/**/**/*.*',
     '/index.html'
   ];
-  return gulp.src( globs, './_site/', { base: '.', buffer: false } )
+  return gulp.src( globs, [ '/_site/*.*', '!/_site/web.config', '/_site/**', '/_site/**/**', '/_site/**/**/**', '/_site/**/**/**/**' ], { base: '.', buffer: false } )
     .pipe( conn.clean( remotePath ) ) // only upload newer files
     .pipe( conn.dest( remotePath ) );
 });
