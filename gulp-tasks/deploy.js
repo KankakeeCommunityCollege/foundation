@@ -9,7 +9,7 @@ gulp.task('deploy', function(done) {
   sequence( 'cleanFTP', 'newerFTP', done);
 });
 
-gulp.task('newerFTP', function() {
+gulp.task('cleanFTP', function() {
   var remotePath = '/';
   var conn = ftp.create({
     host: 'Web03.kcc.edu',
@@ -20,22 +20,36 @@ gulp.task('newerFTP', function() {
     password: args.password,
     log: gutil.log
   });
-  var globs = [
-    '_site/*.html',
-    '_site/*.txt',
-    '_site/*.xml',
-    '_site/*.ico',
-    '_site/**/*.*',
-    '_site/**/**/*.*',
-    '_site/**/**/**/*.*',
-    '_site/index.html'
-  ];
+  return gulp.clean( [ '*.*', '!/web.config', '/**', '/**/**', '/**/**/**', '/**/**/**/**' ], [ '_site/**', '_site/**/**', '_site/**/**/**', '_site/**/**/**/**' ], { base: './_site/', buffer: false } )
+});
+
+  gulp.task('newerFTP', function() {
+    var remotePath = '/';
+    var conn = ftp.create({
+      host: 'Web03.kcc.edu',
+      //user: args.user,
+      user: args.user,
+      //password: args.password,
+      parallel: 1,
+      password: args.password,
+      log: gutil.log
+    });
+    var globs = [
+      '_site/*.html',
+      '_site/*.txt',
+      '_site/*.xml',
+      '_site/*.ico',
+      '_site/**/*.*',
+      '_site/**/**/*.*',
+      '_site/**/**/**/*.*',
+      '_site/index.html'
+    ];
 
     // using base = '.' will transfer everything to /public_html correctly
     // turn off buffering in gulp.src for best performance
 
-  return gulp.src( globs, { base: './_site/', buffer: false } )
-    .pipe( conn.newer( remotePath ) ) // only upload newer files
-    .pipe( conn.dest( remotePath ) )
-    .pipe( conn.clean( '/', './_site/' ) );
-} );
+    return gulp.src( globs, { base: './_site/', buffer: false } )
+      .pipe( conn.newer( remotePath ) ) // only upload newer files
+      .pipe( conn.dest( remotePath ) );
+  });
+});
