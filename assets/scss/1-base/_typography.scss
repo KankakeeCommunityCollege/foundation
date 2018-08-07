@@ -19,6 +19,12 @@ p {
   font-size: $base-font-size;
 }
 
+ul {
+  color: $grey-1;
+  font-family: $basefont-stack;
+  font-size: $base-font-size;
+}
+
 .menu-heading {
   color: $primary-red;
   font-family: $secondaryfont-stack;
