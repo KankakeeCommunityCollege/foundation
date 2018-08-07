@@ -3,7 +3,51 @@ layout: default
 baseurl: ''
 title: Foundation
 description: ''
+slides:
+  - image: uploads/students_on_back_patio_oct2015_D41_0619-web.jpg
+    alt-text: Baseball Championship
+    url: 'https://foundation.kcc.edu'
+    text1: Baseball Championship 2017
+    text2: '2017 NJCAA DIVISION II NATIONAL&#160;CHAMPIONS'
+  - image: uploads/2017_graduates_KCC_066.jpg
+    alt-text: Women's Basketball
+    url: 'https://foundation.kcc.edu'
+    text1: Women's Basketball
+    text2: KCC Women's Basketball <br>vs Joliet Junior College
+  - image: uploads/2016_Century-Scholarship_dinner_D41-5521-web (1).jpg
+    alt-text: 2017 KCC Cavaliers Soccer
+    url: 'https://foundation.kcc.edu'
+    text1: Soccer
+    text2: 2017 KCC Cavaliers Soccer
 ---
+
+<header class="position__offset-fixed-nav">
+  <div class="container">
+    <div class="row slider-row">
+      <div class="col-md-12 heroSlider">
+      {% for slide in page.slides %}
+        {% if forloop.first == true %}
+        <div>
+          <a href="{{ slide.url }}"><img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}"></a>
+          <div class="heading-container">
+            <h3 class="sub-heading">{{slide.text1}}</h3>
+            <h3 class="slide-heading">{{slide.text2}}</h3>
+          </div>
+        </div>
+        {% else %}
+        <div>
+          <a href="{{ slide.url }}"><img src="assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}"></a>
+          <div class="heading-container">
+            <h3 class="sub-heading">{{slide.text1}}</h3>
+            <h3 class="slide-heading">{{slide.text2}}</h3>
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+</header>
 
 <main>
   <div class="container text-center" style="background-color:#bada55;margin-top:180px;">
