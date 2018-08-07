@@ -3,6 +3,8 @@
 //fall back font stack for site
 $basefont-stack: 'Open Sans', sans-serif;
 $base-font-size: 1em;
+$base-font-weight: 400;
+$base-font-weigth-bold: 600;
 //secondary font stack for site
 $secondaryfont-stack: 'Roboto', sans-serif;
 $secondaryfont-weight-regular: 400;
@@ -22,6 +24,8 @@ $black: #000;
 $grey-1: #666;
 $grey-2: #e5e8ed;
 $grey-3: #f1f2f7;            //  Background color for slick tracks
+$grey-4: #f8f9fa;            // Background color for footer (and Bootstrap 4 light navbar)
+$grey-5: #b1b1b1;            // Border-bottom for local-nav navigation bar
 $white: #fff;
 
 
