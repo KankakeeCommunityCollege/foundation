@@ -14,7 +14,7 @@ slides:
     url: 'https://foundation.kcc.edu'
     text1: Women's Basketball
     text2: KCC Women's Basketball <br>vs Joliet Junior College
-  - image: uploads/2016_Century-Scholarship_dinner_D41-5521-web (1).jpg
+  - image: uploads/2016_Century-Scholarship_dinner_D41-5521-web.jpg
     alt-text: 2017 KCC Cavaliers Soccer
     url: 'https://foundation.kcc.edu'
     text1: Soccer
@@ -23,23 +23,23 @@ slides:
 
 <header class="position__offset-fixed-nav">
   <div class="container">
-    <div class="row slider-row">
-      <div class="col-md-12 heroSlider">
+    <div class="row">
+      <div class="col-md-12 hero-slider__slider">
       {% for slide in page.slides %}
         {% if forloop.first == true %}
         <div>
-          <a href="{{ slide.url }}"><img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}"></a>
-          <div class="heading-container">
-            <h3 class="sub-heading">{{slide.text1}}</h3>
-            <h3 class="slide-heading">{{slide.text2}}</h3>
+          <a href="{{ slide.url }}"><img src="{{page.baseurl}}{{slide.image}}" class="img-fluid hero-slider__slider--slide-img" alt="{{slide.alt-text}}"></a>
+          <div class="hero-slider__slider--heading-container">
+            <h3 class="hero-slider__slider--sub-heading">{{slide.text1}}</h3>
+            <h3 class="hero-slider__slider--slide-heading">{{slide.text2}}</h3>
           </div>
         </div>
         {% else %}
         <div>
-          <a href="{{ slide.url }}"><img src="assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}"></a>
-          <div class="heading-container">
-            <h3 class="sub-heading">{{slide.text1}}</h3>
-            <h3 class="slide-heading">{{slide.text2}}</h3>
+          <a href="{{ slide.url }}"><img src="assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid hero-slider__slider--slide-img" alt="{{slide.alt-text}}"></a>
+          <div class="hero-slider__slider--heading-container">
+            <h3 class="hero-slider__slider--sub-heading">{{slide.text1}}</h3>
+            <h3 class="hero-slider__slider--slide-heading">{{slide.text2}}</h3>
           </div>
         </div>
         {% endif %}

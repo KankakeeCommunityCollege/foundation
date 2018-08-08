@@ -1,6 +1,6 @@
 // Custom JS for Slick img carousels
 
-$('.heroSlider').slick({
+$('.hero-slider__slider').slick({
   dots: true,
   slidesToShow: 1,
   slidesToScroll: 1,
