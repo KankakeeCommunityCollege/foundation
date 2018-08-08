@@ -104,6 +104,7 @@ javascript:
     - "assets/js/test.js" # test js file
     - "assets/js/sliders.js"
     - "assets/js/lazyLoad.js"
+    - "assets/js/currentPage.js"
 
 # Gulp task for main travis JS compile/uglify of all.min.js.
 travisScript:
@@ -118,6 +119,7 @@ travisScript:
     - "assets/js/test.js" # test js file
     - "assets/js/sliders.js"
     - "assets/js/lazyLoad.js"
+    - "assets/js/currentPage.js"
 
 sitemap:
   src:
