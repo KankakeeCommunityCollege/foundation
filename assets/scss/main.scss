@@ -1,5 +1,6 @@
 // Variables
 @import '0-tools/vars';
+@import '0-tools/sortable-theme-bootstrap';
 
 // Base items
 @import '1-base/typography';
@@ -13,6 +14,8 @@
 @import '2-modules/local-nav';
 @import '2-modules/foundation-board';
 @import '2-modules/hero-slider';
+@import '2-modules/Scholarship-table';
+@import '2-modules/tabbed-nav';
 
 // Layout items
 // @import "3-layout/...";

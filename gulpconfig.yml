@@ -105,6 +105,28 @@ javascript:
     - "assets/js/sliders.js"
     - "assets/js/lazyLoad.js"
     - "assets/js/currentPage.js"
+    - "!assets/js/scholarshipTable.js"
+    - "!assets/js/scholarships.js"
+    - "!assets/js/sortable.js"
+    - "!assets/js/spreadsheet.js"
+
+tableScript:
+  dest:
+    jekyllRoot: "assets/js/"
+    buildDir: "_site/assets/js/"
+  filename: "spreadsheet.min.js"
+  notification: "Running tableScript"
+  src:
+    # Exclusions: (!exclaim to exclude)
+    # Inclusions: (included in JS compile)
+    - "!assets/js/test.js" # test js file
+    - "!assets/js/sliders.js"
+    - "!assets/js/lazyLoad.js"
+    - "!assets/js/currentPage.js"
+    - "assets/js/scholarshipTable.js"
+    - "!assets/js/scholarships.js"
+    - "!assets/js/spreadsheet.js"
+    - "!assets/js/sortable.js"
 
 # Gulp task for main travis JS compile/uglify of all.min.js.
 travisScript:
@@ -120,6 +142,10 @@ travisScript:
     - "assets/js/sliders.js"
     - "assets/js/lazyLoad.js"
     - "assets/js/currentPage.js"
+    - "!assets/js/scholarshipTable.js"
+    - "!assets/js/scholarships.js"
+    - "!assets/js/sortable.js"
+    - "!assets/js/spreadsheet.js"
 
 sitemap:
   src:
@@ -149,6 +175,9 @@ watch: # 'Watch' for changes in all the following:
   images: "assets/img/**/*"
   javascript:
     - "assets/js/all.min.js"
+    - "assets/js/*.js"
+  tableScript:
+    - "assets/js/spreadsheet.min.js"
     - "assets/js/*.js"
   sass: "assets/scss/**/*.scss"
   pages:

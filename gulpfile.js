@@ -27,12 +27,12 @@ module.exports = config;
 // Gulp 'build' task that builds the site:
 // cleans the _site/ dir, builds the jekyll site, creates the sitemap, compiles Sass and JS, and copies all static assets (i.e. images) into the site
 gulp.task('build', function(done) { // This runs the following tasks (above): clean (cleans _site/), jekyll-build (jekyll does its thing), SASS and JS tasks (compile them), copy (copies static assets like images to the site build)
-  sequence( 'clean', 'jekyll-build', 'sitemap', ['sass', 'contentSass', 'javascript'], 'copy', done);
+  sequence( 'clean', 'jekyll-build', 'sitemap', ['sass', 'contentSass', 'javascript', 'tableScript'], 'copy', done);
 });
 
 gulp.task('travisBuild', function(done) { // This runs the following tasks (above): clean (cleans _site/), jekyll-build (jekyll does its thing), SASS and JS tasks (compile them), copy (copies static assets like images to the site build)
 
-  sequence( 'clean', 'travisJekyllBuild', 'travisSitemap', ['travisSass', 'travisContentSass', 'travisScript'], 'travisCopy', done);
+  sequence( 'clean', 'travisJekyllBuild', 'travisSitemap', ['travisSass', 'travisContentSass', 'travisScript', 'tableScript'], 'travisCopy', done);
 });
 
 // Default gulp task that does the following by running `$ gulp`:
@@ -45,6 +45,7 @@ gulp.task('default', function(done) { // Default gulp task (run via 'gulp' in te
 gulp.task('watch', function() { // Watch for changes to be piped into browserSync on saving of files:
   gulp.watch(config.watch.pages, ['build', browserSync.reload]); // Watch for new pages and changes.
   gulp.watch(config.watch.javascript, ['javascript', browserSync.reload]); // JS changes
+  gulp.watch(config.watch.tableScript, ['tableScript', browserSync.reload]); // JS changes
   gulp.watch(config.watch.sass, ['sass']); // SASS/SCSS changes
   gulp.watch(config.watch.sass, ['contentSass']); // SASS/SCSS changes
   gulp.watch(config.watch.images, ['copy', browserSync.reload]); // Watch for new static assets like images
