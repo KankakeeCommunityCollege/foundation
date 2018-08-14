@@ -75,7 +75,3 @@ function spreadsheetTable() {
   });
 }
 spreadsheetTable();
-
-$(function () {
-  $('[data-toggle="popover"]').popover();
-});

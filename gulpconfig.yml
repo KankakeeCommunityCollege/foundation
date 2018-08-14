@@ -94,21 +94,18 @@ travisContentSass:
 # Main JavaScript compile task (gulp_tasks/script.js)
 javascript:
   dest:
-    jekyllRoot: "assets/js/"
-    buildDir: "_site/assets/js/"
+    jekyllRoot: "assets/js/script/"
+    buildDir: "_site/assets/js/script/"
   filename: "all.min.js"
   notification: "Running JavaScript"
   src:
     # Exclusions: (!exclaim to exclude)
     # Inclusions: (included in JS compile)
-    - "assets/js/test.js" # test js file
-    - "assets/js/sliders.js"
-    - "assets/js/lazyLoad.js"
-    - "assets/js/currentPage.js"
-    - "!assets/js/scholarshipTable.js"
-    - "!assets/js/scholarships.js"
-    - "!assets/js/sortable.js"
-    - "!assets/js/spreadsheet.js"
+    - "!assets/js/script/test.js" # test js file
+    - "assets/js/script/sliders.js"
+    - "assets/js/script/lazyLoad.js"
+    - "assets/js/script/currentPage.js"
+    - "assets/js/script/breadcrumb.js"
 
 tableScript:
   dest:
@@ -119,14 +116,10 @@ tableScript:
   src:
     # Exclusions: (!exclaim to exclude)
     # Inclusions: (included in JS compile)
-    - "!assets/js/test.js" # test js file
-    - "!assets/js/sliders.js"
-    - "!assets/js/lazyLoad.js"
-    - "!assets/js/currentPage.js"
-    - "assets/js/scholarshipTable.js"
     - "!assets/js/scholarships.js"
     - "!assets/js/spreadsheet.js"
     - "!assets/js/sortable.js"
+    - "assets/js/scholarshipTable.js"
 
 # Gulp task for main travis JS compile/uglify of all.min.js.
 travisScript:
