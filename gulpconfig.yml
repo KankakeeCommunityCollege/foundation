@@ -102,6 +102,8 @@ javascript:
     # Exclusions: (!exclaim to exclude)
     # Inclusions: (included in JS compile)
     - "!assets/js/script/test.js" # test js file
+    - "!assets/js/script/stash_breadcrumb.js"
+    - "!assets/js/script/stash_breadcrumb2.js"
     - "assets/js/script/sliders.js"
     - "assets/js/script/lazyLoad.js"
     - "assets/js/script/currentPage.js"
