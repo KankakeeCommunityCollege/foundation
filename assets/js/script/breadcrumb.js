@@ -16,7 +16,7 @@ $(document).ready(function() {
     function createList(splitUrl) {
       $.each(splitUrl, function () {
         var that = this;
-        if (noProto == 'foundation.kcc.edu') {
+        if (noProto == 'foundation.kcc.edu/') {
           console.log('Log that shit ' + that);
         }
 
