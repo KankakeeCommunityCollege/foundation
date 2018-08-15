@@ -14,7 +14,7 @@ $(document).ready(function() {
 //    };
 
     function createList() {
-      if (noProto == 'foundation.kcc.edu') {
+      if (noProto == 'foundation.kcc.edu/') {
         console.log('HOME!');
       }
       //slideString.push();
