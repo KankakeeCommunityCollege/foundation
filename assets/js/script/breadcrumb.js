@@ -14,9 +14,10 @@ $(document).ready(function() {
     };
 
     function createList(splitUrl) {
+      console.log('Log that');
       $.each(splitUrl, function () {
         var that = this;
-        console.log('Log that ' + that);
+
 
         //slideString.push();
 
