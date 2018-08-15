@@ -169,11 +169,11 @@ jekyll:
 watch: # 'Watch' for changes in all the following:
   images: "assets/img/**/*"
   javascript:
-    - "assets/js/all.min.js"
-    - "assets/js/*.js"
+    - "assets/js/script/all.min.js"
+    - "assets/js/script/*.js"
   tableScript:
-    - "assets/js/spreadsheet.min.js"
-    - "assets/js/*.js"
+    - "assets/js/table/spreadsheet.min.js"
+    - "assets/j/tables/*.js"
   sass: "assets/scss/**/*.scss"
   pages:
     - "*.{md,html,yml,xml}"

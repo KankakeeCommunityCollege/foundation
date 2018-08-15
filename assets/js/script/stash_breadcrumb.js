@@ -135,6 +135,65 @@ $(document).ready(function() {
         giveBreadcrumbList.html('Give');
       }
     }
+
+    function createList() {
+      console.log(noProto);
+      if (noProto == 'foundation.kcc.edu/') {
+        console.log('HOME!');
+      } else if (noProto.indexOf('#contact') > -1) {
+        console.log('CONTACT! (HOME!)');
+
+
+      } else if (currentUrl.indexOf('/about/') > -1) {
+        console.log('ABOUT!');
+        if (currentUrl.indexOf('/foundation-board/') > -1) {
+          console.log('FOUNDATION BOARD!');
+        } else if (currentUrl.indexOf('/committees/') > -1) {
+          console.log('COMMITTEES!');
+        }
+
+
+      } else if (currentUrl.indexOf('/events/') > -1) {
+        console.log('EVENTS!');
+        if (currentUrl.indexOf('/special-events/') > -1) {
+          console.log('SPECIAL EVENTS!');
+        }
+
+
+      } else if (currentUrl.indexOf('/alumni/') > -1) {
+        console.log('ALMUMNI!');
+        if (currentUrl.indexOf('/distinguished-alumni-award/') > -1) {
+          console.log('DISTINGUISHED ALMUMNI AWARD!');
+        } else if (currentUrl.indexOf('/alumni-stories/') > -1) {
+          console.log('ALMUMNI STORIES!');
+        }
+
+
+      } else if (currentUrl.indexOf('/scholarships/') > -1) {
+        console.log('SCHOLARSHIPS!');
+        if (currentUrl.indexOf('/century-scholars/') > -1) {
+          console.log('CENTURY SCHOLARS!');
+        } else if (currentUrl.indexOf('/create-a-scholarship/') > -1) {
+          console.log('CREATE A SCHOLARSHIP!!!');
+        }
+
+
+      } else if (currentUrl.indexOf('/give/') > -1) {
+        console.log('GIVE!');
+        if (currentUrl.indexOf('/employee-giving/') > -1) {
+          console.log('EMPLOYEE GIVING!');
+        } else if (currentUrl.indexOf('/planned-giving/') > -1) {
+          console.log('PLANNED GIVING!');
+        } else if (currentUrl.indexOf('/giving-circles/') > -1) {
+          console.log('GIVING CIRCLES!');
+        } else if (currentUrl.indexOf('/creative-giving-ideas/') > -1) {
+          console.log('CREATIVE GIVING IDEAS!');
+        }
+      }
+      //slideString.push();
+    }
+    createList();
+
   }
   wonderBreadcrumbsUnite();
 });

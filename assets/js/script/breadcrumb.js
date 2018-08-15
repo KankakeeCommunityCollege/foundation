@@ -6,19 +6,51 @@ $(document).ready(function() {
     var noProto = currentUrl.replace(/(^\w+:|^)\/\//, '');
     // Remove the baseURL (foundation.kcc.edu)
     var noBase = noProto.replace('foundation.kcc.edu/', '');
-    // Split-out the URL by '/' seperators and return it as an array (essentially grabbing the page names)
-//    var splitFunc = function splitUrl (noBase) {
-//      var urlArray = noBase.split(/\//);
-//      // console.log(urlArray);
-//      return urlArray;
-//    };
 
+    var selfUrl = '/',
+      upOne = '../',
+      upTwo = '../../';
+
+    console.log(noProto);
     function createList() {
-      console.log(noProto);
-      if (noProto == 'foundation.kcc.edu/') {
-        console.log('HOME!');
-      }
-      //slideString.push();
+
+      var listItemStart = '<li class="nav-item">',
+        listItemClose = '</li>',
+        // Links:
+        linkStart = '<a href="',
+        linkPostUrl = '" class="nav-link" style="text-transform: capitalize;">',
+        linkClose = '</a>',
+        lastLinkPostUrl = '" class="nav-link active" style="text-transform: capitalize;">',
+        homeList = '<li id="homeList" class="nav-item"><a id="homePill" href="/" class="nav-link">Home</a></li>';
+
+      var removeSlash = noBase.slice(0,-1);
+      var urlArray = removeSlash.split(/\//),
+        listString = [],
+        lastStringItem = [];
+
+      var lastItem = urlArray[urlArray.length - 1];
+      var arrayLength = urlArray.length;
+      console.log(lastItem);
+      console.log(arrayLength);
+      listString.push( homeList );
+
+      urlArray.forEach(function(page) {
+        var english = page.replace('-', ' ');
+        if (page == lastItem) {
+          listString.push(
+            listItemStart + linkStart + lastLinkPostUrl + english + linkClose + listItemClose
+          );
+        } else if (page == urlArray[0]) {
+          listString.push(
+            listItemStart + linkStart + '/' + linkPostUrl + english + linkClose + listItemClose
+          );
+        } else if (page == urlArray[1]) {
+          listString.push(
+            listItemStart + linkStart + '../' + linkPostUrl + english + linkClose + listItemClose
+          );
+        }
+      });
+      document.getElementById('pillUl').innerHTML = listString.join('');
     }
     createList();
 
