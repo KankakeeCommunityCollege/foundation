@@ -242,7 +242,7 @@ p.general-p {
   font-size: 2.8rem;
   font-weight: 600;
   line-height: 2.8rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-top: 20px;
 }
 
@@ -296,6 +296,18 @@ p.general-p {
 }
 
 @media screen and (min-width: 488px) {
+  .typography__stories--quote {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .typography__stories--quote {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
   .typography__stories--quote {
     font-size: 1.5rem;
   }

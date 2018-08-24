@@ -24,6 +24,12 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .stories__cell-right {
+    padding-top: 0;
+  }
+}
+
 .stories__no-bullet {
   list-style-type: none;
   margin-bottom: 20px;
@@ -47,8 +53,14 @@
   margin-top: 40px;
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 768px) {
   .stories__img {
+    width: 120px;
+  }
+}
 
+@media screen and (min-width: 992px) {
+  .stories__img {
+    width: 125;
   }
 }
