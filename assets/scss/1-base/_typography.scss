@@ -235,3 +235,88 @@ p.general-p {
 .typography__newsroom-heading {
   font-family: $secondaryfont-weight-bold;
 }
+
+.red-heading {
+  color: $primary-red;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.typography__red-h3 {
+  color: $primary-red;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.typography__red-h3--margin-btm {
+  margin-bottom: 40px;
+}
+
+.typography__red-h3--tan--margin-btm{
+  margin-bottom: 21px;
+}
+
+.typography__col--heading-underline {
+  background-image: url(/assets/img/heading-bg-underline.png);
+  background-repeat: no-repeat;
+  background-position: 0 50px;
+}
+
+.typography__col--heading-underline-tan {
+  background-image: url(/assets/img/heading-bg-underline-tan.png);
+  background-repeat: no-repeat;
+  background-position: 0 50px;
+}
+
+.typography__contacts--name {
+  color: $primary-blue;
+  font-family: $secondaryfont-stack;
+  font-size: 1.3em;
+  font-weight: $secondaryfont-weight-bold;
+}
+
+.typography__contacts--title {
+  color: $grey-heading;
+  font-family: $secondaryfont-stack;
+  font-size: 1.1em;
+  font-weight: $secondaryfont-weight-black;
+}
+
+.typography__stories--quote {
+  color: $primary-blue;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 488px) {
+  .typography__stories--quote {
+    font-size: 1.5rem;
+  }
+}
+
+.typography__stories--name {
+  color: $primary-blue;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.typography__orange-h4  {
+  color: $orange-heading;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.4rem;
+}
+
+.typography__h5 {
+  color: $grey-6;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}

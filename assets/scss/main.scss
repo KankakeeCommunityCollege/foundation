@@ -5,6 +5,7 @@
 // Base items
 @import '1-base/typography';
 @import '1-base/links';
+@import '1-base/buttons';
 
 // Modular components
 @import '2-modules/header';
@@ -16,6 +17,10 @@
 @import '2-modules/hero-slider';
 @import '2-modules/scholarship-table';
 @import '2-modules/tabbed-nav';
+@import '2-modules/stories';
+@import '2-modules/contacts';
+@import '2-modules/action-cards';
+@import '2-modules/events';
 
 // Layout items
 // @import "3-layout/...";
