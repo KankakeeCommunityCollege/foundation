@@ -1,8 +1,16 @@
 .nav-pills .nav-link {
   color: $grey-7;
   border-style: solid;
-  border-color: $grey-7;
+  border-color: $grey-5;
   border-width: 1px;
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid $grey-5;
+}
+
+.nav-tabs .nav-link.active {
+  border-color: $grey-5 $grey-5 $white;
 }
