@@ -108,6 +108,7 @@ javascript:
     - "assets/js/script/lazyLoad.js"
     - "assets/js/script/currentPage.js"
     - "assets/js/script/breadcrumb.js"
+    - "assets/js/script/shopSmile.js"
 
 tableScript:
   dest:
