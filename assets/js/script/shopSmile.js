@@ -20,11 +20,17 @@ $(document).ready(function () {
       animateShopSmile();
     }
   }
-  if( localStorage.getItem('visted') != true ){
+  if( localStorage.getItem('visted') != 'true' ){
     showShopSmile();
-    localStorage.setItem('visted', true);
+    localStorage.setItem('visted', 'true');
   }
   function closeSmileWidget() {
+    var deferDisplayNone = $.Deferred();
+    $.when(deferDisplayNone).done(function() {
+      setTimeout(function() {
+        $('#greyOut').removeClass('shop-smile__grey-out--animate-out');
+      }, 1000);
+    });
     $('#exitButton').click(function() {
       $('#shopSmileWrapper').removeClass('shop-smile__wrapper--slide-in');
       $('#shopSmileWrapper').removeClass('shop-smile__wrapper--show');
@@ -32,6 +38,7 @@ $(document).ready(function () {
       $('#greyOut').removeClass('shop-smile__grey-out--animate')
         .addClass('shop-smile__grey-out--animate-out')
         .removeClass('shop-smile__grey-out--show');
+      deferDisplayNone.resolve();
     });
   }
   closeSmileWidget();

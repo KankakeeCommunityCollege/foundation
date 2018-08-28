@@ -107,6 +107,7 @@
 
 .shop-smile__grey-out {
   position: fixed;
+  display: none;
   background-color: $black;
   opacity: 0;
   z-index: 9998;
@@ -134,12 +135,15 @@
 
 .shop-smile__grey-out--animate {
   animation: animateGrey 1s;
+  display: block;
 }
 
 .shop-smile__grey-out--animate-out {
   animation: animateGreyOut 1s;
+  display: block;
 }
 
 .shop-smile__grey-out--show {
   opacity: .4;
+  display: block;
 }
