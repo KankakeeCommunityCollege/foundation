@@ -1,6 +1,6 @@
 
 .shop-smile__wrapper {
-  bottom: -300px;
+  bottom: -500px;
   margin-right: -145px; // Negative margin to offset width of amazon smile widget for centering it
   right: 50%; // position at 50% from right-side. above margin-right compensates for the width of the amazon smile widget to center it in the viewport
   position: fixed;
@@ -22,6 +22,13 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .shop-smile__wrapper {
+    margin-right: 0;
+    right: 40px;
+  }
+}
+
 
 @keyframes shopSmileSlideIn {
   from {
@@ -37,7 +44,7 @@
     bottom: 20px;
   }
   to {
-    bottom: -400px;
+    bottom: -500px;
   }
 }
 
@@ -47,16 +54,16 @@
       bottom: -300px;
     }
     to {
-      bottom: 80px;
+      bottom: 35px;
     }
   }
 
   @keyframes shopSmileSlideOut {
     from {
-      bottom: 80px;
+      bottom: 35px;
     }
     to {
-      bottom: -400px;
+      bottom: -500px;
     }
   }
 }
@@ -75,7 +82,7 @@
 
 @media screen and (min-width: 768px) {
   .shop-smile__wrapper--show {
-    bottom: 80px;
+    bottom: 35px;
   }
 }
 
