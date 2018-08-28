@@ -32,37 +32,41 @@ function spreadsheetTable() {
     html += '<table id="Data" class="display" style="width:100%">';
     html += '<thead>';
     html += '<tr>';
-    html += '<th>Scholarship Name</th>';
-    html += '<th>Number of Recipients</th>';
-    html += '<th>Award Amount</th>';
-    html += '<th>Required Minimum GPA</th>';
-    html += '<th>Open to Part Time</th>';
-    html += '<th>Open to Full Time</th>';
+    html += '<th>Name</th>';
+    html += '<th>Recipients</th>';
+    html += '<th>Award</th>';
+    html += '<th>Category</th>';
+    html += '<th>Minimum GPA</th>';
+    html += '<th>Part Time/Full Time</th>';
     html += '<th>Demonstrate Financial Need</th>';
-    html += '<th>Reside in KCC District 520</th>';
     html += '<th>Other Special Requirements</th>';
+    html += '<th>Apply</th>';
     html += '</tr>';
     html += '</thead>';
     html += '<tbody>';
 
     // loop to build html output for each row
     var entry = data.feed.entry;
+
+    var sum = data.feed.entry[0]['gsx$totalscholarships']['$t'];
+
+
     /**
           ** Change to descending order
           ** for (var i = entry.length - 1; i >= 0; i -= 1) {
            */
     for (var i = 0; i < entry.length; i++) {
       html += '<tr>';
-      html += '<td>' + entry[i]['gsx$scholarshipname']['$t'] + '</td>';
-      html += '<td>' + entry[i]['gsx$numberofrecipients']['$t'] + '</td>';
-      html += '<td>' + entry[i]['gsx$awardamount']['$t'] + '</td>';
-      html += '<td>' + entry[i]['gsx$requiredminimumgpa']['$t'] + '</td>';
-      html += '<td>' + entry[i]['gsx$opentoparttime']['$t'] + '</td>';
-      html += '<td>' + entry[i]['gsx$opentofulltime']['$t'] + '</td>';
+      html += '<td>' + entry[i]['gsx$name']['$t'] + '</td>';
+      html += '<td>' + entry[i]['gsx$recipients']['$t'] + '</td>';
+      html += '<td>' + entry[i]['gsx$award']['$t'] + '</td>';
+      html += '<td>' + entry[i]['gsx$category']['$t'] + '</td>';
+      html += '<td>' + entry[i]['gsx$minimumgpa']['$t'] + '</td>';
+      html += '<td>' + entry[i]['gsx$parttimeorfulltime']['$t'] + '</td>';
       html += '<td>' + entry[i]['gsx$demonstratefinancialneed']['$t'] + '</td>';
-      html += '<td>' + entry[i]['gsx$resideinkccdistrict520']['$t'] + '</td>';
       //html += '<td><button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Other Special Requirements" data-content="' + entry[i]['gsx$otherspecialrequirements']['$t'] + '">Special Requirements</button></td>';
-      html += '<td>' + entry[i]['gsx$otherspecialrequirements']['$t'] + '</td>';
+      html += '<td>' + entry[i]['gsx$specialrequirements']['$t'] + '</td>';
+      html += '<td><a href="#applyModal" data-toggle="modal" class="btn btn-primary">Apply</a></td>';
 
       html += '</tr>';
     }
@@ -71,6 +75,7 @@ function spreadsheetTable() {
 
     // output html
     $('#scholarshipTable').html(html);
+    $('#scholarshipCount').html(sum);
     deferSpreadsheetTable.resolve();
   });
 }

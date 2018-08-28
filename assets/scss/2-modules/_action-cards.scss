@@ -13,9 +13,44 @@
   overflow: visible;
 }
 
-#volunteerSvg:hover #hand,
-#volunteerSvg:focus #hand {
-  animation: wave 1s infinite alternate;
+.action-cards__col--volunteer:hover #hand,
+.action-cards__col--volunteer:focus #hand {
+  animation: wave 1s 2 alternate;
+}
+
+.action-cards__col--volunteer:hover #rightHand,
+.action-cards__col--volunteer:focus #rightHand {
+  animation-name: rightWave;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+.action-cards__col--volunteer:hover #leftHand,
+.action-cards__col--volunteer:focus #leftHand {
+  animation-name: leftWave;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .3s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+.action-cards__col--volunteer:hover #volunteerBg1,
+.action-cards__col--volunteer:focus #volunteerBg1 {
+  animation: volunteerBackground1 1s 2 alternate;
+}
+
+.action-cards__col--give:hover #giveBg,
+.action-cards__col--give:focus #giveBg {
+  animation: giveBackground 1s 2 alternate;
+}
+
+.action-cards__col--scholarships:hover #scholarshipsBg,
+.action-cards__col--scholarships:focus #scholarshipsBg {
+  animation: scholarshipsBackground 1s 2 alternate;
 }
 
 @keyframes wave {
@@ -27,23 +62,81 @@
   }
 }
 
-#giveSvg:hover #openHand,
-#giveSvg:focus #openHand {
-  animation: slideHand 1s infinite alternate;
+@keyframes rightWave {
+  from {
+    transform: translatex(0px) translateY(0px) rotate(0deg) scale(1, 1);
+  }
+  to {
+    transform: translatex(5px) translateY(-8px) rotate(4deg) scale(1.05, 1.05);
+  }
+}
+
+@keyframes leftWave {
+  from {
+    transform: translatex(0px) translateY(0px) rotate(0deg) scale(1, 1);
+  }
+  to {
+    transform: translatex(-7px) translateY(-8px) rotate(-5deg) scale(1.05, 1.05);
+  }
+}
+
+@keyframes volunteerBackground1 {
+  from {
+    transform-origin: center;
+    transform: scale(1, 1) translateY(0px);
+    opacity: 0;
+  }
+  to {
+    transform-origin: center;
+    transform: scale(20, 20) translateY(-0.3px);
+    opacity: .3;
+  }
+}
+
+@keyframes giveBackground {
+  from {
+    transform-origin: 35.199px 49.634px;
+    transform: scale(1, 1) translateY(0px);
+    opacity: 0;
+  }
+  to {
+    transform-origin: 35.199px 49.634px;
+    transform: scale(15, 15) translateY(-0.6px);
+    opacity: .3;
+  }
+}
+
+@keyframes scholarshipsBackground {
+  from {
+    transform-origin: center;
+    transform: scale(1, 1) translateY(0px);
+    opacity: 0;
+  }
+  to {
+    transform-origin: center;
+    transform: scale(20, 20) translateY(-0.6px);
+    opacity: .3;
+  }
+}
+
+.action-cards__col--give:hover #openHand,
+.action-cards__col--give:focus #openHand {
+   animation: slideHand 1s 2 alternate;
+
 }
 
 @keyframes slideHand {
   from {
-    transform: translatex(-5px) scale(1, 1);
+    transform: translatex(0px) scale(1, 1);
   }
   to {
-    transform: translatex(0px) scale(1.05, 1.05);
+    transform: translatex(5px) scale(1.05, 1.05);
   }
 }
 
-#giveSvg:hover #gift,
-#giveSvg:focus #gift {
-  animation: floatGift 1s infinite alternate;
+.action-cards__col--give:hover #gift,
+.action-cards__col--give:focus #gift {
+  animation: floatGift 1s 2 alternate;
 }
 
 @keyframes floatGift {
@@ -73,12 +166,12 @@
   }
 }
 
-#scholarshipSvg:hover #dollarSign2,
-#scholarshipSvg:focus #dollarSign2 {
-  animation: dropIn2 1s infinite alternate;
+.action-cards__col--scholarships:hover #dollarSign2,
+.action-cards__col--scholarships:focus #dollarSign2 {
+  animation: dropIn2 1s 2 alternate;
 }
 
-#scholarshipSvg:hover #dollarSign1,
-#scholarshipSvg:focus #dollarSign1 {
-  animation: dropIn1 1s infinite alternate;
+.action-cards__col--scholarships:hover #dollarSign1,
+.action-cards__col--scholarships:focus #dollarSign1 {
+  animation: dropIn1 1s 2 alternate;
 }

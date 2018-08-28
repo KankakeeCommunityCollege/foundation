@@ -112,17 +112,17 @@ javascript:
 
 tableScript:
   dest:
-    jekyllRoot: "assets/js/"
-    buildDir: "_site/assets/js/"
+    jekyllRoot: "assets/js/table/"
+    buildDir: "_site/assets/js/table/"
   filename: "spreadsheet.min.js"
   notification: "Running tableScript"
   src:
     # Exclusions: (!exclaim to exclude)
     # Inclusions: (included in JS compile)
-    - "!assets/js/scholarships.js"
-    - "!assets/js/spreadsheet.js"
-    - "!assets/js/sortable.js"
-    - "assets/js/scholarshipTable.js"
+    - "!assets/js/table/scholarships.js"
+    - "!assets/js/table/spreadsheet.js"
+    - "!assets/js/table/sortable.js"
+    - "assets/js/table/scholarshipTable.js"
 
 # Gulp task for main travis JS compile/uglify of all.min.js.
 travisScript:
@@ -174,7 +174,7 @@ watch: # 'Watch' for changes in all the following:
     - "assets/js/script/*.js"
   tableScript:
     - "assets/js/table/spreadsheet.min.js"
-    - "assets/j/tables/*.js"
+    - "assets/js/table/*.js"
   sass: "assets/scss/**/*.scss"
   pages:
     - "*.{md,html,yml,xml}"
