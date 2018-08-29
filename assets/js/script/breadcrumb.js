@@ -14,14 +14,14 @@ $(document).ready(function() {
     console.log(noProto);
     function createList() {
 
-      var listItemStart = '<li class="nav-item">',
+      var listItemStart = '<li class="breadcrumb-item">',
+        lastListItemStart = '<li class="breadcrumb-item active">',
         listItemClose = '</li>',
         // Links:
         linkStart = '<a href="',
-        linkPostUrl = '" class="nav-link" style="text-transform: capitalize;">',
+        linkPostUrl = '" style="text-transform: capitalize;">',
         linkClose = '</a>',
-        lastLinkPostUrl = '" class="nav-link active" style="text-transform: capitalize;">',
-        homeList = '<li id="homeList" class="nav-item"><a id="homePill" href="/" class="nav-link">Home</a></li>';
+        homeList = '<li id="homeList" class="breadcrumb-item"><a id="homePill" href="/">Home</a></li>';
 
       var removeSlash = noBase.slice(0,-1);
       var urlArray = removeSlash.split(/\//),
@@ -38,7 +38,7 @@ $(document).ready(function() {
         var english = page.replace('-', ' ');
         if (page == lastItem) {
           listString.push(
-            listItemStart + linkStart + lastLinkPostUrl + english + linkClose + listItemClose
+            lastListItemStart + english + listItemClose
           );
         } else if (page == urlArray[0]) {
           listString.push(
@@ -50,7 +50,7 @@ $(document).ready(function() {
           );
         }
       });
-      document.getElementById('pillUl').innerHTML = listString.join('');
+      document.getElementById('breadcrumbOl').innerHTML = listString.join('');
     }
     createList();
 

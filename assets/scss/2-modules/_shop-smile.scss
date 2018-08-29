@@ -132,16 +132,6 @@
   fill: $black;
 }
 
-.shop-smile__grey-out {
-  background-color: $black;
-  display: none;
-  height: 100%;
-  opacity: 0;
-  position: fixed;
-  width: 100%;
-  z-index: 9998;
-}
-
 .shop-smile__tab--wrapper {
   background-color: $smile-orange;
   // no shorthand borders huh?
@@ -158,6 +148,7 @@
   border-top-style: solid;
   border-top-width: thin;
   color: $white;
+  cursor: pointer;
   padding: 10px;
   position: absolute;
   right: 0;
