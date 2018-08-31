@@ -42,11 +42,11 @@ $(document).ready(function() {
           );
         } else if (page == urlArray[0]) {
           listString.push(
-            listItemStart + linkStart + '/' + linkPostUrl + english + linkClose + listItemClose
+            listItemStart + linkStart + '../' + linkPostUrl + english + linkClose + listItemClose
           );
         } else if (page == urlArray[1]) {
           listString.push(
-            listItemStart + linkStart + '../' + linkPostUrl + english + linkClose + listItemClose
+            listItemStart + linkStart + '../../' + linkPostUrl + english + linkClose + listItemClose
           );
         }
       });
