@@ -1,16 +1,27 @@
 ---
-layout: default
+layout: breadcrumb
 baseurl: '../'
 title: Events
 description: ''
 ---
 
-<main class="position__offset-fixed-nav">
+<main>
   <div class="container">
     <div class="row">
       <div class="col">
+        <nav class="tabbed-nav" role="navigation">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" href="{{ page.baseurl }}events/" role="tab" aria-controls="home" aria-selected="true">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ page.baseurl }}events/special-events/" role="tab" aria-controls="special-events" aria-selected="false">Special Events</a>
+          </li>
+        </ul>
+        </nav>
         <div class="editable">
           <h2>Events</h2>
+          <p>No content in flowmapp</p>
         </div>
       </div>
     </div>

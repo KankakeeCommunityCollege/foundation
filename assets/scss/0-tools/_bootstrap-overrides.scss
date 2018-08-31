@@ -18,3 +18,7 @@
 .nav-tabs .nav-link.active {
   background-color: $ochre-tint;
 }
+
+.breadcrumb .active {
+  text-transform: capitalize;
+}

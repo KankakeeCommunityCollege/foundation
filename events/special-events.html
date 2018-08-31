@@ -1,14 +1,24 @@
 ---
-layout: default
+layout: breadcrumb
 baseurl: '../../'
 title: Special Events
 description: ''
 ---
 
-<main class="position__offset-fixed-nav">
+<main>
   <div class="container">
     <div class="row">
       <div class="col">
+        <nav class="tabbed-nav" role="navigation">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link" id="home-tab" href="{{ page.baseurl }}events/" role="tab" aria-controls="home" aria-selected="false">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="{{ page.baseurl }}events/special-events/" role="tab" aria-controls="special-events" aria-selected="true">Special Events</a>
+          </li>
+        </ul>
+        </nav>
         <div class="editable">
           <h2>Special Events</h2>
           <h3>Scholarship Recognition Dinner</h3>
