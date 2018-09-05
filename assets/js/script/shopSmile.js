@@ -15,6 +15,13 @@ $(document).ready(function () {
   //  smileTab.removeClass('shop-smile__tab--shaddow');
   //}
 
+  if( sessionStorage.clickcount == undefined ) { // if the clickcount is undefined:
+    // set the clickcount to 0:
+    sessionStorage.clickcount = 0;
+  }
+
+  smileWrapper.attr('data-close', sessionStorage.clickcount);
+
   function animateIn() {
     // Function to animate the slide-in of the amazon smile slide-box
     var deferShowShopSmile = $.Deferred();
@@ -34,15 +41,17 @@ $(document).ready(function () {
 
   // Run the slide-box animation on page-load after a delay:
   function showShopSmile() {
-    setTimeout(function(){
-      //removeShaddow();
-      animateIn();
-    }, 2000);
+    if ( smileWrapper.attr('data-close') == 0 ) {
+      setTimeout(function(){
+        //removeShaddow();
+        animateIn();
+      }, 2000);
+    }
   }
-//  if( localStorage.getItem('user_visted') != 'true' ){
+  //  if( localStorage.getItem('user_visted') != 'true' ){
   showShopSmile();
-//    localStorage.setItem('user_visted', 'true');
-//  }
+  //    localStorage.setItem('user_visted', 'true');
+  //  }
 
   // Closing the amazon smile slide-box
   function closeSmileWidget() {
@@ -50,6 +59,7 @@ $(document).ready(function () {
       smileWrapper.removeClass('shop-smile__wrapper--slide-in');
       smileWrapper.removeClass('shop-smile__wrapper--show');
       smileWrapper.addClass('shop-smile__wrapper--slide-out');
+      clickCounter();
       //$('#greyOut').removeClass('shop-smile__grey-out--animate')
       //  .addClass('shop-smile__grey-out--animate-out')
       //  .removeClass('shop-smile__grey-out--show');
@@ -70,6 +80,7 @@ $(document).ready(function () {
         smileWrapper.removeClass('shop-smile__wrapper--show');
         //addShaddow();
         smileWrapper.addClass('shop-smile__wrapper--slide-out');
+        clickCounter();
       } else {
         console.log('NO');
         smileWrapper.removeClass('shop-smile__wrapper--slide-out');
@@ -79,5 +90,17 @@ $(document).ready(function () {
     });
   }
   openSmile();
+
+  function clickCounter() {
+    if(typeof(Storage) !== 'undefined') {
+      if (sessionStorage.clickcount) {
+        sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+      } else {
+        sessionStorage.clickcount = 1;
+      }
+      smileWrapper.attr('data-close', sessionStorage.clickcount);
+    }
+  }
+
 });
 //});

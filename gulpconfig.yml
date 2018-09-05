@@ -109,6 +109,8 @@ javascript:
     - "assets/js/script/currentPage.js"
     - "assets/js/script/breadcrumb.js"
     - "assets/js/script/shopSmile.js"
+    - "assets/js/script/visited.js"
+    - "assets/js/script/scrollFunction.js"
 
 tableScript:
   dest:
