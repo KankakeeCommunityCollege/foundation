@@ -1,4 +1,12 @@
 $(document).ready(function() {
+  var currentUrl = window.location.href;
+  // Remove the http(s):// protocol
+  var noProto = currentUrl.replace(/(^\w+:|^)\/\//, '');
+  // Remove the baseURL (foundation.kcc.edu)
+  var noBase = noProto.replace('foundation.kcc.edu/', '');
+
+  if ( noProto !== 'foundation.kcc.edu/' && noProto !== 'foundation.kcc.edu/#contact' && noProto !== 'localhost:3000/' && noProto !== 'localhost:3000/#contact' ) {
+
   function writeSubNav() {
     var about = 'about',
       board = 'foundation-board',
@@ -20,12 +28,6 @@ $(document).ready(function() {
 
     var alumni = 'alumni',
       distinguished = 'distinguished-alumni-award';
-
-    var currentUrl = window.location.href;
-    // Remove the http(s):// protocol
-    var noProto = currentUrl.replace(/(^\w+:|^)\/\//, '');
-    // Remove the baseURL (foundation.kcc.edu)
-    var noBase = noProto.replace('foundation.kcc.edu/', '');
 
     console.log(noProto);
 
@@ -217,4 +219,5 @@ $(document).ready(function() {
   }
 
   writeSubNav();
+  }
 });
