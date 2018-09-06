@@ -22,3 +22,7 @@
 .breadcrumb .active {
   text-transform: capitalize;
 }
+
+.navbar-light .navbar-nav .active>.nav-link {
+  color: $primary-blue;
+}

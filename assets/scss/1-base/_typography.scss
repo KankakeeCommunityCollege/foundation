@@ -189,25 +189,25 @@ p.general-p {
 
 @media screen and (min-width:576px) {
   .typography__newsroom-main-heading {
-    font-size: 3.2rem;
+    font-size: 2.3rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .typography__newsroom-main-heading {
-    font-size: 4rem;
+    font-size: 2.6rem;
   }
 }
 
 @media screen and (min-width: 992px) {
   .typography__newsroom-main-heading {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .typography__newsroom-main-heading {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -331,4 +331,24 @@ p.general-p {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
   margin-bottom: 20px;
+}
+
+.typography__sub-nav--red-h3 {
+  color: $primary-red;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .typography__sub-nav--red-h3 {
+    font-size: 1.8rem;
+  }
+}
+
+.typography__nav-link {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
 }
