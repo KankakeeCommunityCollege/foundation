@@ -3,7 +3,9 @@ var deferSearchForm = $.Deferred();
 var deferPopovers = $.Deferred();
 
 $.when(deferSpreadsheetTable).done(function() {
-  $('#Data').DataTable();
+  $('#Data').DataTable( {
+    responsive: true
+  } );
   deferSearchForm.resolve();
 });
 
@@ -32,15 +34,15 @@ function spreadsheetTable() {
     html += '<table id="Data" class="display" style="width:100%">';
     html += '<thead>';
     html += '<tr>';
-    html += '<th>Name</th>';
-    html += '<th>Recipients</th>';
-    html += '<th>Award</th>';
-    html += '<th>Category</th>';
-    html += '<th>Minimum GPA</th>';
-    html += '<th>Part Time/Full Time</th>';
-    html += '<th>Demonstrate Financial Need</th>';
-    html += '<th>Other Special Requirements</th>';
-    html += '<th>Apply</th>';
+    html += '<th class="all">Name:</th>';
+    html += '<th class="min-tablet-l">Recipients:</th>';
+    html += '<th class="all">Award:</th>';
+    html += '<th class="min-tablet-l">Category:</th>';
+    html += '<th class="desktop">Minimum&nbsp;GPA:</th>';
+    html += '<th class="none">Part&nbsp;Time/Full&nbsp;Time:</th>';
+    html += '<th class="none">Demonstrate&nbsp;Financial&nbsp;Need:</th>';
+    html += '<th class="none">Other&nbsp;Special&nbsp;Requirements:</th>';
+    html += '<th class="all">Apply:</th>';
     html += '</tr>';
     html += '</thead>';
     html += '<tbody>';
@@ -58,14 +60,17 @@ function spreadsheetTable() {
     for (var i = 0; i < entry.length; i++) {
       html += '<tr>';
       html += '<td>' + entry[i]['gsx$name']['$t'] + '</td>';
-      html += '<td>' + entry[i]['gsx$recipients']['$t'] + '</td>';
+      html += '<td align="center">' + entry[i]['gsx$recipients']['$t'] + '</td>';
       html += '<td>' + entry[i]['gsx$award']['$t'] + '</td>';
       html += '<td>' + entry[i]['gsx$category']['$t'] + '</td>';
-      html += '<td>' + entry[i]['gsx$minimumgpa']['$t'] + '</td>';
+      html += '<td align="center">' + entry[i]['gsx$minimumgpa']['$t'] + '</td>';
       html += '<td>' + entry[i]['gsx$parttimeorfulltime']['$t'] + '</td>';
       html += '<td>' + entry[i]['gsx$demonstratefinancialneed']['$t'] + '</td>';
       //html += '<td><button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Other Special Requirements" data-content="' + entry[i]['gsx$otherspecialrequirements']['$t'] + '">Special Requirements</button></td>';
-      html += '<td>' + entry[i]['gsx$specialrequirements']['$t'] + '</td>';
+      var bulletedString = entry[i]['gsx$specialrequirements']['$t'],
+        bulletBreaks = bulletedString.replace(/•/g, '<br>• ');
+
+      html += '<td>' + bulletBreaks + '</td>';
       html += '<td><a href="#applyModal" data-toggle="modal" class="btn btn-primary">Apply</a></td>';
 
       html += '</tr>';
