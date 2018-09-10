@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<div class="container position__sub-nav--offset-fixed-nav">
+  <div class="row">
+    <div class="col">
+      <nav class="navbar navbar-light bg-light sub-nav__navbar">
+        <a class="navbar-brand" href="#"><h3 class="typography__sub-nav--red-h3">Alumni Stories</h3></a>
+        <ul id="subNavNav" class="nav ml-auto"><li class="nav-item"><a href="../distinguished-alumni-award" class="nav-link sub-nav__nav-link" style="text-transform: capitalize;">distinguished alumni award</a></li><li class="nav-item active"><a href="../alumni-stories" class="nav-link sub-nav__nav-link" style="text-transform: capitalize;">alumni stories <span class="sr-only">(current)</span></a></li></ul>
+      </nav>
+    </div>
+  </div>
+</div><br>
+<div class="container">
+  <div class="row">
+    <div class="col alumni__col">
+      <nav>
+        <div class="nav nav-tabs">
+          {% assign sorted = site.alumnis | sort: 'year' | reverse %}
+          {% for alumni in sorted %}
+          <a class="nav-item nav-link alumni__nav" href="{{ alumni.url }}">
+            <span class="alumni__nav">
+              <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--default float-left" style="background-image: url('{{ page.baseurl }}{{ alumni.portrait }}')">
+              </div>
+              <h3 class="latest-news-widget__latest__tease__overline typography__latest-news-widget__rollup-list-h alumni__h3--width">{{ alumni.name }}</h3>
+            </span>
+            </a>
+          {% endfor %}
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+<div class="container sub-nav__content--wrapper">
+  <div class="row">
+    <div class="col">
+      <img src="{{ page.baseurl }}{{ page.portrait }}" class="float-left img-fluid alumni__portrait" alt="Portrait of {{ page.name }}">
+      <h3 class="blue-heading">{{ page.name }}</h3>
+      <p><strong>{{ page.degree }}, {{ page.year }}</strong></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>{{ content }}</p>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
