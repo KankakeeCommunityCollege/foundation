@@ -1,6 +1,8 @@
 title: "Kankakee Community College"
 google_analytics_key: UA-4328282-19
 collections:
+  alumnis:
+    output: true
   posts:
     output: false
     _hide_content: true
@@ -14,6 +16,14 @@ defaults:
     permalink: /:categories/:title/
     baseurl: ../../../
     categories: news
+- scope:
+    path: ''
+    type: alumnis
+  values:
+    layout: alumni-stories
+    permalink: /:categories/alumni-stories/:title/
+    baseurl: ../../../
+    categories: alumni
 permalink: pretty
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"

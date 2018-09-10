@@ -10,7 +10,39 @@ description: ''
     <div class="row">
       <div class="col sub-nav__content--wrapper">
         <div class="editable">
-          ...
+          <ol id="jsTeaseList" class="latest-news-widget--rollup__latest__tease-group latest-news-widget--rollup__latest__tease-group--width">
+
+            {% assign sorted = site.alumnis | sort: 'year' | reverse %}
+            {% for alumni in sorted %}
+              {% if forloop.first == true %}
+                <li class="latest-news-widget__latest__tease latest-news-widget__latest__tease--default latest-news-widget__latest__tease--has-image latest-news-widget--rollup__latest__tease-width">
+                <!--  Tease is active   -->
+                  <a id="jsTeaseLink{{ forloop.index }}" class="latest-news-widget__latest__tease__link js-hp-latest-tease-link tease-is-active" href="{{ alumni.url }}" data-image="{{ post.image }}" data-image-alt="" tabindex="0" data-tease-type="" data-index="{{ forloop.index0 }}" aria-hidden="true">
+                    <div class="latest-news-widget__latest__tease__hgroup">
+                      <h3 class="latest-news-widget__latest__tease__overline typography__latest-news-widget__rollup-list-h">{{ alumni.name }}</h3>
+                      <p class="latest-news-widget__latest__tease__h">{{ alumni.degree }}, {{ alumni.year }}</p>
+                    </div>
+                    <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--default" style="background-image: url('{{ page.baseurl }}{{ alumni.portrait }}')">
+                    </div>
+                  </a>
+                </li>
+
+              {% else %}
+
+                <li class="latest-news-widget__latest__tease latest-news-widget__latest__tease--default latest-news-widget__latest__tease--has-image latest-news-widget--rollup__latest__tease-width">
+                <!--  Tease is active   -->
+                  <a id="jsTeaseLink{{ forloop.index }}" class="latest-news-widget__latest__tease__link js-hp-latest-tease-link" href="{{ alumni.url }}" data-image="{{ post.image }}" data-image-alt="" tabindex="0" data-tease-type="" data-index="{{ forloop.index0 }}" aria-hidden="true">
+                    <div class="latest-news-widget__latest__tease__hgroup">
+                      <h3 class="latest-news-widget__latest__tease__overline typography__latest-news-widget__rollup-list-h">{{ alumni.name }}</h3>
+                      <p class="latest-news-widget__latest__tease__h">{{ alumni.degree }}, {{ alumni.year }}</p>
+                    </div>
+                    <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--default" style="background-image: url('{{ page.baseurl }}{{ alumni.portrait }}')">
+                    </div>
+                  </a>
+                </li>
+              {% endif %}
+
+            {% endfor %}
         </div>
       </div>
     </div>
