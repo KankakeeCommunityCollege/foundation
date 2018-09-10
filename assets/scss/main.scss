@@ -1,6 +1,7 @@
 // Variables
 @import '0-tools/vars';
 @import '0-tools/bootstrap-overrides';
+@import '0-tools/content';
 
 // Base items
 @import '1-base/typography';
@@ -27,6 +28,8 @@
 @import '2-modules/sub-nav';
 @import '2-modules/latest-news-widget';
 @import '2-modules/alumni';
+@import '2-modules/img-hover';
+@import '2-modules/facilities';
 
 // Layout items
 // @import "3-layout/...";

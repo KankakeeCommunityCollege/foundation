@@ -22,7 +22,9 @@ $(document).ready(function() {
       womens = 'womens-giving-circle';
 
     var events = 'events',
-      special = 'special-events';
+      annual = 'annual-scholarship-event',
+      presidentsDinner = 'presidents-circle-dinner',
+      swine = 'swine-wine-and-dine';
 
     var alumni = 'alumni',
       distinguished = 'distinguished-alumni-award',
@@ -214,13 +216,45 @@ $(document).ready(function() {
       }
 
       else if ( noBase.indexOf(events) > -1 ) {
-        if ( noBase.indexOf(special) > -1 ) {
+        if ( noBase.indexOf(annual) > -1 ) {
           listString.push(
-            lastListItemStart + linkStart + '../' + special + linkPostUrl + special.replace(/-/g, ' ') + srCurrent + linkClose + listItemClose
+            lastListItemStart + linkStart + '../' + annual + linkPostUrl + annual.replace(/-/g, ' ') + srCurrent + linkClose + listItemClose
+          );
+          listString.push(
+            listItemStart + linkStart + '../' + presidentsDinner + linkPostUrl + presidentsDinner.replace(/-/g, ' ') + linkClose + listItemClose
+          );
+          listString.push(
+            listItemStart + linkStart + '../' + swine + linkPostUrl + swine.replace(/-/g, ' ') + linkClose + listItemClose
+          );
+        } else if ( noBase.indexOf(presidentsDinner) > -1 ) {
+          listString.push(
+            listItemStart + linkStart + '../' + annual + linkPostUrl + annual.replace(/-/g, ' ') + linkClose + listItemClose
+          );
+          listString.push(
+            lastListItemStart + linkStart + '../' + presidentsDinner + linkPostUrl + presidentsDinner.replace(/-/g, ' ') + srCurrent + linkClose + listItemClose
+          );
+          listString.push(
+            listItemStart + linkStart + '../' + swine + linkPostUrl + swine.replace(/-/g, ' ') + linkClose + listItemClose
+          );
+        } else if ( noBase.indexOf(swine) > -1 ) {
+          listString.push(
+            listItemStart + linkStart + '../' + annual + linkPostUrl + annual.replace(/-/g, ' ') + linkClose + listItemClose
+          );
+          listString.push(
+            listItemStart + linkStart + '../' + presidentsDinner + linkPostUrl + presidentsDinner.replace(/-/g, ' ') + linkClose + listItemClose
+          );
+          listString.push(
+            lastListItemStart + linkStart + '../' + swine + linkPostUrl + swine.replace(/-/g, ' ') + srCurrent + linkClose + listItemClose
           );
         } else {
           listString.push(
-            listItemStart + linkStart + special + linkPostUrl + special.replace(/-/g, ' ') + linkClose + listItemClose
+            listItemStart + linkStart + annual + linkPostUrl + annual.replace(/-/g, ' ') + linkClose + listItemClose
+          );
+          listString.push(
+            listItemStart + linkStart + presidentsDinner + linkPostUrl + presidentsDinner.replace(/-/g, ' ') + linkClose + listItemClose
+          );
+          listString.push(
+            listItemStart + linkStart + swine + linkPostUrl + swine.replace(/-/g, ' ') + linkClose + listItemClose
           );
         }
       }
