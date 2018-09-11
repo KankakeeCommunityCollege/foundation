@@ -65,8 +65,26 @@ ul {
 
 .footer-heading {
   font-family: $secondaryfont-stack;
-  font-size: 2.6em;
+  font-size: 1.95rem;
   font-weight: $secondaryfont-weight-black;
+}
+
+@media screen and (min-width: 360px) {
+  .footer-heading {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .footer-heading {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 410px) {
+  .footer-heading {
+    font-size: 2.6rem;
+  }
 }
 
 p {

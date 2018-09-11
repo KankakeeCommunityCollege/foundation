@@ -11,6 +11,18 @@
 }
 
 .contacts__col--img {
-  margin-left: 15px;
+  margin-left: 0;
   margin-right: -15px;
+}
+
+@media screen and (min-width: 360px) {
+  .contacts__col--img {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (min-width: 410px) {
+  .contacts__col--img {
+    margin-left: 10px;
+  }
 }
