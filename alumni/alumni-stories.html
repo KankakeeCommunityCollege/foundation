@@ -8,43 +8,61 @@ description: ''
 <main>
   <div class="container">
     <div class="row">
-      <div class="col sub-nav__content--wrapper">
-        <div class="editable">
-          <ol id="jsTeaseList" class="latest-news-widget--rollup__latest__tease-group latest-news-widget--rollup__latest__tease-group--width">
-
+      <div class="col alumni__col">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
             {% assign sorted = site.alumnis | sort: 'year' | reverse %}
             {% for alumni in sorted %}
+            {% assign alumni_id = alumni.name | replace: ' ', '-' | downcase %}
               {% if forloop.first == true %}
-                <li class="latest-news-widget__latest__tease latest-news-widget__latest__tease--default latest-news-widget__latest__tease--has-image latest-news-widget--rollup__latest__tease-width">
-                <!--  Tease is active   -->
-                  <a id="jsTeaseLink{{ forloop.index }}" class="latest-news-widget__latest__tease__link js-hp-latest-tease-link tease-is-active" href="{{ alumni.url }}" data-image="{{ post.image }}" data-image-alt="" tabindex="0" data-tease-type="" data-index="{{ forloop.index0 }}" aria-hidden="true">
-                    <div class="latest-news-widget__latest__tease__hgroup">
-                      <h3 class="latest-news-widget__latest__tease__overline typography__latest-news-widget__rollup-list-h">{{ alumni.name }}</h3>
-                      <p class="latest-news-widget__latest__tease__h">{{ alumni.degree }}, {{ alumni.year }}</p>
-                    </div>
-                    <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--default" style="background-image: url('{{ page.baseurl }}{{ alumni.portrait }}')">
-                    </div>
-                  </a>
-                </li>
-
+              <a class="nav-item nav-link active" id="nav-{{ alumni_id }}-tab" data-toggle="tab" href="#nav-{{ alumni_id }}" role="tab" aria-controls="nav-{{ alumni_id }}" aria-selected="true">
+                <span class="alumni__nav">
+                  <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--default float-left" style="background-image: url('{{ page.baseurl }}{{ alumni.portrait }}')">
+                  </div>
+                  <h3 class="latest-news-widget__latest__tease__overline typography__latest-news-widget__rollup-list-h alumni__h3--width">{{ alumni.name }}</h3>
+                </span>
+                </a>
               {% else %}
-
-                <li class="latest-news-widget__latest__tease latest-news-widget__latest__tease--default latest-news-widget__latest__tease--has-image latest-news-widget--rollup__latest__tease-width">
-                <!--  Tease is active   -->
-                  <a id="jsTeaseLink{{ forloop.index }}" class="latest-news-widget__latest__tease__link js-hp-latest-tease-link" href="{{ alumni.url }}" data-image="{{ post.image }}" data-image-alt="" tabindex="0" data-tease-type="" data-index="{{ forloop.index0 }}" aria-hidden="true">
-                    <div class="latest-news-widget__latest__tease__hgroup">
-                      <h3 class="latest-news-widget__latest__tease__overline typography__latest-news-widget__rollup-list-h">{{ alumni.name }}</h3>
-                      <p class="latest-news-widget__latest__tease__h">{{ alumni.degree }}, {{ alumni.year }}</p>
+                <a class="nav-item nav-link" id="nav-{{ alumni_id }}-tab" data-toggle="tab" href="#nav-{{ alumni_id }}" role="tab" aria-controls="nav-{{ alumni_id }}" aria-selected="false">
+                  <span class="alumni__nav">
+                    <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--default float-left" style="background-image: url('{{ page.baseurl }}{{ alumni.portrait }}')">
                     </div>
-                    <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--default" style="background-image: url('{{ page.baseurl }}{{ alumni.portrait }}')">
-                    </div>
+                    <h3 class="latest-news-widget__latest__tease__overline typography__latest-news-widget__rollup-list-h alumni__h3--width">{{ alumni.name }}</h3>
+                  </span>
                   </a>
-                </li>
-              {% endif %}
+                {% endif %}
+              {% endfor %}
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
 
-            {% endfor %}
+  <div class="container sub-nav__content--wrapper">
+    <div class="row">
+      <div class="col">
+        <div class="tab-content alumni__tab-content" id="nav-tabContent">
+          {% for alumni in sorted %}
+          {% assign alumni_id = alumni.name | replace: ' ', '-' | downcase %}
+          {% if forloop.first == true %}
+            <div class="tab-pane fade show active" id="nav-{{ alumni_id }}" role="tabpanel" aria-labelledby="nav-{{ alumni_id }}-tab">
+              <img src="{{ alumni.baseurl }}{{ alumni.portrait }}" class="float-left img-fluid alumni__portrait" alt="Portrait of {{ alumni.name }}">
+              <h3 class="blue-heading">{{ alumni.name }}</h3>
+              <p><strong>{{ alumni.degree }}, {{ alumni.year }}</strong></p>
+              <p>{{ alumni.content }}</p>
+            </div>
+          {% else %}
+            <div class="tab-pane fade" id="nav-{{ alumni_id }}" role="tabpanel" aria-labelledby="nav-{{ alumni_id }}-tab">
+              <img src="{{ alumni.baseurl }}{{ alumni.portrait }}" class="float-left img-fluid alumni__portrait" alt="Portrait of {{ alumni.name }}">
+              <h3 class="blue-heading">{{ alumni.name }}</h3>
+              <p><strong>{{ alumni.degree }}, {{ alumni.year }}</strong></p>
+              <p>{{ alumni.content }}</p>
+            </div>
+          {% endif %}
+          {% endfor %}
         </div>
       </div>
     </div>
   </div>
+
 </main>

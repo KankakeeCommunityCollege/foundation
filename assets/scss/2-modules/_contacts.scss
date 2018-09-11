@@ -26,3 +26,15 @@
     margin-left: 10px;
   }
 }
+
+@media screen and (min-width: 992px) {
+  .contacts__padding-left {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__padding-left {
+    padding-left: 70px;
+  }
+}
