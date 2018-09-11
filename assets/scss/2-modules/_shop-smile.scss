@@ -1,24 +1,26 @@
 
 .shop-smile__wrapper {
-  border-bottom-width: 30px;
+  background-color: $grey-2;
+  border-bottom-width: 15px;
   border-color: $grey-2;
-  border-left-width: 20px;
+  border-left-width: 10px;
   border-radius: 5px;
-  border-right-width: 20px;
+  border-right-width: 0;
   border-style: solid;
   border-top-width: 40px;
-  bottom: -280px;
+  bottom: -310px;
   margin-right: -145px; // Negative margin to offset width of amazon smile widget for centering it
   position: fixed;
-  right: 50%; // position at 50% from right-side. above margin-right compensates for the width of the amazon smile widget to center it in the viewport
-  width: 290px;
   z-index: 9999;
 }
 
 @media screen and (min-width: 350px) {
   .shop-smile__wrapper {
+    border-left-width: 20px;
+    border-right-width: 20px;
     bottom: -320px;
     margin-right: -170px;
+    right: 50%; // position at 50% from right-side. above margin-right compensates for the width of the amazon smile widget to center it in the viewport
     width: 340px;
   }
 }
@@ -33,7 +35,7 @@
 
 @keyframes shopSmileSlideIn {
   from {
-    bottom: -280px;
+    bottom: -310px;
   }
 
   to {
@@ -47,7 +49,7 @@
   }
 
   to {
-    bottom: -280px;
+    bottom: -310px;
   }
 }
 
@@ -118,9 +120,15 @@
   display: block;
   padding: .5rem;
   position: absolute;
-  right: -10px;
+  right: 5px;
   top: -40px;
   width: 2rem;
+}
+
+@media screen and (min-width: 350px) {
+  .shop-smile__exit {
+    right: -10px;
+  }
 }
 
 .st0{
@@ -151,9 +159,15 @@
   cursor: pointer;
   padding: 10px;
   position: absolute;
-  right: 0;
+  right: 20px;
   top: -94px;
   z-index: 10001;
+}
+
+@media screen and (min-width: 350px) {
+  .shop-smile__tab--wrapper {
+    right: 0;
+  }
 }
 
 .shop-smile__tab--wrapper--hidden {
@@ -167,3 +181,9 @@
 //.shop-smile__tab--shaddow {
 //  box-shadow: 0px -1px 10px #7c7c7c;
 //}
+
+.shop-smile__widget-wrapper {
+  position: relative;
+  top: -8px;
+  left: -8px;
+}
