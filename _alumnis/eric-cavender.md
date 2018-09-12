@@ -5,7 +5,7 @@ year: 2010
 portrait: uploads/eric-cavendar.jpg
 ---
 
-#### What is your favorite memory of KCC???
+#### What is your favorite memory of KCC?
 {: .blue-heading-small}
 
 This may sound weird, but for somebody who has studied mortuary science and works for the coroner’s office I suppose it’s perfectly acceptable… my favorite memory at KCC was working with the cadavers during human anatomy. Many students feared this day in human anatomy lab, but not me! I think I even showed up early out of pure excitement to finally get the chance to put aside a textbook and get a firsthand opportunity to learn from a cadaver. I can still recall the reactions of others and the voice of Professor Bob Ling as he went over the anatomy of the cadaver we studied
