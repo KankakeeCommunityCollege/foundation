@@ -3,6 +3,7 @@ name: Heidi Surprenant-Pommier
 degree: Associate Degree
 year: 1991
 portrait: uploads/heidi-pommier.jpg
+quote: KCC gave me a love for education
 ---
 
 <h4 class="blue-heading-small">What was your favorite memory of KCC?</h4>

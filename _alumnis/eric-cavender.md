@@ -3,6 +3,7 @@ name: Eric Cavender
 degree: Associate Degree
 year: 2010
 portrait: uploads/eric-cavendar.jpg
+quote: "KCC was one of the best decisions I have ever made."
 ---
 
 #### What is your favorite memory of KCC?
