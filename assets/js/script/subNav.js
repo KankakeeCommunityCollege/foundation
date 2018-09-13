@@ -1,3 +1,4 @@
+// Builds out the sub-navigation based on whe current URL of the user.
 $(document).ready(function() {
   var currentUrl = window.location.href;
   // Remove the http(s):// protocol
