@@ -303,25 +303,25 @@ p.general-p {
 .typography__stories--quote {
   color: $primary-blue;
   font-family: 'Oswald', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.1em;
   font-weight: 300;
 }
 
 @media screen and (min-width: 488px) {
   .typography__stories--quote {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .typography__stories--quote {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 
 @media screen and (min-width: 992px) {
   .typography__stories--quote {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 

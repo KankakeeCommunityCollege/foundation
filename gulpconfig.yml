@@ -109,6 +109,8 @@ javascript:
     - "assets/js/script/visited.js"
     - "assets/js/script/scrollFunction.js"
     - "assets/js/script/subNav.js"
+    - "assets/js/script/walkText.js"
+    - "assets/js/script/tabLink.js"
 
 tableScript:
   dest:

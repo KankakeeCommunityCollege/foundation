@@ -398,33 +398,33 @@ slides:
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-md-6 stories__left-col--margin-top typography__col--heading-underline">
-        <h3 class="typography__red-h3 typography__red-h3--margin-btm">KCC Stories</h3>
-        <div class="editable">
-          <p>Our scholars are committed to achieving academic success. One day they will educate our children, care for us when we are sick, keep order, and build our economy. Kankakee Community College Foundation is fortunate to have a strong donor commitment. Donors to the Foundation believe in these students so strongly, that they choose to help make higher education possible for them.
-          </p>
-          <p>
-            On behalf of the Kankakee Community College Foundation, we congratulate our scholarship recipients as they embark on their journey of life-long learning. We also thank the men, women,businesses, clubs, and service organizations that we proudly call, donors. It is because of their generous financial support, that studentshave access to an extraordinary education.
-          </p>
-          <a href="#" class="btn btn-primary">More</a>
-        </div>
+      <div class="col stories__left-col--margin-top typography__col--heading-underline">
+        <h3 class="typography__red-h3 typography__red-h3--margin-btm">Alumni Stories</h3>
       </div>
-      <div class="col-md-6 stories__right-col--margin-top">
-          <ul class="stories__list">
-            <li class="stories__no-bullet">
-              <div class="stories__cell-left"><img class="stories__img" src="{{ page.baseurl }}uploads/student-1.jpg" alt=""></div>
-              <div class="stories__cell-right"><span class="typography__stories--quote editable">“Every gift matters – gifts of all sizes make a difference!”</span><br><span class="typography__stories--name editable">-&nbsp;Student Name</span></div>
-            </li>
-            <li class="stories__no-bullet">
-              <div class="stories__cell-left"><img class="stories__img" src="{{ page.baseurl }}uploads/student-2.jpg" alt=""></div>
-              <div class="stories__cell-right"><span class="typography__stories--quote editable">“Every gift matters – gifts of all sizes make a difference!”</span><br><span class="typography__stories--name editable">-&nbsp;Student Name</span></div>
-            </li>
-            <li class="stories__no-bullet">
-              <div class="stories__cell-left"><img class="stories__img" src="{{ page.baseurl }}uploads/student-3.jpg" alt=""></div>
-              <div class="stories__cell-right"><span class="typography__stories--quote editable">“Every gift matters – gifts of all sizes make a difference!”</span><br><span class="typography__stories--name editable">-&nbsp;Student Name</span></div>
-            </li>
-          </ul>
-        </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <ol id="jsTeaseList" class="latest-news-widget__latest__tease-group">
+          {% assign sorted = site.alumnis | sort: 'year' | reverse %}
+          {% for alumni in sorted limit:4 %}
+
+            <li class="latest-news-widget__latest__tease latest-news-widget__latest__tease--default latest-news-widget__latest__tease--has-image">
+            <!--  Tease is active   -->
+              <a id="jsTeaseLink{{ forloop.index }}" class="latest-news-widget__latest__tease__link js-hp-latest-tease-link" href="{{ page.baseurl }}alumni/alumni-stories/#{{ alumni.name | replace: ' ', '-' | downcase }}" data-image="{{ alumni.portrait }}" data-image-alt="" tabindex="0" data-tease-type="" data-index="{{ forloop.index0 }}" aria-hidden="true">
+                <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--default" style="background-image: url('{{ page.baseurl }}{{ alumni.portrait }}')">
+                </div>
+              <div class="latest-news-widget__latest__tease__hgroup">
+                <h3 class="typography__stories--quote editable">“{{ alumni.quote }}”</h3>
+                <h3 class="latest-news-widget__latest__tease__overline typography__latest-news-widget__rollup-list-h">&nbsp;-&nbsp;{{ alumni.name }}</h3>
+              </div>
+              <p><button type="button" class="btn btn-primary alumni__btn">Read More</button></p>
+            </a>
+          </li>
+
+          {% endfor %}
+        </ol>
+      </div>
+    </div>
     </div>
   </div>
 </section>
