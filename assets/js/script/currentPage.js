@@ -3,7 +3,7 @@ $(document).ready(function () {
   var currentUrl = window.location.href;
   var noProto = currentUrl.replace(/(^\w+:|^)\/\//, '');
   $('#navbarSupportedContent').find('.active').removeClass('active');
-  if (noProto == 'foundation.kcc.edu/') {
+  if (noProto == 'foundation.kcc.edu/' || noProto == 'localhost:3000/' ) {
     $('#home').addClass('active');
   } else if (currentUrl.indexOf('/events/') > -1) {
     $('#events').addClass('active');
