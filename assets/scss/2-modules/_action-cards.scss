@@ -121,3 +121,7 @@
 .action-cards__col--scholarships:focus #dollarSign1 {
   animation: dropIn1 .5s 2 alternate;
 }
+
+.jsScholarshipHidden {
+  display: none;
+}

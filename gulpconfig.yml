@@ -111,6 +111,7 @@ javascript:
     - "assets/js/script/subNav.js"
     - "assets/js/script/walkText.js"
     - "assets/js/script/tabLink.js"
+    - "assets/js/script/scholarshipTime.js"
 
 tableScript:
   dest:
