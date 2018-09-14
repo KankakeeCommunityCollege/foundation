@@ -42,7 +42,6 @@ function spreadsheetTable() {
     html += '<th class="none">Part&nbsp;Time/Full&nbsp;Time:</th>';
     html += '<th class="none">Demonstrate&nbsp;Financial&nbsp;Need:</th>';
     html += '<th class="none">Other&nbsp;Special&nbsp;Requirements:</th>';
-    html += '<th class="all">Apply:</th>';
     html += '</tr>';
     html += '</thead>';
     html += '<tbody>';
@@ -59,7 +58,7 @@ function spreadsheetTable() {
            */
     for (var i = 0; i < entry.length; i++) {
       html += '<tr>';
-      html += '<td>' + entry[i]['gsx$name']['$t'] + '</td>';
+      html += '<td style="vertical-align:top">' + entry[i]['gsx$name']['$t'] + '</td>';
       html += '<td align="center">' + entry[i]['gsx$recipients']['$t'] + '</td>';
       html += '<td>' + entry[i]['gsx$award']['$t'] + '</td>';
       html += '<td>' + entry[i]['gsx$category']['$t'] + '</td>';
@@ -71,7 +70,6 @@ function spreadsheetTable() {
         bulletBreaks = bulletedString.replace(/•/g, '<br>• ');
 
       html += '<td>' + bulletBreaks + '</td>';
-      html += '<td><a href="#applyModal" data-toggle="modal" class="btn btn-primary">Apply</a></td>';
 
       html += '</tr>';
     }
