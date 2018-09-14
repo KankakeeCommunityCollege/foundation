@@ -36,3 +36,7 @@
 .navbar-light .navbar-nav .active>.nav-link {
   color: $primary-blue;
 }
+
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before {
+    top: 4px;
+  }
