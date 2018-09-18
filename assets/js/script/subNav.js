@@ -31,7 +31,7 @@ $(document).ready(function() {
       distinguished = 'distinguished-alumni-award',
       stories = 'alumni-stories';
 
-    console.log(noProto);
+    //console.log(noProto);
 
     function createList() {
 
@@ -50,8 +50,8 @@ $(document).ready(function() {
 
       var lastItem = urlArray[urlArray.length - 1];
       var arrayLength = urlArray.length;
-      console.log(lastItem);
-      console.log(arrayLength);
+      //console.log(lastItem);
+      //console.log(arrayLength);
 
       if ( noBase.indexOf(about) > -1 ) {
         if ( noBase.indexOf(committees) > -1 ) {

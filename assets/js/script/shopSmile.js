@@ -71,18 +71,18 @@ $(document).ready(function () {
   // Reopening the slide-box by clicking it's minimized tab:
   function openSmile() {
     $('#openSmile').on('click', function() {
-      console.log('clicked');
+      //console.log('clicked');
       var wrapperClasses = smileWrapper.hasClass('shop-smile__wrapper--show');
-      console.log(wrapperClasses);
+      //console.log(wrapperClasses);
       if ( wrapperClasses == true ) {
-        console.log('show');
+        //console.log('show');
         smileWrapper.removeClass('shop-smile__wrapper--slide-in');
         smileWrapper.removeClass('shop-smile__wrapper--show');
         //addShaddow();
         smileWrapper.addClass('shop-smile__wrapper--slide-out');
         clickCounter();
       } else {
-        console.log('NO');
+        //console.log('NO');
         smileWrapper.removeClass('shop-smile__wrapper--slide-out');
         //removeShaddow();
         animateIn();
