@@ -9,7 +9,6 @@ $(document).ready(function() {
   function writeSubNav() {
     var about = 'about',
       board = 'foundation-board',
-      donors = 'donors',
       committees = 'committees';
 
     var scholar = 'scholarships',
@@ -59,19 +58,6 @@ $(document).ready(function() {
             lastListItemStart + linkStart + '../' + committees + linkPostUrl + committees + srCurrent + linkClose + listItemClose
           );
           listString.push(
-            listItemStart + linkStart + '../' + donors + linkPostUrl + donors + linkClose + listItemClose
-          );
-          listString.push(
-            listItemStart + linkStart + '../' + board + linkPostUrl + board.replace(/-/g, ' ') + linkClose + listItemClose
-          );
-        } else if ( noBase.indexOf(donors) > -1 ) {
-          listString.push(
-            listItemStart + linkStart + '../' + committees + linkPostUrl + committees + linkClose + listItemClose
-          );
-          listString.push(
-            lastListItemStart + linkStart + '../' + donors + linkPostUrl + donors + srCurrent + linkClose + listItemClose
-          );
-          listString.push(
             listItemStart + linkStart + '../' + board + linkPostUrl + board.replace(/-/g, ' ') + linkClose + listItemClose
           );
         } else if ( noBase.indexOf(board) > -1 ) {
@@ -79,17 +65,11 @@ $(document).ready(function() {
             listItemStart + linkStart + '../' + committees + linkPostUrl + committees + linkClose + listItemClose
           );
           listString.push(
-            listItemStart + linkStart + '../' + donors + linkPostUrl + donors + linkClose + listItemClose
-          );
-          listString.push(
             lastListItemStart + linkStart + '../' + board + linkPostUrl + board.replace(/-/g, ' ') + srCurrent + linkClose + listItemClose
           );
         } else {
           listString.push(
             listItemStart + linkStart + committees + linkPostUrl + committees + linkClose + listItemClose
-          );
-          listString.push(
-            listItemStart + linkStart + donors + linkPostUrl + donors + linkClose + listItemClose
           );
           listString.push(
             listItemStart + linkStart + board + linkPostUrl + board.replace(/-/g, ' ') + linkClose + listItemClose
