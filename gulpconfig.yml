@@ -184,6 +184,7 @@ watch: # 'Watch' for changes in all the following:
     # !exlclusions:
     - "!_site/**/*.*"
     - "!assets/**/*.*"
+    - "_alumnis/*.md"
     - "about/**"
     - "about/**/**"
     - "events/**"
