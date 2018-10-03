@@ -24,7 +24,7 @@ $(document).ready(function() {
     var events = 'events',
       annual = 'annual-scholarship-event',
       presidentsDinner = 'presidents-circle-dinner',
-      swine = 'swine-wine-and-dine';
+      fundraiser = 'annual-fundraiser';
 
     var alumni = 'alumni',
       distinguished = 'distinguished-alumni-award',
@@ -205,7 +205,7 @@ $(document).ready(function() {
             listItemStart + linkStart + '../' + presidentsDinner + linkPostUrl + presidentsDinner.replace(/-/g, ' ') + linkClose + listItemClose
           );
           listString.push(
-            listItemStart + linkStart + '../' + swine + linkPostUrl + swine.replace(/-/g, ' ') + linkClose + listItemClose
+            listItemStart + linkStart + '../' + fundraiser + linkPostUrl + fundraiser.replace(/-/g, ' ') + linkClose + listItemClose
           );
         } else if ( noBase.indexOf(presidentsDinner) > -1 ) {
           listString.push(
@@ -215,9 +215,9 @@ $(document).ready(function() {
             lastListItemStart + linkStart + '../' + presidentsDinner + linkPostUrl + presidentsDinner.replace(/-/g, ' ') + srCurrent + linkClose + listItemClose
           );
           listString.push(
-            listItemStart + linkStart + '../' + swine + linkPostUrl + swine.replace(/-/g, ' ') + linkClose + listItemClose
+            listItemStart + linkStart + '../' + fundraiser + linkPostUrl + fundraiser.replace(/-/g, ' ') + linkClose + listItemClose
           );
-        } else if ( noBase.indexOf(swine) > -1 ) {
+        } else if ( noBase.indexOf(fundraiser) > -1 ) {
           listString.push(
             listItemStart + linkStart + '../' + annual + linkPostUrl + annual.replace(/-/g, ' ') + linkClose + listItemClose
           );
@@ -225,7 +225,7 @@ $(document).ready(function() {
             listItemStart + linkStart + '../' + presidentsDinner + linkPostUrl + presidentsDinner.replace(/-/g, ' ') + linkClose + listItemClose
           );
           listString.push(
-            lastListItemStart + linkStart + '../' + swine + linkPostUrl + swine.replace(/-/g, ' ') + srCurrent + linkClose + listItemClose
+            lastListItemStart + linkStart + '../' + fundraiser + linkPostUrl + fundraiser.replace(/-/g, ' ') + srCurrent + linkClose + listItemClose
           );
         } else {
           listString.push(
@@ -235,7 +235,7 @@ $(document).ready(function() {
             listItemStart + linkStart + presidentsDinner + linkPostUrl + presidentsDinner.replace(/-/g, ' ') + linkClose + listItemClose
           );
           listString.push(
-            listItemStart + linkStart + swine + linkPostUrl + swine.replace(/-/g, ' ') + linkClose + listItemClose
+            listItemStart + linkStart + fundraiser + linkPostUrl + fundraiser.replace(/-/g, ' ') + linkClose + listItemClose
           );
         }
       }
