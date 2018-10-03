@@ -1,2 +1,31 @@
 // Homepage specific Styles
 // ==========================================
+
+.home__scholarships--button {
+  margin-top: 5px;
+}
+
+.home__scholarships--banner--bottom {
+  height: auto;
+  margin-left: -15px;
+  margin-top: -11px;
+  width: calc(100% + 30px);
+}
+
+@media screen and (min-width: 768px) {
+  .home__scholarships--banner--bottom {
+    margin-top: -4px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .home__scholarships--banner--bottom {
+    margin-top: 2px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .home__scholarships--banner--bottom {
+    margin-top: 5px;
+  }
+}
