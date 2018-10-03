@@ -17,41 +17,89 @@ banner_alt:
               <div class="card-header" id="headingOne">
                 <h2 id="dontate" class="mb-0 main-heading">
                   <button id="plusButton" class="btn btn-link buttons__btn-link-custom donateTarget" aria-expanded="true" aria-controls="collapseOne">
-                    <span id="plusMinus" class="buttons__blue-circle buttons__plus buttons__minus"></span>&#160;Donate to KCC Foundation
+                    <span id="plusMinus" class="buttons__blue-circle buttons__plus buttons__minus"></span>&#160;The Power of Giving
                   </button>
                 </h2>
               </div>
               <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="display: block">
                 <div class="card-body">
                   <div class="editable">
-                    <h4 class="blue-heading-small">The Power of Giving</h3>
-                      <p>Your donation to the KCC Foundation advances the college’s mission by raising funds to support the college’s students, faculty, staff, programs and unmet needs.</p>
-                      <p>The Power of KCC general scholarships [link to giving page that goes to General Scholarship Fund] makes an immediate impact on the lives of students. This fund assists students with books, digital codes, educational supplies, screening tests and more.</p>
-                      <p>The Power of the Cavalier Annual Fund (link to giving page that goes to Cavalier Annual Fund). These unrestricted dollars allow us to use your gift where the need is the greatest.</p>
-                      <p><a href="https://51743.thankyou4caring.org/page.aspx?pid=298" class="btn btn-primary">Donate Now</a></p>
-                      <p><strong>The Power of You</strong><br>
-                        The KCC Foundation has many opportunities for giving that fit your philanthropic needs.</p>
-                      <p><strong><a href="{{ page.baseurl }}give/planned-giving/">Planned Giving</a></strong><br>
-                        Provide a benefit to the college while reducing the income, estate and gift tax burden on your estate and heirs.</p>
-                      <p><strong><a href="{{ page.baseurl }}give/womens-giving-circle/">Women’s Giving Circle</a></strong><br>
-                        Assists students who are in their second year who face a barrier to completion. This grant allows for unique assistance providing resources so students can remain in class and acheive their degree or certificate.</p>
-                      <p><strong><a href="{{ page.baseurl }}give/employee-giving/">KCC Employee Giving</a></strong><br>
-                        Support students in achieving their academic goals and future aspirations</p>
+                    <h4 class="blue-heading-small">The Power of You</h3>
+                      <p>The KCC Foundation has many opportunities for giving that fit your philanthropic needs. Your donation to the KCC Foundation advances the college’s mission by raising funds to support the college’s students, faculty, staff, programs and unmet needs.</p>
+                      <p>Scholarships <span style="background-color: yellow;">[link to giving page that goes to General Scholarship Fund]</span> makes an immediate impact on the lives of students. This fund assists students with books, digital codes, educational supplies, screening tests and more.</p>
+                      <p>The Power of the Cavalier Annual Fund <span style="background-color: yellow;">(link to giving page that goes to Cavalier Annual Fund)</span>. These unrestricted dollars allow us to use your gift where the need is the greatest.</p>
+                      <p><a href="https://51743.thankyou4caring.org/page.aspx?pid=298" class="btn btn-primary">Give Now</a></p>
+                      <p><strong>Your gift is powerful</strong></p>
                       <h4 class="blue-heading-small">Matching Gift</h4>
                       <p>You can double your gift to the KCC Foundation if your employer matches gifts. To find out if your employer offers a matching gift program, please contact your human resources department.</p>
                   </div>
                 </div>
               </div>
             </div>
+
             <div class="card">
               <div class="card-header" id="headingTwo">
-                <h2 id="rights" class="mb-0 main-heading">
-                  <button id="plusButton2" class="btn btn-link buttons__btn-link-custom rightsTarget" aria-expanded="true" aria-controls="collapseTwo">
-                    <span id="plusMinus2" class="buttons__blue-circle buttons__plus"></span>&#160;Donor Bill of Rights
+                <h2 id="planned" class="mb-0 main-heading">
+                  <button id="plusButton2" class="btn btn-link buttons__btn-link-custom plannedTarget" aria-expanded="true" aria-controls="collapseTwo">
+                    <span id="plusMinus2" class="buttons__blue-circle buttons__plus"></span>&#160;Planned Giving
                   </button>
                 </h2>
               </div>
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="editable">
+                      <p><p><strong><a href="{{ page.baseurl }}give/planned-giving/">Planned Giving</a></strong><br>
+                        Provide a benefit to the college while reducing the income, estate and gift tax burden on your estate and heirs.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 id="womensCircle" class="mb-0 main-heading">
+                  <button id="plusButton3" class="btn btn-link buttons__btn-link-custom womensCircleTarget" aria-expanded="true" aria-controls="collapseThree">
+                    <span id="plusMinus3" class="buttons__blue-circle buttons__plus"></span>&#160;Women's Giving Circle
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="editable">
+                    <p><strong><a href="{{ page.baseurl }}give/womens-giving-circle/">Women’s Giving Circle</a></strong><br>
+                      Assists students who are in their second year who face a barrier to completion. This grant allows for unique assistance providing resources so students can remain in class and acheive their degree or certificate.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h2 id="employee" class="mb-0 main-heading">
+                  <button id="plusButton4" class="btn btn-link buttons__btn-link-custom employeeTarget" aria-expanded="true" aria-controls="collapseFour">
+                    <span id="plusMinus4" class="buttons__blue-circle buttons__plus"></span>&#160;KCC Employee Giving
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="editable">
+                    <p><strong><a href="{{ page.baseurl }}give/employee-giving/">KCC Employee Giving</a></strong><br>
+                      Support students in achieving their academic goals and future aspirations</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h2 id="rights" class="mb-0 main-heading">
+                  <button id="plusButton5" class="btn btn-link buttons__btn-link-custom rightsTarget" aria-expanded="true" aria-controls="collapseFive">
+                    <span id="plusMinus5" class="buttons__blue-circle buttons__plus"></span>&#160;Donor Bill of Rights
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
                 <div class="card-body">
                   <div class="editable">
                     <p>Philanthropy is voluntary action for the common good. It is a tradition of giving and sharing that is primary to quality of life. To assure that philanthropy merits the respect and trust of the general public, and that donors and prospective donor can have full confidence in the not-for-profit organizations and causes they are asked to support, we declare that all donors have these rights:</p>
@@ -71,15 +119,16 @@ banner_alt:
                 </div>
               </div>
             </div>
+
             <div class="card">
-              <div class="card-header" id="headingThree">
+              <div class="card-header" id="headingSix">
                 <h2 id="gift-fees" name="gift-fees" class="mb-0 main-heading">
-                  <button id="plusButton3" class="btn btn-link collapsed buttons__btn-link-custom feesTarget" aria-expanded="false" aria-controls="collapseThree">
-                    <span id="plusMinus3" class="buttons__blue-circle buttons__plus"></span>&#160;Administrative Gift Fees
+                  <button id="plusButton6" class="btn btn-link collapsed buttons__btn-link-custom feesTarget" aria-expanded="false" aria-controls="collapseSix">
+                    <span id="plusMinus6" class="buttons__blue-circle buttons__plus"></span>&#160;Administrative Gift Fees
                   </button>
                 </h2>
               </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
                 <div class="card-body">
                   <div class="editable">
                     <h3 class="blue-heading">Administrative Gift Fees</h3>
