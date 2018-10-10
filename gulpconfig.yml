@@ -106,6 +106,7 @@ javascript:
     - "assets/js/script/sliders.js"
     - "assets/js/script/lazyLoad.js"
     - "assets/js/script/currentPage.js"
+    - "assets/js/script/searchToggle.js"
     - "assets/js/script/shopSmile.js"
     - "assets/js/script/scrollFunction.js"
     - "assets/js/script/subNav.js"
