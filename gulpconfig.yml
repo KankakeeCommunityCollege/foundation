@@ -114,6 +114,8 @@ javascript:
     - "assets/js/script/tabLink.js"
     - "assets/js/script/scholarshipTime.js"
     - "assets/js/script/accordian.js"
+    - "assets/js/script/boldFont.js"
+    - "assets/js/script/jumpLinkFix.js"
 
 tableScript:
   dest:
