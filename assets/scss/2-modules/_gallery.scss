@@ -1,0 +1,29 @@
+.gallery__wrapper {
+  margin-bottom: 15px;
+}
+
+.gallery__item {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: .5rem auto;
+  position: relative;
+  background: $primary-blue;
+  padding: 6px;
+  border: 1px solid $primary-blue;
+  border-radius: 2px;
+  transition: 0.3s ease;
+  font-size: 0;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.gallery__row {
+  margin-top: 25px;
+}
+
+.gallery__button {
+  border-color: $grey-5;
+	border-radius: 2px;
+}

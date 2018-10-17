@@ -15,7 +15,7 @@ description: ''
             {% for alumni in sorted %}
             {% assign alumni_id = alumni.name | replace: ' ', '-' | downcase %}
               {% if forloop.first == true %}
-              <a class="nav-item nav-link active" id="{{ alumni_id }}-tab" data-toggle="tab" href="#{{ alumni_id }}" role="tab" aria-controls="{{ alumni_id }}" aria-selected="true">
+              <a class="nav-item nav-link jsTabLink active" id="{{ alumni_id }}-tab" data-toggle="tab" href="#{{ alumni_id }}" role="tab" aria-controls="{{ alumni_id }}" aria-selected="true">
                 <span class="alumni__nav">
                   <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--small float-left" style="background-image: url('{{ page.baseurl }}{{ alumni.portrait }}')">
                   </div>
@@ -23,7 +23,7 @@ description: ''
                 </span>
                 </a>
               {% else %}
-                <a class="nav-item nav-link" id="{{ alumni_id }}-tab" data-toggle="tab" href="#{{ alumni_id }}" role="tab" aria-controls="{{ alumni_id }}" aria-selected="false">
+                <a class="nav-item nav-link jsTabLink" id="{{ alumni_id }}-tab" data-toggle="tab" href="#{{ alumni_id }}" role="tab" aria-controls="{{ alumni_id }}" aria-selected="false">
                   <span class="alumni__nav">
                     <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--small float-left" style="background-image: url('{{ page.baseurl }}{{ alumni.portrait }}')">
                     </div>

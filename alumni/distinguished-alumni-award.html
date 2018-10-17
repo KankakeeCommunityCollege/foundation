@@ -8,22 +8,63 @@ description: ''
 <main>
   <div class="container">
     <div class="row">
-      <div class="col sub-nav__content--wrapper">
-        <div class="editable">
-          <h3 class="blue-heading">John Fulton Distinguished Alumni Award</h3>
-          <img src="{{ page.baseurl }}uploads/John_Fulton_20121108_DSC_0141-med.jpg" class="img-fluid float-right position__img--fr-pad" alt="">
-          <p>Established in 2009, the John M. Fulton Distinguished Alumni Award honors longtime KCC Alumni Association member John Fulton of Herscher. Fulton is a 1981 graduate of KCC and earned two associate degrees (business and general studies).</p>
-          <p>John Fulton is a local farmer, a friend, a decorated Vietnam War hero, and a tireless advocate for veterans affairs and for people with disabilities. He demonstrates the power of KCC alumni and is a source of pride and inspiration. In 2009, the KCC Foundation Board voted unanimously to name the top honor for KCC alumni "The John M. Fulton Distinguished Alumni Award."</p>
-          <p>Recipients of the award must meet the following criteria:</p>
-          <ul>
-            <li>Outstanding success and distinction in chosen field</li>
-            <li>Humanitarian service that has proven greatly beneficial to society</li>
-            <li>Continued interest in/support of education and community colleges</li>
-            <li>Evidence of having overcome life's obstacles</li>
-            <li>Completion of a recognized program of instruction at Kankakee Community College</li>
-          </ul>
+      <div class="col alumni__col">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link jsTabLink active" id="john-fulton" data-toggle="tab" href="#john-fulton" role="tab" aria-controls="john-fulton" aria-selected="true">
+              <span class="alumni__nav">
+                <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--small float-left" style="background-image: url('{{ page.baseurl }}uploads/John_Fulton_20121108_DSC_0141-med.jpg')">
+                </div>
+                <h3 class="latest-news-widget__latest__tease__overline typography__latest-news-widget__rollup-list-h alumni__h3--width">John Fulton</h3>
+              </span>
+            </a>
+            {% assign sorted = site.distinguished_alumnis | sort: 'year' | reverse %}
+            {% for distinguished_alumni in sorted %}
+            {% assign distinguished_alumni_id = distinguished_alumni.name | replace: ' ', '-' | downcase %}
+            <a class="nav-item nav-link jsTabLink" id="{{ distinguished_alumni_id }}-tab" data-toggle="tab" href="#{{ distinguished_alumni_id }}" role="tab" aria-controls="{{ distinguished_alumni_id }}" aria-selected="false">
+              <span class="alumni__nav">
+                <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--small float-left" style="background-image: url('{{ page.baseurl }}{{ distinguished_alumni.portrait }}')">
+                </div>
+                <h3 class="latest-news-widget__latest__tease__overline typography__latest-news-widget__rollup-list-h alumni__h3--width">{{ distinguished_alumni.name }}</h3>
+              </span>
+            </a>
+              {% endfor %}
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="container sub-nav__content--wrapper">
+    <div class="row">
+      <div class="col">
+        <div class="tab-content alumni__tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="{{ distinguished_alumni_id }}" role="tabpanel" aria-labelledby="{{ distinguished_alumni_id }}-tab">
+            <img src="{{ page.baseurl }}uploads/John_Fulton_20121108_DSC_0141-med.jpg" class="float-left img-fluid alumni__portrait" alt="Portrait of {{ distinguished_alumni.name }}">
+            <h3 class="blue-heading">John Fulton Distinguished Alumni Award</h3>
+            <p>Established in 2009, the John M. Fulton Distinguished Alumni Award is named for long-time KCC Alumni Association member John Fulton of Herscher. Fulton is a 1981 graduate of KCC, and earned two associate degrees, in business and general studies.</p>
+            <p>As a decorated Vietnam War hero, a tireless advocate for veterans affairs, and for people with disabilities, a farmer, and friend, Fulton is a source of pride and inspiration for all of us at KCC.</p>
+            <p>Following Fulton's receipt of the KCC Foundation's Distinguished Alumni Award in 2009, the KCC Foundation Board voted unanimously to rename the recognition "The John M. Fulton Distinguished Alumni Award."</p>
+            <p>Recipients of the award must meet the following criteria:</p>
+            <ul>
+              <li>Outstanding success and distinction in chosen field</li>
+              <li>Humanitarian service that has proven greatly beneficial to society</li>
+              <li>Continued interest in/support of education and community colleges</li>
+              <li>Overcoming life's obstacles</li>
+              <li>Completion of a recognized program of instruction at Kankakee Community College</li>
+            </ul>
+          </div>
+          {% for distinguished_alumni in sorted %}
+          {% assign distinguished_alumni_id = distinguished_alumni.name | replace: ' ', '-' | downcase %}
+            <div class="tab-pane fade" id="{{ distinguished_alumni_id }}" role="tabpanel" aria-labelledby="{{ distinguished_alumni_id }}-tab">
+              <img src="{{ distinguished_alumni.baseurl }}{{ distinguished_alumni.portrait }}" class="float-left img-fluid alumni__portrait" alt="Portrait of {{ distinguished_alumni.name }}">
+              <h3 class="blue-heading">{{ distinguished_alumni.year }} - {{ distinguished_alumni.name }}</h3>
+              <p>{{ distinguished_alumni.content }}</p>
+            </div>
+          {% endfor %}
         </div>
       </div>
     </div>
   </div>
+
 </main>

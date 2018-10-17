@@ -9,10 +9,49 @@ description: ''
   <div class="container">
     <div class="row">
       <div class="col sub-nav__content--wrapper">
-        <div class="editable">
-          <p><img src="{{ page.baseurl }}uploads/swine-wine-dine_16-9_crop.jpg" alt="" class="img-fluid float-image-left">For most of our students, financial assistance is needed to attend college. Your support enables our students to achieve their college education. Our newest fundraising event raises critical dollars to support students via scholarships, grants and assists with unmet needs. The inaugural event was held on August 25, 2018 and was a success! The event featured Creme of the Crop catering and the Nick Lynch Band.  Nucor Steel of Kankakee was our lead sponsor. The event raised over $70,000! Thank you to all of our generous sponsors.</p>
+        <div class="col-12 col-lg-4 float-left text-center">
+          <img src="{{ page.baseurl }}uploads/swine-wine-dine_16-9_crop.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-12 col-lg-8 float-right">
+          <div class="editable">
+            <p>For most of our students, financial assistance is needed to attend college. Your support enables our students to achieve their college education. Our newest fundraising event raises critical dollars to support students via scholarships, grants and assists with unmet needs. The inaugural event was held on August 25, 2018 and was a success! The event featured Creme of the Crop catering and the Nick Lynch Band.  Nucor Steel of Kankakee was our lead sponsor. The event raised over $70,000! Thank you to all of our generous sponsors.</p>
+          </div>
         </div>
       </div>
     </div>
+    <div class="row gallery__row">
+      <div class="col-12">
+        <h3 class="blue-heading editable">Photos of the 2018 Swine, Wine & Dine Event.</h3>
+      </div>
+      {% for photo in site.photos %}
+      <div class="gallery__wrapper col-12 col-lg-3 col-md-4 col-sm-6">
+        <button type="button" class="gallery__button" data-toggle="modal" data-target="#photo{{ forloop.index }}">
+          <div class="gallery__item">
+            <img src="{{ page.baseurl }}assets/img/kcc-placeholder.png" data-src="{{ page.baseurl }}{{ photo.image_path }}" class="img-fluid" alt="{{ photo.image_alt }}" />
+          </div>
+        </button>
+      </div>
+      {% endfor %}
+    </div>
   </div>
 </main>
+
+{% for photo in site.photos %}
+<div class="modal fade" id="photo{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="photo{{ forloop.index }}" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="{{ page.baseurl }}{{ photo.image_path }}" class="img-fluid" alt="{{ photo.image_alt }}" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}

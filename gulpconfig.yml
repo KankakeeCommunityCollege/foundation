@@ -116,6 +116,7 @@ javascript:
     - "assets/js/script/accordian.js"
     - "assets/js/script/boldFont.js"
     - "assets/js/script/jumpLinkFix.js"
+    - "assets/js/script/bootstrapTabs.js"
 
 tableScript:
   dest:
