@@ -115,8 +115,7 @@
   }
 }
 
-.heroSlider .slick-dots li button:before,
-.baseballSlider .slick-dots li button:before {
+.slick-dots li button:before {
   color: $landing-bg;
   font-size: 12px;
   line-height: 30px;
@@ -128,8 +127,7 @@
     1px 1px 0 $black;
 }
 
-.heroSlider .slick-dots li.slick-active button:before,
-.baseballSlider .slick-dots li.slick-active button:before {
+.slick-dots li.slick-active button:before {
   color: $primary-blue;
   opacity: 1;
   text-shadow:
@@ -139,8 +137,7 @@
     1px 1px 0 $black;
 }
 
-.heroSlider .slick-dots li,
-.baseballSlider .slick-dots li  {
+.slick-dots li  {
   margin-left: 1px;
   margin-right: 1px;
   padding-left: 0;
@@ -178,14 +175,26 @@
   }
 }
 
-.baseballSlider {   // prevents all slides from displaying vertically before slick has initialized
-  visibility: hidden;
+#gallerySlider {
+  display: none;
 }
 
-.slick-initialized {   // makes slides visible again once slick has initialized
-  visibility: visible;
+.slick-initialized {
+  display: block !important;
 }
 
-.slick-track {
-  margin-left: 0;
+.slick-next:before, .slick-prev:before {
+  position: relative;
+}
+
+.slick-next:before {
+  right: 30px;
+}
+
+.slick-prev:before {
+  left: 30px;
+}
+
+button.slick-prev {
+  z-index: 4;
 }

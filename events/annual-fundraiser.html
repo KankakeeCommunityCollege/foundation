@@ -25,7 +25,7 @@ description: ''
       </div>
       {% for photo in site.photos %}
       <div class="gallery__wrapper col-12 col-lg-3 col-md-4 col-sm-6">
-        <button type="button" class="gallery__button" data-toggle="modal" data-target="#photo{{ forloop.index }}">
+        <button type="button" class="gallery__button" data-toggle="modal" data-target="#photoGallery" data-slide="{{ forloop.index0 }}">
           <div class="gallery__item">
             <img src="{{ page.baseurl }}assets/img/kcc-placeholder.png" data-src="{{ page.baseurl }}{{ photo.image_path }}" class="img-fluid" alt="{{ photo.image_alt }}" />
           </div>
@@ -36,8 +36,7 @@ description: ''
   </div>
 </main>
 
-{% for photo in site.photos %}
-<div class="modal fade" id="photo{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="photo{{ forloop.index }}" aria-hidden="true">
+<div class="modal fade" id="photoGallery" tabindex="-1" role="dialog" aria-labelledby="photoGallery" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -46,7 +45,13 @@ description: ''
         </button>
       </div>
       <div class="modal-body text-center">
-        <img src="{{ page.baseurl }}{{ photo.image_path }}" class="img-fluid" alt="{{ photo.image_alt }}" />
+        <div class="gallery__slides">
+          <div id="gallerySlider">
+            {% for photo in site.photos %}
+            <img src="{{ page.baseurl }}{{ photo.image_path }}" class="img-fluid" alt="{{ photo.image_alt }}" />
+            {% endfor %}
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -54,4 +59,3 @@ description: ''
     </div>
   </div>
 </div>
-{% endfor %}
