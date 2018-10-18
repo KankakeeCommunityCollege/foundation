@@ -188,7 +188,7 @@
 }
 
 .slick-next:before {
-  right: 30px;
+  right: 60px;
 }
 
 .slick-prev:before {
@@ -197,4 +197,9 @@
 
 button.slick-prev {
   z-index: 4;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 50px;
+  opacity: .9;
 }
