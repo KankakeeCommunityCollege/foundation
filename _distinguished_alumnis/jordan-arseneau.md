@@ -1,7 +1,7 @@
 ---
 name: Jordan Arseneau
 year: 2015
-portrait: uploads/jordan-arseneau.jpg
+portrait: uploads/D4S_0751.jpg
 ---
 
 ​Jordan ArseneauGrowing up, Jordan Arseneau and his twin brother, Jesse, spent hours making films. "From the moment my brother Jesse and I started messing around with video cameras, we knew we wanted careers involving media. But coming from a family where neither of our parents graduated from college, we were unsure of where to start.”
