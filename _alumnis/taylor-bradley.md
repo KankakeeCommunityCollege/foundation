@@ -1,7 +1,7 @@
 ---
 name: Taylor Bradley
-degree:
-year:
+degree: Associate in Applied Science
+year: 2018
 portrait: uploads/taylor-bradley_photo.jpg
 quote: "There’s so much more to know. I think I’ll go back and continue taking cases."
 ---
