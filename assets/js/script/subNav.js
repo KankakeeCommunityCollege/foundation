@@ -17,7 +17,7 @@ $(document).ready(function() {
     var give = 'give',
       employee = 'employee-giving',
       planned = 'planned-giving',
-      presidents = 'presidents-giving-circle',
+      presidents = 'presidents-circle',
       womens = 'womens-giving-circle';
 
     var events = 'events',

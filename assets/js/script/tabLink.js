@@ -6,7 +6,7 @@ $(document).ready(function() {
   $.when(deferScroll).done(function() {
     setTimeout(function(){
       window.scrollTo(0,0);
-    }, 900);
+    }, 220);
   });
 
   function linkTabs() {
