@@ -183,17 +183,17 @@
   display: block !important;
 }
 
-.slick-prev::before, .slick-next::before {
+.slick-prev--modal::before, .slick-next--modal::before {
   opacity: .9;
 }
 
-.slick-next {
+.slick-next--modal {
   transform: scale(2.5,2.5);
   right: 20px;
   z-index: 9999;
 }
 
-.slick-prev {
+.slick-prev--modal {
   transform: scale(2.5,2.5);
   left: 20px;
   z-index: 10000;

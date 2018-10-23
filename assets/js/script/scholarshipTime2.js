@@ -1,24 +1,32 @@
 $(document).ready(function() {
 
+// Hold off on comparing dates until the year is determined
   var deferCheckDate = $.Deferred();
 
+// Create date objects for today/now, start, and end dates of scholarship time
   var today = new Date();
   var start = new Date();
   var end = new Date();
   // For testing dates:
   var test = new Date();
 
+  // Define todays month as var
   //var currentMonth = today.getMonth();
   var currentMonth = 1;
+
+  // Define todays year as var
   //var currentYear = today.getFullYear();
   var currentYear = 2018;
   console.log(currentYear);
+
+  // Define todays date # as var
   //var currentDay = today.getDate();
   var currentDay = 28;
 
-  // set some dates (JS dates start at 0):
+  // set some dates (JS months start at 0):
   start.setMonth(10); // November
   start.setDate(1); // 1st
+
   end.setMonth(2); // March
   end.setDate(1); // 1st
 
@@ -26,10 +34,12 @@ $(document).ready(function() {
   test.setDate(28);
   test.setFullYear(2018);
 
+  // After deferCheckDate has been resolved, run checkTheDate()
   $.when(deferCheckDate).done(function() {
     checkTheDate();
   });
 
+  // Define a function for setting the start-date & end-dates' year (start/end year adjusted if after/before new year)
   function setTheYear() {
     if ( currentMonth >= 2 ) { // Check if it's past March
     console.log('Month - greater than or equal to 2');
@@ -56,6 +66,7 @@ $(document).ready(function() {
     }
     deferCheckDate.resolve();
   }
+
   function checkTheDate() {
     if ( test.getTime() >= start.getTime() && test.getTime() <= end.getTime() ) {
       $('#applyNow').removeClass('jsScholarshipHidden').attr('aria-hidden', 'false');
