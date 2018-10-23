@@ -97,10 +97,10 @@ $(document).ready(function() {
             listItemStart + linkStart + '../' + planned + linkPostUrl + planned.replace(/-/g, ' ') + linkClose + listItemClose
           );
           listString.push(
-            listItemStart + linkStart + '../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ') + linkClose + listItemClose
+            listItemStart + linkStart + '../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ').replace("ts", "t's") + linkClose + listItemClose
           );
           listString.push(
-            listItemStart + linkStart + '../' + womens + linkPostUrl + womens.replace(/-/g, ' ') + linkClose + listItemClose
+            listItemStart + linkStart + '../' + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + linkClose + listItemClose
           );
         } else if ( noBase.indexOf(planned) > -1 ) {
           listString.push(
@@ -110,10 +110,10 @@ $(document).ready(function() {
             lastListItemStart + linkStart + '../' + planned + linkPostUrl + planned.replace(/-/g, ' ') + srCurrent + linkClose + listItemClose
           );
           listString.push(
-            listItemStart + linkStart + '../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ') + linkClose + listItemClose
+            listItemStart + linkStart + '../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ').replace("ts", "t's")  + linkClose + listItemClose
           );
           listString.push(
-            listItemStart + linkStart + '../' + womens + linkPostUrl + womens.replace(/-/g, ' ') + linkClose + listItemClose
+            listItemStart + linkStart + '../' + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + linkClose + listItemClose
           );
         } else if ( noBase.indexOf(presidents) > -1 ) {
           listString.push(
@@ -123,10 +123,10 @@ $(document).ready(function() {
             listItemStart + linkStart + '../' + planned + linkPostUrl + planned.replace(/-/g, ' ') + linkClose + listItemClose
           );
           listString.push(
-            lastListItemStart + linkStart + '../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ') + srCurrent + linkClose + listItemClose
+            lastListItemStart + linkStart + '../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ').replace("ts", "t's")  + srCurrent + linkClose + listItemClose
           );
           listString.push(
-            listItemStart + linkStart + '../' + womens + linkPostUrl + womens.replace(/-/g, ' ') + linkClose + listItemClose
+            listItemStart + linkStart + '../' + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + linkClose + listItemClose
           );
         } else if ( noBase.indexOf(womens) > -1 ) {
           listString.push(
@@ -136,10 +136,10 @@ $(document).ready(function() {
             listItemStart + linkStart + '../' + planned + linkPostUrl + planned.replace(/-/g, ' ') + linkClose + listItemClose
           );
           listString.push(
-            listItemStart + linkStart + '../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ') + linkClose + listItemClose
+            listItemStart + linkStart + '../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ').replace("ts", "t's")  + linkClose + listItemClose
           );
           listString.push(
-            lastListItemStart + linkStart + '../' + womens + linkPostUrl + womens.replace(/-/g, ' ') + srCurrent + linkClose + listItemClose
+            lastListItemStart + linkStart + '../' + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + srCurrent + linkClose + listItemClose
           );
         } else {
           listString.push(
@@ -149,10 +149,10 @@ $(document).ready(function() {
             listItemStart + linkStart + planned + linkPostUrl + planned.replace(/-/g, ' ') + linkClose + listItemClose
           );
           listString.push(
-            listItemStart + linkStart + presidents + linkPostUrl + presidents.replace(/-/g, ' ') + linkClose + listItemClose
+            listItemStart + linkStart + presidents + linkPostUrl + presidents.replace(/-/g, ' ').replace("ts", "t's")  + linkClose + listItemClose
           );
           listString.push(
-            listItemStart + linkStart + womens + linkPostUrl + womens.replace(/-/g, ' ') + linkClose + listItemClose
+            listItemStart + linkStart + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + linkClose + listItemClose
           );
         }
       }
@@ -188,7 +188,7 @@ $(document).ready(function() {
             lastListItemStart + linkStart + '../' + annual + linkPostUrl + annual.replace(/-/g, ' ') + srCurrent + linkClose + listItemClose
           );
           listString.push(
-            listItemStart + linkStart + '../' + presidentsDinner + linkPostUrl + presidentsDinner.replace(/-/g, ' ') + linkClose + listItemClose
+            listItemStart + linkStart + '../' + presidentsDinner + linkPostUrl + presidentsDinner.replace(/-/g, ' ').replace("ts", "t's")  + linkClose + listItemClose
           );
           listString.push(
             listItemStart + linkStart + '../' + fundraiser + linkPostUrl + fundraiser.replace(/-/g, ' ') + linkClose + listItemClose
@@ -198,7 +198,7 @@ $(document).ready(function() {
             listItemStart + linkStart + '../' + annual + linkPostUrl + annual.replace(/-/g, ' ') + linkClose + listItemClose
           );
           listString.push(
-            lastListItemStart + linkStart + '../' + presidentsDinner + linkPostUrl + presidentsDinner.replace(/-/g, ' ') + srCurrent + linkClose + listItemClose
+            lastListItemStart + linkStart + '../' + presidentsDinner + linkPostUrl + presidentsDinner.replace(/-/g, ' ').replace("ts", "t's")  + srCurrent + linkClose + listItemClose
           );
           listString.push(
             listItemStart + linkStart + '../' + fundraiser + linkPostUrl + fundraiser.replace(/-/g, ' ') + linkClose + listItemClose
@@ -208,7 +208,7 @@ $(document).ready(function() {
             listItemStart + linkStart + '../' + annual + linkPostUrl + annual.replace(/-/g, ' ') + linkClose + listItemClose
           );
           listString.push(
-            listItemStart + linkStart + '../' + presidentsDinner + linkPostUrl + presidentsDinner.replace(/-/g, ' ') + linkClose + listItemClose
+            listItemStart + linkStart + '../' + presidentsDinner + linkPostUrl + presidentsDinner.replace(/-/g, ' ').replace("ts", "t's")  + linkClose + listItemClose
           );
           listString.push(
             lastListItemStart + linkStart + '../' + fundraiser + linkPostUrl + fundraiser.replace(/-/g, ' ') + srCurrent + linkClose + listItemClose
@@ -218,7 +218,7 @@ $(document).ready(function() {
             listItemStart + linkStart + annual + linkPostUrl + annual.replace(/-/g, ' ') + linkClose + listItemClose
           );
           listString.push(
-            listItemStart + linkStart + presidentsDinner + linkPostUrl + presidentsDinner.replace(/-/g, ' ') + linkClose + listItemClose
+            listItemStart + linkStart + presidentsDinner + linkPostUrl + presidentsDinner.replace(/-/g, ' ').replace("ts", "t's")  + linkClose + listItemClose
           );
           listString.push(
             listItemStart + linkStart + fundraiser + linkPostUrl + fundraiser.replace(/-/g, ' ') + linkClose + listItemClose
