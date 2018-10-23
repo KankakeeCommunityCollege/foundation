@@ -130,11 +130,12 @@
 
 .hero-slider__slider .slick-next {
   right: 10px;
+  z-index: 9999;
 }
 
 .hero-slider__slider .slick-prev {
   left: 10px;
-  z-index: 4;
+  z-index: 10000;
 }
 
 @media screen and (min-width: 488px) {
@@ -146,7 +147,6 @@
 @media screen and (min-width: 488px) {
   .hero-slider__slider .slick-prev {
     left: 20px;
-    z-index: 4;
   }
 }
 
@@ -157,7 +157,6 @@
 
   .hero-slider__slider .slick-prev {
     left: 25px;
-    z-index: 4;
   }
 }
 

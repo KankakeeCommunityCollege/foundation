@@ -183,23 +183,23 @@
   display: block !important;
 }
 
-.slick-next:before, .slick-prev:before {
-  position: relative;
-}
-
-.slick-next:before {
-  right: 60px;
-}
-
-.slick-prev:before {
-  left: 30px;
-}
-
-button.slick-prev {
-  z-index: 4;
-}
-
-.slick-prev:before, .slick-next:before {
-  font-size: 50px;
+.slick-prev::before, .slick-next::before {
   opacity: .9;
+}
+
+.slick-next {
+  transform: scale(2.5,2.5);
+  right: 20px;
+  z-index: 9999;
+}
+
+.slick-prev {
+  transform: scale(2.5,2.5);
+  left: 20px;
+  z-index: 10000;
+}
+
+button.gallery__button {
+  background-color: $white;
+  cursor: pointer;
 }
