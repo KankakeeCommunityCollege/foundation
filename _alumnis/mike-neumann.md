@@ -14,7 +14,7 @@ Then he heard about a gym for sale. It was a good deal and with a friend investo
 
 Within record time, Mike’s new gym was up and running. “I didn’t even have enough equipment for a full gym, but it was enough to get started.” As Fit Body U started making profits, Mike poured the money back into the gym for more equipment.
 
-“I’ve learned to appreciate the idea of a small beginnings. Some people want to start big and if they’re not sure about what they’re doing, they’ll fall on their face. That’s why I like starting small, and making corrections as I go.”
+“I’ve learned to appreciate the idea of small beginnings. Some people want to start big and if they’re not sure about what they’re doing, they’ll fall on their face. That’s why I like starting small, and making corrections as I go.”
 
 After working as an employee for 11 businesses, Mike enjoys putting his own ideas into practice. “If you work for someone else, you have to work for their vision. But now I can practice my own vision and see how the community responds to my ideas.”
 
