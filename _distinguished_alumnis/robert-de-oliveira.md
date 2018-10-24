@@ -8,9 +8,9 @@ Since graduating from KCC in 1993, Robert de Oliveira has made a major impact on
 
 Since 2014, de Oliveira has been a consultant for the Migrant Education Program, helping students and their families with their education. He helps those wanting to learn English as well. De Oliveira was president of the Illinois Migrant Education Association from 2006-09. In 2008, he received the Illinois Migrant Teacher of the Year award.
 
-After receiving an Associates in Arts degree from KCC, de Oliveira attended Olivet Nazarene University and completed a bachelor’s degree in history education in 1996. He began teaching in Kankakee School District 111 and quickly became a favorite teacher among students, who frequently call him “Mr. D.” In 19 years of teaching, he has taught subjects such as social studies, bilingual classes, and English as a Second Language. Today, he teaches Spanish and Latin American Studies at the Kankakee High School.
+After receiving an Associates in Arts degree from KCC, de Oliveira attended Olivet Nazarene University and completed a bachelor’s degree in history education in 1996. He began teaching in Kankakee School District 111 and quickly became a favorite teacher among students, who frequently call him “Mr. D.” In 19 years of teaching, he has taught subjects such as social studies, bilingual classes, and English as a Second Language.
 
-In 2013, de Oliveira introduced the Foreign Travel Program, encouraging students to explore other countries and learn their cultures. In June, he will lead a tour to Spain, France and Italy. In 2016 he will be leaving teaching, after 19 years, to become an assistant principal for Kankakee High School.
+In 2013, de Oliveira introduced the Foreign Travel Program, encouraging students to explore other countries and learn their cultures. In 2016, he left teaching to become an assistant principal for Kankakee High School.
 
 Outside of teaching, de Oliveira has been involved in many committees including:
 

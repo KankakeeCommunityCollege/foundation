@@ -25,5 +25,3 @@ Beyond being a wonderful athlete, Jenny also was a gifted student who was induct
 After completing an Associate in Arts transfer degree at KCC in 2002, Jenny transferred to Marian University in Indianapolis and completed a bachelor's degree in elementary and special education. Jenny then attended Illinois State University and earned a master's degree in communication and science disorders.
 
 Currently, Jenny is a speech language pathologist at Reed-Custer grade school. Originally from South Wilmington, she now lives in Braidwood. Jenny has devoted her life to helping others through her profession, and as a volunteer teacher for Habitat for Humanity in Haiti. Each year, she leads workshops to help train more than 500 Haitian teachers. She also has volunteered in an orphanage in the mountainside village of Sucre, Bolivia.
-
-Jenny is truly an inspiration to us all and we are proud to have her in the Cavalier family.

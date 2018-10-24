@@ -17,5 +17,3 @@ She chaired Hospice’s annual Playhouse Raffle for four years, raising more tha
 Boicken also served on the board of a local chamber of commerce, and chaired its annual Leadership Development Institute.
 
 Boicken is a consummate professional, a community leader, a dedicated wife and mother, and graduate of whom we are most proud. Her achievements and service to others mesh perfectly with the values of KCC, and the spirit of this award.
-
-It is the pleasure of KCC and the KCC Foundation to recognize Cathy Boicken as the 2012 recipient of the John M. Fulton Distinguished Alumnus Award.

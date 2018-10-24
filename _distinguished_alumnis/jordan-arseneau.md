@@ -4,7 +4,7 @@ year: 2015
 portrait: uploads/D4S_0751.jpg
 ---
 
-​Jordan ArseneauGrowing up, Jordan Arseneau and his twin brother, Jesse, spent hours making films. "From the moment my brother Jesse and I started messing around with video cameras, we knew we wanted careers involving media. But coming from a family where neither of our parents graduated from college, we were unsure of where to start.”
+​Growing up, Jordan Arseneau and his twin brother, Jesse, spent hours making films. "From the moment my brother Jesse and I started messing around with video cameras, we knew we wanted careers involving media. But coming from a family where neither of our parents graduated from college, we were unsure of where to start.”
 
 Jordan and Jesse were part of a single parent household and they knew early on they would be responsible for paying for their own education. Jordan met with several KCC faculty members and weighed his options before choosing KCC.
 
