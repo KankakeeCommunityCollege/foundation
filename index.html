@@ -3,6 +3,7 @@ layout: default
 baseurl:
 title: Foundation
 description:
+scholarships_available: false
 slides:
   - image: uploads/hero-1.jpg
     alt-text: The Power of Community
@@ -127,8 +128,8 @@ slides:
           <h5 class="typography__h5 editable">
               Complete one online application to be considered for all eligible scholarships. Each year, $200,000 in scholarships are distributed among nearly 200 students by the KCC Foundation.
           </h5>
-            <a href="{{ page.baseurl }}scholarships" id="viewScholarships" class="btn btn-primary jsScholarshipHidden">View Scholarships</a>
-            <a href="{{ page.baseurl }}scholarships" id="applyNow" class="btn btn-primary jsScholarshipHidden">Apply Now</a>
+            <a href="{{ page.baseurl }}scholarships" id="viewScholarships" class="btn btn-primary {% if page.scholarships_available == true %}action-cards__scholarships--hide-button{% endif %}">View Scholarships</a>
+            <a href="{{ page.baseurl }}scholarships" id="applyNow" class="btn btn-primary {% if page.scholarships_available == false %}action-cards__scholarships--hide-button{% endif %}">Apply Now</a>
         </div>
         <div class="col-md-4 text-center action-cards__col--margin-btm action-cards__col--give">
           <div class="impact__give">

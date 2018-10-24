@@ -3,21 +3,17 @@ layout: table-sort
 baseurl: '../'
 title: Scholarships
 description: ''
+scholarships_available: true
 ---
 
 <main>
   <div class="container">
     <div class="row">
-      <div class="col">
-        
-         <!-- Temporarily removed by JN
+      <div class="col {% if page.scholarships_available == false %}action-cards__scholarships--hide-button{% endif %}">
         <h3 class="blue-heading editable">How To Apply</h3>
         <div class="editable">
-           
-            <p>Complete one application to be considered for all available scholarships&nbsp; <a href="#" id="applyButton" data-toggle="modal" data-target="#applyModal" class="btn btn-primary">Apply Now</a></p>
-            
+            <p>Complete one application to be considered for all available scholarships&nbsp; <a href="https://kcc.scholarships.ngwebsolutions.com/ScholarX_ApplyForScholarship.aspx?applicationformid=3594&AYID=997" class="btn btn-primary">Apply Now</a></p>
         </div>
-        -->
       </div>
     </div>
     <div class="row">
@@ -53,7 +49,7 @@ description: ''
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <!-- This button-link to the scholarship form will not show if it is NOT scholarship time -->
         <a type="button" id="formLink" href="https://kcc.scholarships.ngwebsolutions.com/CMXAdmin/Cmx_Content.aspx?cpId=639" class="btn btn-primary jsScholarshipHidden" aria-hidden="true" target="_blank" rel="noopener">Scholarship Form</a>
-    
+
       </div>
     </div>
   </div>
