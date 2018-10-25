@@ -3,7 +3,7 @@ name: Taylor Bradley
 degree: Associate in Applied Science
 year: 2018
 portrait: uploads/taylor-bradley_photo.jpg
-quote: "There’s so much more to know. I think I’ll go back and continue taking cases."
+quote: "There’s so much more to know. I think I’ll go back and continue taking classes."
 ---
 
 Taylor Bradley has always been fascinated with law and politics, with helping others understand their rights. So, it’s no surprise that she graduated KCC with an associate in applied science degree in Paralegal/Legal Assistant Studies. But it was far from easy.
