@@ -71,12 +71,6 @@
   padding-right: 0;
 }
 
-@media screen and (min-width: 1400px) {
-  .hero-slider__slider {
-    max-width: 1300px;
-  }
-}
-
 .hero-slider__slider--heading-container {   // div container for slide headings
   margin-left: .5%;
   padding-left: 5px;
@@ -130,12 +124,11 @@
 
 .hero-slider__slider .slick-next {
   right: 10px;
-  z-index: 9999;
 }
 
 .hero-slider__slider .slick-prev {
   left: 10px;
-  z-index: 10000;
+  z-index: 1;
 }
 
 @media screen and (min-width: 488px) {
