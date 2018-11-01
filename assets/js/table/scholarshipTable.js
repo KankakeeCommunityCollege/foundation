@@ -37,7 +37,7 @@ function spreadsheetTable() {
     html += '<th class="all">Name:</th>';
     html += '<th class="min-tablet-l">Recipients:</th>';
     html += '<th class="all">Award:</th>';
-    html += '<th class="min-tablet-l">Category:</th>';
+    // html += '<th class="min-tablet-l">Category:</th>';
     html += '<th class="desktop">Minimum&nbsp;GPA:</th>';
     html += '<th class="none">Part&nbsp;Time/Full&nbsp;Time:</th>';
     html += '<th class="none">Demonstrate&nbsp;Financial&nbsp;Need:</th>';
@@ -61,7 +61,7 @@ function spreadsheetTable() {
       html += '<td style="vertical-align:top">' + entry[i]['gsx$name']['$t'] + '</td>';
       html += '<td align="center">' + entry[i]['gsx$recipients']['$t'] + '</td>';
       html += '<td>' + entry[i]['gsx$award']['$t'] + '</td>';
-      html += '<td>' + entry[i]['gsx$category']['$t'] + '</td>';
+      // html += '<td>' + entry[i]['gsx$category']['$t'] + '</td>';
       html += '<td align="center">' + entry[i]['gsx$minimumgpa']['$t'] + '</td>';
       html += '<td>' + entry[i]['gsx$parttimeorfulltime']['$t'] + '</td>';
       html += '<td>' + entry[i]['gsx$demonstratefinancialneed']['$t'] + '</td>';
