@@ -19,7 +19,14 @@ $.when(deferPopovers).done(function() {
 });
 
 function spreadsheetTable() {
+  var rowCount;
   var spreadsheetID = '1spDfZUVLeEE5n0OFvbXl2FSJD_RmS0dSPc7CSGr1TjI';
+
+  if (screen.width <= 768) {
+    rowCount = 25;
+  } else {
+    rowCount = 50;
+  }
 
   // Make sure it is public or set to Anyone with link can view
   var url = 'https://spreadsheets.google.com/feeds/list/' + spreadsheetID + '/od6/public/values?alt=json';
@@ -31,7 +38,7 @@ function spreadsheetTable() {
     var html = '';
 
     // build table headings
-    html += '<table id="Data" class="display" style="width:100%">';
+    html += '<table id="Data" class="display" data-page-length="' + rowCount + '" style="width:100%">';
     html += '<thead>';
     html += '<tr>';
     html += '<th class="all">Name:</th>';
