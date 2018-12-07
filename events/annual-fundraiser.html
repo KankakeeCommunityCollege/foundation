@@ -23,7 +23,8 @@ description: ''
       <div class="col-12">
         <h3 class="blue-heading editable">2018 Swine, Wine & Dine Event</h3>
       </div>
-      {% for photo in site.photos %}
+      {% assign fundraiser_photos = site.photos | where: "category", "fundraiser" %}
+      {% for photo in fundraiser_photos %}
       <div class="gallery__wrapper col-12 col-lg-3 col-md-4 col-sm-6">
         <button type="button" class="gallery__button" data-toggle="modal" data-target="#photoGallery" data-slide="{{ forloop.index0 }}">
           <div class="gallery__item">
@@ -47,7 +48,7 @@ description: ''
       <div class="modal-body text-center">
         <div class="gallery__slides">
           <div id="gallerySlider">
-            {% for photo in site.photos %}
+            {% for photo in fundraiser_photos %}
             <img src="{{ page.baseurl }}{{ photo.image_path }}" class="img-fluid" alt="{{ photo.image_alt }}" />
             {% endfor %}
           </div>

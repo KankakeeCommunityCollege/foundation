@@ -20,9 +20,7 @@ $(document).ready(function() {
           dots: true,
           initialSlide: that.data('slide'),
           slidesToShow: 1,
-          slidesToScroll: 1,
-          prevArrow:'<img alt="" class="a-left control-c prev slick-prev slick-prev--modal" src="assets/img/dbl-prev.svg">',
-          nextArrow:'<img alt="" class="a-right control-c next slick-next slick-next--modal" src="assets/img/dbl-next.svg">'
+          slidesToScroll: 1
         });
       }, 300);
       $('#gallerySlider').slick('slickGoTo', slideTarget );
