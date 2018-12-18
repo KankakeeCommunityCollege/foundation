@@ -117,6 +117,7 @@ javascript:
     - "assets/js/script/boldFont.js"
     - "assets/js/script/jumpLinkFix.js"
     - "assets/js/script/bootstrapTabs.js"
+    - "assets/js/script/footerDate.js"
 
 tableScript:
   dest:
