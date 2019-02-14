@@ -11,8 +11,6 @@
           <!-- include Google Tag Manager script on production -->
           {% include google-tag.html %}
         {% endif %}
-        <!-- YouTube API -->
-        <meta name="yt-api-k" value="AIzaSyBpxv9JNl4AX816ScNmZcqHkLncMUeiAws" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <script>
         (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
@@ -24,29 +22,27 @@
         ga("send", "pageview");
         </script>
         <!--  Preload slick font  -->
-        <link rel="preload" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/fonts/slick.woff" as="font">
-        <!--  https://youtube.com/embed/lirlq5CSEUA?controls=0&showinfo=0&rel=0  -->
-        <link rel="preload" href="https://youtube.com/embed/lirlq5CSEUA?controls=0&showinfo=0&rel=0" as="script">
+        <link rel="preload" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/fonts/slick.woff" as="font" crossorigin="anonymous">
         <!-- Bootstrap 4 Beta stylesheet CDN link -->
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
         <!--  Slick.js v1.8.1 stylesheet followed by slick-theme stylesheet  -->
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" crossorigin="anonymous">
         <!-- dataTables stylesheets -->
         <!-- dataTables Bootstrap4 themed stylesheet -->
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css" crossorigin="anonymous">
         <!-- dataTables "Responsive" extension stylesheet for bootstrap4 theme -->
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.2/css/responsive.bootstrap4.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.2/css/responsive.bootstrap4.min.css" crossorigin="anonymous">
         <!-- Typkit font for local nav's "FOUNDATION" header -->
-        <link rel="stylesheet" href="https://use.typekit.net/mli7lsm.css">
+        <link rel="stylesheet" href="https://use.typekit.net/mli7lsm.css" crossorigin="anonymous">
         <!-- Link to Google Font's "Roboto" font -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet" crossorigin="anonymous">
         <!-- Link to Google Font's "Open Sans" font -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" crossorigin="anonymous">
         <!-- Link to Google Font's "Oswald" font -->
-        <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600" rel="stylesheet" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,700" rel="stylesheet" crossorigin="anonymous">
         <!-- Place favicon.ico in the root directory -->
         <!-- Standard Favicon -->
         <link rel="icon" type="image/x-icon" href="{{page.baseurl}}favicon.ico" />
