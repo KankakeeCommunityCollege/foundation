@@ -18,7 +18,8 @@ $(document).ready(function() {
       employee = 'employee-giving',
       planned = 'planned-giving',
       presidents = 'presidents-circle',
-      womens = 'womens-giving-circle';
+      womens = 'womens-giving-circle',
+      form = 'form';
 
     var events = 'events',
       annual = 'annual-scholarship-event',
@@ -42,14 +43,7 @@ $(document).ready(function() {
         linkClose = '</a>',
         srCurrent = ' <span class="sr-only">(current)</span>';
 
-      var removeSlash = noBase.slice(0,-1);
-      var urlArray = removeSlash.split(/\//),
-        listString = [];
-
-      var lastItem = urlArray[urlArray.length - 1];
-      var arrayLength = urlArray.length;
-      //console.log(lastItem);
-      //console.log(arrayLength);
+      var listString = [];
 
       if ( noBase.indexOf(about) > -1 ) {
         if ( noBase.indexOf(board) > -1 ) {
@@ -140,6 +134,19 @@ $(document).ready(function() {
           );
           listString.push(
             lastListItemStart + linkStart + '../' + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + srCurrent + linkClose + listItemClose
+          );
+        } else if ( noBase.indexOf(form) > -1 ) {
+          listString.push(
+            listItemStart + linkStart + '../' + employee + linkPostUrl + employee.replace(/-/g, ' ') + linkClose + listItemClose
+          );
+          listString.push(
+            listItemStart + linkStart + '../' + planned + linkPostUrl + planned.replace(/-/g, ' ') + linkClose + listItemClose
+          );
+          listString.push(
+            listItemStart + linkStart + '../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ').replace("ts", "t's")  + linkClose + listItemClose
+          );
+          listString.push(
+            listItemStart + linkStart + '../' + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + linkClose + listItemClose
           );
         } else {
           listString.push(
