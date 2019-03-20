@@ -149,7 +149,7 @@ slides:
 
             <li class="latest-news-widget__latest__tease latest-news-widget__latest__tease--default latest-news-widget__latest__tease--has-image">
             <!--  Tease is active   -->
-              <a id="jsTeaseLink{{ forloop.index }}" class="latest-news-widget__latest__tease__link js-hp-latest-tease-link" href="{{ page.baseurl }}alumni/alumni-stories/#{{ alumni.name | replace: ' ', '-' | downcase }}" data-image="{{ alumni.portrait }}" data-image-alt="" tabindex="0" data-tease-type="" data-index="{{ forloop.index0 }}" aria-hidden="true">
+              <a id="jsTeaseLink{{ forloop.index }}" class="latest-news-widget__latest__tease__link js-hp-latest-tease-link" href="{{ page.baseurl }}alumni/alumni-stories/#{{ alumni.name | replace: ' ', '-' | downcase }}" data-image="{{ alumni.portrait }}" data-image-alt="" data-tease-type="" data-index="{{ forloop.index0 }}" aria-hidden="false">
                 <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--default" style="background-image: url('{{ page.baseurl }}{{ alumni.portrait }}')">
                 </div>
               <div class="latest-news-widget__latest__tease__hgroup">
@@ -175,7 +175,7 @@ slides:
         <div class="stories__heading-underline"></div>
         <a class="text-center" href="{{ page.baseurl }}scholarships/">
           <div class="text-center">
-          <img class="stories__banner" src="{{ page.baseurl }}assets/img/kcc-placeholder.png" data-src="{{ page.baseurl }}uploads/scholarships_thank-you.jpg" alt="Banner that reads apply one time to be considered for all scholarships available. Application opens November 1 to March 1 for fall 2019. $200,000 in scholarships awarded annually." />
+          <img class="stories__banner" src="{{ page.baseurl }}assets/img/kcc-placeholder.png" data-src="{{ page.baseurl }}uploads/scholarships_thank-you.jpg" alt="Banner that reads Thank you scholarship applicants and donors! Award notices for 2019-2020 KCC Foundation scholarships will be emailed before May 15, 2019." />
           </div>
         </a>
       </div>

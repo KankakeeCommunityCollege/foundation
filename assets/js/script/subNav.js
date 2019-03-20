@@ -150,16 +150,16 @@ $(document).ready(function() {
           );
         } else {
           listString.push(
-            listItemStart + linkStart + employee + linkPostUrl + employee.replace(/-/g, ' ') + linkClose + listItemClose
+            listItemStart + linkStart + '../' + employee + linkPostUrl + employee.replace(/-/g, ' ') + linkClose + listItemClose
           );
           listString.push(
-            listItemStart + linkStart + planned + linkPostUrl + planned.replace(/-/g, ' ') + linkClose + listItemClose
+            listItemStart + linkStart + '../' + planned + linkPostUrl + planned.replace(/-/g, ' ') + linkClose + listItemClose
           );
           listString.push(
-            listItemStart + linkStart + presidents + linkPostUrl + presidents.replace(/-/g, ' ').replace("ts", "t's")  + linkClose + listItemClose
+            listItemStart + linkStart + '../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ').replace("ts", "t's")  + linkClose + listItemClose
           );
           listString.push(
-            listItemStart + linkStart + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + linkClose + listItemClose
+            listItemStart + linkStart + '../' + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + linkClose + listItemClose
           );
         }
       }

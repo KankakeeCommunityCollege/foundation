@@ -21,6 +21,7 @@
           iFrame.height = 256;
           iFrame.setAttribute && iFrame.setAttribute('scrolling', 'no');
           iFrame.setAttribute('frameborder', '0');
+          iFrame.setAttribute('title', 'Shop Amazon Smile iframe');
           setTimeout(function() {
             var contents = (iFrame.contentWindow) ? iFrame.contentWindow : (iFrame.contentDocument.document) ? iFrame.contentDocument.document : iFrame.contentDocument;
             contents.document.open();
