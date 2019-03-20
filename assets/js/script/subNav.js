@@ -19,7 +19,10 @@ $(document).ready(function() {
       planned = 'planned-giving',
       presidents = 'presidents-circle',
       womens = 'womens-giving-circle',
-      form = 'form';
+      form = 'form',
+      formGeneral = 'general',
+      formEmployee = 'employee-giving',
+      formPresident = 'presidents-circle';
 
     var events = 'events',
       annual = 'annual-scholarship-event',
@@ -83,84 +86,127 @@ $(document).ready(function() {
       }
 
       else if ( noBase.indexOf(give) > -1 ) {
-        if ( noBase.indexOf(employee) > -1 ) {
-          listString.push(
-            lastListItemStart + linkStart + '../' + employee + linkPostUrl + employee.replace(/-/g, ' ') + srCurrent + linkClose + listItemClose
-          );
-          listString.push(
-            listItemStart + linkStart + '../' + planned + linkPostUrl + planned.replace(/-/g, ' ') + linkClose + listItemClose
-          );
-          listString.push(
-            listItemStart + linkStart + '../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ').replace("ts", "t's") + linkClose + listItemClose
-          );
-          listString.push(
-            listItemStart + linkStart + '../' + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + linkClose + listItemClose
-          );
-        } else if ( noBase.indexOf(planned) > -1 ) {
-          listString.push(
-            listItemStart + linkStart + '../' + employee + linkPostUrl + employee.replace(/-/g, ' ') + linkClose + listItemClose
-          );
-          listString.push(
-            lastListItemStart + linkStart + '../' + planned + linkPostUrl + planned.replace(/-/g, ' ') + srCurrent + linkClose + listItemClose
-          );
-          listString.push(
-            listItemStart + linkStart + '../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ').replace("ts", "t's")  + linkClose + listItemClose
-          );
-          listString.push(
-            listItemStart + linkStart + '../' + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + linkClose + listItemClose
-          );
-        } else if ( noBase.indexOf(presidents) > -1 ) {
-          listString.push(
-            listItemStart + linkStart + '../' + employee + linkPostUrl + employee.replace(/-/g, ' ') + linkClose + listItemClose
-          );
-          listString.push(
-            listItemStart + linkStart + '../' + planned + linkPostUrl + planned.replace(/-/g, ' ') + linkClose + listItemClose
-          );
-          listString.push(
-            lastListItemStart + linkStart + '../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ').replace("ts", "t's")  + srCurrent + linkClose + listItemClose
-          );
-          listString.push(
-            listItemStart + linkStart + '../' + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + linkClose + listItemClose
-          );
-        } else if ( noBase.indexOf(womens) > -1 ) {
-          listString.push(
-            listItemStart + linkStart + '../' + employee + linkPostUrl + employee.replace(/-/g, ' ') + linkClose + listItemClose
-          );
-          listString.push(
-            listItemStart + linkStart + '../' + planned + linkPostUrl + planned.replace(/-/g, ' ') + linkClose + listItemClose
-          );
-          listString.push(
-            listItemStart + linkStart + '../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ').replace("ts", "t's")  + linkClose + listItemClose
-          );
-          listString.push(
-            lastListItemStart + linkStart + '../' + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + srCurrent + linkClose + listItemClose
-          );
-        } else if ( noBase.indexOf(form) > -1 ) {
-          listString.push(
-            listItemStart + linkStart + '../' + employee + linkPostUrl + employee.replace(/-/g, ' ') + linkClose + listItemClose
-          );
-          listString.push(
-            listItemStart + linkStart + '../' + planned + linkPostUrl + planned.replace(/-/g, ' ') + linkClose + listItemClose
-          );
-          listString.push(
-            listItemStart + linkStart + '../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ').replace("ts", "t's")  + linkClose + listItemClose
-          );
-          listString.push(
-            listItemStart + linkStart + '../' + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + linkClose + listItemClose
-          );
+        if ( noBase.indexOf(form) > -1 ) {
+          if ( noBase.indexOf(formEmployee) > -1 ) {
+            listString.push(
+              listItemStart + linkStart + '../../' + employee + linkPostUrl + employee.replace(/-/g, ' ') + srCurrent + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + '../../' + planned + linkPostUrl + planned.replace(/-/g, ' ') + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + '../../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ').replace("ts", "t's") + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + '../../' + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + linkClose + listItemClose
+            );
+          } else if ( noBase.indexOf(formPresident) > -1 ) {
+            listString.push(
+              listItemStart + linkStart + '../../' + employee + linkPostUrl + employee.replace(/-/g, ' ') + srCurrent + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + '../../' + planned + linkPostUrl + planned.replace(/-/g, ' ') + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + '../../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ').replace("ts", "t's") + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + '../../' + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + linkClose + listItemClose
+            );
+          } else {
+            listString.push(
+              listItemStart + linkStart + '../../' + employee + linkPostUrl + employee.replace(/-/g, ' ') + srCurrent + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + '../../' + planned + linkPostUrl + planned.replace(/-/g, ' ') + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + '../../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ').replace("ts", "t's") + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + '../../' + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + linkClose + listItemClose
+            );
+          }
         } else {
-          listString.push(
-            listItemStart + linkStart + '../' + employee + linkPostUrl + employee.replace(/-/g, ' ') + linkClose + listItemClose
-          );
-          listString.push(
-            listItemStart + linkStart + '../' + planned + linkPostUrl + planned.replace(/-/g, ' ') + linkClose + listItemClose
-          );
-          listString.push(
-            listItemStart + linkStart + '../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ').replace("ts", "t's")  + linkClose + listItemClose
-          );
-          listString.push(
-            listItemStart + linkStart + '../' + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + linkClose + listItemClose
-          );
+          if ( noBase.indexOf(employee) > -1 ) {
+            listString.push(
+              lastListItemStart + linkStart + '../' + employee + linkPostUrl + employee.replace(/-/g, ' ') + srCurrent + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + '../' + planned + linkPostUrl + planned.replace(/-/g, ' ') + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + '../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ').replace("ts", "t's") + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + '../' + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + linkClose + listItemClose
+            );
+          } else if ( noBase.indexOf(planned) > -1 ) {
+            listString.push(
+              listItemStart + linkStart + '../' + employee + linkPostUrl + employee.replace(/-/g, ' ') + linkClose + listItemClose
+            );
+            listString.push(
+              lastListItemStart + linkStart + '../' + planned + linkPostUrl + planned.replace(/-/g, ' ') + srCurrent + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + '../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ').replace("ts", "t's")  + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + '../' + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + linkClose + listItemClose
+            );
+          } else if ( noBase.indexOf(presidents) > -1 ) {
+            listString.push(
+              listItemStart + linkStart + '../' + employee + linkPostUrl + employee.replace(/-/g, ' ') + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + '../' + planned + linkPostUrl + planned.replace(/-/g, ' ') + linkClose + listItemClose
+            );
+            listString.push(
+              lastListItemStart + linkStart + '../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ').replace("ts", "t's")  + srCurrent + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + '../' + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + linkClose + listItemClose
+            );
+          } else if ( noBase.indexOf(womens) > -1 ) {
+            listString.push(
+              listItemStart + linkStart + '../' + employee + linkPostUrl + employee.replace(/-/g, ' ') + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + '../' + planned + linkPostUrl + planned.replace(/-/g, ' ') + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + '../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ').replace("ts", "t's")  + linkClose + listItemClose
+            );
+            listString.push(
+              lastListItemStart + linkStart + '../' + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + srCurrent + linkClose + listItemClose
+            );
+          } else if ( noBase.indexOf(form) > -1 ) {
+            listString.push(
+              listItemStart + linkStart + '../' + employee + linkPostUrl + employee.replace(/-/g, ' ') + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + '../' + planned + linkPostUrl + planned.replace(/-/g, ' ') + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + '../' + presidents + linkPostUrl + presidents.replace(/-/g, ' ').replace("ts", "t's")  + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + '../' + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + linkClose + listItemClose
+            );
+          } else {
+            listString.push(
+              listItemStart + linkStart + employee + linkPostUrl + employee.replace(/-/g, ' ') + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + planned + linkPostUrl + planned.replace(/-/g, ' ') + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + presidents + linkPostUrl + presidents.replace(/-/g, ' ').replace("ts", "t's")  + linkClose + listItemClose
+            );
+            listString.push(
+              listItemStart + linkStart + womens + linkPostUrl + womens.replace(/-/g, ' ').replace("ns", "n's") + linkClose + listItemClose
+            );
+          }
         }
       }
 
