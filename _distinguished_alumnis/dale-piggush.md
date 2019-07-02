@@ -1,7 +1,7 @@
 ---
 name: Dale Piggush
 year: 1975
-portrait:
+portrait: Dale Piggush.JPG
 ---
 
 Dale Piggush graduated from Kankakee Community College’s Carpentry Apprenticeship Program in 1975. After working for other construction companies, he started his own Piggush Simoneau, Inc. in 1991, and initially worked out of his garage. Hard work and dedication, plus a thoughtful approach to the needs of clients allowed the firm to grow. Today, Piggush Simoneau is very successful, and builds a number of large construction projects in Kankakee County. Among the most recent is the Advanced Technology Education Center at Kankakee Community College, completed in 2019.&nbsp;
