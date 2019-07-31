@@ -31,7 +31,9 @@ $(document).ready(function() {
 
     var alumni = 'alumni',
       distinguished = 'distinguished-alumni-award',
-      stories = 'alumni-stories';
+      stories = 'alumni-stories',
+      alumniEvents = 'alumni-events';
+
 
     //console.log(noProto);
 
@@ -218,6 +220,9 @@ $(document).ready(function() {
           listString.push(
             listItemStart + linkStart + '../' + stories + linkPostUrl + stories.replace(/-/g, ' ') + linkClose + listItemClose
           );
+          listString.push(
+            listItemStart + linkStart + '../' + alumniEvents + linkPostUrl + alumniEvents.replace(/-/g, ' ') + linkClose + listItemClose
+          );
         } else if ( noBase.indexOf(stories) > -1 ) {
           listString.push(
             listItemStart + linkStart + '../' + distinguished + linkPostUrl + distinguished.replace(/-/g, ' ') + linkClose + listItemClose
@@ -225,12 +230,28 @@ $(document).ready(function() {
           listString.push(
             lastListItemStart + linkStart + '../' + stories + linkPostUrl + stories.replace(/-/g, ' ') + srCurrent + linkClose + listItemClose
           );
+          listString.push(
+            listItemStart + linkStart + '../' + alumniEvents + linkPostUrl + alumniEvents.replace(/-/g, ' ') + linkClose + listItemClose
+          );
+        } else if ( noBase.indexOf(alumniEvents) > -1 ) {
+          listString.push(
+            listItemStart + linkStart + '../' + distinguished + linkPostUrl + distinguished.replace(/-/g, ' ') + linkClose + listItemClose
+          );
+          listString.push(
+            listItemStart + linkStart + '../' + stories + linkPostUrl + stories.replace(/-/g, ' ') + srCurrent + linkClose + listItemClose
+          );
+          listString.push(
+            lastListItemStart + linkStart + '../' + alumniEvents + linkPostUrl + alumniEvents.replace(/-/g, ' ') + linkClose + listItemClose
+          );
         } else {
           listString.push(
             listItemStart + linkStart + distinguished + linkPostUrl + distinguished.replace(/-/g, ' ') + linkClose + listItemClose
           );
           listString.push(
             listItemStart + linkStart + stories + linkPostUrl + stories.replace(/-/g, ' ') + linkClose + listItemClose
+          );
+          listString.push(
+            listItemStart + linkStart + alumniEvents + linkPostUrl + alumniEvents.replace(/-/g, ' ') + linkClose + listItemClose
           );
         }
       }
