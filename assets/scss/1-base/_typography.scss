@@ -1,3 +1,27 @@
+.typography__new-beginnings {
+  font-family: $font-family-new-beggings;
+  color: $black;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .typography__new-beginnings {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .typography__new-beginnings {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .typography__new-beginnings {
+    font-size: 2rem;
+  }
+}
+
 .page-heading { // This class is applied to h1 level headings
   color: $sub-nav-heading;
   font-family: $secondaryfont-stack;

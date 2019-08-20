@@ -7,36 +7,34 @@ description: ''
 
 <main>
   <div class="container">
-    {% comment %}
-    <div class="row mb-3">
-      <div class="col sub-nav__content--wrapper">
-        <div class="col-12 col-lg-4 float-left text-center">
-          <img src="{{ page.baseurl }}uploads/swine-wine-dine_16-9_crop.jpg" alt="" class="img-fluid">
-        </div>
-        <div class="col-12 col-lg-8 float-right">
-          <div class="editable">
-            <p>For most of our students, financial assistance is needed to attend college. Your support enables our students to achieve their college education. Our newest fundraising event raises critical dollars to support students via scholarships, grants and assists with unmet needs.</p>
+
+    <div class="row">
+      <div class="col cards__col--mx">
+        <div class="card cards__padding--xl cards__border--rounder mb-4">
+          <img src="{{ page.baseurl }}uploads/new-beginnings.png" class="card-img-top img-fluid cards__img cards__img--mx" alt="New beginnings">
+          <div class="card-body">
+            <h3 class="typography__new-beginnings text-center">A Kankakee Community College Foundation Fall Event</h3>
+            <h4 class="blue-heading text-center mb-3">Thursday, September 26th</h4>
+            <p>The Kankakee Community College Foundation invites you to attend their fall fundraising event, New Beginnigns, on Thursday, September 26 on the Riverfront Campus. Dress for the evening is business attire.<br><strong>The RSVP deadline for this event is September 13.</strong></p>
+            <a href="{{ page.baseurl }}give/form/annual-fundraiser" class="btn btn-primary mb-3">Register Now</a>
+            <p class="mb-1">If you would like to send a check, please make payable to the KCC Foundation and mail to:</p>
+            <p>Kankakee Community College Foundation<br>
+            100 College Drive<br>
+            Kankakee, IL 60901</p>
+            <p>For more information please contact Dawn Graveline at <a href="tel:18158028252">815-802-8252</a></p>
           </div>
         </div>
       </div>
     </div>
-    {% endcomment %}
-    <div class="row">
-      <div class="col mx-5">
-        <div class="card cards__border--rounder">
-          <img src="{{ page.baseurl }}uploads/new-beginnings.png" class="card-img-top" alt="">
-          <div class="card-body">
-            <h3 class="blue-heading">A Kankakee Community College Foundation Fall Event</h3>
-          </div>
-        </div>
-      </div>
-        <div class="row">
-          <div class="col-md-6 col-xl-4 mb-4">
-            <div class="card cards__border--rounder cards__min-height">
-              <div class="card-body d-flex flex-column justify-content-center">
+
+
+            <div class="row">
+              <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card cards__border--rounder cards__min-height">
+                  <div class="card-body">
 {% markdown %}
 ### Sponsorship Opportunities
-{: .blue-heading }
+{: .blue-heading .mt-3 }
 
 **Proceeds from this event will benefit scholarships and emerging needs for KCC students.**
 
@@ -46,15 +44,15 @@ description: ''
  - Live Auction Sponsor
  - Jazz Sponsor
 {% endmarkdown %}
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-xl-4 mb-4">
-            <div class="card cards__border--rounder cards__min-height">
-              <div class="card-body d-flex flex-column justify-content-center">
+              <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card cards__border--rounder cards__min-height">
+                  <div class="card-body">
 {% markdown %}
 ### $25,000 - Leadership Sponsor
-{: .blue-heading }
+{: .blue-heading .mt-3 }
 
 - VIP dinner seating
 - Two tables of 10 at event
@@ -67,15 +65,15 @@ description: ''
 - Corporate logo with link on event website
 - Corporate logo on KCC social media sites
 {% endmarkdown %}
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-xl-4 mb-4">
-            <div class="card cards__border--rounder cards__min-height">
-              <div class="card-body d-flex flex-column justify-content-center">
+              <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card cards__border--rounder cards__min-height">
+                  <div class="card-body">
 {% markdown %}
 ### $15,000 - Dinner Sponsor
-{: .blue-heading }
+{: .blue-heading .mt-3 }
 
  - One table of 10 at event
  - Signage at event
@@ -85,15 +83,15 @@ description: ''
  - Corporate logo with link on event website
  - Aknowledgment on KCC social media sites
 {% endmarkdown %}
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-xl-4 mb-4">
-            <div class="card cards__border--rounder cards__min-height">
-              <div class="card-body d-flex flex-column justify-content-center">
+              <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card cards__border--rounder cards__min-height">
+                  <div class="card-body">
 {% markdown %}
 ### $10,000 - Cocktail Sponsor
-{: .blue-heading }
+{: .blue-heading .mt-3 }
 
  - Up to 10 tickets to the event
  - Signage at event
@@ -103,15 +101,15 @@ description: ''
  - Corporate logo with link on event website
  - Aknowledgment on KCC social media sites
 {% endmarkdown %}
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-xl-4 mb-4">
-            <div class="card cards__border--rounder cards__min-height">
-              <div class="card-body d-flex flex-column justify-content-center">
+              <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card cards__border--rounder cards__min-height">
+                  <div class="card-body">
 {% markdown %}
 ### $5,000 - Live Auction Sponsor
-{: .blue-heading }
+{: .blue-heading .mt-3 }
 
  - 6 tickets to the event
  - Signage at event
@@ -119,69 +117,34 @@ description: ''
  - Listed as a sponsor on KCC digital screens
  - Listed on event website
 {% endmarkdown %}
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-xl-4 mb-4">
-            <div class="card cards__border--rounder cards__min-height">
-              <div class="card-body d-flex flex-column justify-content-center">
+              <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card cards__border--rounder cards__min-height">
+                  <div class="card-body">
 {% markdown %}
 ### 2,000 - Jazz Sponsor
-{: .blue-heading }
+{: .blue-heading .mt-3 }
 
  - 2 tickets to the event
  - Signage at the event
  - Recognition in the program
  - Listed on event website
 {% endmarkdown %}
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    {% comment %}
-    <div class="row gallery__row">
-      <div class="col-12">
-        <h3 class="blue-heading editable">2018 Swine, Wine & Dine Event</h3>
-      </div>
-      {% assign fundraiser_photos = site.photos | where: "category", "fundraiser" %}
-      {% for photo in fundraiser_photos %}
-      <div class="gallery__wrapper col-12 col-lg-3 col-md-4 col-sm-6">
-        <button type="button" class="gallery__button" data-toggle="modal" data-target="#photoGallery" data-slide="{{ forloop.index0 }}">
-          <div class="gallery__item">
-            <img src="{{ page.baseurl }}assets/img/kcc-placeholder.png" data-src="{{ page.baseurl }}{{ photo.image_path }}" class="img-fluid" alt="{{ photo.image_alt }}" />
-          </div>
-        </button>
-      </div>
-      {% endfor %}
-    </div>
-  {% endcomment %}
+
+
+
+
+
+
+
+
+
+
   </div>
 </main>
-
-{% comment %}
-<div class="modal fade" id="photoGallery" tabindex="-1" role="dialog" aria-labelledby="photoGallery" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body text-center">
-        <div class="gallery__slides">
-          <div id="gallerySlider">
-            {% for photo in fundraiser_photos %}
-            <img src="{{ page.baseurl }}{{ photo.image_path }}" class="img-fluid" alt="{{ photo.image_alt }}" />
-            {% endfor %}
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-{% endcomment %}

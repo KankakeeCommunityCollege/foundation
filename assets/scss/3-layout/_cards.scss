@@ -1,7 +1,10 @@
 
-.cards__min-height {
-  min-height: 23rem;
+@media screen and (min-width: 768px) {
+  .cards__min-height {
+    min-height: 30rem;
+  }
 }
+
  .cards__border--rounder {
    border-radius: 15px;
  }
@@ -9,4 +12,34 @@
 .cards__border--rounder .card-img-top {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .cards__col--mx {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards__col--mx {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+.cards__img {
+  width: 80%;
+}
+
+.cards__img--mx {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+@media screen and (min-width: 1200px) {
+  .cards__padding--xl {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
