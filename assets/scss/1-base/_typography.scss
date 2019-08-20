@@ -376,6 +376,10 @@ p.general-p {
   text-transform: uppercase;
 }
 
+.navbar-brand .typography__sub-nav--red-h3 {
+  white-space: normal;
+}
+
 @media screen and (min-width: 768px) {
   .typography__sub-nav--red-h3 {
     font-size: 1.8rem;
