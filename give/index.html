@@ -15,11 +15,38 @@ banner_alt:
       <div class="col sub-nav__content--wrapper">
         <div class="editable">
             <div id="accordion">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h2 id="dontate" class="mb-0 main-heading"><button id="plusButton" class="btn btn-link buttons__btn-link-custom donateTarget" aria-expanded="true" aria-controls="collapseOne"><span id="plusMinus" class="buttons__blue-circle buttons__plus buttons__minus"></span>&nbsp;The Power of Giving</button></h2>
+              <div class="card">
+                  <div class="card-header" id="headingOne">
+                      <h2 id="newBeginnings" class="mb-0 main-heading"><button id="plusButton1" class="btn btn-link buttons__btn-link-custom newBeginningsTarget" type="button" data-target="#collapseOne" data-toggle="collapse" aria-expanded="true" aria-controls="collapseNewBeginnings"><span id="plusMinus1" class="buttons__blue-circle buttons__plus buttons__minus"></span>&nbsp;New Beginnings</button></h2>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col cards__col--mx">
+                          <div class="card cards__border--rounder mb-4">
+                            <img src="{{ page.baseurl }}uploads/new-beginnings.png" class="card-img-top img-fluid cards__img cards__img--mx" alt="New beginnings">
+                            <div class="card-body">
+                              <h3 class="typography__new-beginnings text-center mb-4">A Kankakee Community College Foundation Fall Event</h3>
+                              <h4 class="blue-heading text-center mb-3">Thursday, September 26th</h4>
+                              <p>The Kankakee Community College Foundation invites you to attend their fall fundraising event, New Beginnigns, on Thursday, September 26 on the Riverfront Campus. Dress for the evening is business attire.<br><strong>The RSVP deadline for this event is September 13.</strong></p>
+                              <a href="{{ page.baseurl }}give/form/annual-fundraiser" class="btn btn-primary mb-3">Register Now</a>
+                              <p>If you would like to send a check, please make payable to the KCC Foundation and mail to:</p>
+                              <p>Kankakee Community College Foundation<br>
+                              100 College Drive<br>
+                              Kankakee, IL 60901</p>
+                              <p>For more information please contact Dawn Graveline at <a href="tel:18158028252">815-802-8252</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="display: block">
+                  </div>
+              </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 id="dontate" class="mb-0 main-heading"><button id="plusButton" class="btn btn-link buttons__btn-link-custom donateTarget" type="button" data-target="#collapseTwo" data-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo"><span id="plusMinus2" class="buttons__blue-circle buttons__plus"></span>&nbsp;The Power of Giving</button></h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                         <div class="card-body">
                             <div>
                                 <h4 class="blue-heading">The Power of You</h4>
@@ -34,10 +61,10 @@ banner_alt:
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h2 id="planned" class="mb-0 main-heading"><button id="plusButton2" class="btn btn-link buttons__btn-link-custom plannedTarget" aria-expanded="true" aria-controls="collapseTwo"><span id="plusMinus2" class="buttons__blue-circle buttons__plus"></span>&nbsp;Planned Giving</button></h2>
+                    <div class="card-header" id="headingThree">
+                        <h2 id="planned" class="mb-0 main-heading"><button id="plusButton2" class="btn btn-link buttons__btn-link-custom plannedTarget" type="button" data-target="#collapseThree" data-toggle="collapse" aria-expanded="false" aria-controls="collapseThree"><span id="plusMinus3" class="buttons__blue-circle buttons__plus"></span>&nbsp;Planned Giving</button></h2>
                     </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                         <div class="card-body">
                             <div>
                                 <p>&nbsp;</p>
@@ -47,10 +74,10 @@ banner_alt:
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h2 id="womensCircle" class="mb-0 main-heading"><button id="plusButton3" class="btn btn-link buttons__btn-link-custom womensCircleTarget" aria-expanded="true" aria-controls="collapseThree"><span id="plusMinus3" class="buttons__blue-circle buttons__plus"></span>&nbsp;Women's Giving Circle</button></h2>
+                    <div class="card-header" id="headingFour">
+                        <h2 id="womensCircle" class="mb-0 main-heading"><button id="plusButton3" class="btn btn-link buttons__btn-link-custom womensCircleTarget" type="button" data-target="#collapseFour" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFour"><span id="plusMinus4" class="buttons__blue-circle buttons__plus"></span>&nbsp;Women's Giving Circle</button></h2>
                     </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                         <div class="card-body">
                             <div>
                                 <p><strong><a href="../give/womens-giving-circle/">Women&rsquo;s Giving Circle</a></strong><br />Assists students who are in their second year who face a barrier to completion. This grant allows for unique assistance providing resources so students can remain in class and achieve their degree or certificate.</p>
@@ -59,10 +86,10 @@ banner_alt:
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header" id="headingFour">
-                        <h2 id="employee" class="mb-0 main-heading"><button id="plusButton4" class="btn btn-link buttons__btn-link-custom employeeTarget" aria-expanded="true" aria-controls="collapseFour"><span id="plusMinus4" class="buttons__blue-circle buttons__plus"></span>&nbsp;KCC Employee Giving</button></h2>
+                    <div class="card-header" id="headingFive">
+                        <h2 id="employee" class="mb-0 main-heading"><button id="plusButton4" class="btn btn-link buttons__btn-link-custom employeeTarget" type="button" data-target="#collapseFive" data-toggle="collapse" aria-expanded="false" aria-controls="collapseFive"><span id="plusMinus5" class="buttons__blue-circle buttons__plus"></span>&nbsp;KCC Employee Giving</button></h2>
                     </div>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
                         <div class="card-body">
                             <div>
                                 <p><strong><a href="../give/employee-giving/">KCC Employee Giving</a></strong><br />Support students in achieving their academic goals and future aspirations</p>
@@ -71,10 +98,10 @@ banner_alt:
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header" id="headingFive">
-                        <h2 id="rights" class="mb-0 main-heading"><button id="plusButton5" class="btn btn-link buttons__btn-link-custom rightsTarget" aria-expanded="true" aria-controls="collapseFive"><span id="plusMinus5" class="buttons__blue-circle buttons__plus"></span>&nbsp;Donor Bill of Rights</button></h2>
+                    <div class="card-header" id="headingSix">
+                        <h2 id="rights" class="mb-0 main-heading"><button id="plusButton5" class="btn btn-link buttons__btn-link-custom rightsTarget" type="button" data-target="#collapseSix" data-toggle="collapse" aria-expanded="false" aria-controls="collapseSix"><span id="plusMinus6" class="buttons__blue-circle buttons__plus"></span>&nbsp;Donor Bill of Rights</button></h2>
                     </div>
-                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
                         <div class="card-body">
                             <div>
                                 <p>Philanthropy is voluntary action for the common good. It is a tradition of giving and sharing that is primary to quality of life. To assure that philanthropy merits the respect and trust of the general public, and that donors and prospective donor can have full confidence in the not-for-profit organizations and causes they are asked to support, we declare that all donors have these rights:</p>
@@ -95,10 +122,10 @@ banner_alt:
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header" id="headingSix">
-                        <h2 id="gift-fees" name="gift-fees" class="mb-0 main-heading"><button id="plusButton6" class="btn btn-link collapsed buttons__btn-link-custom feesTarget" aria-expanded="false" aria-controls="collapseSix"><span id="plusMinus6" class="buttons__blue-circle buttons__plus"></span>&nbsp;Administrative Gift Fees</button></h2>
+                    <div class="card-header" id="headingSeven">
+                        <h2 id="gift-fees" name="gift-fees" class="mb-0 main-heading"><button id="plusButton6" class="btn btn-link collapsed buttons__btn-link-custom feesTarget" type="button" data-target="#collapseSeven" data-toggle="collapse" aria-expanded="false" aria-controls="collapseSeven"><span id="plusMinus7" class="buttons__blue-circle buttons__plus"></span>&nbsp;Administrative Gift Fees</button></h2>
                     </div>
-                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
                         <div class="card-body">
                             <div>
                                 <h3 class="blue-heading">Administrative Gift Fees</h3>
