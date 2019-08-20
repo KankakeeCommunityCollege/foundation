@@ -1,0 +1,12 @@
+
+.cards__min-height {
+  min-height: 23rem;
+}
+ .cards__border--rounder {
+   border-radius: 15px;
+ }
+
+.cards__border--rounder .card-img-top {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}

@@ -1,5 +1,5 @@
 ---
-layout: sub-nav
+layout: sub-nav_md
 baseurl: '../../'
 title: Annual Fundraiser
 description: ''
@@ -7,7 +7,8 @@ description: ''
 
 <main>
   <div class="container">
-    <div class="row">
+    {% comment %}
+    <div class="row mb-3">
       <div class="col sub-nav__content--wrapper">
         <div class="col-12 col-lg-4 float-left text-center">
           <img src="{{ page.baseurl }}uploads/swine-wine-dine_16-9_crop.jpg" alt="" class="img-fluid">
@@ -19,7 +20,128 @@ description: ''
         </div>
       </div>
     </div>
-    {% comment %}<div class="row gallery__row">
+    {% endcomment %}
+    <div class="row">
+      <div class="col mx-5">
+        <div class="card cards__border--rounder">
+          <img src="{{ page.baseurl }}uploads/new-beginnings.png" class="card-img-top" alt="">
+          <div class="card-body">
+            <h3 class="blue-heading">A Kankakee Community College Foundation Fall Event</h3>
+          </div>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-md-6 col-xl-4 mb-4">
+            <div class="card cards__border--rounder cards__min-height">
+              <div class="card-body d-flex flex-column justify-content-center">
+{% markdown %}
+### Sponsorship Opportunities
+{: .blue-heading }
+
+**Proceeds from this event will benefit scholarships and emerging needs for KCC students.**
+
+ - Leadership Sponsor
+ - Dinner Sponsor
+ - Cocktail Sponsor
+ - Live Auction Sponsor
+ - Jazz Sponsor
+{% endmarkdown %}
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4 mb-4">
+            <div class="card cards__border--rounder cards__min-height">
+              <div class="card-body d-flex flex-column justify-content-center">
+{% markdown %}
+### $25,000 - Leadership Sponsor
+{: .blue-heading }
+
+- VIP dinner seating
+- Two tables of 10 at event
+- Signage at event
+- Signage on table
+- Corporate logo on front of program
+- Recognition from podium
+- Opportunity to introduce student speaker
+- Corporate logo displayed on KCC digital screens
+- Corporate logo with link on event website
+- Corporate logo on KCC social media sites
+{% endmarkdown %}
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4 mb-4">
+            <div class="card cards__border--rounder cards__min-height">
+              <div class="card-body d-flex flex-column justify-content-center">
+{% markdown %}
+### $15,000 - Dinner Sponsor
+{: .blue-heading }
+
+ - One table of 10 at event
+ - Signage at event
+ - Recognition in the program
+ - Recognition from podium
+ - Corporate logo displayed on KCC digital screens
+ - Corporate logo with link on event website
+ - Aknowledgment on KCC social media sites
+{% endmarkdown %}
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4 mb-4">
+            <div class="card cards__border--rounder cards__min-height">
+              <div class="card-body d-flex flex-column justify-content-center">
+{% markdown %}
+### $10,000 - Cocktail Sponsor
+{: .blue-heading }
+
+ - Up to 10 tickets to the event
+ - Signage at event
+ - Recognition in the program
+ - Recognition from podium
+ - Corporate logo displayed on KCC digital screens
+ - Corporate logo with link on event website
+ - Aknowledgment on KCC social media sites
+{% endmarkdown %}
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4 mb-4">
+            <div class="card cards__border--rounder cards__min-height">
+              <div class="card-body d-flex flex-column justify-content-center">
+{% markdown %}
+### $5,000 - Live Auction Sponsor
+{: .blue-heading }
+
+ - 6 tickets to the event
+ - Signage at event
+ - Recognition in the program
+ - Listed as a sponsor on KCC digital screens
+ - Listed on event website
+{% endmarkdown %}
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4 mb-4">
+            <div class="card cards__border--rounder cards__min-height">
+              <div class="card-body d-flex flex-column justify-content-center">
+{% markdown %}
+### 2,000 - Jazz Sponsor
+{: .blue-heading }
+
+ - 2 tickets to the event
+ - Signage at the event
+ - Recognition in the program
+ - Listed on event website
+{% endmarkdown %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% comment %}
+    <div class="row gallery__row">
       <div class="col-12">
         <h3 class="blue-heading editable">2018 Swine, Wine & Dine Event</h3>
       </div>
@@ -33,10 +155,12 @@ description: ''
         </button>
       </div>
       {% endfor %}
-    </div>{% endcomment %}
+    </div>
+  {% endcomment %}
   </div>
 </main>
 
+{% comment %}
 <div class="modal fade" id="photoGallery" tabindex="-1" role="dialog" aria-labelledby="photoGallery" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
@@ -60,3 +184,4 @@ description: ''
     </div>
   </div>
 </div>
+{% endcomment %}
