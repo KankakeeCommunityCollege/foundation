@@ -1,9 +1,29 @@
+.BBFormTitle {
+  font-family: $secondaryfont-stack !important;
+  font-weight: 500 !important;
+}
+
 .BBFormEventName {
-  font-family: $secondaryfont-stack;
-  font-weight: 600;
+  font-size: 1.4rem !important;
+}
+
+@media screen and (min-width:768px) {
+  .BBFormEventName {
+    font-size: 1.6rem !important;
+  }
 }
 
 .BBFormContainer {
   background-color: $white !important;
   border: none !important;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.BBFormPriceName {
+  font-weight: 500 !important;
+}
+
+.BBFormTableFooter {
+  font-size: 1.1em !important;
+  font-weight: 700 !important;
 }
