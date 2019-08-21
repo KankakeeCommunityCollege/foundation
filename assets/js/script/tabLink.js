@@ -2,6 +2,11 @@
 // This provides a way to link to individual alumni stories and have that desired story active on the alumni-stories page when you get there.
 $(document).ready(function() {
   var deferScroll = $.Deferred();
+  var url = document.location.toString();
+
+  if ( url.match(/distinguished-alumni-award|alumni-stories/g) ) {
+    linkTabs();
+  } else { return; }
 
   $.when(deferScroll).done(function() {
     setTimeout(function(){
@@ -10,21 +15,11 @@ $(document).ready(function() {
   });
 
   function linkTabs() {
-    var url = document.location.toString();
-    if (url.match(/(?!#contact$)#.+/) ) {
+
+    // Negative lookahead regex: (?!<match_1>|<match_2>)
+    if (url.match(/(?!#contacts$|#sponsorship-opportunities$)#.+/) ) { // If the string does NOT match "<match_1>" or "<match_2>"then, check for the rest of the regular expression pattern
       $('.nav-tabs a[href="#'+url.split('#')[1]+'"]').tab('show') ;
       deferScroll.resolve();
-    }
+    } else { return; }
   }
-
-  linkTabs();
-
-  // With HTML5 history API, we can easily prevent scrolling!
-  //$('.nav-tabs a').on('shown.bs.tab', function (e) {
-    //if(history.pushState) {
-      //history.pushState(null, null, e.target.hash);
-    //} else {
-      //window.location.hash = e.target.hash; //Polyfill for old browsers
-    //}
-  //});
 });

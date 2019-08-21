@@ -1,7 +1,19 @@
 
 @media screen and (min-width: 768px) {
   .cards__min-height {
-    min-height: 30rem;
+    min-height: 34rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .cards__min-height {
+    min-height: 26rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards__min-height {
+    min-height: 32rem;
   }
 }
 

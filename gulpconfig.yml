@@ -102,7 +102,6 @@ javascript:
     # Exclusions: (!exclaim to exclude)
     # Inclusions: (included in JS compile)
     - "!assets/js/script/test.js" # test js file
-    - "!assets/js/script/breadcrumb.js"
     - "assets/js/script/sliders.js"
     - "assets/js/script/lazyLoad.js"
     - "assets/js/script/currentPage.js"
@@ -112,10 +111,8 @@ javascript:
     - "assets/js/script/subNav.js"
     - "assets/js/script/walkText.js"
     - "assets/js/script/tabLink.js"
-    - "!assets/js/script/scholarshipTime.js"
     - "assets/js/script/accordian.js"
     - "assets/js/script/boldFont.js"
-    - "assets/js/script/jumpLinkFix.js"
     - "assets/js/script/bootstrapTabs.js"
     - "assets/js/script/footerDate.js"
 

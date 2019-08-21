@@ -32,20 +32,20 @@
 // link__offset class used to offset anchor jump-links via CSS only method
 // Links need offseting to compensate for fixed nav menu
 // ===========================================================================================
-.link__offset::before {
-  // mobile devices get slightly different offset w/ different sized fixed header
+.links__offset::before {
+  // mobile devices get slightly different offset b/c of different sized fixed header
   content: " ";
   display: block;
-  height: 371px; // defining a height increases the size
-  margin-top: -371px; // negative margin offsets hight to pull it back down
-  pointer-events: none;
+  height: 126px;  // defining a height pushes the element down the page
+  margin-top: -126px;  // negative margin is needed to push it back to its original position
+  pointer-events: none;  // w/ out this it will interfere with the sites navigation links
   visibility: hidden;
 }
 
 @media screen and (min-width: 768px) {
-    .link__offset::before {
-      height: 271px;
-      margin-top: -271px;
+    .links__offset::before {
+      height: 150px;
+      margin-top: -150px;
   }
 }
 
