@@ -115,6 +115,7 @@ javascript:
     - "assets/js/script/boldFont.js"
     - "assets/js/script/bootstrapTabs.js"
     - "assets/js/script/footerDate.js"
+    - 'assets/js/script/closeMenuForContactLink.js'
 
 tableScript:
   dest:
