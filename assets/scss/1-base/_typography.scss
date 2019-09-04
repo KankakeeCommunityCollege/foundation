@@ -424,3 +424,51 @@ p.general-p {
     font-size: 3.1rem;
   }
 }
+
+.typography__astounder {
+  color: $black;
+  font-family: astounder-squared-bb,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 400px) {
+  .typography__astounder {
+    font-size: 3rem;
+  }
+}
+
+.typography__astrounder--bigger {
+  font-size: 4rem;
+}
+
+@media screen and (min-width: 360px) {
+  .typography__astrounder--bigger {
+    font-size: 5rem;
+  }
+}
+
+.typography__astounder--p {
+  color: $black;
+  font-family: astounder-squared-bb,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  letter-spacing: .04rem;
+  line-height: 1;
+  text-transform: uppercase;
+  a {
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .typography__astounder--p {
+    font-size: 1.2rem;
+  }
+}
