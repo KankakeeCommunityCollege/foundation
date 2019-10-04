@@ -203,3 +203,20 @@ button.gallery__button {
   background-color: $white;
   cursor: pointer;
 }
+
+#galleryNav .slick-slide {
+  border-color: $primary-blue;
+  border-style: solid;
+  border-width: .25rem;
+  margin-left: .25rem;
+  margin-right: .25rem;
+}
+
+@media screen and (min-width: 768px) {
+  #galleryTrack {
+    border-color: $primary-blue;
+    border-style: solid;
+    border-width: .25rem;
+    width: 60%;
+  }
+}

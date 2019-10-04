@@ -3,11 +3,13 @@ layout: sub-nav_md
 baseurl: '../../'
 title: Annual Fundraiser
 description: ''
+gallery_title: "New Beginnings | 2019"
+gallery_category: "fundraiser"
 ---
 
 <main>
   <div class="container">
-
+    {% comment %}
     <div class="row">
       <div class="col cards__col--mx">
         <div class="card cards__padding--xl cards__border--rounder mb-4">
@@ -26,9 +28,9 @@ description: ''
         </div>
       </div>
     </div>
-
-
-            <div class="row">
+    {% endcomment %}
+    {% include photo-gallery.html %}
+            <div class="row mt-3">
               <div class="col-md-6 col-xl-4 mb-4">
                 <div class="card cards__border--rounder cards__min-height">
                   <div class="card-body">
