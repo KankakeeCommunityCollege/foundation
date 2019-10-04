@@ -1,0 +1,21 @@
+<section>
+    <div class="row">
+      <div class="col">
+        <h3 class="blue-heading editable">
+            {{ page.gallery_title }}
+        </h3>
+      {% assign category = page.gallery_category %}
+      {% assign photos = site.photos | where: "category", category %}
+      <div class="mx-auto" id="galleryTrack">
+        {% for photo in photos %}
+        <img src="{{ page.baseurl }}{{ photo.image_path }}" class="img-fluid" alt="{{ photo.image_alt }}" />
+        {% endfor %}
+      </div>
+      <div id="galleryNav" class="my-3">
+        {% for photo in photos %}
+        <img src="{{ page.baseurl }}{{ photo.image_path }}" class="img-fluid" alt="{{ photo.image_alt }}" />
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
