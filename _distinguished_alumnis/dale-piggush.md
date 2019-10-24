@@ -1,6 +1,6 @@
 ---
 name: Dale Piggush
-year: 1975
+year: 2019
 portrait: uploads/dale-piggush.jpg
 ---
 
