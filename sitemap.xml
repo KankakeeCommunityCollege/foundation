@@ -1,135 +1,267 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
+        
         <loc>https://foundation.kcc.edu/</loc>
-        <lastmod>2019-11-01T17:40:08.304Z</lastmod>
+    
+        
+        <lastmod>2019-11-07T22:00:19.615Z</lastmod>
+    
     </url>
     <url>
+        
         <loc>https://foundation.kcc.edu/about/</loc>
-        <lastmod>2019-11-01T17:40:08.303Z</lastmod>
+    
+        
+        <lastmod>2019-11-07T22:00:19.614Z</lastmod>
+    
     </url>
     <url>
+        
         <loc>https://foundation.kcc.edu/alumni/</loc>
-        <lastmod>2019-11-01T17:40:08.303Z</lastmod>
+    
+        
+        <lastmod>2019-11-07T22:00:19.613Z</lastmod>
+    
     </url>
     <url>
+        
         <loc>https://foundation.kcc.edu/events/</loc>
-        <lastmod>2019-11-01T17:40:08.303Z</lastmod>
+    
+        
+        <lastmod>2019-11-07T22:00:19.613Z</lastmod>
+    
     </url>
     <url>
+        
         <loc>https://foundation.kcc.edu/give/</loc>
-        <lastmod>2019-11-01T17:40:08.303Z</lastmod>
+    
+        
+        <lastmod>2019-11-07T22:00:19.613Z</lastmod>
+    
     </url>
     <url>
+        
         <loc>https://foundation.kcc.edu/scholarships/</loc>
-        <lastmod>2019-11-01T17:40:08.303Z</lastmod>
+    
+        
+        <lastmod>2019-11-07T22:00:19.614Z</lastmod>
+    
     </url>
     <url>
+        
         <loc>https://foundation.kcc.edu/search/</loc>
-        <lastmod>2019-11-01T17:40:08.305Z</lastmod>
+    
+        
+        <lastmod>2019-11-07T22:00:19.617Z</lastmod>
+    
     </url>
     <url>
+        
         <loc>https://foundation.kcc.edu/about/foundation-board/</loc>
-        <lastmod>2019-11-01T17:40:08.302Z</lastmod>
+    
+        
+        <lastmod>2019-11-07T22:00:19.612Z</lastmod>
+    
     </url>
     <url>
+        
         <loc>https://foundation.kcc.edu/alumni/alumni-events/</loc>
-        <lastmod>2019-11-01T17:40:08.299Z</lastmod>
+    
+        
+        <lastmod>2019-11-07T22:00:19.605Z</lastmod>
+    
     </url>
     <url>
+        
         <loc>https://foundation.kcc.edu/alumni/alumni-stories/</loc>
-        <lastmod>2019-11-01T17:40:08.299Z</lastmod>
+    
+        
+        <lastmod>2019-11-07T22:00:19.605Z</lastmod>
+    
     </url>
     <url>
+        
         <loc>https://foundation.kcc.edu/alumni/distinguished-alumni-award/</loc>
-        <lastmod>2019-11-01T17:40:08.301Z</lastmod>
+    
+        
+        <lastmod>2019-11-07T22:00:19.609Z</lastmod>
+    
     </url>
     <url>
-        <loc>https://foundation.kcc.edu/events/annual-fundraiser/</loc>
-        <lastmod>2019-11-01T17:40:08.300Z</lastmod>
-    </url>
-    <url>
+        
         <loc>https://foundation.kcc.edu/events/annual-scholarship-event/</loc>
-        <lastmod>2019-11-01T17:40:08.300Z</lastmod>
+    
+        
+        <lastmod>2019-11-07T22:00:19.607Z</lastmod>
+    
     </url>
     <url>
+        
         <loc>https://foundation.kcc.edu/events/presidents-circle-dinner/</loc>
-        <lastmod>2019-11-01T17:40:08.304Z</lastmod>
+    
+        
+        <lastmod>2019-11-07T22:00:19.615Z</lastmod>
+    
     </url>
     <url>
+        
         <loc>https://foundation.kcc.edu/events/special-events/</loc>
-        <lastmod>2019-11-01T17:40:08.305Z</lastmod>
+    
+        
+        <lastmod>2019-11-07T22:00:19.617Z</lastmod>
+    
     </url>
     <url>
+        
+        <loc>https://foundation.kcc.edu/events/annual-fundraiser/</loc>
+    
+        
+        <lastmod>2019-11-07T22:00:19.607Z</lastmod>
+    
+    </url>
+    <url>
+        
         <loc>https://foundation.kcc.edu/give/employee-giving/</loc>
-        <lastmod>2019-11-01T17:40:08.302Z</lastmod>
+    
+        
+        <lastmod>2019-11-07T22:00:19.610Z</lastmod>
+    
     </url>
     <url>
+        
         <loc>https://foundation.kcc.edu/give/planned-giving/</loc>
-        <lastmod>2019-11-01T17:40:08.304Z</lastmod>
+    
+        
+        <lastmod>2019-11-07T22:00:19.615Z</lastmod>
+    
     </url>
     <url>
+        
         <loc>https://foundation.kcc.edu/give/presidents-circle/</loc>
-        <lastmod>2019-11-01T17:40:08.304Z</lastmod>
+    
+        
+        <lastmod>2019-11-07T22:00:19.616Z</lastmod>
+    
     </url>
     <url>
+        
         <loc>https://foundation.kcc.edu/give/womens-giving-circle/</loc>
-        <lastmod>2019-11-01T17:40:08.306Z</lastmod>
+    
+        
+        <lastmod>2019-11-07T22:00:19.618Z</lastmod>
+    
     </url>
     <url>
-        <loc>https://foundation.kcc.edu/scholarships/create-a-scholarship/</loc>
-        <lastmod>2019-11-01T17:40:08.301Z</lastmod>
-    </url>
-    <url>
-        <loc>https://foundation.kcc.edu/scholarships/recipients-donors/</loc>
-        <lastmod>2019-11-01T17:40:08.305Z</lastmod>
-    </url>
-    <url>
+        
         <loc>https://foundation.kcc.edu/scholarships/century-scholars/</loc>
-        <lastmod>2019-11-01T17:40:08.301Z</lastmod>
+    
+        
+        <lastmod>2019-11-07T22:00:19.608Z</lastmod>
+    
     </url>
     <url>
+        
+        <loc>https://foundation.kcc.edu/scholarships/create-a-scholarship/</loc>
+    
+        
+        <lastmod>2019-11-07T22:00:19.609Z</lastmod>
+    
+    </url>
+    <url>
+        
+        <loc>https://foundation.kcc.edu/scholarships/recipients-donors/</loc>
+    
+        
+        <lastmod>2019-11-07T22:00:19.616Z</lastmod>
+    
+    </url>
+    <url>
+        
         <loc>https://foundation.kcc.edu/give/form/annual-fundraiser/</loc>
-        <lastmod>2019-11-01T17:40:08.300Z</lastmod>
+    
+        
+        <lastmod>2019-11-07T22:00:19.606Z</lastmod>
+    
     </url>
     <url>
+        
         <loc>https://foundation.kcc.edu/give/form/century-scholars/</loc>
-        <lastmod>2019-11-01T17:40:08.301Z</lastmod>
+    
+        
+        <lastmod>2019-11-07T22:00:19.608Z</lastmod>
+    
     </url>
     <url>
+        
         <loc>https://foundation.kcc.edu/give/form/employee-giving/</loc>
-        <lastmod>2019-11-01T17:40:08.302Z</lastmod>
+    
+        
+        <lastmod>2019-11-07T22:00:19.610Z</lastmod>
+    
     </url>
     <url>
-        <loc>https://foundation.kcc.edu/give/form/presidents-circle/</loc>
-        <lastmod>2019-11-01T17:40:08.305Z</lastmod>
-    </url>
-    <url>
+        
         <loc>https://foundation.kcc.edu/give/form/general/</loc>
-        <lastmod>2019-11-01T17:40:08.302Z</lastmod>
+    
+        
+        <lastmod>2019-11-07T22:00:19.613Z</lastmod>
+    
     </url>
     <url>
+        
+        <loc>https://foundation.kcc.edu/give/form/presidents-circle/</loc>
+    
+        
+        <lastmod>2019-11-07T22:00:19.616Z</lastmod>
+    
+    </url>
+    <url>
+        
         <loc>https://foundation.kcc.edu/uploads/docs/2018 PresCircledonors.pdf</loc>
+    
+        
         <lastmod>2019-01-29T16:32:05.000Z</lastmod>
+    
     </url>
     <url>
+        
         <loc>https://foundation.kcc.edu/uploads/docs/century-club-contribution.pdf</loc>
+    
+        
         <lastmod>2019-01-29T16:32:05.000Z</lastmod>
+    
     </url>
     <url>
+        
         <loc>https://foundation.kcc.edu/uploads/docs/century-scholars-list.pdf</loc>
+    
+        
         <lastmod>2019-01-29T16:32:05.000Z</lastmod>
+    
     </url>
     <url>
+        
         <loc>https://foundation.kcc.edu/uploads/docs/distinguished-alumni-form.pdf</loc>
+    
+        
         <lastmod>2019-01-29T16:32:05.000Z</lastmod>
+    
     </url>
     <url>
+        
         <loc>https://foundation.kcc.edu/uploads/docs/kcc-scholarship-recipient-list.pdf</loc>
+    
+        
         <lastmod>2019-09-04T15:08:29.000Z</lastmod>
+    
     </url>
     <url>
+        
         <loc>https://foundation.kcc.edu/uploads/docs/women-giving.pdf</loc>
+    
+        
         <lastmod>2019-01-29T16:32:05.000Z</lastmod>
+    
     </url>
 </urlset>
