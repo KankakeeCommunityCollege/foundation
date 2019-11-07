@@ -1,28 +1,24 @@
-{% include head.html %}
-  {% include global-nav.html %}
-  {% include local-nav.html %}
-  {% include sub-nav.html %}
-  <main>
-    <div class="container">
-      <div class="row">
-        <div class="col sub-nav__content--wrapper">
-          <div id="bbox-root"></div>
-          <script type="text/javascript">
-          window.bboxInit = function () {
-          bbox.showForm('{{ page.form_key }}');
-          };
-          (function () {
-          var e = document.createElement('script'); e.async = true;
-          e.src = 'https://bbox.blackbaudhosting.com/webforms/bbox-min.js';
-          document.getElementsByTagName('head')[0].appendChild(e);
-          } ());
-          </script>
+---
+layout: default
+---
 
-        </div>
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col sub-nav__content--wrapper">
+        <div id="bbox-root"></div>
+        <script type="text/javascript">
+        window.bboxInit = function () {
+        bbox.showForm('{{ page.form_key }}');
+        };
+        (function () {
+        var e = document.createElement('script'); e.async = true;
+        e.src = 'https://bbox.blackbaudhosting.com/webforms/bbox-min.js';
+        document.getElementsByTagName('head')[0].appendChild(e);
+        } ());
+        </script>
+
       </div>
     </div>
-  </main>
-  {% include footer.html %}
-  {% include vendor-scripts.html %}
-  {% include custom-script.html %}
-{% include foot.html %}
+  </div>
+</main>
