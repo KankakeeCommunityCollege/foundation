@@ -1,5 +1,6 @@
 title: "Kankakee Community College"
 url: https://foundation.kcc.edu
+site_name: Foundation
 theme: kcc-gem-theme
 nav_links:
   - link_text: About
@@ -24,19 +25,34 @@ nav_links:
 #    link_href: 'https://example-external-link.com'
 #    button: false
 #    external: true  <---- #### Add the `external: true` key & value to make an external link ####
-#
-#### Example sub-nav configuration below #### =============================================================== #
-##                                                                                                           ##
-##   `link_href:` values must have a single '/' in the link (no '/' in the begining or end of the string)    ##
-##                                                                                                           ##
-## ========================================================================================================== #
-#
-#sub-nav_links:
-#  - link_text: Sheets
-#    link_href: 'reference/gsheets'
-#  - link_text: CloudCannon
-#    link_href: 'reference/cloudcannon'
-#
+sub-nav_links:
+  - link_text: 'Foundation Board'
+    link_href: 'about/foundation-board'
+  - link_text: 'Annual Scholarship Event'
+    link_href: 'events/annual-scholarship-event'
+  - link_text: "President's Circle Dinner"
+    link_href: 'events/presidents-circle-dinner'
+  - link_text: 'Annual Fundraiser'
+    link_href: 'events/annual-fundraiser'
+  - link_text: 'Distinguished Alumni Award'
+    link_href: 'alumni/distinguished-alumni-award'
+  - link_text: 'Alumni Stories'
+    link_href: 'alumni/alumni-stories'
+  - link_text: 'Alumni Events'
+    link_href: 'alumni/alumni-events'
+  - link_text: 'Century Scholars'
+    link_href: 'scholarships/century-scholars'
+  - link_text: 'Create A Scholarship'
+    link_href: scholarships/create-a-scholarship
+  - link_text: "Employee Giving"
+    link_href: 'give/employee-giving'
+  - link_text: "Planned Giving"
+    link_href: 'give/planned-giving'
+  - link_text: "President's Circle"
+    link_href: 'give/presidents-circle'
+  - link_text: "Women's Giving Circle"
+    link_href: 'give/womens-giving-circle'
+
 collections:
   photos:
     output: false
