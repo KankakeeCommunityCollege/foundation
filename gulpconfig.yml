@@ -61,6 +61,7 @@ watch: # 'Watch' for changes in all the following:
     - "uploads/*"
   sass: "assets/scss/**/*.scss"
   pages:
+    - "_config.yml"
     - "{_data,_includes,_layouts,_pages,_posts,_alerts}/**/*.{md,html,yml,xml}"
     # All these subfolders are added because the watch task was not looking deep enough
     # !exlclusions:
