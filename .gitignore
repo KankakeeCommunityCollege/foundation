@@ -1,5 +1,4 @@
-### Ignore the Gemfile to keep it out of cloudcannon ###
-Gemfile
+# Stuffs for git to ignore
 
 ### General Apple things to ignore ###
 .DS_Store
@@ -39,12 +38,3 @@ package-lock.json
 
 # Ignore gem lock to avoid mac/windows discrepencies
 Gemfile.lock
-
-# Ignore adobe directory containing working illustrator, photoshop,
-assets/adobe/
-assets/adobe/*
-/adobe/
-adobe/*
-
-# Yarn error log
-yarn-error.log
