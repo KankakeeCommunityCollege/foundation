@@ -7,8 +7,8 @@ const config = {
   watch: true,
   //entry: path.join(__dirname, 'webpack', 'main'),
   entry: {
-    'main': './assets/js/src/all.js'
-    //'slim': './assets/js/slim/slim.js'
+    'main': './assets/js/src/all.js',
+    'table': './assets/js/table/table.js'
   },
   output: {
     filename: '[name].[hash].bundle.js',
