@@ -42,7 +42,11 @@ scholarships_available: true
     <div class="row">
       <div class="col">
         <p><strong>Click the </strong> <span class="scholarship-table__key--plus-sign">+</span> <strong>icon next to a scholarship to see more information</strong></p>
-        <div id="scholarshipTable" class="scholarship-table"></div>
+        <div id="scholarshipTable" class="scholarship-table">
+          <div class="loader">
+            <img src="{{ page.baseurl }}assets/img/loader.gif" class="loader__img" alt="Content loading...">
+          </div>
+        </div>
       </div>
     </div>
   </div>
