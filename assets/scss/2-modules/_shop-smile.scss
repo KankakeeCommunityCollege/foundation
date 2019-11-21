@@ -1,41 +1,56 @@
 
 .shop-smile__wrapper {
   background-color: $grey-2;
-  border-bottom-width: 15px;
-  border-color: $grey-2;
-  border-left-width: 10px;
   border-radius: 5px;
-  border-right-width: 0;
+  border-color: $black;
   border-style: solid;
-  border-top-width: 40px;
-  bottom: -310px;
-  margin-right: -145px; // Negative margin to offset width of amazon smile widget for centering it
+  border-width: thin;
+  bottom: -320px;
+  padding-bottom: 25px;
+  padding-left: 0;
+  padding-right: 5px;
+  padding-top: 35px;
   position: fixed;
+  right: 2px;
   z-index: 9999;
 }
 
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 360px) {
   .shop-smile__wrapper {
-    border-left-width: 20px;
-    border-right-width: 20px;
-    bottom: -320px;
-    margin-right: -170px;
-    right: 50%; // position at 50% from right-side. above margin-right compensates for the width of the amazon smile widget to center it in the viewport
-    width: 340px;
+    padding-left: 10px;
+    padding-right: 15px;
+    right: 12px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .shop-smile__wrapper {
+    right: 20px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .shop-smile__wrapper {
+    right: 30px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .shop-smile__wrapper {
+    right: 40px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .shop-smile__wrapper {
     margin-right: 0;
-    right: 40px;
   }
 }
 
 
 @keyframes shopSmileSlideIn {
   from {
-    bottom: -310px;
+    bottom: -320px;
   }
 
   to {
@@ -49,51 +64,7 @@
   }
 
   to {
-    bottom: -310px;
-  }
-}
-
-@media screen and (min-width: 350px) {
-  @keyframes shopSmileSlideIn {
-    from {
-      bottom: -320px;
-    }
-
-    to {
-      bottom: 20px;
-    }
-  }
-
-  @keyframes shopSmileSlideOut {
-    from {
-      bottom: 20px;
-    }
-
-    to {
-      bottom: -320px;
-    }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  @keyframes shopSmileSlideIn {
-    from {
-      bottom: -320px;
-    }
-
-    to {
-      bottom: 35px;
-    }
-  }
-
-  @keyframes shopSmileSlideOut {
-    from {
-      bottom: 35px;
-    }
-
-    to {
-      bottom: -320px;
-    }
+    bottom: -320px;
   }
 }
 
@@ -109,26 +80,14 @@
   bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
-  .shop-smile__wrapper--show {
-    bottom: 35px;
-  }
-}
-
 .shop-smile__exit {
   cursor: pointer;
   display: block;
   padding: .5rem;
   position: absolute;
   right: 5px;
-  top: -40px;
+  top: 0;
   width: 2rem;
-}
-
-@media screen and (min-width: 350px) {
-  .shop-smile__exit {
-    right: -10px;
-  }
 }
 
 .st0{
@@ -159,16 +118,11 @@
   cursor: pointer;
   padding: 10px;
   position: absolute;
-  right: 20px;
-  top: -94px;
+  right: 5px;
+  top: -55px;
   z-index: 10001;
 }
 
-@media screen and (min-width: 350px) {
-  .shop-smile__tab--wrapper {
-    right: 0;
-  }
-}
 
 .shop-smile__tab--wrapper--hidden {
   visibility: hidden;
@@ -181,12 +135,6 @@
 //.shop-smile__tab--shaddow {
 //  box-shadow: 0px -1px 10px #7c7c7c;
 //}
-
-.shop-smile__widget-wrapper {
-  position: relative;
-  top: -8px;
-  left: -8px;
-}
 
 .shop-smile__img--position {
   position: relative;
