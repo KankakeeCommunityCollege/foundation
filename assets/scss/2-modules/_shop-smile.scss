@@ -88,6 +88,10 @@
   right: 5px;
   top: 0;
   width: 2rem;
+  &--icon {
+    height: 16px; // height must be defined for proper IE display
+    width: 16px; // width must be defined for proper IE display
+  }
 }
 
 .st0{
