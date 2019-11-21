@@ -1,12 +1,14 @@
 // Table styles
 // ================================================
 
-.tables {
+.table {
   color: $grey-1;
   border-spacing: 15px;
-
+  & th {
+    padding-top: .5em;
+    padding-bottom: .5rem;
+  }
   & tr td {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 1px;
   }
 }
