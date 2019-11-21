@@ -1,6 +1,58 @@
 title: "Kankakee Community College"
 url: https://foundation.kcc.edu
-google_analytics_key: UA-4328282-19
+site_name: Foundation
+theme: kcc-gem-theme
+nav_links:
+  - link_text: About
+    link_href: 'about'
+    button: false
+  - link_text: Events
+    link_href: 'events'
+    button: false
+  - link_text: Alumni
+    link_href: 'alumni'
+    button: false
+  - link_text: Scholarships
+    link_href: 'scholarships'
+    button: false
+  - link_text: Contact
+    link_href: '#contact'
+    button: false
+  - link_text: Give
+    link_href: 'give'
+    button: true
+#  - link_text: Example External Link
+#    link_href: 'https://example-external-link.com'
+#    button: false
+#    external: true  <---- #### Add the `external: true` key & value to make an external link ####
+sub-nav_links:
+  - link_text: 'Foundation Board'
+    link_href: 'about/foundation-board'
+  - link_text: 'Annual Scholarship Event'
+    link_href: 'events/annual-scholarship-event'
+  - link_text: "President's Circle Dinner"
+    link_href: 'events/presidents-circle-dinner'
+  - link_text: 'Annual Fundraiser'
+    link_href: 'events/annual-fundraiser'
+  - link_text: 'Distinguished Alumni Award'
+    link_href: 'alumni/distinguished-alumni-award'
+  - link_text: 'Alumni Stories'
+    link_href: 'alumni/alumni-stories'
+  - link_text: 'Alumni Events'
+    link_href: 'alumni/alumni-events'
+  - link_text: 'Century Scholars'
+    link_href: 'scholarships/century-scholars'
+  - link_text: 'Create A Scholarship'
+    link_href: scholarships/create-a-scholarship
+  - link_text: "Employee Giving"
+    link_href: 'give/employee-giving'
+  - link_text: "Planned Giving"
+    link_href: 'give/planned-giving'
+  - link_text: "President's Circle"
+    link_href: 'give/presidents-circle'
+  - link_text: "Women's Giving Circle"
+    link_href: 'give/womens-giving-circle'
+
 collections:
   photos:
     output: false
@@ -39,7 +91,7 @@ defaults:
     baseurl: ../../../
     categories: distinguished_alumnis
 permalink: pretty
-email: your-email@domain.com
+email:
 description: > # this means to ignore newlines until "baseurl:"
 # Delete this comment and place description on this line
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -62,12 +114,12 @@ exclude:
   - "Gemfile"
   - "Gemfile.lock"
   - "gulpconfig.yml"
-  - "/docs/"
-  - "yarn.lock"
   - "/assets/adobe/"
   - "gulp-tasks/"
   - "install.sh"
   - "siteicon.png"
+  - "ubuntu.18.04.package-lock.json"
+  - "webpack.config.js"
 
 uploads_dir: # specifies the default uploads directory for CloudCannon
   - "uploads/"
