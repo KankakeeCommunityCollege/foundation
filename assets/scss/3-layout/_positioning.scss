@@ -75,3 +75,9 @@
     margin-top: 160px;
   }
 }
+
+@media screen and (min-width: 360px) {
+  .position__offset-fixed-nav {
+    margin-top: 125px;
+  }
+}
