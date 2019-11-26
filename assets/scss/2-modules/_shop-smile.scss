@@ -123,8 +123,20 @@
   padding: 10px;
   position: absolute;
   right: 5px;
-  top: -54px;
+  top: -53px;
   z-index: 10001;
+}
+
+@media screen and (min-width: 576px) {
+  .shop-smile__tab--wrapper {
+    top: -54px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .shop-smile__tab--wrapper {
+    top: -55px;
+  }
 }
 
 
