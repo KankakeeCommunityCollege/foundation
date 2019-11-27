@@ -1,30 +1,19 @@
-// Javascript to enable links/external-links to Bootstrap4 tab-nav's
-// This provides a way to link to individual alumni stories and have that desired story active on the alumni-stories page when you get there.
+// Provide the ability to activate a tab from the URL (e.g. 'http://localhost:3000/alumni/distinguished-alumni-award/#donald-rehmer' makes the #donald-rehmer tab active).
+const DISTINGUISHED_ALUMNI_OR_ALUMNI_STORIES_REGEX = /(alumni\/distinguished-alumni-award|alumni\/alumni-stories)/g;
 
 function makeTabsLinkable() {
-  $(document).ready(function() {
-    var deferScroll = $.Deferred();
-    var url = document.location.toString();
+  let initialURL = location.href;
+  const userIsNotOnCorrectPage = initialURL.search(DISTINGUISHED_ALUMNI_OR_ALUMNI_STORIES_REGEX) === -1;
 
-    if ( url.match(/distinguished-alumni-award|alumni-stories/g) ) {
-      linkTabs();
-    } else { return; }
+  if ( userIsNotOnCorrectPage )
+    return;
 
-    $.when(deferScroll).done(function() {
-      setTimeout(function(){
-        window.scrollTo(0,0);
-      }, 220);
-    });
-
-    function linkTabs() {
-
-      // Negative lookahead regex: (?!<match_1>|<match_2>)
-      if (url.match(/(?!#contacts$|#sponsorship-opportunities$)#.+/) ) { // If the string does NOT match "<match_1>" or "<match_2>"then, check for the rest of the regular expression pattern
-        $('.nav-tabs a[href="#'+url.split('#')[1]+'"]').tab('show') ;
-        deferScroll.resolve();
-      } else { return; }
-    }
-  });
+  if (location.hash) {
+    $('#nav-tab a[href="' + location.hash.replace(/\/$/g, '') + '"]').tab('show'); // Bootstrap 4 method. See: https://getbootstrap.com/docs/4.4/components/navs/#via-javascript
+    setTimeout(() => {
+      $(window).scrollTop(0);
+    }, 400);
+  }
 }
 
 export default makeTabsLinkable;
