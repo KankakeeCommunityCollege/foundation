@@ -12,6 +12,7 @@ slides:
     alt-text: "The Scholarship application is now open. Application is open November 1 to March 1 for Fall 2020. Apply one time to be considered for all available scholarships at foundation.kcc.edu/scholarships. $200,000 in scholarships is awarded annually."
     url: /scholarships
     text:
+    white_background: true
   - image: uploads/super-power.png
     alt-text: What's your super power?
     url: /scholarships/recipients-donors
@@ -32,27 +33,7 @@ slides:
 
 <section class="position__offset-fixed-nav">
     <div class="container container--tan-bg">
-      <div class="row">
-        <div class="col-md-12 hero-slider__slider">
-        {% for slide in page.slides %}
-          {% if forloop.first == true %}
-          <div>
-            <a href="{{ slide.url }}"><img src="{{page.baseurl}}{{slide.image}}" class="img-fluid hero-slider__slider--slide-img" alt="{{slide.alt-text}}" /></a>
-            <div class="hero-slider__slider--heading-container text-center">
-              <h3 class="hero-slider__slider--slide-heading">{{slide.text}}</h3>
-            </div>
-          </div>
-          {% else %}
-          <div>
-            <a href="{{ slide.url }}"><img src="assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid hero-slider__slider--slide-img" alt="{{slide.alt-text}}" /></a>
-            <div class="hero-slider__slider--heading-container text-center">
-              <h3 class="hero-slider__slider--slide-heading">{{slide.text}}</h3>
-            </div>
-          </div>
-          {% endif %}
-        {% endfor %}
-        </div>
-      </div>
+      {% include hero-slider.html %}
       <div class="row">
         <div class="col text-center"><h2 class="red-heading editable">
     Your Gift Makes a Lasting Impact
