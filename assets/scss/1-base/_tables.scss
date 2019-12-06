@@ -11,4 +11,8 @@
   & tr td {
     padding: 1px;
   }
+  &__td--padding-x tr td {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
 }
