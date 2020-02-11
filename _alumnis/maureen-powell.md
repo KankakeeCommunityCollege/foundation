@@ -2,6 +2,7 @@
 name: Maureen Powell
 degree: Associate Degree
 year: 1985
+order: 4
 portrait: uploads/maureen-linkedin_crop.jpg
 quote: "I applied to, visited, and was accepted by four-year universities.  When I graduated, though, I wasn’t ready to go away to school.  Fortunately, KCC was there."
 ---
