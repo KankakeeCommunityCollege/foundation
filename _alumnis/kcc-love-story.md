@@ -1,0 +1,54 @@
+---
+name: Scott Runyan & Taylor Roach
+degree:
+year:
+order: 1
+portrait: uploads/story_thumb.jpg
+quote:
+---
+
+<h3 class="typography__h4">KCC Love Story</h3>
+
+Year of Graduation:
+2015
+
+How did you meet?
+We met at KCC our freshman year. Scott played baseball and Taylor played women’s basketball for the Cavaliers. Second semester, we were in the same science class when Taylor reached out to Scott first. We began talking & studying with each other and have been together ever since!
+
+What did the two of you do for fun/dates?
+
+Our favorite date spot was Burgers & Beer in Kankakee. It had just opened our freshman year & was our go to place to eat (and still is!) Most of our time outside of class was spent playing our sport & attending each others games. We also spent time hanging out with friends & teammates.
+
+<hr>
+<br>
+<div class="text-center">
+  <img class="img-fluid" src="{{ page.baseurl }}uploads/story-img_baseball-field.jpg" alt="Scott & Taylor at the Cavaliers baseball field">
+</div>
+<br>
+<hr>
+
+<div class="text-center">
+  <img class="float-md-right img-fluid" style="width: 300px; margin-bottom: 1rem; margin-left: 1rem;" src="{{ page.baseurl }}uploads/story-img_gym.jpg" alt="Scott & Taylor posing in the George H. Ryan Activities Center">
+</div>
+
+How many years have you been together?
+ 6 years.
+
+When are you planning to marry?
+ July 18, 2020.
+
+Are there any special memories of you two on campus?
+
+Our favorite memory was the opportunity for us to both play the sports we love for such a great athletic program & college. We were able to meet many amazing people during our time at KCC. Most of all, we are grateful that KCC brought us together. Recently, we enjoyed taking our engagement pictures on the beautiful KCC campus to capture where our love & memories started.
+
+After KCC:
+
+After graduating from KCC, we both continued our education & graduated from Eastern Illinois University. Upon graduation, Taylor came back to KCC for the Physical Therapy Assistant Program. Currently, we reside in Champaign Illinois. Scott is an Athletic Director at St. Matthew Middle School and also coaches middle school & high school baseball. Taylor is a PTA at Gibson Area Hospital in Paxton.
+
+<hr>
+<br>
+<div class="text-center">
+  <img class="img-fluid" src="{{ page.baseurl }}uploads/story-img_cavaliers.jpg" alt="Scott & Taylor at the Cavaliers baseball field">
+</div>
+<br>
+<hr>
