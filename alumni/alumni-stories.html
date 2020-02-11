@@ -12,7 +12,7 @@ description: ''
       <div class="col alumni__col">
         <nav>
           <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            {% assign sorted = site.alumnis | sort: 'year' | reverse %}
+            {% assign sorted = site.alumnis | sort: 'order' %}
             {% for alumni in sorted %}
             {% assign alumni_id = alumni.name | replace: ' ', '-' | downcase %}
               {% if forloop.first == true %}
@@ -49,7 +49,7 @@ description: ''
             <div class="tab-pane fade show active" id="{{ alumni_id }}" role="tabpanel" aria-labelledby="{{ alumni_id }}-tab">
               <img src="{{ alumni.baseurl }}{{ alumni.portrait }}" class="float-left img-fluid alumni__portrait" alt="Portrait of {{ alumni.name }}">
               <h3 class="blue-heading">{{ alumni.name }}</h3>
-              <p><strong>{{ alumni.degree }}, {{ alumni.year }}</strong></p>
+              <p><strong>{% if alumni.degree and alumni.year %}{{ alumni.degree }}, {{ alumni.year }}{% elsif alumni.degree %}{{ alumni.degree }}{% endif %}</strong></p>
               <p>{{ alumni.content }}</p>
             </div>
           {% else %}
