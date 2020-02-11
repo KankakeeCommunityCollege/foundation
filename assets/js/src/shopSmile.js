@@ -6,23 +6,12 @@ function shopSmileInit() {
 
     var smileWrapper = $('#shopSmileWrapper');
 
-    //function addShaddow() {
-    //  var smileTab = $('#smileTab');
-    //  setTimeout(function(){
-    //    smileTab.addClass('shop-smile__tab--shaddow');
-    //  }, 1200);
-    //}
-    //function removeShaddow() {
-    //  var smileTab = $('#smileTab');
-    //  smileTab.removeClass('shop-smile__tab--shaddow');
-    //}
-
-    if( sessionStorage.clickcount == undefined ) { // if the clickcount is undefined:
-      // set the clickcount to 0:
-      sessionStorage.clickcount = 0;
+    if( sessionStorage.smileClickCount == undefined ) { // if the smileClickCount is undefined:
+      // set the smileClickCount to 0:
+      sessionStorage.smileClickCount = 0;
     }
 
-    smileWrapper.attr('data-close', sessionStorage.clickcount);
+    smileWrapper.attr('data-close', sessionStorage.smileClickCount);
 
     function animateIn() {
       // Function to animate the slide-in of the amazon smile slide-box
@@ -95,12 +84,12 @@ function shopSmileInit() {
 
     function clickCounter() {
       if(typeof(Storage) !== 'undefined') {
-        if (sessionStorage.clickcount) {
-          sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+        if (sessionStorage.smileClickCount) {
+          sessionStorage.smileClickCount = Number(sessionStorage.smileClickCount)+1;
         } else {
-          sessionStorage.clickcount = 1;
+          sessionStorage.smileClickCount = 1;
         }
-        smileWrapper.attr('data-close', sessionStorage.clickcount);
+        smileWrapper.attr('data-close', sessionStorage.smileClickCount);
       }
     }
 
