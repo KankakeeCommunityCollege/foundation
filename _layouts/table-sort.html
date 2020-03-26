@@ -13,6 +13,7 @@
   {% if site.translate == true %}{% include translate.html %}{% endif %}
   {% include nav-global.html %}
   {% include nav-local.html %}
+  {% include emergency-alerts.html %}
   {% include nav-sub.html %}
   {% include shop-smile.html %}
   {{ content }}
@@ -22,6 +23,8 @@
   {% include scripts/table-cdn.html %}
   {% include scripts/table-scripts.html %}
   {% include scripts/custom.html %}
+  {% include scripts/emergency-alerts.html %}
+  {% include scripts/google-api.html %}
   {% if site.translate == true %}<!-- Link to this site's custom google translate stylesheet -->
   {% include scripts/translate.html %}{% endif %}
 {% include foot.html %}
