@@ -1,6 +1,7 @@
 title: "Kankakee Community College"
 url: https://foundation.kcc.edu
 site_name: Foundation
+# BUILD
 theme: kcc-gem-theme
 google-tag_key: GTM-KKZRJB5
 nav_links:
