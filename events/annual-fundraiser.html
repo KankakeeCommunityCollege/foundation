@@ -4,23 +4,121 @@ baseurl: '../../'
 title: Annual Fundraiser
 sub-nav_section: events
 description: ''
----
-
-{% comment %}
----
 gallery_title: "New Beginnings | 2019"
 gallery_category: "fundraiser"
 ---
-{% endcomment %}
 
 <main>
   <div class="container mt-2">
+    {% comment %}
     <div class="row">
-      <div class="col">
-        <div class="editable">
-          <h3 class="typography__h3">Give Day 2020</h3>
+      <div class="col cards__col--mx">
+        <div class="card cards__padding--xl cards__border--rounder mb-4">
+          <img src="{{ page.baseurl }}uploads/new-beginnings.png" class="card-img-top img-fluid cards__img cards__img--mx" alt="New beginnings">
+          <div class="card-body cards__card-body--padding">
+            <h3 class="typography__new-beginnings text-center">A Kankakee Community College Foundation Fall Event</h3>
+            <h4 class="blue-heading text-center mb-3">Thursday, September 26th</h4>
+            <p>The Kankakee Community College Foundation invites you to attend their fall fundraising event, New Beginnings, on Thursday, September 26 on the Riverfront Campus. Dress for the evening is business attire.<br><strong>The RSVP deadline for this event is September 13.</strong></p>
+            {% comment %}<a href="{{ page.baseurl }}give/form/annual-fundraiser" class="btn btn-primary mb-3">Register Now</a>{% endcomment %}
+            <p class="mb-1">If you would like to send a check, please make payable to the KCC Foundation and mail to:</p>
+            <p>Kankakee Community College Foundation<br>
+            100 College Drive<br>
+            Kankakee, IL 60901</p>
+            <p>For more information please contact Dawn Graveline at <a href="tel:18158028252">815-802-8252</a></p>
+          </div>
         </div>
       </div>
     </div>
+    {% endcomment %}
+    {% include photo-gallery.html %}
+            <div class="row mt-3">
+              <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card cards__border--rounder cards__min-height">
+                  <div class="card-body">
+{% markdown %}
+### Sponsorship Opportunities
+{: .blue-heading .mt-3 .links__offset name="sponsorship-opportunities" }
+
+**Proceeds from this event will benefit scholarships and emerging needs for KCC students.**
+
+ - Leadership Sponsor
+ - Dinner Sponsor
+ - Cocktail Sponsor
+ - Live Auction Sponsor
+ - Jazz Sponsor
+{% endmarkdown %}
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card cards__border--rounder cards__min-height">
+                  <div class="card-body d-flex flex-column">
+{% markdown %}
+### $25,000 - Leadership Sponsor
+{: .blue-heading .my-3 }
+
+<a href="https://nucor.com/" target="_blank" rel="noopener noreferrer"><img src="{{ page.baseurl }}uploads/nucor_logo.png" class="img-fluid" alt=""></a>
+{% endmarkdown %}
+                  {% comment %}<a href="{{ page.baseurl }}give/form/annual-fundraiser" class="btn btn-primary align-self-start mt-auto ml-3">Register Now</a>{% endcomment %}
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card cards__border--rounder cards__min-height">
+                  <div class="card-body d-flex flex-column">
+{% markdown %}
+### $15,000 - Dinner Sponsor
+{: .blue-heading .my-3 }
+
+<img src="{{ page.baseurl }}uploads/rhc-standard_logo.png" class="img-fluid" alt="">
+{% endmarkdown %}
+                  {% comment %}<a href="{{ page.baseurl }}give/form/annual-fundraiser" class="btn btn-primary align-self-start mt-auto ml-3">Register Now</a>{% endcomment %}
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card cards__border--rounder cards__min-height">
+                  <div class="card-body d-flex flex-column">
+{% markdown %}
+### $10,000 - Cocktail Sponsor
+{: .blue-heading .my-3 }
+
+<img src="{{ page.baseurl }}uploads/ndy-metal-fabrication_logo.png" class="img-fluid" alt="">
+{% endmarkdown %}
+                  {% comment %}<a href="{{ page.baseurl }}give/form/annual-fundraiser" class="btn btn-primary align-self-start mt-auto ml-3">Register Now</a>{% endcomment %}
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card cards__border--rounder cards__min-height">
+                  <div class="card-body d-flex flex-column">
+{% markdown %}
+### $5,000 - Live Auction Sponsor
+{: .blue-heading .my-3 }
+
+<img src="{{ page.baseurl }}uploads/franco-family-foundation_logo.png" class="img-fluid" alt="">
+<img src="{{ page.baseurl }}uploads/cypress-creek_logo.png" class="img-fluid" alt="">
+<img src="{{ page.baseurl }}uploads/dka-name_logo.png" class="img-fluid" alt="">
+{% endmarkdown %}
+                  {% comment %}<a href="{{ page.baseurl }}give/form/annual-fundraiser" class="btn btn-primary align-self-start mt-auto ml-3">Register Now</a>{% endcomment %}
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4 mb-4">
+                <div class="card cards__border--rounder cards__min-height">
+                  <div class="card-body d-flex flex-column">
+{% markdown %}
+### $2,000 - Jazz Sponsor
+{: .blue-heading .my-3 }
+
+Special thanks to our sponsor **Mr.&nbsp;&&nbsp;Mrs&nbsp;Michael&nbsp;Fegan**.
+{: style="font-size: 1.2rem" }
+
+{% endmarkdown %}
+                  {% comment %}<a href="{{ page.baseurl }}give/form/annual-fundraiser" class="btn btn-primary align-self-start mt-auto ml-3">Register Now</a>{% endcomment %}
+                  </div>
+                </div>
+              </div>
+            </div>
   </div>
 </main>
