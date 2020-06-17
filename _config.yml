@@ -123,6 +123,7 @@ exclude:
   - "siteicon.png"
   - "ubuntu.18.04.package-lock.json"
   - "webpack.config.js"
+  - "/events/annual-fundraiser-gallery.txt"
 
 uploads_dir: # specifies the default uploads directory for CloudCannon
   - "uploads/"
