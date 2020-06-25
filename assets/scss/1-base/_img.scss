@@ -1,0 +1,11 @@
+
+.img__circle {
+  border-color: $white;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 50%;
+  filter: drop-shadow(5px 5px 12px #b1b1b1);
+  height: auto;
+  max-width: 100%;
+  width: 300px;
+}
