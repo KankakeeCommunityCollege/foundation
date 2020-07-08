@@ -476,3 +476,14 @@ p.general-p {
 .typography__larger {
   font-size: 1.1rem;
 }
+
+.typography__h5--theme,
+.typography__h6--theme {
+  color: $grey-1;
+  font-family: $secondaryfont-stack;
+  font-weight: 700;
+}
+
+.typography__h5--theme {
+  font-size: 1.5rem;
+}
