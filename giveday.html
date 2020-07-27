@@ -1,11 +1,14 @@
 ---
-layout: foundation_default_no-smile
+layout: default_no-alerts
 baseurl: '../'
 title: Give Day
 description: ''
 ---
 
-<main>
+	{% include facebook-javascript.html %}
+	{% include twitter-for-websites.html %}
+
+<main class="position__offset-fixed-nav">
   <div class="container">
     <div class="row">
       <div class="col">
@@ -40,11 +43,37 @@ description: ''
         </div>
 
         <div class="row my-4 py-5 container--tan-bg">
-          <div class="col col-md-8 offset-md-2 col-xl-6 offset-xl-3">
-            <p class="mb-4 typography__larger"><button type="button" class="btn btn-primary buttons__bolder typography__larger-p" data-toggle="modal" data-target="#staticBackdrop">Donate now</button> or <em>by check</em> payable to the <strong>KCC&nbsp;Foundation</strong> sent&nbsp;to:</p>
-            <p class="typography__larger"><strong>The KCC Foundation<br>
-            100 College Drive<br>
-            Kankakee, IL 60901</strong></p>
+          <div class="col">
+            <div class="row">
+              <div class="col col-md-8 offset-md-2 col-xl-6 offset-xl-3">
+
+                <p class="mb-4 typography__larger">
+                  <button type="button" class="btn btn-primary buttons__bolder typography__larger-p"
+                    data-toggle="modal" data-target="#staticBackdrop">Donate now</button> or <em>by check</em> payable to the
+                  <strong>KCC&nbsp;Foundation</strong> sent&nbsp;to:
+                </p>
+                <p class="typography__larger mb-5">
+                  <strong>The KCC Foundation<br>
+                    100 College Drive<br>
+                    Kankakee, IL 60901</strong>
+                  </p>
+
+                  <div class="row">
+                    <div class="col mb-2 d-flex">
+                      <p class="typography__larger-p mr-2">
+                        <strong>Spread the word on social
+                          media!</strong> 
+                        </p>
+                      <div class="fb-like mr-2" data-href="https://foundation.kcc.edu/events/giveday/" data-width=""
+                        data-layout="button" data-show-faces="false" data-action="like" data-size="large"
+                        data-share="true"></div>
+                      <a class="twitter-share-button" href="https://twitter.com/intent/tweet"
+                        data-text="KCC  Give Day - August 27, 2020 #strongtogether"
+                        data-url="https://foundation.kcc.edu/events/giveday/" data-size="large">Tweet</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
           </div>
         </div>
 
