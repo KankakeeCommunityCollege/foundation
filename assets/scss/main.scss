@@ -3,6 +3,7 @@
 @import '0-tools/bootstrap-overrides';
 @import '0-tools/black-baud_overrides';
 @import '0-tools/content';
+@import '0-tools/overrides';
 
 // Base items
 @import '1-base/typography';
@@ -13,6 +14,7 @@
 @import '1-base/img';
 @import '1-base/blackbaud-overrides';
 @import '1-base/borders';
+@import '1-base/svg';
 
 // Modular components
 @import '2-modules/header';

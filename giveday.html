@@ -8,74 +8,235 @@ description: ''
 	{% include facebook-javascript.html %}
 	{% include twitter-for-websites.html %}
 
-<main class="position__offset-fixed-nav">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-
-        <div class="text-center">
-          <img src="{{ page.baseurl }}uploads/giveday-graphic-with-cavalier.png" class="img-fluid" alt="">
-        </div>
-
+<main class="position__offset-giveday-nav">
+  <section class="benefits__blue-section">
+    <div class="container-fluid px-0">
+      <div class="container">
         <div class="row">
-          <div class="col-md-8 my-auto">
-            <h3 class="typography__h3">Give Day 2020</h3>
-            <p>The KCC Foundation will hold its first <strong>Give Day</strong> on <strong>August 27</strong>! This peer to peer fundraiser asks KCC alumni, donors and friends to give and encourage others to give. The world is changing rapidly and we must keep pace to ensure student success! The two initiatives below are our Give Day funding priorities.</p>
-
-            <p><strong>The Equity, Diversity and Inclusion (EDI) Center</strong> will provide services and activities that will create a climate of intentional interaction. Together, students will utilize critical thinking, expand awareness and increase overall cultural competency.</p>
-
-            <p><strong>Laptops and WiFi Units</strong> are needed because many of our students have no access to technology and need resources to complete their coursework.</p>
-          </div>
-          <div class="col-md-4 text-center">
-            <img src="{{ page.baseurl }}assets/img/kcc-placeholder.png" data-src="{{ page.baseurl }}uploads/giveday_student.jpg" class="img__circle" alt="">
-          </div>
-        </div>
-
-        <div class="row mt-3 mt-md-0 mb-4">
-          <div class="col-md-4 text-center order-2 order-md-1">
-            <img src="{{ page.baseurl }}assets/img/kcc-placeholder.png" data-src="{{ page.baseurl }}uploads/giveday-student-2.jpg" class="img__circle" alt="">
-          </div>
-          <div class="col-md-8 my-auto order-1 order-md-2">
-            <p>Sponsors of $1,500 or more are invited to attend the closing reception on August 27 at 5 p.m. on Main Campus.</p>
-            <p>100% of the proceeds from this event will support students and college initiatives!</p>
-            <p>The first $5,000 we raise will be matched, dollar for dollar, thanks to a generous donor!</p>
-          </div>
-        </div>
-
-        <div class="row my-4 py-5 container--tan-bg">
           <div class="col">
-            <div class="row">
-              <div class="col col-md-8 offset-md-2 col-xl-6 offset-xl-3">
 
-                <p class="mb-4 typography__larger">
-                  <button type="button" class="btn btn-primary buttons__bolder typography__larger-p"
-                    data-toggle="modal" data-target="#staticBackdrop">Donate now</button> or <em>by check</em> payable to the
-                  <strong>KCC&nbsp;Foundation</strong> sent&nbsp;to:
-                </p>
-                <p class="typography__larger mb-5">
-                  <strong>The KCC Foundation<br>
-                    100 College Drive<br>
-                    Kankakee, IL 60901</strong>
-                  </p>
+            <div class="position__video-wrapper">
+              <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/mbqJUT89-AY?rel=0&autoplay=1&cc_lang_pref=en&cc_load_policy=1"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
 
-                  <div class="row">
-                    <div class="col mb-2 d-flex">
-                      <p class="typography__larger-p mr-2">
-                        <strong>Spread the word on social
-                          media!</strong> 
-                        </p>
-                      <div class="fb-like mr-2" data-href="https://foundation.kcc.edu/events/giveday/" data-width=""
-                        data-layout="button" data-show-faces="false" data-action="like" data-size="large"
-                        data-share="true"></div>
-                      <a class="twitter-share-button" href="https://twitter.com/intent/tweet"
-                        data-text="KCC  Give Day - August 27, 2020 #strongtogether"
-                        data-url="https://foundation.kcc.edu/events/giveday/" data-size="large">Tweet</a>
-                    </div>
-                  </div>
+            <h3 class="typography__large-h4 text-center mb-0">Give Day</h3>
+            <h4 class="benefits__typography--h5 text-center mb-4">#strongtogether</h4>
+            
+            <p class="typography__larger-p">The Kankakee Community College (KCC) Foundation presents <strong>GIVE DAY 2020 #strongtogether</strong>. Giving Day is the one day that alumni, families, students, staff, faculty, and friends unite to support one common goal: supporting the Kankakee Community College Mission&mdash;<strong><em>enhancing the quality of life through learning.</em></strong></p>
+              
+            <p class="typography__larger-p">The KCC Foundation would like to acknowledge that this year’s event is happening during a very challenging time in our community. Given the unprecedented changes occurring on our campus and the impact of the pandemic on our community, it feels right to unite our college community and supporters in a common effort. We also know that our students need our support more than ever. 100% of your gift will have a direct and immediate impact on KCC students.</p>
+                
+            <p class="typography__larger-p">We sincerely hope that you consider helping make KCC’s GIVE DAY #strongtogether a success. Any gift, no matter what the size, can change lives. You can designate which fund you would like your donation to benefit:</p>
+
+            <div class="row mt-5 text-center">
+              <div class="col-12 col-md-4 mb-5">
+                {% include svg/icon-technology-fund.html %}
+                <h5 class="benefits__typography--h6">Technology <br>Fund</h5>
+                <h6 class="typography__h5">Designating your donation to this fund will help current Kankakee Community College students navigate the impact of remote learning.</h6>
+              </div>
+              <div class="col-12 col-md-4 mb-5">
+                {% include svg/icon-edi-center.html %}
+                <h5 class="benefits__typography--h6">Equity, Diversity and Inclusion Center Fund</h5>
+                <h6 class="typography__h5">Supporting this initiative will foster community building, provide resources and a safe, inclusive and affirming space for the entire campus community.</h6>
+              </div>
+              <div class="col-12 col-md-4 mb-5">
+                {% include svg/icon-emergency-assistance-fund.html %}
+                <h5 class="benefits__typography--h6">Emergency Assistance Fund</h5>
+                <h6 class="typography__h5">The Emergency Assistance Fund supports KCC students experiencing an extreme financial hardship that threatens to halt their education.</h6>
               </div>
             </div>
+
+            <div class="row my-2 py-2">
+              <div class="col">
+
+                <div class="text-center">
+                  <button type="button" class="btn btn-primary buttons__bolder buttons__large mb-2" data-toggle="modal" data-target="#staticBackdrop">Donate now</button>
+                </div>
+
+                <p class="typography__larger-p mt-3">The Kankakee Community College is a 501c3 organization. <strong>All
+                    donations are tax deductible.</strong></p>
+
+                <p class="typography__larger-p">Checks can be made payable to the <strong>Kankakee Community College
+                    Foundation</strong>. Please send to <strong>KCC Foundation, 100 College Drive, Kankakee, IL 60901</strong></p>
+                  
+                <p class="typography__larger-p">For more information contact Kelly Myers, Executive Director of the
+                  KCC Foundation: <a href="tel:+18158028260">815-802-8260</a> or <a
+                    href="mailto:kmyers@kcc.edu">kmyers@kcc.edu</a>.
+                  </p>
+              </div>
+            </div>
+
+
+                  
           </div>
         </div>
+      </div>  
+    </div>
+  </section>
+  <section class="my-4 py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h5 class="typography__larger-h5 text-center mb-4">Student Success Stories</h5>
+          <p class="typography__larger-p"><strong>When you donate to KCC Give Day #strongtogether, you will be a part of a student’s success story:</strong></p>
+          <div class="row">
+            <div class="col-12 mb-3">
+              <img src="{{ page.baseurl }}assets/img/kcc-placeholder.png" data-src="{{ page.baseurl }}uploads/a-silvey.jpg"
+                class="img-fluid float-right mt-2 ml-2 img__width--200" alt="">
+              <p class="typography__larger-p"><em>&rdquo;I am passionate about becoming a nurse and my experience at KCC has made me confident that I will be a wonderful nurse. My children and I are extremely grateful I was able to receive an award because it means I am able to spend more time studying and quality time. I cannot wait until I am able to give back and help other students like myself, because without people like you that have the ability to help I wouldn’t be standing where I am today.&rdquo;</em> - Ashley S.</p>
+            </div>
+            <div class="col-12 mb-3">
+              <img src="{{ page.baseurl }}assets/img/kcc-placeholder.png" data-src="{{ page.baseurl }}uploads/c-vickery.jpg"
+                class="mg-fluid float-left mt-2 mr-3 img__width--150" alt="">
+              <p class="typography__larger-p"><em>&ldquo;Because of generous donors like you, I can advance in a
+                business career to become the best I can be!&rdquo;</em> – Callie V.</p>
+            </div>
+             <div class="col-12 mb-3">
+               <img src="{{ page.baseurl }}assets/img/kcc-placeholder.png"
+                 data-src="{{ page.baseurl }}uploads/e-alvarado.jpg"
+                 class="img-fluid float-right mt-2 ml-2 img__width--150"
+                 alt="">
+               <p class="typography__larger-p"><em>&ldquo;I’m working on getting into the Registered Nursing program here at KCC
+                 and fulfilling my career goals. I am beyond excited that I have the support to continue to move forward
+                 without the worry of any financial burdens that may have come along. We all know how much average
+                 school books are, especially nursing books that are vital in our learning experience and it all adds
+                 up, and on top of registration fees, the multiple classes being added for the program, the tools, etc.
+                 It all adds up. Which is why I am so beyond thankful for this support because it helps so much. I'm so
+                 blessed to even be able to get this far in my education, coming from parents who weren't able to get
+                 this far, continuing on is very important to me. And having the relief that I can still keep my
+                 education and career goals an option throws a lot of weight off my shoulders and allows me to continue
+                 on, getting closer and closer to my dream job. So I just want to say thank you to The KCC Foundation
+                 for your commitment to my education and helping me reach my goals, it means so much to me.&rdquo;</em>
+                 - Emilee A.
+               </p>
+             </div>
+             <div class="col-12 mb-3">
+               <img src="{{ page.baseurl }}assets/img/kcc-placeholder.png"
+                 data-src="{{ page.baseurl }}uploads/c-duran.jpg"
+                 class="mg-fluid float-left mt-2 mr-3 img__width--150" alt="">
+               <p class="typography__larger-p"><em>&ldquo;Since I was a little girl, I always dreamed of going to
+                 college, graduating, wearing a cap and gown, and receiving a diploma. The financial assistance you provide will
+                 be a great help in paying for my educational expenses. It will also allow me to concentrate more of my
+                 time studying and working towards my life-long goal. Again, I am deeply appreciative of your support
+                 and commitment to helping me get one step closer to future success. Thank you so much! I promise to
+                 work hard and not give up on my goals and dreams!&rdquo;</em> - Cruz D.</p>
+             </div>
+             <div class="col-12 mb-3">
+               <img src="{{ page.baseurl }}assets/img/kcc-placeholder.png"
+                 data-src="{{ page.baseurl }}uploads/v-martinez.jpg"
+                 class="img-fluid float-right mt-2 ml-2 img__width--150" alt="">
+               <p class="typography__larger-p"><em>&ldquo;The money aspect of a college education has always been a factor
+                 contributing to when and where I could go to further my education, but that has not stopped me. As an
+                 immigrant, things are not always at one's leisure, after high school I did not know what I was going to
+                 do because I knew financial aids like FAFSA were not a possibility and I did not believe at the time
+                 that there was assistance for immigrants. I was fortunate enough to be accepted for the Deferred Action
+                 for childhood Arrivals, also known as DACA, which I am grateful for and it did open doors of
+                 possibilities that I did not have before.
+                 Such opportunities as being able to have a job and attending college. DACA has allowed me to have a job
+                 that then allowed me to finance my first associate degree at Kankakee Community College. By me being
+                 able to work I have had the opportunity to pay for school on my own. I am the first in my family to
+                 attend college, have any degree and have so far financed that through my own labor in hopes of one day
+                 having a career in the law field as a paralegal or attorney. My financial need for attending college is
+                 urgent and full of opportunity for my future.&rdquo;</em> - Victor M.</p>
+             </div>
+             <div class="col-12 mb-3">
+               <img src="{{ page.baseurl }}assets/img/kcc-placeholder.png"
+                 data-src="{{ page.baseurl }}uploads/l-mason.jpg"
+                 class="img-fluid float-left mt-2 mr-3 img__width--150" alt="">
+               <p class="typography__larger-p"><em>&rdquo;I believe my drive is what sets me apart from others. I know
+                 that
+                 nursing is where I belong and I won't stop until I fulfill that purpose. I have three daughters. I want
+                 to show them that they can do anything that their heart desires as long as they put forward the
+                 effort.&rdquo;</em> - Lenore M.</p>
+             </div>
+             <div class="col-12 mb-3">
+               <img src="{{ page.baseurl }}assets/img/kcc-placeholder.png"
+                 data-src="{{ page.baseurl }}uploads/m-bell.jpg"
+                 class="img-fluid float-right mt-2 ml-2 img__width--150" alt="">
+               <p class="typography__larger-p"><em>&rdquo;This opportunity is a once in a life-time thing and I want to
+                 capitalize on this chance to further my education. Show my family that this can be done and show them
+                 that no matter what you set your mind to you can do it.&rdquo;</em> – Michael B. </p>
+             </div>
+             <div class="col-12 mb-3">
+               <img src="{{ page.baseurl }}assets/img/kcc-placeholder.png"
+                 data-src="{{ page.baseurl }}uploads/k-roedl.jpg"
+                 class="img-fluid float-left mt-2 mr-3 img__width--150" alt="">
+               <p class="typography__larger-p"><em>&ldquo;Thank you so much for your generous offering. My education
+                 plans after KCC are to transfer to Illinois
+                 State University to pursue a Bachelors degree in Business Administration. After I achieve this goal, my
+                 career goal is to work my way up in a company and potentially start my own business.&rdquo;</em> -
+                 Kevin R.</p>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="benefits__blue-section">
+    <div class="container">
+      <div class="row my-2 py-2">
+        <div class="col">
+
+          <div class="text-center">
+            <button type="button" class="btn btn-primary buttons__bolder buttons__large mb-2" data-toggle="modal"
+              data-target="#staticBackdrop">Donate now</button>
+          </div>
+
+          <p class="typography__larger-p mt-3">The Kankakee Community College is a 501c3 organization. <strong>All
+              donations are tax deductible.</strong></p>
+
+          <p class="typography__larger-p">Checks can be made payable to the <strong>Kankakee Community College
+              Foundation</strong>. Please send to <strong>KCC Foundation, 100 College Drive, Kankakee, IL 60901</strong>
+          </p>
+
+          <p class="typography__larger-p">For more information contact Kelly Myers, Executive Director of the
+            KCC Foundation: <a href="tel:+18158028260">815-802-8260</a> or <a
+              href="mailto:kmyers@kcc.edu">kmyers@kcc.edu</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container my-3 py-3">
+    <div class="row">
+      <div class="col">
+        <h5 class="typography__larger-h5 text-center mb-0">Spread the Word</h5>
+        <div class="text-center mb-3">
+          <img src="{{ page.baseurl }}uploads/giveday-graphic-with-cavalier.png" class="img-fluid" alt="">
+        </div>
+        <div class="col mb-2 d-flex justify-content-center">
+          <div class="fb-like mr-2 fb__transform" data-href="https://foundation.kcc.edu/events/giveday/" data-width="" data-layout="button"
+            data-show-faces="false" data-action="like" data-size="large" data-share="true">
+          </div>
+          <a class="twitter-share-button buttons__transform" href="https://twitter.com/intent/tweet"
+            data-text="KCC  Give Day - August 27, 2020 #strongtogether" data-url="https://foundation.kcc.edu/events/giveday/"
+            data-size="large">Tweet</a>
+        </div>
+        <p class="typography__larger-p">Help us spread the word and support KCC students and initiatives. On August 27,
+          please use your social media and/or text messages with the hashtag #strongtogether to share information on
+          Give Day.</p>
+
+          <p class="typography__larger-p">Following are a few sample Facebook posts:</p>
+          <ul class="typography__larger-p">
+            <li>It’s finally here! Today is the day to make a gift to Kankakee Community College. Help us show the world that we are #strongtogether</li>
+            <li>Every gift matters! Don’t forget to visit www.kcc.edu/giveday and show the world that we are #strongtogether</li>
+            <li>You don’t have to give a lot, every little bit counts. www.kcc.edu/giveday #strongtogether</li>
+          </ul>
+          
+          
+          
+
+      </div>
+    </div>
+  </section>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col">
 
         <!-- Modal -->
         <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" data-focus="true" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -112,9 +273,14 @@ description: ''
         <p>The Foundation has provided 82 laptops and 40 WiFi devices for students since March. More laptops and WiFi devices are needed for Fall.</p>
 
         <p><span class="typography__larger-p"><em>&ldquo;Our lives begin to end the day we become silent about things that matter.&rdquo;</em></span> - Martin Luther King Jr.</p>
-
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
         <div class="text-center">
-          <img src="{{ page.baseurl }}assets/img/kcc-placeholder.png" data-src="{{ page.baseurl }}uploads/foundation-logo.png" class="img-fluid" alt="">
+          <img src="{{ page.baseurl }}assets/img/kcc-placeholder.png" data-src="{{ page.baseurl }}uploads/foundation-logo.png" class="img-fluid" alt="KCC Foundation logo">
         </div>
 
         </div>

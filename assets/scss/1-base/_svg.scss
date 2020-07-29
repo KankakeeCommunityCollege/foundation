@@ -1,0 +1,40 @@
+
+.svg {
+  height: 200px;
+  max-width: 100%;
+  width: 200px;
+  &__edi {
+    .st0 {
+      fill: $white;
+    }
+
+    .st1 {
+      fill: $primary-blue;
+    }
+
+    .st2 {
+      fill: $svg-blue-light;
+    }
+
+    .st3 {
+      fill: $primary-blue;
+      stroke: $primary-blue;
+      stroke-width: 6.229;
+      stroke-miterlimit: 10;
+    }
+
+    .st4 {
+      fill: none;
+    }
+  }
+  &__eaf,
+  &__tf {
+    	.st0 {
+    	  fill: $primary-blue;
+    	}
+
+    	.st1 {
+    	  fill: none;
+    	}
+  }
+}

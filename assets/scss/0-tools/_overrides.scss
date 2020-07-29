@@ -1,0 +1,18 @@
+
+[id*='twitter-widget-'] {
+  transform: scale(1.25) translate(10px, -10px);
+}
+
+.fb__transform {
+  transform: scale(1.255) translate(-10px, -10px);
+}
+
+@media screen and (min-width: 400px) {
+  [id*='twitter-widget-'] {
+    transform: scale(1.5) translate(20px, -26.5px);
+  }
+
+  .fb__transform {
+    transform: scale(1.55) translate(-20px, -25px);
+  }
+}
