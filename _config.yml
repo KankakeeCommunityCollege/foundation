@@ -47,6 +47,8 @@ sub-nav_links:
     link_href: 'scholarships/century-scholars'
   - link_text: 'Create A Scholarship'
     link_href: scholarships/create-a-scholarship
+  - link_text: "GIVE DAY"
+    link_href: "give/giveday"
   - link_text: "Employee Giving"
     link_href: 'give/employee-giving'
   - link_text: "Planned Giving"
