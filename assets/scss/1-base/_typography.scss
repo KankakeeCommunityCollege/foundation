@@ -508,3 +508,13 @@ p.general-p {
 ul.typography__larger-p li {
   font-size: 1.2rem;
 }
+
+.typography__h5--smaller {
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .typography__h5--smaller {
+    font-size: 1.195rem;
+  }
+}

@@ -49,4 +49,7 @@
 
 .buttons__large {
   font-size: 2rem;
+  &--smaller {
+    font-size: 1.4rem;
+  }
 }
