@@ -1,7 +1,7 @@
 ---
 accordion_page: 'Give'
 card_heading: 'The Power of Giving'
-order: 1
+order: 2
 ---
 
 <h3 class="typography__h3">The Power of You</h3>

@@ -1,7 +1,7 @@
 ---
 accordion_page: 'Give'
 card_heading: 'Donor Bill of Rights'
-order: 5
+order: 6
 ---
 
 <p>Philanthropy is voluntary action for the common good. It is a tradition of giving and sharing that is primary to quality of life. To assure that philanthropy merits the respect and trust of the general public, and that donors and prospective donor can have full confidence in the not-for-profit organizations and causes they are asked to support, we declare that all donors have these rights:</p>

@@ -1,7 +1,7 @@
 ---
 accordion_page: 'Give'
 card_heading: 'Administrative Gift Fees'
-order: 6
+order: 7
 ---
 
 <h3 class="typography__h3">Administrative Gift Fees</h3>
