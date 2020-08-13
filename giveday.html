@@ -3,10 +3,18 @@ layout: default_no-alerts
 baseurl: '../'
 title: GIVE DAY
 description: ''
+video_loading_image: 'assets/img/give-day-video_thumb_for-web.jpg'
+video_loading_image_alt: 'Thumbnail for the KCC GIVE DAY video'
+video_sources:
+  - src: https://cdn.kcc.edu/foundation/kcc-give-day_1080p.mp4
+    type: video/mp4
 ---
 
 	{% include facebook-javascript.html %}
-	{% include twitter-for-websites.html %}
+  {% include twitter-for-websites.html %}
+  
+<div class="clipboard__box px-3 py-2">
+</div>
 
 <main class="position__offset-giveday-nav">
   <section class="benefits__blue-section">
@@ -15,6 +23,9 @@ description: ''
         <div class="row">
           <div class="col">
 
+            {% include video-header.html %}
+
+            {% comment %}
             <div class="position__video-wrapper">
               <iframe width="560" height="315"
                 src="https://www.youtube.com/embed/mbqJUT89-AY?rel=0"
@@ -22,6 +33,7 @@ description: ''
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             </div>
+            {% endcomment %}
 
             <h3 class="typography__large-h4 text-center mb-0 mt-3">GIVE DAY</h3>
             <h4 class="benefits__typography--h5 text-center mb-4">#strongtogether</h4>

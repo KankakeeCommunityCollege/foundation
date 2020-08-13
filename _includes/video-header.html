@@ -1,0 +1,61 @@
+<div class="container-fluid padding__x--none">
+  <div class="row">
+    <div class="col-12 position__video-wrapper">
+      <div id="videoContainer">
+        <div id="video" data-videos="{% for source in page.video_sources %}{{ source.src }}{% unless forloop.last == true %},{% endunless %}{% endfor %}" data-video-types="{% for source in page.video_sources %}{{ source.type }}{% unless forloop.last == true %},{% endunless %}{% endfor %}" data-poster="{{ page.baseurl }}{{ page.video_loading_image }}">
+          <div class="video__img--wrapper">
+            <img src="{{ page.baseurl }}{{ page.video_loading_image }}" class="img__full-width" alt="{{ page.video_loading_image_alt }}">
+            <div class="video__loader--wrapper d-flex justify-content-center align-items-center">
+              <img src="/assets/img/loader.gif" class="video__loader" alt="Loading video...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="d-flex justify-content-end video__options">
+        <a href="https://youtu.be/mbqJUT89-AY" class="btn btn-outline-primary mr-3" target="_blank" rel="noopener noreferrer">View on YouTube</a>
+        <button role="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#videoShareWindow">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18px" height="18px" class="video__svg--share">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z" />
+          </svg>&nbsp;Share
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="videoShareWindow" tabindex="-1" aria-labelledby="videoShareWindowLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="videoShareWindowLabel">Copy video link</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card">
+          <div class="card-body">
+
+            <div class="input-group mb-3">
+              <input type="text" id="link" class="form-control" value="https://youtu.be/mbqJUT89-AY" placeholder="https://youtu.be/mbqJUT89-AY" aria-label="Link to the KCC GIVE DAY video" aria-describedby="copy">
+              <div class="input-group-append">
+                <button class="btn btn-outline-primary" type="button" data-clipboard-target="#link" id="copy">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="video__clipboard" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M19 2h-4.18C14.4.84 13.3 0 12 0c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm7 18H5V4h2v3h10V4h2v16z" /></svg>
+                  &nbsp;Copy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

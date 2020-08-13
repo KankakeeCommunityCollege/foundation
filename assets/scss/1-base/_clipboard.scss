@@ -1,0 +1,34 @@
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.clipboard__box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #666;
+  border-bottom-left-radius: 5px;
+  max-width: 100%;
+  display: none;
+  transition: all ease-in-out;
+  z-index: 9999;
+  &--visible {
+    display: block;
+  }
+  &--out {
+    display: block;
+    animation-name: fade-out;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+  }
+}
+
+.clipboard__p {
+  color: $white;
+  font-size: 1rem;
+}

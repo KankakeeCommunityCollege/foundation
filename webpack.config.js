@@ -24,6 +24,13 @@ const config = {
         use: {
           loader: 'babel-loader'
         }
+      },
+      {
+        test: require.resolve('clipboard'),
+        loader: 'expose-loader',
+        options: {
+          exposes: ['ClipboardJS', 'clipboard'],
+        },
       }
     ]
   },

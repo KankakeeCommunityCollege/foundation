@@ -1,0 +1,150 @@
+video {
+  /* override other styles to make responsive */
+  width: 100% !important;
+  height: auto !important;
+}
+
+.video__play-button--wrapper {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+@keyframes mouse-effect {
+  from {
+    opacity: .9;
+    transform: scale(1);
+  }
+  to {
+    opacity: .995;
+    transform: scale(1.2);
+  }
+}
+
+.video__play-button {
+  background-color: transparent;
+  background-image: url('/assets/img/play.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  border: none;
+  filter: drop-shadow(4px 7px 6px #000000);
+  opacity: .9;
+  pointer-events: all;
+  text-indent: -9999rem;
+  transition: all ease-in-out;
+  height: 75px;
+  width: 75px;
+  &:hover,
+  &:focus {
+    animation-name: mouse-effect;
+    animation-duration: .35s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .video__play-button {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .video__play-button {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+.video__message {
+  background-color: rgba(102, 102, 102, .25);
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
+  border-color: $grey-6;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+
+.video__typography {
+  &--whoops {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .video__typography {
+    &--whoops {
+      font-size: 2.75rem;
+    }
+    &--p {
+      font-size: 1.35rem;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .video__typography {
+    &--whoops {
+      font-size: 3.5rem;
+    }
+
+    &--p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.video__img--wrapper {
+  position: relative;
+}
+
+.video__loader {
+  height: 75px;
+  width: 75px;
+  &--wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+}
+
+.video__svg--share {
+  transform: scale(-1, 1);
+  height: 22px;
+  vertical-align: top;
+  fill: #007bff;
+  width: 22px;
+}
+
+button.btn-outline-primary:hover .video__svg--share {
+  fill: $white;
+}
+
+.video__modal--input {
+  width: 100%;
+}
+
+.video__clipboard {
+  fill: #007bff;
+}
+
+#copy:hover .video__clipboard {
+  fill: $white;
+}
+
+.video__options {
+  margin-top: -.5rem;
+}

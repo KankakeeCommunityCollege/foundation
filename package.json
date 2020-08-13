@@ -65,7 +65,10 @@
     "yargs": "^13.2.4"
   },
   "dependencies": {
+    "clipboard": "^2.0.6",
     "core-js": "^3.1.4",
+    "export-loader": "^1.0.52",
+    "expose-loader": "^1.0.0",
     "regenerator-runtime": "^0.13.2"
   }
 }
