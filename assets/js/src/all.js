@@ -10,9 +10,9 @@ import loadVideo from './loadVideo.js';
 //accordian();
 //bootstrapTabs();
 initSlickSliders();
+loadVideo();
 document.addEventListener('DOMContentLoaded', function() {
   linkToGiveNowModal();
-  loadVideo();
   copyToClipboard();
   makeTabsLinkable();
 });
