@@ -1,5 +1,28 @@
-video {
-  /* override other styles to make responsive */
+//  HTML5 VIDEO PLAYER STYLE RULES FOR GIVE DAY LANDING PAGE VIDEO EMBED
+//
+// ====================================================================== //
+//
+
+// Styling for the video's placeholders: <img> of video's thumb and loading GIF
+// These are placeholder elements that are removed from the JS in `loadVideos.js`
+.video__img--wrapper {
+  position: relative;
+}
+
+.video__loader {
+  height: 75px;
+  width: 75px;
+
+  &--wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+}
+//  Video el, play-button, error-message styling
+.video {
   width: 100% !important;
   height: auto !important;
 }
@@ -11,6 +34,12 @@ video {
   right: 0;
   top: 0;
   pointer-events: none;
+}
+
+@media screen and (max-width: 991px) { // Hide the play button in mobile
+  .video__play-button--wrapper {
+    display: none !important; // Requires !important to override BS4 `.d-flex{ display: flex !important; }`
+  }
 }
 
 @keyframes mouse-effect {
@@ -25,39 +54,27 @@ video {
 }
 
 .video__play-button {
-  background-color: transparent;
-  background-image: url('/assets/img/play.svg');
-  background-repeat: no-repeat;
-  background-size: 100% auto;
   border: none;
   filter: drop-shadow(4px 7px 6px #000000);
+  height: 150px;
   opacity: .9;
   pointer-events: all;
   text-indent: -9999rem;
   transition: all ease-in-out;
-  height: 75px;
-  width: 75px;
+  width: 150px;
+  &--bg {
+    background-color: transparent;
+    background-image: url('/assets/img/play.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
   &:hover,
   &:focus {
-    animation-name: mouse-effect;
+    animation-direction: alternate;
     animation-duration: .35s;
     animation-iteration-count: 2;
-    animation-direction: alternate;
+    animation-name: mouse-effect;
     animation-timing-function: ease-in-out;
-  }
-}
-
-@media screen and (min-width: 576px) {
-  .video__play-button {
-    height: 100px;
-    width: 100px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .video__play-button {
-    height: 150px;
-    width: 150px;
   }
 }
 
@@ -74,7 +91,37 @@ video {
   top: 0;
 }
 
+// Styling for the buttons under the video embed:
+// "View on YouTube" & "Share" buttons, parent elements, & modal
+.video__options {
+  margin-top: -.5rem;
+}
 
+.video__svg--share {
+  transform: scale(-1, 1);
+  height: 22px;
+  vertical-align: top;
+  fill: #007bff;
+  width: 22px;
+}
+
+button.btn-outline-primary:hover .video__svg--share {
+  fill: $white;
+}
+
+.video__modal--input {
+  width: 100%;
+}
+
+.video__clipboard {
+  fill: #007bff;
+}
+
+#copy:hover .video__clipboard {
+  fill: $white;
+}
+
+// Font/typographical styling for the video loading-error message
 .video__typography {
   &--whoops {
     font-size: 2rem;
@@ -103,48 +150,4 @@ video {
       font-size: 1.5rem;
     }
   }
-}
-
-.video__img--wrapper {
-  position: relative;
-}
-
-.video__loader {
-  height: 75px;
-  width: 75px;
-  &--wrapper {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-  }
-}
-
-.video__svg--share {
-  transform: scale(-1, 1);
-  height: 22px;
-  vertical-align: top;
-  fill: #007bff;
-  width: 22px;
-}
-
-button.btn-outline-primary:hover .video__svg--share {
-  fill: $white;
-}
-
-.video__modal--input {
-  width: 100%;
-}
-
-.video__clipboard {
-  fill: #007bff;
-}
-
-#copy:hover .video__clipboard {
-  fill: $white;
-}
-
-.video__options {
-  margin-top: -.5rem;
 }

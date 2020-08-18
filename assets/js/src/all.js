@@ -10,11 +10,11 @@ import loadVideo from './loadVideo.js';
 //accordian();
 //bootstrapTabs();
 initSlickSliders();
-loadVideo();
 document.addEventListener('DOMContentLoaded', function() {
-  linkToGiveNowModal();
-  copyToClipboard();
   makeTabsLinkable();
+  linkToGiveNowModal();
+  loadVideo();
+  copyToClipboard();
+  shopSmileInit();
 });
 
-shopSmileInit();

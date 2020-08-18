@@ -3,6 +3,35 @@ import watchForPlayClicks from './watchForPlayClicks.js';
 const VIDEO_PLACEHOLDER_ID = 'video';
 const VIDEO_CONTAINER_ID = 'videoContainer';
 
+function capturePerformanceTime() {
+  return performance.now();
+}
+
+function addVideoOptionButtons(html) {
+  return html += `
+    <p>Your browser doesn't support HTML5 video. Here is
+     a <a href="https://cdn.kcc.edu/foundation/kcc-give-day_1080p.mp4">link to the video</a> instead.</p>
+  </video>
+  <div class="d-flex flex-column justify-content-center align-items-center video__play-button--wrapper">
+    <button class="video__play-button video__play-button--bg" role="button" id="playButton">Play Video</button>
+  </div>`;
+}
+
+function createSourceElements(html, videoArr, typeArr) {
+  videoArr.forEach((src,i) => {
+    html += `<source src="${src}" type="${typeArr[i]}">`;
+    return html;
+  });
+  return html = addVideoOptionButtons(html);
+}
+
+function createVideoElement(html, videoData) {
+  const videoElClasses = ['width__full', 'video'];
+
+  html = `<video controls poster="${videoData.poster}" id="videoElement" class="${videoElClasses.join(' ')}">`;
+  return html = createSourceElements(html, videoData.videos.split(','), videoData.videoTypes.split(','));
+}
+
 function createVideoFailMessage() {
   let message;
   return message = `
@@ -13,66 +42,45 @@ function createVideoFailMessage() {
   </div>`;
 }
 
-function createSources(html, videoArr, typeArr) {
-  videoArr.forEach((src,i) => {
-    html += `<source src="${src}" type="${typeArr[i]}">`;
-    return html;
-  });
-  return html;
+function createErrorMessage(videoContianer) {
+  videoContainer.parentElement.innerHTML = `${createVideoFailMessage()}`;
+  return console.error('Slow network speeds. Aborting video load');
 }
+
+function createVideo(videoContainer, html) {
+  videoContainer.innerHTML = '';
+  videoContainer.innerHTML = html;
+  watchForPlayClicks();
+}
+
+function buildVideoOnPageLoad(t0, videoContainer, html) {
+  window.addEventListener('load', () => {
+
+    const t1 = capturePerformanceTime();
+    const slowNetworkSpeeds = t1 - t0 > 6000;
+
+    slowNetworkSpeeds ?
+      createErrorMessage(videoContainer)
+      : createVideo(videoContainer, html);
+  });
+}
+
 
 function loadVideo() {
   // Bail-out if the element needed is missing
   if ( ! document.getElementById(VIDEO_PLACEHOLDER_ID) )
     return;
 
-  const t0 = performance.now();
+  const t0 = capturePerformanceTime();
+  let html = createVideoElement(html, document.getElementById(VIDEO_PLACEHOLDER_ID).dataset);
 
-  const videoContainer = document.getElementById(VIDEO_CONTAINER_ID);
-  const videoPlaceholder = document.getElementById(VIDEO_PLACEHOLDER_ID);
-  const videoSourcesArray = videoPlaceholder.dataset.videos.split(',');// `data-*=""` attributes built into the HTML
-  const videoSourceTypesArray = videoPlaceholder.dataset.videoTypes.split(',');// `data-*=""` attributes built into the HTML
-  //const videoPoster = videoPlaceholder.dataset.poster;// `data-*=""` attributes built into the HTML
-
-  let html = `<video controls poster="${videoPlaceholder.dataset.poster}" id="videoElement" class="width__full">`;
-
-  html = createSources(
-    html,
-    videoSourcesArray,
-    videoSourceTypesArray
-  );
-
-  html += `
-    <p>Your browser doesn't support HTML5 video. Here is
-     a <a href="https://cdn.kcc.edu/foundation/kcc-give-day_1080p.mp4">link to the video</a> instead.</p>
-  </video>
-  <div class="d-flex flex-column justify-content-center align-items-center video__play-button--wrapper">
-    <button class="video__play-button" role="button" id="playButton">Play Video</button>
-  </div>`;
-
-  const videoLoadingFailureMessage = createVideoFailMessage();
-
-  window.addEventListener('load', ()=>{
-
-    const t1 = performance.now();
-    if ( t1 - t0 > 6000 ) {
-      videoContainer.parentElement.innerHTML = videoLoadingFailureMessage;
-      return console.error('Slow network speeds. Aborting video load');
-    } else {
-      videoContainer.innerHTML = '';
-      videoContainer.innerHTML = html;
-      watchForPlayClicks();
-    }
-  });
+  buildVideoOnPageLoad(t0, document.getElementById(VIDEO_CONTAINER_ID), html);
 }
 
 export default loadVideo;
 //  USAGE:
-//
-//  //Fire immediately. Do NOT fire inside `DOMContentLoaded` watcher
-//
-//  loadVideo();
+//  import loadVideo from './loadVideo.js';
 //
 //  document.addEventListener('DOMContentLoaded', function() {
-//    // Normal JS that fires after the DOM has loaded...
+//    loadVideo();
 //  });
