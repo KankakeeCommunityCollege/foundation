@@ -1,4 +1,4 @@
-import watchForPlayClicks from './watchForPlayClicks.js';
+import watchForVideoPlay from './watchForVideoPlay.js';
 
 const VIDEO_PLACEHOLDER_ID = 'video';
 const VIDEO_CONTAINER_ID = 'videoContainer';
@@ -50,7 +50,7 @@ function createErrorMessage(videoContianer) {
 function createVideo(videoContainer, html) {
   videoContainer.innerHTML = '';
   videoContainer.innerHTML = html;
-  watchForPlayClicks();
+  watchForVideoPlay();
 }
 
 function buildVideoOnPageLoad(t0, videoContainer, html) {
