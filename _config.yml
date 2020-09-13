@@ -29,8 +29,6 @@ nav_links:
 sub-nav_links:
   - link_text: 'Foundation Board'
     link_href: 'about/foundation-board'
-  - link_text: 'Give Day'
-    link_href: 'events/giveday'
   - link_text: 'Annual Scholarship Event'
     link_href: 'events/annual-scholarship-event'
   - link_text: "President's Circle Dinner"
@@ -47,8 +45,6 @@ sub-nav_links:
     link_href: 'scholarships/century-scholars'
   - link_text: 'Create A Scholarship'
     link_href: scholarships/create-a-scholarship
-  - link_text: "GIVE DAY"
-    link_href: "give/giveday"
   - link_text: "Employee Giving"
     link_href: 'give/employee-giving'
   - link_text: "Planned Giving"

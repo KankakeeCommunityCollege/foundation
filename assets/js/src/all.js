@@ -4,7 +4,6 @@ import bootstrapTabs from './bootstrapTabs.js';
 import initSlickSliders from './sliders.js';
 import makeTabsLinkable from './tabLink.js';
 import shopSmileInit from './shopSmile.js';
-import linkToGiveNowModal from './linkToGiveNowModal.js';
 import loadVideo from './loadVideo.js';
 
 //accordian();
@@ -12,7 +11,6 @@ import loadVideo from './loadVideo.js';
 initSlickSliders();
 document.addEventListener('DOMContentLoaded', function() {
   makeTabsLinkable();
-  linkToGiveNowModal();
   loadVideo();
   copyToClipboard();
   shopSmileInit();

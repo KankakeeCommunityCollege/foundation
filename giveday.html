@@ -37,6 +37,21 @@ video_sources:
             </div>
             {% endcomment %}
 
+            <div class="row">
+              <div class="col">  
+                <div class="p-0 mt-5 mx-3 mx-md-5">
+                  <div class="card mb-4">
+                    <div class="card-body py-5 px-3">
+                      <h3 class="mb-4 typography__h5">The KCC Foundation held its first Give Day on August 27, 2020</h3>
+                      <p>Thanks to all who gave! Your gift will provide technology for students who have none, assist a student who needs emergency assistance, or it will be used for our new Equity, Diversity and Inclusion Center on main campus.</p>
+
+                      <p class="mb-2"><strong>Together we raised $39,565.42!! Thank you!! #strongtogether!</strong></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <h3 class="typography__large-h4 text-center mb-0 mt-3">GIVE DAY</h3>
             <h4 class="benefits__typography--h5 text-center mb-4">#strongtogether</h4>
             
@@ -75,7 +90,7 @@ video_sources:
               <div class="col">
 
                 <div class="text-center">
-                  <button type="button" class="btn btn-primary buttons__bolder buttons__large mb-2" data-toggle="modal" data-target="#donateNowModal">Donate Now</button>
+                  <a href="{{ page.baseurl }}give/form/general/" class="btn btn-primary buttons__bolder buttons__large mb-2">Donate Now</a>
                 </div>
 
                 <p class="typography__larger-p mt-3">The Kankakee Community College Foundation is a 501c3 organization. <strong>All
@@ -190,8 +205,7 @@ video_sources:
         <div class="col">
 
           <div class="text-center">
-            <button type="button" class="btn btn-primary buttons__bolder buttons__large mb-2" data-toggle="modal"
-              data-target="#donateNowModal">Donate Now</button>
+            <a href="{{ page.baseurl }}give/form/general/" class="btn btn-primary buttons__bolder buttons__large mb-2">Donate Now</a>
           </div>
 
           <p class="typography__larger-p mt-3">The Kankakee Community College Foundation is a 501c3 organization. <strong>All
@@ -245,37 +259,6 @@ video_sources:
   <div class="container mt-5">
     <div class="row">
       <div class="col">
-
-        <!-- Modal -->
-        <div class="modal fade" id="donateNowModal" data-backdrop="static" data-keyboard="false" data-focus="true" tabindex="-1" role="dialog" aria-labelledby="donateNowModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="donateNowModalLabel">GIVE DAY 2020 Giving Form</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div id="bbox-root"></div>
-                <script type="text/javascript">
-                  window.bboxInit = function () {
-                    bbox.showForm('111cb5aa-0db2-4a6b-a771-630529e0c827');
-                  };
-                  (function () {
-                    var e = document.createElement('script'); e.async = true;
-
-                    e.src = 'https://bbox.blackbaudhosting.com/webforms/bbox-min.js';
-                    document.getElementsByTagName('head')[0].appendChild(e);
-                  } ());
-                </script>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
         <p><span class="typography__larger-p"><em>&ldquo;Our lives begin to end the day we become silent about things that matter.&rdquo;</em></span> - Martin Luther King Jr.</p>
       </div>
     </div>
