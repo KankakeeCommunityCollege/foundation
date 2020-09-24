@@ -146,3 +146,14 @@ _options: # The CloudCannon options key
     hidden: true
   baseurl: # We don't want users changing these!!
     hidden: true
+
+_explore:
+  groups:
+    - heading: 'Standalone | Pages'
+      collections:
+        - pages
+    - heading: 'Collections | Data'
+      collections:
+        - accordions
+        - alumnis
+        - distinguished_alumnis
