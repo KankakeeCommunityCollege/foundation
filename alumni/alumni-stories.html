@@ -18,7 +18,7 @@ description: ''
               {% if forloop.first == true %}
               <a class="nav-item nav-link jsTabLink active" id="{{ alumni_id }}-tab" data-toggle="tab" href="#{{ alumni_id }}" role="tab" aria-controls="{{ alumni_id }}" aria-selected="true">
                 <span class="alumni__nav">
-                  <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--small float-left" style="background-image: url('{{ page.baseurl }}{{ alumni.portrait }}')">
+                  <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--small float-left" style="background-image: url('{{ page.baseurl }}{{ alumni.portrait_image }}')">
                   </div>
                   <h3 class="latest-news-widget__latest__tease__overline typography__latest-news-widget__rollup-list-h alumni__h3--width">{{ alumni.name }}</h3>
                 </span>
@@ -26,7 +26,7 @@ description: ''
               {% else %}
                 <a class="nav-item nav-link jsTabLink" id="{{ alumni_id }}-tab" data-toggle="tab" href="#{{ alumni_id }}" role="tab" aria-controls="{{ alumni_id }}" aria-selected="false">
                   <span class="alumni__nav">
-                    <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--small float-left" style="background-image: url('{{ page.baseurl }}{{ alumni.portrait }}')">
+                    <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--small float-left" style="background-image: url('{{ page.baseurl }}{{ alumni.portrait_image }}')">
                     </div>
                     <h3 class="latest-news-widget__latest__tease__overline typography__latest-news-widget__rollup-list-h alumni__h3--width">{{ alumni.name }}</h3>
                   </span>
@@ -47,14 +47,14 @@ description: ''
           {% assign alumni_id = alumni.name | replace: ' ', '-' | downcase %}
           {% if forloop.first == true %}
             <div class="tab-pane fade show active" id="{{ alumni_id }}" role="tabpanel" aria-labelledby="{{ alumni_id }}-tab">
-              <img src="{{ alumni.baseurl }}{{ alumni.portrait }}" class="float-left img-fluid alumni__portrait" alt="Portrait of {{ alumni.name }}">
+              <img src="{{ alumni.baseurl }}{{ alumni.portrait_image }}" class="float-left img-fluid alumni__portrait" alt="Portrait of {{ alumni.name }}">
               <h3 class="blue-heading">{{ alumni.name }}</h3>
               <p><strong>{% if alumni.degree and alumni.year %}{{ alumni.degree }}, {{ alumni.year }}{% elsif alumni.degree %}{{ alumni.degree }}{% endif %}</strong></p>
               <p>{{ alumni.content }}</p>
             </div>
           {% else %}
             <div class="tab-pane fade" id="{{ alumni_id }}" role="tabpanel" aria-labelledby="{{ alumni_id }}-tab">
-              <img src="{{ alumni.baseurl }}{{ alumni.portrait }}" class="float-left img-fluid alumni__portrait" alt="Portrait of {{ alumni.name }}">
+              <img src="{{ alumni.baseurl }}{{ alumni.portrait_image }}" class="float-left img-fluid alumni__portrait" alt="Portrait of {{ alumni.name }}">
               <h3 class="blue-heading">{{ alumni.name }}</h3>
               <p><strong>{{ alumni.degree }}, {{ alumni.year }}</strong></p>
               <p>{{ alumni.content }}</p>

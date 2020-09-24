@@ -1,7 +1,7 @@
 ---
 name: Cathy Boicken
 year: 2012
-portrait: uploads/cboicken_DSC_8658.jpg
+portrait_image: uploads/cboicken_DSC_8658.jpg
 ---
 
 A 1993 graduate of KCC, Cathy Boicken has built a very successful career in banking. She has dedicated significant time and talent to our community, and is an involved parent with her teenage daughter.

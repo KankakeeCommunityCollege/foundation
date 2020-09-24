@@ -1,7 +1,7 @@
 ---
 name: Robert de Oliveira
 year: 2016
-portrait: uploads/deoliveira_D51_6078.jpg
+portrait_image: uploads/deoliveira_D51_6078.jpg
 ---
 
 Since graduating from KCC in 1993, Robert de Oliveira has made a major impact on the Hispanic community in and out of the classroom. He was raised in Brazil and moved to the United States to receive a higher education. As a former migrant, de Oliveira understands how challenging it can be to live in a country without knowing the language. He says he couldn’t have succeeded without the help of his friends, He now speaks three languages: Portuguese, Spanish and English. One of de Oliveira’s missions is to help new migrants adjust to living in the U.S.

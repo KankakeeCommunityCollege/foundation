@@ -2,6 +2,6 @@
 name:
 degree:
 year:
-portrait:
+portrait_image:
 quote:
 ---

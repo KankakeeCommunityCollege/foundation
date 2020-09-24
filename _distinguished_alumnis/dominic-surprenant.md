@@ -1,7 +1,7 @@
 ---
 name: Dominic Surprenant
 year: 2011
-portrait: uploads/dsurprenant.jpg
+portrait_image: uploads/dsurprenant.jpg
 ---
 
 After graduating from Bradley-Bourbonnais Community High School in 1973, 17 year-old Dominic Surprenant wanted to pursue higher education, but his family could not afford to send him to college.

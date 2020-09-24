@@ -1,7 +1,7 @@
 ---
 name: Maureen Powell
 year: 2018
-portrait: uploads/maureen-linkedin_crop.jpg
+portrait_image: uploads/maureen-linkedin_crop.jpg
 ---
 
 Maureen Powell has achieved professional success and respect in local business and philanthropic communities. Powell has risen through the ranks at CSL  Behring, a manufacturing facility. She began her career in 1994 at the Kankakee location, and is now the site head of communications, responsible for internal and external communications.
