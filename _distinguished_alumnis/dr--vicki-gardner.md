@@ -1,5 +1,5 @@
 ---
-name: Dr. Vicki Gardner
+name: Dr Vicki Gardner
 year: '2020'
 portrait_image: /uploads/vicki-gardner.jpg
 ---
