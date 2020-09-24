@@ -1,7 +1,7 @@
 ---
 name: Barbara Decker
 year: 2014
-portrait: uploads/barb-decker.jpg
+portrait_image: uploads/barb-decker.jpg
 ---
 
 Barbara Decker started her college career at Kankakee Community College right after high school. KCC is truly a family tradition. Her mother, an administrative assistant in the admissions office, and her uncle, the supervisor of the media department, both worked at Kankakee Community College. She and her two sisters both attended KCC. After completing her Associates in Applied Sciences, she began her nursing career in 1977 as a staff nurse in the Kankakee community. She steadily worked to enhance her capabilities and climbed the corporate ladder.

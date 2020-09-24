@@ -134,8 +134,8 @@ slides:
 
             <li class="latest-news-widget__latest__tease latest-news-widget__latest__tease--default latest-news-widget__latest__tease--has-image">
             <!--  Tease is active   -->
-              <a id="jsTeaseLink{{ forloop.index }}" class="latest-news-widget__latest__tease__link js-hp-latest-tease-link" href="{{ page.baseurl }}alumni/alumni-stories/#{{ alumni.name | replace: ' ', '-' | downcase }}" data-image="{{ alumni.portrait }}" data-image-alt="" data-tease-type="" data-index="{{ forloop.index0 }}" aria-hidden="false">
-                <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--default" style="background-image: url('{{ page.baseurl }}{{ alumni.portrait }}')">
+              <a id="jsTeaseLink{{ forloop.index }}" class="latest-news-widget__latest__tease__link js-hp-latest-tease-link" href="{{ page.baseurl }}alumni/alumni-stories/#{{ alumni.name | replace: ' ', '-' | downcase }}" data-image="{{ alumni.portrait_image }}" data-image-alt="" data-tease-type="" data-index="{{ forloop.index0 }}" aria-hidden="false">
+                <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--default" style="background-image: url('{{ page.baseurl }}{{ alumni.portrait_image }}')">
                 </div>
               <div class="latest-news-widget__latest__tease__hgroup">
                 <h3 class="typography__stories--quote">{{ alumni.quote }}</h3>

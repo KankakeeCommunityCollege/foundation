@@ -1,7 +1,7 @@
 ---
 name: Jenny Dinelli
 year: 2010
-portrait: uploads/jenny-dinelli.jpg
+portrait_image: uploads/jenny-dinelli.jpg
 ---
 
 Ever since Jenny Dinelli was a young girl, she has been a star athlete and loved to play sports. Unfortunately, all of this could have changed for her in middle school. During a basketball game, Jenny hit her head on the court and experienced a brain hemorrhage. She was flown by helicopter to Loyola Medical Center in Chicago.

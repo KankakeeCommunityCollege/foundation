@@ -1,7 +1,7 @@
 ---
 name: Steven DePasquale
 year: 2013
-portrait: uploads/sdepasquale-2013.jpg
+portrait_image: uploads/sdepasquale-2013.jpg
 ---
 
 Steve DePasquale was born and raised in Bourbonnais. As a student, he worked full-time at night while attending KCC. He completed an associate degree in 1989 at 27 years old and was the first in his family to graduate from college.
