@@ -15,6 +15,12 @@ $secondaryfont-weight-boldish: 500;
 $secondaryfont-weight-bold: 700;
 $secondaryfont-weight-black: 900;
 
+$font-family-headings: $secondaryfont-stack;
+
+$font-weight-boldish: 500;
+$font-weight-bolder: 600;
+$font-weight-bold: 700;
+
 $powerfont-family: 'Libre Franklin', sans-serif;
 $powerfont-weight-light: 300;
 $powerfont-weight-bold: 700;
@@ -51,6 +57,7 @@ $grey-6: #58585b;
 $grey-7: #868686;
 $white: #fff;
 
+$color-grey-heading: $grey-1; // Grey headings used within page content
 
 $landing-bg: $grey-2;        // Landing page's background-color
 $default-bg: $white;        // Background color for non-landing pages
@@ -69,16 +76,3 @@ $smile-orange: #ff9901;
 $btn-primary-bg: #0051a7;
 
 $svg-blue-light: #5C7DA1;  // For svg styling in _svg.scss
-
-html,
-body {
-  overflow-x: hidden;
-}
-
-body.landing {
-  background-color: $landing-bg;
-}
-
-body.page {
-  background-color: $default-bg;
-}
