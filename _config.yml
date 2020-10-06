@@ -110,6 +110,8 @@ markdown: kramdown
 include:
   - "_accordions/"
   - "_tabs/"
+  - "_distinguished-alumnis/"
+  - "_alumnis"
 
 exclude:
   - "gulpfile.js"
