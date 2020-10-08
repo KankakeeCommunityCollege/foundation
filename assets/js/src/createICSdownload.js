@@ -8,9 +8,12 @@ const description = `The KCC scholarship application opens today, Nov. 1, and wi
 
 const PARENT_CONTAINER_ID = 'Reminder';
 const paragraphWithDownloadButton =
-`<p>
-  Want to be reminded when the scholarship application is available? <br><button class="btn btn-outline-primary" role="button" id="Download">Download this iCal file</button> and add it to your calendar app to to get a reminder on Nov.&nbsp;1, ${year}.
-</p>`; // Markup for a BS4 button el
+`<p class="mb-2">
+  <strong><em>Want to be reminded when the scholarship application is available?</em></strong>
+</p>
+<p>
+  <button class="btn btn-outline-primary" role="button" id="Download">Download this iCal file</button> and add it to your calendar app to get a reminder on Nov.&nbsp;1, ${year}.
+</p>`;
 
 function createICSdownload() {
   if ( ! document.getElementById(PARENT_CONTAINER_ID) )
