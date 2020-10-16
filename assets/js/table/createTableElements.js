@@ -29,7 +29,7 @@ function setDefaultNumberOfItemsToDisplay() {
 
 function createTableElement(parent) {
   const table = document.createElement('table');
-  table.classList.add('display', 'table', 'table-striped', 'table-hover');
+  table.classList.add('display', 'table', 'table-striped', 'table-hover', 'tables--compact');
   table.setAttribute('width', '100%');
   table.setAttribute('id', 'responsiveTable');
   table.setAttribute('data-page-length', setDefaultNumberOfItemsToDisplay());
