@@ -25,3 +25,38 @@
 .img__uwl {
   width: 400px;
 }
+
+.img__yt-thumb {
+  width: 220px;
+  height: 165px;
+  &--wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  &--wrapper::before {
+    background-image: url('/uploads/youtube_default.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 85px 58.95px;
+    bottom: 0;
+    content: ' ';
+    display: flex;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    opacity: .8;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: .35s;
+    position: absolute;
+    top: 0;
+    width: 220px;
+  }
+}
+
+.img__yt-thumb--link:hover .img__yt-thumb--wrapper::before,
+.img__yt-thumb--link:focus .img__yt-thumb--wrapper::before {
+  transform: scale(1.25);
+  opacity: 1;
+}
