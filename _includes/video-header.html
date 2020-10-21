@@ -1,10 +1,15 @@
+{% assign youtube_id = page.video_youtube_share | remove: 'https://youtu.be/' %}
+
+<div class="clipboard__box px-3 py-2">
+</div>
+
 <div class="container-fluid padding__x--none">
   <div class="row">
     <div class="col-12 position__video-wrapper">
       <div id="videoContainer">
-        <div id="video" data-videos="{% for source in page.video_sources %}{{ source.src }}{% unless forloop.last == true %},{% endunless %}{% endfor %}" data-video-types="{% for source in page.video_sources %}{{ source.type }}{% unless forloop.last == true %},{% endunless %}{% endfor %}" data-poster="{{ page.baseurl }}{{ page.video_loading_image }}">
+        <div id="video" data-videos="{% for source in page.video_sources %}{{ source.src }}{% unless forloop.last == true %},{% endunless %}{% endfor %}" data-video-types="{% for source in page.video_sources %}{{ source.type }}{% unless forloop.last == true %},{% endunless %}{% endfor %}" data-poster="{{ page.baseurl }}{{ page.video_loading_image }}" data-youtube="https://youtu.be/{{ youtube_id }}">
           <div class="video__img--wrapper">
-            <img src="{{ page.baseurl }}{{ page.video_loading_image }}" class="img__full-width" alt="{{ page.video_loading_image_alt }}">
+            <img src="{{ page.baseurl }}{{ page.video_loading_image }}" class="img__full-width" alt="Thumbnail picture of the {{ page.video_title }} video">
             <div class="video__loader--wrapper d-flex justify-content-center align-items-center">
               <img src="/assets/img/loader.gif" class="video__loader" alt="Loading video...">
             </div>
@@ -14,7 +19,7 @@
     </div>
     <div class="col-12">
       <div class="d-flex justify-content-end video__options">
-        <a href="https://youtu.be/mbqJUT89-AY" class="btn btn-outline-primary mr-3" target="_blank" rel="noopener noreferrer">View on YouTube</a>
+        <a href="https://youtu.be/{{ youtube_id }}" class="btn btn-outline-primary mr-3" target="_blank" rel="noopener noreferrer">View on YouTube</a>
         <button role="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#videoShareWindow">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18px" height="18px" class="video__svg--share">
             <path d="M0 0h24v24H0z" fill="none" />
@@ -41,7 +46,7 @@
           <div class="card-body">
 
             <div class="input-group mb-3">
-              <input type="text" id="link" class="form-control" value="https://youtu.be/mbqJUT89-AY" placeholder="https://youtu.be/mbqJUT89-AY" aria-label="Link to the KCC GIVE DAY video" aria-describedby="copy">
+              <input type="text" id="link" class="form-control" value="https://youtu.be/{{ youtube_id }}" placeholder="https://youtu.be/{{ youtube_id }}" aria-label="Link to the {{ page.video_title }} video" aria-describedby="copy">
               <div class="input-group-append">
                 <button class="btn btn-outline-primary" type="button" data-clipboard-target="#link" id="copy">
                   <svg xmlns="http://www.w3.org/2000/svg" class="video__clipboard" viewBox="0 0 24 24" fill="black" width="18px" height="18px">
