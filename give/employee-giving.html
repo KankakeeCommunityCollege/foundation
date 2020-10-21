@@ -79,6 +79,8 @@ video_sources:
       </div>
     </div>
     <div class="row">
+
+      <!-- KCC Employee Giving card -->
       <div class="col-12 col-lg-6 d-flex mb-5">
         <div class="card">
           <div class="card-body d-flex flex-column justify-content-between">
@@ -88,15 +90,16 @@ video_sources:
                 <img src="{{ page.baseurl }}assets/img/kcc-placeholder.png" data-src="{{ page.baseurl }}uploads/foundation-logo_sm-padding.png" class="img-fluid img__fl" alt="">
               </div>
               <div class="text-center">
-                <a href="{{ page.baseurl }}give/form/employee-giving/" class="btn btn-primary buttons__bolder buttons__large">Give Now</a>
+                <button role="button" class="btn btn-primary buttons__bolder buttons__large" data-toggle="modal" data-target="#employeeGivingModal">Give Now</button>
               </div>
             </div>
             <div class="editable">
-              <h4 class="typography__h5 mb-5">Choose a Purpose</h4>
+              <h4 class="typography__h5 mb-3">Choose a Purpose</h4>
               <p><strong>Emerging Needs</strong> - Goes to the unrestricted fund and is used where the need is greatest.</p>
               <p><strong>College Improvement</strong> - Funds capital expenses. Examples include technology, signage, buildings, etc.</p>
-              <p><strong>Compassion Fund</strong> - Provides assistance to students at risk of dropping out/failing to complete because of unexpected financial emergencies.</p>
+              <p><strong>Cavalier Fund</strong> - Supports KCC students experiencing an extreme financial hardship that threatens to halt their education.</p>
               <p><strong>Educate, Empower and Endeavor</strong> - Provides assistance to second-year students who are nearing completion but face barriers that hinder their graduation. This program requires faculty mentoring to receive assistance.</p>
+              <p><strong>Compassion Fund</strong> - Provides assistance to students at risk of dropping out/failing to complete because of unexpected financial emergencies.</p>
               <p><strong>Food Pantry</strong> - Provides critical resources for the KCC Food Pantry. Your gift provides nourishment so that our students can perform well in class.</p>
               <p><strong>High School Equivalency Test</strong> - Assists those unable to afford the cost of
               the $120 test.</p>
@@ -109,6 +112,51 @@ video_sources:
           </div>
         </div>
       </div>
+      <!--End card -->
+
+      <!-- Modal for instructions on how to give for the Employee Giving campaign -->
+      <div class="modal fade" id="employeeGivingModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="employeeGivingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title typography__h5" id="employeeGivingModalLabel">KCC Employee Giving Campaign</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-4">
+                <h6 class="typography__h3">Give online</h6>
+                <p class="mb-2">You can give a one-time gift on the KCC Foundation website using the <span style="white-space: nowrap;">online&nbsp;<a href="{{ page.baseurl }}give/form/employee-giving/" class="btn btn-primary">Employee Giving Form</a></span></p>
+                <p class="mb-4">The form is always available at <a href="https://foundation.kcc.edu/give/form/employee-giving/">https://foundation.kcc.edu/give/form/employee-giving/</a>.</p>
+                <h6 class="typography__h3">Instructions for the KCC Employee Giving Campaign</h6>
+                <p>To setup a recurring gift, pledge, or one-time gift using the KCC Employee Giving pledge form please read the following instructions carefully.</p>
+                <ol>
+                  <li>Download the <a class="btn btn-outline-primary" href="{{ page.baseurl }}uploads/pdf/2021-employee-giving-form_fillable_10-15-20.pdf" target="_blank" download="2021-employee-giving-form_fillable_10-15-20.pdf">KCC Employee Giving pledge form</a></li>
+                  <li>Save the PDF to your computer&mdash;<strong>do not edit the PDF in your internet browser</strong>&mdash;changes will not be saved!</li>
+                  <li>Using your “<em>File Explorer</em>” (Windows) or “<em>Finder</em>” (Mac), find the downloaded file you just saved.  Unless you renamed it, the downloaded file should be named <code>2021-employee-giving-form_fillable_10-15-20.pdf</code></li>
+                  <li>Using Adobe Acrobat, or another PDF editing software, <strong>complete the pledge form</strong>.</li>
+                  <li><strong>Save your changes!</strong></li>
+                  <li>Email Dawn Graveline your completed pledge form at <a href="mailto:dgraveline@kcc.edu">dgraveline@kcc.edu</a> and <strong>attach the saved KCC Employee Giving pledge form</strong>.</li>
+                </ol>
+                <p class="mb-2"><strong>Don't have PDF editing software?</strong></p>
+                <p><strong><em>Always download software from the vendor's official&nbsp;website:</em></strong> <br><a href="https://get.adobe.com/reader/" target="_blank" rel="noopener noreferrer">Download Adobe Acrobat Reader DC</a> for free.</p>
+              </div>
+              <div class="text-center">
+                <a href="{{ page.baseurl }}uploads/pdf/2021-employee-giving-form_thumb.jpg" target="_blank" download="2021-employee-giving-form_fillable_10-15-20.pdf">
+                  <img src="{{ page.baseurl }}assets/img/kcc-placeholder.png" data-src="{{ page.baseurl }}uploads/2021-employee-giving-form_thumb.jpg" class="img-fluid borders__fine--light" alt="Thumbnail image of the KCC United Way  pledge form">
+                </a>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End modal code -->
+
+      <!-- United Way card -->
       <div class="col-12 col-lg-6 mb-5">
         <div class="card">
           <div class="card-body">
@@ -118,7 +166,7 @@ video_sources:
                 <img src="{{ page.baseurl }}assets/img/kcc-placeholder.png" data-src="{{ page.baseurl }}uploads/uwkic-logo-header_x-space.png" class="img-fluid text-center img__uwl" alt="">
               </div>
               <div class="text-center mb-4">
-                <button role="button" class="btn btn-primary buttons__bolder buttons__large" data-toggle="modal" data-target="#employeeGivingModal">Give Now</button>
+                <button role="button" class="btn btn-primary buttons__bolder buttons__large" data-toggle="modal" data-target="#uwEmployeeGivingModal">Give Now</button>
               </div>
 
               <p>KCC’s 2020 United Way campaign helps our neighbors, friends, and families live their best possible lives. With your support, United Way of Kankakee and Iroquois Counties strengthens our entire community and positions us for a better tomorrow. When you support United Way of Kankakee and Iroquois Counties, you join the fight for:The health of our community.</p>
@@ -132,24 +180,14 @@ video_sources:
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6 mb-4">
-        <div class="editable">
-          <h4 class="typography__h5">2020 United Way Resources and Info</h4>
-          <ul>
-            <li><a href="{{ page.baseurl }}uploads/pdf/2020-impact-report_final.pdf" target="_blank" rel="noopener noreferrer">Impact Report</a></li>
-            <li><a href="{{ page.baseurl }}uploads/pdf/2020-uw-workplace-toolkit-brochure_letter-sized.pdf" target="_blank" rel="noopener noreferrer">Workplace Toolkit</a></li>
-            <li><a href="{{ page.baseurl }}uploads/pdf/united-way-community-impact-strategy-map_draft-Aug2020.pdf" target="_blank" rel="noopener noreferrer"">Community Strategy</a></li>
-            <li><a href="{{ page.baseurl }}uploads/pdf/2020-uw-health_letter-sized.pdf" target="_blank" rel="noopener noreferrer">Health</a></li>
-            <li><a href="{{ page.baseurl }}uploads/pdf/2020-uw-education_letter-sized.pdf" target="_blank" rel="noopener noreferrer">Education</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- Modal for instructions on how to give for the Employee Giving campaign -->
-      <div class="modal fade" id="employeeGivingModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="employeeGivingModalLabel" aria-hidden="true">
+      <!--End card -->
+
+      <!-- Modal for instructions on how to give for the United Way Giving campaign -->
+      <div class="modal fade" id="uwEmployeeGivingModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="uwEmployeeGivingModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title typography__h5" id="employeeGivingModalLabel">Instructions for the United Way KCC pledge form</h5>
+              <h5 class="modal-title typography__h5" id="uwEmployeeGivingModalLabel">Instructions for the United Way KCC pledge form</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -158,22 +196,20 @@ video_sources:
               <div class="editable mb-4">
                 <p><strong>Please read the following instructions carefully.</strong></p>
                 <ol>
-                  <li>Save the PDF <strong>to your computer</strong>&mdash;<strong>Do not edit the PDF in your internet browser&mdash;<em>changes will not be saved!</em></strong>
-                </li>
-                  <li><strong>Using your "File Explorer" (Windows) or "Finder" (Mac)</strong>, find the downloaded file named <code>2021-united-way-kcc-pledge-form_fillable_rev-2_10-14-20.pdf</code>.</li>
-                  <li>Using Adobe Acrobat, or another PDF editing software, <strong>complete the pledge form.</strong></li>
-                  <li>Save your changes!</li>
-                  <li><strong>Send your completed pledge form to Janet Fager</strong> at <a href="mailto:jfager@kcc.edu">jfager@kcc.edu</a>.</li>
+                  <li>Download the <a class="btn btn-outline-primary" href="{{ page.baseurl }}uploads/pdf/2021-employee-giving-form_fillable_10-15-20.pdf" target="_blank" download="2021-united-way-kcc-pledge-form_fillable_rev-2_10-14-20.pdf">KCC United Way pledge form</a></li>
+                  <li>Save the PDF to your computer&mdash;<strong>do not edit the PDF in your internet browser</strong>&mdash;changes will not be saved!</li>
+                  <li>Using your “<em>File Explorer</em>” (Windows) or “<em>Finder</em>” (Mac), find the downloaded file you just saved.  Unless you renamed it, the downloaded file should be named <code>2021-united-way-kcc-pledge-form_fillable_rev-2_10-14-20.pdf</code></li>
+                  <li>Using Adobe Acrobat, or another PDF editing software, <strong>complete the pledge form</strong>.</li>
+                  <li><strong>Save your changes!</strong></li>
+                  <li>Email Janet Fager your completed pledge form at <a href="mailto:jfager@kcc.edu">jfager@kcc.edu</a> and <strong>attach the saved KCC United Way pledge form</strong>.</li>
                 </ol>
+
                 <p><strong>Don't have PDF editing software?</strong></h6>
                 <p><strong><em>Always download software from the vendor's official&nbsp;website:</em></strong> <br><a href="https://get.adobe.com/reader/" target="_blank" rel="noopener noreferrer">Download Adobe Acrobat Reader DC</a> for free.</p>
               </div>
-              <div class="editable text-center">
-                <p><a class="btn btn-outline-primary" href="{{ page.baseurl }}uploads/pdf/2021-united-way-kcc-pledge-form_fillable_rev-2_10-14-20.pdf" target="_blank" rel="noopener noreferrer" download="{{ page.baseurl }}uploads/pdf/2021-united-way-kcc-pledge-form_fillable_rev-2_10-14-20.pdf">Download KCC United Way pledge form</a></p>
-              </div>
               <div class="text-center">
-                <a href="{{ page.baseurl }}uploads/pdf/2021-united-way-kcc-pledge-form_fillable_rev-2_10-14-20.pdf" target="_blank" rel="noopener noreferrer" download="{{ page.baseurl }}uploads/pdf/2021-united-way-kcc-pledge-form_fillable_rev-2_10-14-20.pdf">
-                  <img src="{{ page.baseurl }}assets/img/kcc-placeholder.png" data-src="{{ page.baseurl }}uploads/2021-united-way-kcc-pledge-form_thumbnail.jpg" class="img-fluid" alt="Thumbnail image of the KCC Employee Giving Pledge Form">
+                <a href="{{ page.baseurl }}uploads/pdf/2021-united-way-kcc-pledge-form_fillable_rev-2_10-14-20.pdf" target="_blank" rel="noopener noreferrer" download="2021-united-way-kcc-pledge-form_fillable_rev-2_10-14-20.pdf">
+                  <img src="{{ page.baseurl }}assets/img/kcc-placeholder.png" data-src="{{ page.baseurl }}uploads/2021-united-way-kcc-pledge-form_thumbnail.jpg" class="img-fluid" alt="Thumbnail image of the KCC Employee Giving pledge form">
                 </a>
               </div>
             </div>
@@ -183,9 +219,21 @@ video_sources:
           </div>
         </div>
       </div>
-      <!-- End modal code -->
+      <!-- End UW modal code -->
 
-      <div class="col-12 col-md-6 mb-4 text-center">
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <div class="editable">
+          <h4 class="typography__h5">2020-2021 United Way Resources and&nbsp;Info</h4>
+          <ul>
+            <li><a href="{{ page.baseurl }}uploads/pdf/2020-impact-report_final.pdf" target="_blank" rel="noopener noreferrer">Impact Report</a></li>
+            <li><a href="{{ page.baseurl }}uploads/pdf/2020-uw-workplace-toolkit-brochure_letter-sized.pdf" target="_blank" rel="noopener noreferrer">Workplace Toolkit</a></li>
+            <li><a href="{{ page.baseurl }}uploads/pdf/united-way-community-impact-strategy-map_draft-Aug2020.pdf" target="_blank" rel="noopener noreferrer"">Community Strategy</a></li>
+            <li><a href="{{ page.baseurl }}uploads/pdf/2020-uw-health_letter-sized.pdf" target="_blank" rel="noopener noreferrer">Health</a></li>
+            <li><a href="{{ page.baseurl }}uploads/pdf/2020-uw-education_letter-sized.pdf" target="_blank" rel="noopener noreferrer">Education</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">
         <a href="https://youtu.be/GSIYiitLROk" class="img__yt-thumb--link" target="_blank" rel="noopener noreferrer">
           <div class="img__yt-thumb--wrapper">
             <img src="{{ page.baseurl }}assets/img/kcc-placeholder.png" data-src="{{ page.baseurl }}uploads/uw-youtube-thumb.jpg" class="img-fluid img__yt-thumb" alt="Thumbnail image for the YouTube video">
