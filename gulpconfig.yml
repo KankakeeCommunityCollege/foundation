@@ -80,3 +80,4 @@ watch: # 'Watch' for changes in all the following:
     - "give/**"
     - "give/**/**"
     - "giveday.html"
+    - "_contacts/*"
