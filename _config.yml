@@ -66,6 +66,8 @@ collections:
     _hide_content: true
   accordions:
     output: false
+  contacts:
+    output: false
 defaults:
 - scope:
     path: ''
@@ -111,7 +113,8 @@ include:
   - "_accordions/"
   - "_tabs/"
   - "_distinguished-alumnis/"
-  - "_alumnis"
+  - "_alumnis/"
+  - "_contacts/"
 
 exclude:
   - "gulpfile.js"
