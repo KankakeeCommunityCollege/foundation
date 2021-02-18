@@ -36,7 +36,7 @@ sass:
 
 # Gulp task to create stylesheet for custom CloudCannon editor styles (CMS customizations)
 cmsScss:
-  outputStyle: { outputStyle: 'expanded' }
+  outputStyle: {outputStyle: 'expanded'} # Pass an object w/ outputStyle: 'expanded' for CloudCanon custom stylesheet
   dest:
     jekyllRoot: "assets/css/"
     buildDir: "_site/assets/css/"
