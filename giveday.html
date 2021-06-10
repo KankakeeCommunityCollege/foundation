@@ -1,19 +1,21 @@
 ---
 layout: default_no-alerts
-baseurl: '../'
+baseurl: ../
 title: GIVE DAY
-description: ''
-video_loading_image: 'assets/img/give-day-video_thumb_for-web.jpg'
-video_title: 'KCC GIVE DAY'
-video_youtube_share: 'https://youtu.be/mbqJUT89-AY'
+description:
+video_loading_image: assets/img/give-day-video_thumb_for-web.jpg
+video_title: KCC GIVE DAY
+video_youtube_share: 'https://youtu.be/TUi1DBpIzUs'
 video_sources:
-  - src: https://cdn.kcc.edu/foundation/kcc-give-day_1080p.mp4
+  - src: https://cdn.kcc.edu/foundation/kcc-giveday_2021.mp4
     type: video/mp4
-  - src: https://cdn.kcc.edu/foundation/kcc-give-day_1080p_v7-a4.ogv
+  - src: https://cdn.kcc.edu/foundation/kcc-giveday_2021_v6-a3.ogv
     type: video/ogg
+  - src: https://cdn.kcc.edu/foundation/kcc-giveday_2021_crf30_a128k.webm
+    type: video/webm
 ---
 
-	{% include facebook-javascript.html %}
+{% include facebook-javascript.html %}
   {% include twitter-for-websites.html %}
 
 <main class="position__offset-giveday-nav">
@@ -22,7 +24,7 @@ video_sources:
       <div class="container">
 
         {% include video-header.html %}
-
+            {% comment %}
             <div class="row">
               <div class="col">  
                 <div class="p-0 mt-5 mx-3 mx-md-5">
@@ -37,28 +39,29 @@ video_sources:
                 </div>
               </div>
             </div>
-
-            <h3 class="typography__large-h4 text-center mb-0 mt-3">GIVE DAY</h3>
+            {% endcomment %}
+            <h3 class="typography__large-h4 text-center mb-0 mt-3">GIVE DAY 2021</h3>
             <h4 class="benefits__typography--h5 text-center mb-4">#strongtogether</h4>
-            
-            <p class="typography__larger-p">The Kankakee Community College (KCC) Foundation presents <strong>GIVE DAY 2020 #strongtogether</strong>. GIVE DAY is the one day that alumni, families, students, staff, faculty, and friends unite to support one common goal: supporting the Kankakee Community College Mission&mdash;<strong><em>enhancing the quality of life through learning.</em></strong></p>
-              
+            <p class="typography__larger-p">The Kankakee Community College (KCC) Foundation presents <strong>GIVE DAY 2021 #strongtogether</strong>. GIVE DAY is the one day that alumni, families, students, staff, faculty, and friends unite to support one common goal: supporting the Kankakee Community College Mission&mdash;<strong><em>enhancing the quality of life through learning.</em></strong></p>
+            {% comment %}
             <p class="typography__larger-p">The KCC Foundation would like to acknowledge that this year’s event is
               happening during a very challenging time in our community. Given the unprecedented changes occurring on
               our campus and the impact of the pandemic on our community, it feels right to unite our college community
               and supporters in a common effort. We also know that our students need our support more than ever.
               <strong>100% of your gift will have a direct and immediate impact on KCC students.</strong></p>
-                
+            {% endcomment %}
+            <p class="typography__larger-p"><strong>100% of your gift will have a direct and immediate impact on KCC students.</strong></p>
             <p class="typography__larger-p">We sincerely hope that you consider helping make KCC’s GIVE DAY
               #strongtogether a success. Any gift, no matter what the size, can change lives. <strong>You can designate
               which
               fund you would like your donation to benefit:</strong></p>
 
             <div class="row mt-5 text-center">
-              <div class="col-12 col-md-4 mb-5">
-                {% include svg/icon-technology-fund.html %}
-                <h5 class="benefits__typography--h6">Technology <br>Fund</h5>
-                <h6 class="typography__h5">Helps current KCC students navigate the impact of remote learning.</h6>
+              <div class="col-12 col-md-4 mb-5 action-cards__col--mortarboard">
+                {% include svg/mortarboard.html %}
+                <h5 class="benefits__typography--h6">Student Success<br>Fund</h5>
+                <h6 class="typography__h5">Helps current KCC students with items they need to do their best, like graphing calculators,
+                  technology, lab equipment or other learning tools and resources.</h6>
               </div>
               <div class="col-12 col-md-4 mb-5">
                 {% include svg/icon-edi-center.html %}
@@ -85,9 +88,9 @@ video_sources:
                 <p class="typography__larger-p">Checks can be made payable to the <strong>Kankakee Community College
                     Foundation</strong>. Please send to: <strong>KCC Foundation, 100 College Drive, Kankakee, IL 60901</strong></p>
                   
-                <p class="typography__larger-p">For more information contact Kelly Myers, Executive Director of the
-                  KCC Foundation: <a href="tel:+18158028260">815-802-8260</a> or <a
-                    href="mailto:kmyers@kcc.edu">kmyers@kcc.edu</a>.
+                <p class="typography__larger-p text-center">For more information contact the
+                  KCC Foundation: <a href="tel:+18158028950">	815-802-8950</a> or <a
+                    href="mailto:kccfoundation@kcc.edu">kccfoundation@kcc.edu</a>.
                   </p>
               </div>
             </div>
