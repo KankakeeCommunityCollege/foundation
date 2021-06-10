@@ -2,17 +2,21 @@
 layout: default_no-alerts
 baseurl: ../
 title: GIVE DAY
-description:
-video_loading_image: assets/img/give-day-video_thumb_for-web.jpg
+description: >-
+  The Kankakee Community College (KCC) Foundation presents GIVE DAY 2021 #strongtogether. 
+  GIVE DAY, August 27 2021, is the one day that alumni, families, students, staff, faculty, and friends 
+  unite to support one common goal: supporting the Kankakee Community College Mission—enhancing the 
+  quality of life through learning.
+video_loading_image: assets/img/giveday-2021_thumb_change-lives.jpg
 video_title: KCC GIVE DAY
 video_youtube_share: 'https://youtu.be/TUi1DBpIzUs'
 video_sources:
-  - src: https://cdn.kcc.edu/foundation/kcc-giveday_2021.mp4
+  - src: https://cdn.kcc.edu/foundation/kcc-giveday_1080p_2021.mp4
     type: video/mp4
-  - src: https://cdn.kcc.edu/foundation/kcc-giveday_2021_v6-a3.ogv
-    type: video/ogg
-  - src: https://cdn.kcc.edu/foundation/kcc-giveday_2021_crf30_a128k.webm
+  - src: https://cdn.kcc.edu/foundation/kcc-giveday_1080p_2021_crf30-a128k.webm
     type: video/webm
+  - src: https://cdn.kcc.edu/foundation/kcc-giveday_1080p_2021_v6-a3.ogv
+    type: video/ogg
 ---
 
 {% include facebook-javascript.html %}
@@ -40,9 +44,9 @@ video_sources:
               </div>
             </div>
             {% endcomment %}
-            <h3 class="typography__large-h4 text-center mb-0 mt-3">GIVE DAY 2021</h3>
+            <h3 class="typography__large-h4 text-center mb-0 mt-3">GIVE DAY {{ 'today' | date: '%Y' }}</h3>
             <h4 class="benefits__typography--h5 text-center mb-4">#strongtogether</h4>
-            <p class="typography__larger-p">The Kankakee Community College (KCC) Foundation presents <strong>GIVE DAY 2021 #strongtogether</strong>. GIVE DAY is the one day that alumni, families, students, staff, faculty, and friends unite to support one common goal: supporting the Kankakee Community College Mission&mdash;<strong><em>enhancing the quality of life through learning.</em></strong></p>
+            <p class="typography__larger-p">The Kankakee Community College (KCC) Foundation presents <strong>GIVE DAY {{ 'today' | date: '%Y' }} #strongtogether</strong>. GIVE DAY is the one day that alumni, families, students, staff, faculty, and friends unite to support one common goal: supporting the Kankakee Community College Mission&mdash;<strong><em>enhancing the quality of life through learning.</em></strong></p>
             {% comment %}
             <p class="typography__larger-p">The KCC Foundation would like to acknowledge that this year’s event is
               happening during a very challenging time in our community. Given the unprecedented changes occurring on
@@ -68,7 +72,7 @@ video_sources:
                 <h5 class="benefits__typography--h6">Equity, Diversity and Inclusion Center Fund</h5>
                 <h6 class="typography__h5">Fosters community-building, provides resources and a safe, inclusive and affirming space for the entire campus community.</h6>
               </div>
-              <div class="col-12 col-md-4 mb-5">
+              <div class="col-12 col-md-4 mb-5 svg__animation--col">
                 {% include svg/icon-emergency-assistance-fund.html %}
                 <h5 class="benefits__typography--h6">Emergency Assistance Fund</h5>
                 <h6 class="typography__h5">Supports KCC students experiencing an extreme financial hardship that threatens to halt their education.</h6>
@@ -81,17 +85,11 @@ video_sources:
                 <div class="text-center">
                   <a href="{{ page.baseurl }}give/form/general/" class="btn btn-primary buttons__bolder buttons__large mb-2">Donate Now</a>
                 </div>
-
                 <p class="typography__larger-p mt-3">The Kankakee Community College Foundation is a 501c3 organization. <strong>All
                     donations are tax deductible.</strong></p>
-
                 <p class="typography__larger-p">Checks can be made payable to the <strong>Kankakee Community College
                     Foundation</strong>. Please send to: <strong>KCC Foundation, 100 College Drive, Kankakee, IL 60901</strong></p>
-                  
-                <p class="typography__larger-p text-center">For more information contact the
-                  KCC Foundation: <a href="tel:+18158028950">	815-802-8950</a> or <a
-                    href="mailto:kccfoundation@kcc.edu">kccfoundation@kcc.edu</a>.
-                  </p>
+                {% include giveday-contact.html %}
               </div>
             </div>
 
@@ -194,17 +192,12 @@ video_sources:
           <div class="text-center">
             <a href="{{ page.baseurl }}give/form/general/" class="btn btn-primary buttons__bolder buttons__large mb-2">Donate Now</a>
           </div>
-
           <p class="typography__larger-p mt-3">The Kankakee Community College Foundation is a 501c3 organization. <strong>All
               donations are tax deductible.</strong></p>
-
           <p class="typography__larger-p">Checks can be made payable to the <strong>Kankakee Community College
               Foundation</strong>. Please send to: <strong>KCC Foundation, 100 College Drive, Kankakee, IL 60901</strong>
           </p>
-
-          <p class="typography__larger-p">For more information contact Kelly Myers, Executive Director of the
-            KCC Foundation: <a href="tel:+18158028260">815-802-8260</a> or <a
-              href="mailto:kmyers@kcc.edu">kmyers@kcc.edu</a>.
+          {% include giveday-contact.html %}
           </p>
         </div>
       </div>
@@ -215,7 +208,7 @@ video_sources:
       <div class="col">
         <h5 class="typography__larger-h5 text-center mb-0">Spread the Word</h5>
         <div class="text-center mb-3">
-          <img src="{{ page.baseurl }}uploads/giveday-graphic-with-cavalier.png" class="img-fluid" alt="">
+          <img src="{{ page.baseurl }}uploads/giveday-banner_no-year_16-9.png" class="img-fluid" alt="Banner with the KCC cavalier mascot and stylized text that reads 'Aug. 27, GIVE DAY #strongtogether'">
         </div>
         <div class="col mb-2 d-flex justify-content-center">
           <div class="fb-like mr-2 fb__transform" data-href="https://foundation.kcc.edu/events/giveday/" data-width="" data-layout="button"
