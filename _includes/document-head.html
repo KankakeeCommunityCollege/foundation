@@ -9,5 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Standard Favicon -->
     <link rel="icon" type="image/x-icon" href="{{page.baseurl}}favicon.ico" />
-
-    {% if page.title == 'Give Day' %}{% include facebook-meta.html %}{% endif %}
+    {%- if page.url == '/giveday/' -%}
+    <!-- preload the Give Day video_loading_image (i.e. video poster image) -->
+    <link rel="preload" as="image" href="{{ page.baseurl }}{{ page.video_loading_image }}">
+    {%- endif -%}
+    {%- if page.slides -%}
+    <!-- preload the first slider image -->
+    <link rel="preload" as="image" href="{{ page.baseurl }}{{ page.slides[0].image }}">
+    {%- endif -%}
+    {% if page.url == '/giveday/' %}{% include facebook-meta.html %}{% endif %}
