@@ -14,12 +14,14 @@
 }
 
 .action-cards__col--volunteer:hover #hand,
-.action-cards__col--volunteer:focus #hand {
+.action-cards__col--volunteer:focus #hand,
+#volunteerSvg.animateMobile #hand {
   animation: wave .5s 2 alternate;
 }
 
 .action-cards__col--volunteer:hover #rightHand,
-.action-cards__col--volunteer:focus #rightHand {
+.action-cards__col--volunteer:focus #rightHand,
+#volunteerSvg.animateMobile #rightHand {
   animation-name: rightWave;
   animation-duration: .5s;
   animation-timing-function: ease-in-out;
@@ -29,7 +31,8 @@
 }
 
 .action-cards__col--volunteer:hover #leftHand,
-.action-cards__col--volunteer:focus #leftHand {
+.action-cards__col--volunteer:focus #leftHand,
+#volunteerSvg.animateMobile #leftHand {
   animation-name: leftWave;
   animation-duration: .5s;
   animation-timing-function: ease-in-out;
@@ -81,7 +84,8 @@
 }
 
 .action-cards__col--give:hover #gift,
-.action-cards__col--give:focus #gift {
+.action-cards__col--give:focus #gift,
+#giveSvg.animateMobile #gift {
   animation: floatGift .5s 2 alternate;
 }
 
@@ -113,12 +117,14 @@
 }
 
 .action-cards__col--scholarships:hover #dollarSign2,
-.action-cards__col--scholarships:focus #dollarSign2 {
+.action-cards__col--scholarships:focus #dollarSign2,
+#scholarshipSvg.animateMobile #dollarSign2 {
   animation: dropIn2 .5s 2 alternate;
 }
 
 .action-cards__col--scholarships:hover #dollarSign1,
-.action-cards__col--scholarships:focus #dollarSign1 {
+.action-cards__col--scholarships:focus #dollarSign1,
+#scholarshipSvg.animateMobile #dollarSign1 {
   animation: dropIn1 .5s 2 alternate;
 }
 
