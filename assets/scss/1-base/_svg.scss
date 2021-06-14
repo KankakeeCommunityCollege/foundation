@@ -63,7 +63,8 @@
 }
 
 .action-cards__col--mortarboard:hover #visibleHat,
-.action-cards__col--mortarboard:focus #visibleHat {
+.action-cards__col--mortarboard:focus #visibleHat,
+#mortarboardSvg.animateMobile #visibleHat {
   animation-name: mainHat;
   animation-duration: .5s;
   animation-timing-function: ease-in-out;
@@ -72,7 +73,8 @@
 }
 
 .action-cards__col--mortarboard:hover #leftHat,
-.action-cards__col--mortarboard:focus #leftHat {
+.action-cards__col--mortarboard:focus #leftHat,
+#mortarboardSvg.animateMobile #leftHat {
   animation-name: leftHat;
   animation-duration: .5s;
   animation-timing-function: ease-in-out;
@@ -81,7 +83,8 @@
 }
 
 .action-cards__col--mortarboard:hover #rightHat,
-.action-cards__col--mortarboard:focus #rightHat {
+.action-cards__col--mortarboard:focus #rightHat,
+#mortarboardSvg.animateMobile #rightHat {
   animation-name: rightHat;
   animation-duration: .6s;
   animation-timing-function: ease-in-out;
@@ -90,7 +93,8 @@
 }
 
 .action-cards__col--mortarboard:hover #rightHat2,
-.action-cards__col--mortarboard:focus #rightHat2 {
+.action-cards__col--mortarboard:focus #rightHat2,
+#mortarboardSvg.animateMobile #rightHat2 {
   animation-name: rightHat2;
   animation-delay: .2s;
   animation-duration: .5s;
@@ -149,7 +153,8 @@
 }
 
 .svg__animation--col:hover #dollar,
-.svg__animation--col:focus #dollar {
+.svg__animation--col:focus #dollar,
+.svg__eaf.animateMobile #dollar {
   animation-name: float;
   animation-duration: .3s;
   animation-timing-function: ease-in-out;

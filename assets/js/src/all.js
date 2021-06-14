@@ -21,6 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
       loadVideo();
     });
   }
+  if (window.location.pathname == '/' || window.location.pathname == '/giveday/') {
+    if (true || window.navigator.maxTouchPoints > 1 && window.matchMedia('(max-width: 767px)')) {  // Animate the SVG icons for mobile users who don't have :focus or :hover
+      import(/* webpackChunkName: 'animateIcons' */ './animateIcons').then(({default: animateIcons}) => {
+        animateIcons();
+      });
+    }
+  }
   // Code in progress for creating a giveday .ics calendar reminder
   // if (window.location.pathname.search(pagesWithICALreminders) == -1)
   //   return;
