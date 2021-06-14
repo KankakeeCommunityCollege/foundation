@@ -12,7 +12,8 @@ const config = {
   },
   output: {
     filename: '[name].[hash].bundle.js',
-    path: path.resolve(__dirname, 'assets', 'js', 'dist')
+    path: path.resolve(__dirname, 'assets', 'js', 'dist'),
+    publicPath: '/assets/js/dist/'
   },
   module: {
     rules: [
