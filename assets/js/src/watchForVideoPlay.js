@@ -18,6 +18,7 @@ function watchForVideoPlay() {
   button.addEventListener('click', (e)=> {
     e.target.matches('#playButton') ? playVideo(video) : null;
   });
+  video.load();
 }
 
 export default watchForVideoPlay;

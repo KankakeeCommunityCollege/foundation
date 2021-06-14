@@ -36,12 +36,6 @@
   pointer-events: none;
 }
 
-@media screen and (max-width: 991px) { // Hide the play button in mobile
-  .video__play-button--wrapper {
-    display: none !important; // Requires !important to override BS4 `.d-flex{ display: flex !important; }`
-  }
-}
-
 @keyframes mouse-effect {
   from {
     opacity: .9;
@@ -56,12 +50,12 @@
 .video__play-button {
   border: none;
   filter: drop-shadow(4px 7px 6px #000000);
-  height: 150px;
+  height: 90px;
   opacity: .9;
   pointer-events: all;
   text-indent: -9999rem;
   transition: all ease-in-out;
-  width: 150px;
+  width: 90px;
   &--bg {
     background-color: transparent;
     background-image: url('/assets/img/play.svg');
@@ -75,6 +69,20 @@
     animation-iteration-count: 2;
     animation-name: mouse-effect;
     animation-timing-function: ease-in-out;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .video__play-button {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .video__play-button {
+    height: 150px;
+    width: 150px;
   }
 }
 
