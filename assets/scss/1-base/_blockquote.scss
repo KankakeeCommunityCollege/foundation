@@ -1,0 +1,30 @@
+.blockquote {
+  border-radius: .5rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.125);
+  padding: 1rem 1.5rem;
+  &__p {
+    font-size: 1.1rem;
+  }
+  &__quote {
+    background-color: #fdf6e4;
+    border-radius: .5rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    &::after {
+      content: ' ';
+      background-color: #fdf6e4;
+      transform: rotate(45deg);
+      position: absolute;
+      left: 4.5rem;
+      display: block;
+      height: 25px;
+      width: 25px;
+    }
+    & p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
