@@ -10,6 +10,26 @@
   width: 300px;
 }
 
+.img__quote {
+  height: 266.672px;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+  width: 150px;
+}
+
+@media screen and (min-width: 576px) {
+  .img__quote {
+    float: right;
+    margin-left: .5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .img__quote {
+    margin-right: .75rem;
+  }
+}
+
 .img__width--200 {
   width: 200px;
 }
