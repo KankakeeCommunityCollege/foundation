@@ -1,4 +1,4 @@
-//import accordian from './accordian.js';
+import '../../scss/main.scss';
 import copyToClipboard from './copyToClipboard.js';
 import initSlickSliders from './sliders.js';
 import makeTabsLinkable from './tabLink.js';
@@ -15,8 +15,10 @@ document.addEventListener('DOMContentLoaded', function() {
   makeTabsLinkable();
   copyToClipboard();
   shopSmileInit();
-  if ( window.location.pathname == '/giveday/' ) {
-    // console.log("GIVE DAY page!");
+  if (
+    window.location.pathname == '/giveday/' ||
+    window.location.pathname == '/give/employee-giving/' // If you need lazyLoading videos on a new page, ad the pathname here
+  ) {
     import(/* webpackChunkName: 'loadVideo' */ './loadVideo').then(({default: loadVideo}) => {
       loadVideo();
     });
