@@ -1,49 +1,54 @@
-import download from './download.js';
+import DownloadButton from './createDownloadButton.js'
+import ICALstring from './createICALstring.js'
+// USAGE:
+//    download('<DOWNLOADABLE>', '<file-name>.<ext>', '<filetype>');
+//  SEE: <http://danml.com/download.html>
+//    // '<DOWNLOADABLE>' is a "String, Blob, or Typed Array of data, or via a dataURL representing the file's data as base64 or url-encoded string."
+//    // '<file-name>.<ext>' is the filename with the extension
+//    // '<filetype> is the MIME content-type'
 
 let year = new Date().getFullYear().toString();
-let openingDateWithNoYearInIcalDateTimeFormat = '1101T000000';
-let dayAfterOpeningDateWithNoYearInIcalDateTimeFormat = '1102T000000';
-const summary = `KCC scholarship application is open`;
-const description = `The KCC scholarship application opens today, Nov. 1, and will end on March 1. Apply one time to be considered for all applications. Apply now at https://foundation.kcc.edu/scholarships!`;
-
-const PARENT_CONTAINER_ID = 'Reminder';
+const PARENT_CONTAINER_ID = 'giveDayReminder'; // Built into HTML DOM
 const paragraphWithDownloadButton =
-`<p class="mb-2">
-  <strong><em>Want to be reminded when the scholarship application is available?</em></strong>
-</p>
-<p>
-  <button class="btn btn-outline-primary" role="button" id="Download">Download this iCal file</button> and add it to your calendar app to get a reminder on Nov.&nbsp;1, ${year}.
-</p>`;
+`<div class="card m-4">
+  <div class="card-body">
+    <p>
+      <strong>Want a calendar reminder for GIVE DAY ${year}?</strong>
+    </p>
+    <p>
+      <button class="btn btn-outline-primary" role="button" id="Download">Download the iCal file</button>
+      and add it to your calendar app to get a reminder on Nov.&nbsp;1, ${year}.
+    </p>
+  </div>
+</div>`;
 
 function createICSdownload() {
   if ( ! document.getElementById(PARENT_CONTAINER_ID) )
     return;
 
-  const PARENT = document.getElementById(PARENT_CONTAINER_ID);
-  const start = year + openingDateWithNoYearInIcalDateTimeFormat;
-  const end = year + dayAfterOpeningDateWithNoYearInIcalDateTimeFormat;
-
-  let ICAL_STRING =
-`BEGIN:VCALENDAR
-VERSION:2.0
-CALSCALE:GREGORIAN
-BEGIN:VEVENT
-SUMMARY:${summary}
-DTSTART;TZID=America/Chicago:${start}
-DTEND;TZID=America/Chicago:${end}
-X-MICROSOFT-CDO-ALLDAYEVENT:TRUE
-DESCRIPTION:${description}
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENT
-END:VCALENDAR`;
-
-  PARENT.innerHTML = paragraphWithDownloadButton;
+  let icalString = new ICALstring(
+    [
+      [
+        `KCC GIVE DAY ${year}`,
+        `Today is KCC's GIVE DAY ${year}! Any amount helps! Give today at https://foundation.kcc.edu/giveday`,
+        true,
+        `06/03/${year}`,
+        `06/04/${year}`
+      ],
+      [
+        `KCC GIVE DAY 2 ${year}`,
+        `Today is KCC's GIVE DAY ${year}! Any amount helps! Give today at https://foundation.kcc.edu/giveday`,
+        false,
+        `06/13/${year} 8:30 AM`,
+        `06/14/${year} 9:45 AM`
+      ]
+    ]
+  )
+  document.getElementById(PARENT_CONTAINER_ID).innerHTML = paragraphWithDownloadButton;
   const btn = document.getElementById('Download');
-  
-  btn.addEventListener('click', () => {
-    download(ICAL_STRING, 'kcc_scholarship_reminder.ics', 'text/calendar');
-  });
+  //console.log(icalString.createIcal());
+  let button = new DownloadButton(btn, icalString.createIcal(), 'kcc_giveday_reminder', 'ics', 'text/calendar');
+  button.init();
 }
 
 export default createICSdownload;
