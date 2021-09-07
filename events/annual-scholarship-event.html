@@ -28,37 +28,52 @@ gallery_category: "event"
         </div>
         <div class="col-12 col-lg-8 float-right">
           <div class="editable">
-            <p>At the annual Scholarship Event, scholarship recipients and those who donated to their scholarship have the opportunity to meet. Recipients share their appreciation with donors and talk more about their plans for the future. Donors are able to see firsthand the impact their donations made and how their contributions transformed students&rsquo; lives.</p>
-            <h4 class="blue-heading">KCC Foundation Scholarship Breakfast</h4>
-            <p>The 2021-22 Scholarship Breakfast will be held Oct. 19 at the KCC Riverfront Campus.</p>
-            <p><strong>This event is only open to KCC Foundation Scholarship recipients and donors.</strong></p>
+            <p>At the annual scholarship event, scholarship recipients and those who donated to their scholarship have the opportunity to meet. Recipients share their appreciation with donors and talk more about their plans for the future. Donors are able to see firsthand the impact their donations made and how their contributions transformed students&rsquo; lives.</p>
+            <h4 class="blue-heading">KCC Foundation Scholarship Event</h4>
+            <p>The 2021-22 scholarship recipient and donor reception will be held Oct. 19 from 4 - 6 p.m. at the KCC Riverfront Campus.</p>
+            <p><strong>This event is only open to KCC Foundation Scholarship recipients and donors.</strong> <br>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registrationModal">
+              Registration form
+            </button></p>
             <p>For more information, please contact the Foundation Office at <a href="tel:18158028252">815-802-8252</a>. More information about KCC Foundation scholarships is at <a href="https://foundation.kcc.edu/scholarships">foundation.kcc.edu/scholarships</a>.</p>
           </div>
         </div>
       </div>
     </div>
-    {% comment %}
-    <div class="row gallery__row">
-      <div class="col-12">
-        <h3 class="blue-heading editable">
-            2018 Scholarship Breakfast
-        </h3>
-      </div>
-      {% assign scholarship_photos = site.photos | where: "category", "scholarship" %}
-      {% for photo in scholarship_photos %}
-      <div class="gallery__wrapper col-12 col-lg-3 col-md-4 col-sm-6">
-        <button type="button" class="gallery__button" data-toggle="modal" data-target="#photoGallery" data-slide="{{ forloop.index0 }}">
-          <div class="gallery__item">
-            <img src="{{ page.baseurl }}assets/img/kcc-placeholder.png" data-src="{{ page.baseurl }}{{ photo.image_path }}" class="img-fluid" alt="{{ photo.image_alt }}" />
-          </div>
-        </button>
-      </div>
-      {% endfor %}
-    </div>
-    {% endcomment %}
   </div>
 </main>
 
+<!-- Modal -->
+<div class="modal fade" id="registrationModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="registrationModalLabel">2021-22 Scholarship Reception Registration Form</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="bbox-root"></div>
+        <script type="text/javascript">
+          window.bboxInit = function () {
+            bbox.showForm('91b77814-b831-4c97-99f9-60e2affc5cde');
+          };
+          (function () {
+            var e = document.createElement('script'); e.async = true;
+            e.src = 'https://bbox.blackbaudhosting.com/webforms/bbox-min.js';
+            document.getElementsByTagName('head')[0].appendChild(e);
+          } ());
+        </script>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% comment %}
 <div class="modal fade" id="photoGallery" tabindex="-1" role="dialog" aria-labelledby="photoGallery" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
@@ -82,3 +97,4 @@ gallery_category: "event"
     </div>
   </div>
 </div>
+{% endcomment %}
