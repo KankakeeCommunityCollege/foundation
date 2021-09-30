@@ -16,7 +16,9 @@ scholarships_available: true
       <div class="col">
         <div class="editable mb-4">
           <h3 class="typography__h3 mb-4">Scholarship Application</h3>
-          <p class="mb-2">The KCC scholarship application is open <strong>every year from Oct. 1 to March 1.</strong></p>
+          <p class="mb-2">
+            The KCC scholarship application is open <strong>every year from Oct. 1 to March 1.</strong>
+          </p>
           {% comment %}
           <div class="card">
             <div class="card-body">
@@ -74,6 +76,12 @@ scholarships_available: true
             </div>
           </div>
           {% endcomment %}
+        </div>
+        <div id="scholarshipsMessage" class="text-center mb-2">
+          <p class="mb-2">Checking if application is open...</p>
+          <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
         </div>
       </div>
     </div>

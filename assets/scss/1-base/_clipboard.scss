@@ -11,7 +11,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #666;
+  background-color: #282828;
   border-bottom-left-radius: 5px;
   max-width: 100%;
   display: none;
@@ -29,6 +29,11 @@
 }
 
 .clipboard__p {
-  color: $white;
+  color: #61ff61;
   font-size: 1rem;
+}
+
+
+.clipboard__span {
+  color: $white;
 }
