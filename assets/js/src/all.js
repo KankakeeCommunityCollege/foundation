@@ -1,33 +1,43 @@
 import '../../scss/main.scss';
-import copyToClipboard from './copyToClipboard.js';
 import initSlickSliders from './sliders.js';
-import makeTabsLinkable from './tabLink.js';
-import shopSmileInit from './shopSmile.js';
+
+const path = window.location.pathname;
 // Code in progress for creating a giveday .ics calendar reminder
 // import createICSdownload from './createICSdownload.js';
 // Code in progress for creating a giveday .ics calendar reminder
 //const pagesWithICALreminders = /\/giveday\/?/
 
-//accordian();
-//bootstrapTabs();
-initSlickSliders();
-document.addEventListener('DOMContentLoaded', function() {
-  makeTabsLinkable();
-  copyToClipboard();
-  shopSmileInit();
+function loadModule(...moduleArgs) {
+  const len = moduleArgs.length;
+  const module = moduleArgs[0];
+  let moduleFn;
+
+  len == 1 ? moduleFn = module : moduleFn == moduleArgs[1];
+  import(`./${module}`).then(({ default: moduleFn }) => {
+    moduleFn();
+  })
+}
+
+window.addEventListener('load', () => {
+  path == '/giveday/' ? loadModule('copyToClipboard') : null;
+  path == '/scholarships/' ?
+    window.setTimeout(() => loadModule('checkScholarshipApp'), 2000)
+  : null;
+});
+
+initSlickSliders(); // Do NOT place this function within a `document.addEventListener('DOMContentLoaded', ()=>{...})` or `window.onload...` function!!
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('shopSmileWrapper') ? loadModule('shopSmile', 'shopSmileInit') : null;
   if (
-    window.location.pathname == '/giveday/' ||
-    window.location.pathname == '/give/employee-giving/' // If you need lazyLoading videos on a new page, ad the pathname here
+    path == '/giveday/' ||
+    path == '/give/employee-giving/' // If you need lazyLoading videos on a new page, ad the pathname here
   ) {
-    import(/* webpackChunkName: 'loadVideo' */ './loadVideo').then(({default: loadVideo}) => {
-      loadVideo();
-    });
+    loadModule('loadVideo')
   }
-  if (window.location.pathname == '/' || window.location.pathname == '/giveday/') {
-    if (true || window.navigator.maxTouchPoints > 1 && window.matchMedia('(max-width: 767px)')) {  // Animate the SVG icons for mobile users who don't have :focus or :hover
-      import(/* webpackChunkName: 'animateIcons' */ './animateIcons').then(({default: animateIcons}) => {
-        animateIcons();
-      });
+  if (path == '/' || path == '/giveday/') {
+    if (window.navigator.maxTouchPoints > 1 || window.matchMedia('(max-width: 767px)')) {  // Animate the SVG icons for mobile users who don't have :focus or :hover
+      loadModule('animateIcons');
     }
   }
   // Code in progress for creating a giveday .ics calendar reminder
@@ -37,4 +47,3 @@ document.addEventListener('DOMContentLoaded', function() {
   // console.log(`Pages with ICAL Downloads!`);
   // createICSdownload();
 });
-

@@ -40,3 +40,8 @@
 table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before {
     top: 4px;
   }
+
+.spinner-border {
+  border-color: rgba(0,0,0,.5);
+  border-right-color: transparent;
+}

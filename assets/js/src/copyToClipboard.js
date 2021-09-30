@@ -11,8 +11,8 @@ function copytoClipboard() {
   const clipboard = new ClipboardJS(CLIPBOARD_BUTTON);
 
   clipboard.on('success', (e)=>{
-    //console.info('Text:', e.text);
-    const text = `<p class="clipboard__p mb-0 text-center">Copied!</p>`;
+    console.info('Text:', e.text);
+    const text = `<p class="clipboard__p mb-0 text-center">Copied <span class="clipboard__span">${e.text}</span> to&nbsp;clipboard!</p>`;
     let message = document.querySelector(CLIPBOARD_MESSAGE)
 
     message.innerHTML = text;
