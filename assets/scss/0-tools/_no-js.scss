@@ -1,0 +1,9 @@
+.no-js__warning {
+  display: none;
+  visibility: hidden;
+}
+
+.no-js .no-js__warning {
+  display: block;
+  visibility: visible;
+}

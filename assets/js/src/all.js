@@ -1,11 +1,17 @@
 import '../../scss/main.scss';
 import initSlickSliders from './sliders.js';
 
+const html = document.querySelector('html.no-js');
 const path = window.location.pathname;
 // Code in progress for creating a giveday .ics calendar reminder
 // import createICSdownload from './createICSdownload.js';
 // Code in progress for creating a giveday .ics calendar reminder
 //const pagesWithICALreminders = /\/giveday\/?/
+
+function removeNoJs(el) { // The `.no-js` class needs to be removed to on the scholarships page
+  el.classList.remove('no-js');
+}
+removeNoJs(html); // Leave `removeNoJs` definition and call at top of file to execute ASAP!
 
 function loadModule(...moduleArgs) {
   const len = moduleArgs.length;
