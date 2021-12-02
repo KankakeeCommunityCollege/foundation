@@ -35,8 +35,6 @@ sub-nav_links:
     link_href: 'events/annual-scholarship-event'
   - link_text: "President's Circle Dinner"
     link_href: 'events/presidents-circle-dinner'
-  - link_text: 'Annual Fundraiser'
-    link_href: 'events/annual-fundraiser'
   - link_text: 'Distinguished Alumni Award'
     link_href: 'alumni/distinguished-alumni-award'
   - link_text: 'Alumni Stories'
