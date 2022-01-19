@@ -1,5 +1,4 @@
 import '../../scss/main.scss';
-import initSlickSliders from './sliders.js';
 
 const html = document.querySelector('html.no-js');
 const path = window.location.pathname;
@@ -28,10 +27,10 @@ window.addEventListener('load', () => {
   path == '/giveday/' ? loadModule('copyToClipboard') : null;
   path == '/scholarships/' ?
     window.setTimeout(() => loadModule('checkScholarshipApp'), 2000)
-  : null;
+    : null;
+  document.getElementById('galleryTrack') ? loadModule('receptionGallery') : null;
 });
 
-initSlickSliders(); // Do NOT place this function within a `document.addEventListener('DOMContentLoaded', ()=>{...})` or `window.onload...` function!!
 
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('shopSmileWrapper') ? loadModule('shopSmile', 'shopSmileInit') : null;

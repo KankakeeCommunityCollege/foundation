@@ -4,21 +4,20 @@ baseurl: ../../
 title: Annual Scholarship Event
 sub-nav_section: events
 description: >-
-  The KCC Foundation hosts the Annual Scholarship Event, President’s Circle
+  The KCC Foundation hosts the Annual Scholarship Event, President's Circle
   Dinner and Annual Fundraiser each year to raise money for scholarships,
   academic programs and capital projects. Learn how you can support these
   events.
 banner: uploads/scholarship-breakfast_2019.png
-banner_alt:
-gallery_title: "Scholarship Breakfast | 2019-20"
-gallery_category: "event"
+banner_alt: 'The POWER of Scholarships - Kankakee Community College'
+gallery_title: Scholarship Reception | 2021
 ---
 
 <main>
   <div class="container mt-2">
     <div class="row">
       <div class="col">
-        {% include photo-gallery.html %}
+        {% include reception-gallery.html %}
       </div>
     </div>
     <div class="row">
@@ -30,12 +29,16 @@ gallery_category: "event"
           <div class="editable">
             <p>At the annual scholarship event, scholarship recipients and those who donated to their scholarship have the opportunity to meet. Recipients share their appreciation with donors and talk more about their plans for the future. Donors are able to see firsthand the impact their donations made and how their contributions transformed students&rsquo; lives.</p>
             <h4 class="blue-heading">KCC Foundation Scholarship Event</h4>
-            <p>The 2021-22 scholarship recipient and donor reception will be held Oct. 19 from 4 - 6 p.m. at the KCC Riverfront Campus.</p>
+            <p>The 2021-22 scholarship recipient and donor reception was held on Oct. 19 at the KCC Riverfront Campus.</p>
             <p><strong>This event is only open to KCC Foundation Scholarship recipients and donors.</strong> <br>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registrationModal">
-              Registration form
-            </button></p>
+              {%- comment -%}
+              <!-- USE THIS BUTTON + MODAL FOR THE BLACK-BAUD REGISTRATION FORM (when registration starts) -->
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registrationModal">
+                Registration form
+              </button>
+              {%- endcomment -%}
+            </p>
             <p>For more information, please contact the Foundation Office at <a href="tel:18158028252">815-802-8252</a>. More information about KCC Foundation scholarships is at <a href="https://foundation.kcc.edu/scholarships">foundation.kcc.edu/scholarships</a>.</p>
           </div>
         </div>
@@ -44,6 +47,7 @@ gallery_category: "event"
   </div>
 </main>
 
+{%- comment -%}
 <!-- Modal -->
 <div class="modal fade" id="registrationModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
@@ -55,6 +59,7 @@ gallery_category: "event"
         </button>
       </div>
       <div class="modal-body">
+        <!-- THIS OLD BLACK-BAUD FORM FROM 2021 has been removed from blackbaud by foundation -->
         <div id="bbox-root"></div>
         <script type="text/javascript">
           window.bboxInit = function () {
@@ -73,28 +78,4 @@ gallery_category: "event"
     </div>
   </div>
 </div>
-{% comment %}
-<div class="modal fade" id="photoGallery" tabindex="-1" role="dialog" aria-labelledby="photoGallery" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body text-center">
-        <div class="gallery__slides">
-          <div id="gallerySlider">
-            {% for photo in scholarship_photos %}
-            <img src="{{ page.baseurl }}{{ photo.image_path }}" class="img-fluid" alt="{{ photo.image_alt }}" />
-            {% endfor %}
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-{% endcomment %}
+{%- endcomment -%}
