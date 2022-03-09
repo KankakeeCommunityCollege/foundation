@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "clipboard": "^2.0.8",
-    "colors": "^1.4.0",
+    "colors": "1.4.0",
     "core-js": "^3.6.5",
     "regenerator-runtime": "^0.13.5"
   }
