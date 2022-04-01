@@ -69,3 +69,9 @@
     margin-top: 120px;
   }
 }
+
+.positioning__bbForm--centered {
+  max-width: 725px; // 725px is abound the max-width that a BlackBaud form & its border/padding/etc. will go
+  margin-left: auto;
+  margin-right: auto;
+}

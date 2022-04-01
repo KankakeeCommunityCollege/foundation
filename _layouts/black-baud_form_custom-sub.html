@@ -10,7 +10,18 @@ layout: custom-sub-nav
       </div>
     </div>
     <div class="row">
-      <div class="col sub-nav__content--wrapper">
+      <div class="col{% if page.form_custom_wrapper_class and page.form_custom_wrapper_class != '' %} {{ page.form_custom_wrapper_class }}{% endif %} sub-nav__content--wrapper">
+        {% if page.form_instructions and page.form_instructions != '' %}
+        <hr>
+        <div class="row">
+          <div class="col">
+            <p class="mb-0">
+              {{ page.form_instructions }}
+            </p>
+          </div>
+        </div>
+        <hr>
+        {% endif %}
         <div id="bbox-root"></div>
         <script type="text/javascript">
         window.bboxInit = function () {
@@ -22,7 +33,17 @@ layout: custom-sub-nav
         document.getElementsByTagName('head')[0].appendChild(e);
         } ());
         </script>
-
+        {% if page.form_footer_note and page.form_footer_note != '' %}
+        <hr>
+        <div class="row">
+          <div class="col">
+            <p class="mb-0">
+              {{ page.form_footer_note }}
+            </p>
+          </div>
+        </div>
+        <hr>
+        {% endif %}
       </div>
     </div>
   </div>
