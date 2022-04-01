@@ -63,7 +63,6 @@ collections:
     output: false
   posts:
     output: false
-    _hide_content: true
   accordions:
     output: false
   contacts:
@@ -139,6 +138,10 @@ _comments:
   sport_category: Sport for which news item pertains. Gets pulled into news rollup.
   news_thumb_image: Must be 16:9 ratio image. Preferably 200px wide.
   description: "Descriptions are seen by search engines like Google and displayed in search results"
+  form_key: Copy and paste the unique string of characters from the BlackBaud embed code and not the full embed code (e.g. 461d247a-4b20-4ef4-8eec-e42b5836cd13)
+  form_instructions: (Optional) enter a paragraph of instructions for the form (appears above the form embed) - accepts inline HTML
+  form_footer_note: (Optional) enter a paragraph that will appear under the form (e.g. contact info) - accepts inline HTML
+  form_custom_wrapper_class: (Optional) enter any classes (separated with spaces) to add to the form's wrapper/parent element
 
 
 _options: # The CloudCannon options key
