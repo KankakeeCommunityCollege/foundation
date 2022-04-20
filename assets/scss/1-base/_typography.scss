@@ -516,3 +516,13 @@ ul.typography__larger-p li {
 .typography--underline {
   text-decoration: underline;
 }
+
+.typography__alumni-year {
+  color: #999;
+  font-family: $basefont-stack;
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .125rem;
+  margin-bottom: 0;
+}
+
