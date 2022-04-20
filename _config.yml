@@ -143,7 +143,6 @@ _comments:
   form_footer_note: (Optional) enter a paragraph that will appear under the form (e.g. contact info) - accepts inline HTML
   form_custom_wrapper_class: (Optional) enter any classes (separated with spaces) to add to the form's wrapper/parent element
 
-
 _options: # The CloudCannon options key
   layout: # We don't want users changing these!!
     hidden: true

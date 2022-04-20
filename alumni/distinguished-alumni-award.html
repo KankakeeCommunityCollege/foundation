@@ -27,10 +27,13 @@ description: >-
             <a class="nav-item nav-link jsTabLink" id="{{ distinguished_alumni_id }}-tab" data-toggle="tab" href="#{{ distinguished_alumni_id }}" role="tab" aria-controls="{{ distinguished_alumni_id }}" aria-selected="false">
               <span class="alumni__nav">
                 {% if distinguished_alumni.portrait_image %}
-                <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--small float-left" style="background-image: url('{{ page.baseurl }}{{ distinguished_alumni.portrait_image }}')">
+                <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--small float-left mb-2" style="background-image: url('{{ page.baseurl }}{{ distinguished_alumni.portrait_image }}')">
                 </div>
                 {% endif %}
-                <h3 class="latest-news-widget__latest__tease__overline typography__latest-news-widget__rollup-list-h alumni__h3--width">{{ distinguished_alumni.name }}</h3>
+                <h3 class="latest-news-widget__latest__tease__overline typography__latest-news-widget__rollup-list-h alumni__h3--width mb-0">{{ distinguished_alumni.name }}</h3>
+                {% unless distinguished_alumni.hide_year == true %}
+                <h4 class="typography__alumni-year">{{ distinguished_alumni.year }}</h4>
+                {% endunless %}
               </span>
             </a>
             {% endfor %}
