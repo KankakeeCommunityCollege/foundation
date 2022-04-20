@@ -68,7 +68,7 @@ description: >-
               {% if distinguished_alumni.portrait_image %}
               <img src="{{ distinguished_alumni.baseurl }}{{ distinguished_alumni.portrait_image }}" class="float-left img-fluid alumni__portrait" alt="Portrait of {{ distinguished_alumni.name }}">
               {% endif %}
-              <h3 class="blue-heading">{% unless distinguished_alumni.hide_year == true %}{{ distinguished_alumni.year }} - {% endunless %}{{ distinguished_alumni.name }}</h3>
+              <h3 class="blue-heading">{{ distinguished_alumni.name }}</h3>
               <p>{{ distinguished_alumni.content }}</p>
             </div>
           {% endfor %}
