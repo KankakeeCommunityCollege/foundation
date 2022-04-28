@@ -4,6 +4,7 @@ public-url: https://foundation.kcc.edu
 site_name: Foundation
 theme: kcc-gem-theme
 port: 3000
+timezone: America/Chicago
 google-tag_key: GTM-KKZRJB5
 nav_links:
   - link_text: About
@@ -61,8 +62,6 @@ collections:
     output: false
   alumnis:
     output: false
-  posts:
-    output: false
   accordions:
     output: false
   contacts:
@@ -75,25 +74,16 @@ defaults:
     baseurl: ../../
 - scope:
     path: ''
-    type: posts
-  values:
-    layout: post
-    title: ''
-    permalink: /:categories/:title/
-    baseurl: ../../../
-    categories: news
-- scope:
-    path: ''
     type: alumnis
   values:
     baseurl: ../../../
-    categories: alumni
+    categories: [alumni]
 - scope:
     path: ''
     type: distinguished_alumnis
   values:
     baseurl: ../../../
-    categories: distinguished_alumnis
+    categories: [distinguished_alumnis]
 permalink: pretty
 email:
 description: > # this means to ignore newlines until "baseurl:"
