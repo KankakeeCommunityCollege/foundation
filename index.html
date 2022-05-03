@@ -9,13 +9,6 @@ description: >-
   Donate today to KCC Foundation to help students achieve.
 scholarships_available: true
 slides:
-  - image: /uploads/Scholarship-deadline-banner-may3.jpg
-    alt-text: >-
-      Apply for scholarships Oct. 1 - May 3. Apply online one time to be
-      considered for hundreds of available KCC Foundation scholarships. More
-      than $200,000 in scholarships awarded for the 2022-23 academic year.
-    url: /scholarships
-    text:
   - image: uploads/thumbnail_opt.jpg
     alt-text: The Power of Education
     url: /about
@@ -152,23 +145,21 @@ slides:
     </div>
 
 </section>
-{% comment %}
+{%- comment -%}
 <section>
   <div class="container">
     <div class="row">
       <div class="col stories__left-col--margin-top">
         <h3 class="typography__red-h3 typography__red-h3--margin-btm">Scholarships</h3>
         <div class="stories__heading-underline"></div>
-        <a class="text-center" href="{{ page.baseurl }}scholarships/">
-          <div class="text-center">
-            <img class="stories__banner" src="{{ page.baseurl }}assets/img/kcc-placeholder.png" data-src="{{ page.baseurl }}uploads/scholarship-deadline-banner_2020_800x450_for-web.jpg" alt="Banner for scholarships. Application open November 1 to March 1 for fall 2021. Scholarship awards are for the 2021-22 academic year. Awards will be announced May 15. More than $200,000 in scholarships awarded annually. Apply one time to be considered for all available scholarships at foundation.kcc.edu/scholarships. Virtual workshop dates: All workshops 6-8pm. 11/4/2020 FAFSA & Scholarship Workshop. 11/19/2020 FAFSA & Scholarship Workshop. 12/9/2020 FAFSA & Scholarship Workshop." />
-          </div>
+        <a href="{{ page.baseurl }}scholarships/">
+          <img class="stories__banner" src="{{ page.baseurl }}uploads/scholarship-static-web-image_with-link.jpg" alt="" />
         </a>
       </div>
     </div>
   </div>
 </section>
-{% endcomment %}
+{%- endcomment -%}
 <section>
   {% include contacts-tan.html %}
 </section>
