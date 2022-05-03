@@ -17,7 +17,7 @@ scholarships_available: true
         <div class="editable mb-4">
           <h3 class="typography__h3 mb-4">Scholarship Application</h3>
           <p class="mb-2">
-            The KCC Foundation’s scholarship application deadline is extended until May 3 at noon. We experienced a technical glitch which briefly prevented application submissions yesterday, May 1. As a result, we’re opening the application until noon tomorrow, May 3.
+            The KCC scholarship application is open <strong>every year from Oct. 1 to May 1.</strong>
           </p>
           {% comment %}
           <div class="card">
@@ -77,7 +77,6 @@ scholarships_available: true
           </div>
           {% endcomment %}
         </div>
-        {%- comment -%}
         <div id="scholarshipsMessage" class="text-center mb-2">
           <div class="alert alert-warning mx-auto no-js__warning" style="max-width: 800px; border: 1px solid #856404">
             <p class="typography__alert mb-0">You need to enable JavaScript on this site to check if the application is open.</p>
@@ -87,7 +86,9 @@ scholarships_available: true
             <span class="sr-only">Loading...</span>
           </div>
         </div>
-        {%- endcomment -%}
+        
+        {%- comment -%}
+        <!-- APPLICATION OPEN MESSAGE (use to manually provide the Scholarship Application button) -->
         <div class="text-center mb-2">
           <p class="mb-4">
             <strong>The application is open:</strong><br>
@@ -103,6 +104,7 @@ scholarships_available: true
               <p class="mb-0 text-center"><strong>Need Help?</strong> Contact Jen Zimmerman: <a href="tel:+18158028251">815-802-8251</a> or <a href=""mailto:jzimmerman@kcc.edu>jzimmerman@kcc.edu</a></p>
             </div>
         </div>
+        {%- endcomment -%}
       </div>
     </div>
     {% comment %}

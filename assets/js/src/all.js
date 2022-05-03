@@ -25,9 +25,9 @@ function loadModule(...moduleArgs) {
 
 window.addEventListener('load', () => {
   path == '/giveday/' ? loadModule('copyToClipboard') : null;
-  // path == '/scholarships/' ?
-  //   window.setTimeout(() => loadModule('checkScholarshipApp'), 2000)
-  //   : null;
+  if (path == '/scholarships/') {
+    window.setTimeout(() => loadModule('checkScholarshipApp'), 2000);
+  }
   document.getElementById('galleryTrack') ? loadModule('receptionGallery') : null;
 });
 
