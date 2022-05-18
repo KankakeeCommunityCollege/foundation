@@ -118,9 +118,10 @@ exclude:
   - "/events/annual-fundraiser-gallery.txt"
   - "buildtools/"
   - "postcss.config.js"
-
 uploads_dir: "uploads/" # specifies the default uploads directory for CloudCannon
 
+# CloudCannon configurations — (CC config always starts with an underscore "_")
+## For custom helper comments in CloudCannon — these comments appear next to the front-matter setting they correspond to:
 _comments:
   layout: Do NOT modify layouts. It may break things.
   baseurl: Do NOT modify baseurl. It WILL break all page links.
@@ -132,7 +133,7 @@ _comments:
   form_instructions: (Optional) enter a paragraph of instructions for the form (appears above the form embed) - accepts inline HTML
   form_footer_note: (Optional) enter a paragraph that will appear under the form (e.g. contact info) - accepts inline HTML
   form_custom_wrapper_class: (Optional) enter any classes (separated with spaces) to add to the form's wrapper/parent element
-
+## CloudCannon options for giving users custom styles and editing settings:
 _options: # The CloudCannon options key
   layout: # We don't want users changing these!!
     hidden: true
@@ -191,7 +192,7 @@ _options: # The CloudCannon options key
     strike: true
     subscript: true
     superscript: true
-
+## CloudCannon configuration for custom naming of the parts of the project in the CC GUI:
 _explore:
   groups:
     - heading: 'Standalone | Pages'
