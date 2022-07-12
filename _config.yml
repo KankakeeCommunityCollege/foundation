@@ -199,7 +199,9 @@ _explore:
       collections:
         - pages
     - heading: 'Collections | Data'
+## If a collection is omitted from the _explore.collections list it won't show/exist in CloudCannon ##
       collections:
         - accordions
         - alumnis
         - distinguished_alumnis
+        - contacts
