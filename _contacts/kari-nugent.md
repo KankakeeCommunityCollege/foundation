@@ -2,9 +2,9 @@
 name: Kari Nugent
 contacts_title: Vice President for Advancement, Marketing, and Public Relations
 display_order: 1
-portrait_image: For departments with no contact photos, do not change this field.
+portrait_image: /uploads/kari-nugent-founfation-pic.jpg
 phone: 815-802-8256
-email: email@email.com
+email: knugent@kcc.edu
 department_email:
 ---
 
