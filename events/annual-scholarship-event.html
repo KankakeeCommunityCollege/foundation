@@ -16,54 +16,58 @@ gallery_title: Scholarship Reception | 2021
 <main>
   <div class="container mt-2">
     <div class="row">
-      <div class="col">
-        {% include reception-gallery.html %}
+      <div class="col sub-nav__content--wrapper mt-3">
+        <div class="editable">
+          <h4 class="blue-heading">KCC Foundation Scholarship Event</h4>
+          <p>
+            At the annual scholarship event, scholarship recipients and those who donated to their scholarship have the
+            opportunity to meet. Recipients share their appreciation with donors and talk more about their plans for the future.
+            Donors are able to see firsthand the impact their donations made and how their contributions transformed
+            students&rsquo; lives.
+          </p>
+          <p>
+            The 2021-22 scholarship recipient and donor reception was held on Oct. 19 at the KCC Riverfront Campus.
+          </p>
+          <p><strong>This event is only open to KCC Foundation Scholarship recipients and donors.</strong> <br>
+            <!-- USE THIS BUTTON + MODAL FOR THE BLACK-BAUD REGISTRATION FORM (when registration starts) -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#registrationModal">
+              Registration form
+            </button>
+
+          </p>
+          <p>
+            For more information, please contact the Foundation Office at 
+            <a href="tel:18158028252">815-802-8252</a>. <br>
+            More information about KCC Foundation scholarships is at 
+            <a href="https://foundation.kcc.edu/scholarships">foundation.kcc.edu/scholarships</a>.
+          </p>
+        </div>
       </div>
     </div>
     <div class="row">
-      <div class="col sub-nav__content--wrapper mt-3">
-        <div class="col-12 col-lg-4 float-left text-center">
-          <img src="{{ page.baseurl }}{{ page.banner }}" alt="{{ page.banner_alt }}" class="img-fluid banner" />
-        </div>
-        <div class="col-12 col-lg-8 float-right">
-          <div class="editable">
-            <p>At the annual scholarship event, scholarship recipients and those who donated to their scholarship have the opportunity to meet. Recipients share their appreciation with donors and talk more about their plans for the future. Donors are able to see firsthand the impact their donations made and how their contributions transformed students&rsquo; lives.</p>
-            <h4 class="blue-heading">KCC Foundation Scholarship Event</h4>
-            <p>The 2021-22 scholarship recipient and donor reception was held on Oct. 19 at the KCC Riverfront Campus.</p>
-            <p><strong>This event is only open to KCC Foundation Scholarship recipients and donors.</strong> <br>
-              {%- comment -%}
-              <!-- USE THIS BUTTON + MODAL FOR THE BLACK-BAUD REGISTRATION FORM (when registration starts) -->
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registrationModal">
-                Registration form
-              </button>
-              {%- endcomment -%}
-            </p>
-            <p>For more information, please contact the Foundation Office at <a href="tel:18158028252">815-802-8252</a>. More information about KCC Foundation scholarships is at <a href="https://foundation.kcc.edu/scholarships">foundation.kcc.edu/scholarships</a>.</p>
-          </div>
-        </div>
+      <div class="col">
+        {% include reception-gallery.html %}
       </div>
     </div>
   </div>
 </main>
 
-{%- comment -%}
 <!-- Modal -->
 <div class="modal fade" id="registrationModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="registrationModalLabel">2021-22 Scholarship Reception Registration Form</h5>
+        <h5 class="modal-title" id="registrationModalLabel">Scholarship Reception Registration Form</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        <!-- THIS OLD BLACK-BAUD FORM FROM 2021 has been removed from blackbaud by foundation -->
+      <div class="modal-body mx-auto">
         <div id="bbox-root"></div>
         <script type="text/javascript">
           window.bboxInit = function () {
-            bbox.showForm('91b77814-b831-4c97-99f9-60e2affc5cde');
+            bbox.showForm('73edf4cf-6a4d-4939-92b6-6b3d38753d63');
           };
           (function () {
             var e = document.createElement('script'); e.async = true;
@@ -78,4 +82,3 @@ gallery_title: Scholarship Reception | 2021
     </div>
   </div>
 </div>
-{%- endcomment -%}

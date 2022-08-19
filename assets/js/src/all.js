@@ -7,10 +7,9 @@ const path = window.location.pathname;
 // Code in progress for creating a giveday .ics calendar reminder
 //const pagesWithICALreminders = /\/giveday\/?/
 
-function removeNoJs(el) { // The `.no-js` class needs to be removed to on the scholarships page
+function removeNoJs(el) { // The `.no-js` class needs to be removed on the scholarships page
   el.classList.remove('no-js');
 }
-removeNoJs(html); // Leave `removeNoJs` definition and call at top of file to execute ASAP!
 
 function loadModule(...moduleArgs) {
   const len = moduleArgs.length;
@@ -18,22 +17,13 @@ function loadModule(...moduleArgs) {
   let moduleFn;
 
   len == 1 ? moduleFn = module : moduleFn == moduleArgs[1];
-  import(`./${module}`).then(({ default: moduleFn }) => {
-    moduleFn();
-  })
+  return import(`./${module}`).then(({ default: moduleFn }) => moduleFn());
 }
 
+document.addEventListener('DOMContentLoaded', () => removeNoJs(html));  // Leave `removeNoJs` definition and call at top of file to execute ASAP!
+
 window.addEventListener('load', () => {
-  path == '/giveday/' ? loadModule('copyToClipboard') : null;
-  if (path == '/scholarships/') {
-    window.setTimeout(() => loadModule('checkScholarshipApp'), 2000);
-  }
-  document.getElementById('galleryTrack') ? loadModule('receptionGallery') : null;
-});
-
-
-document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('shopSmileWrapper') ? loadModule('shopSmile', 'shopSmileInit') : null;
+  if (document.getElementById('shopSmileWrapper')) loadModule('shopSmile', 'shopSmileInit');
 
   if (
     path == '/giveday/' ||
@@ -47,10 +37,18 @@ document.addEventListener('DOMContentLoaded', () => {
       loadModule('animateIcons');
     }
   }
+  if (path == '/giveday/') loadModule('copyToClipboard');
+
+  if (path == '/scholarships/') {
+    window.setTimeout(() => loadModule('checkScholarshipApp'), 2e3);
+  }
+
+  if (document.getElementById('galleryTrack')) loadModule('receptionGallery');
+});
+
   // Code in progress for creating a giveday .ics calendar reminder
   // if (window.location.pathname.search(pagesWithICALreminders) == -1)
   //   return;
   //
   // console.log(`Pages with ICAL Downloads!`);
   // createICSdownload();
-});
