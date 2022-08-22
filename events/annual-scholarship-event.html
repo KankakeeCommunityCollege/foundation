@@ -55,7 +55,7 @@ gallery_title: Scholarship Reception | 2021
 
 <!-- Modal -->
 <div class="modal fade" id="registrationModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="registrationModalLabel">Scholarship Reception Registration Form</h5>
@@ -64,6 +64,9 @@ gallery_title: Scholarship Reception | 2021
         </button>
       </div>
       <div class="modal-body mx-auto">
+        {%- comment -%}
+        <!-- BlackBaud form does not work correctly on localhost!!! -->
+        {%- endcomment -%}
         <div id="bbox-root"></div>
         <script type="text/javascript">
           window.bboxInit = function () {
