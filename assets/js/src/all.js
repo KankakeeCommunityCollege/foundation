@@ -46,8 +46,6 @@ window.addEventListener('load', () => {
   }
 
   if (document.getElementById('galleryTrack')) loadModule('receptionGallery');
-
-  if (path.search(/\/annual-scholarship-event\//) !== -1) loadModule('openModalWithQueryString');
 });
 
   // Code in progress for creating a giveday .ics calendar reminder
