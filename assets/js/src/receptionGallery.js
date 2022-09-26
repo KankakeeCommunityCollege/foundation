@@ -3,43 +3,49 @@
  * @author Wesley Zajicek - <https://github.com/wdzajicek>
  * @copyright © 2022 Kankakee Community College
  * 
+ * See <https://kenwheeler.github.io/slick/> for more information on slick slider/carousel
  * 
  */
-//  const imgObj = {
-//   async *[Symbol.asyncIterator]() {
-//     for(let value = 0; value <= (this.length - 1); value++) {
-//       // make a pause between values, wait for something
-//       await new Promise(res => {
-//         let img = this.list[value];
+import slickParams from './slickParams'; // Holds slick parameter objects for slick initialization 
 
-//         img.onload = () => {
-//           img.removeAttribute('data-gallery-src');
-//           res();
-//         }
-//         img.src = img.dataset.gallerySrc;
-//       });
-//       yield value;
-//     }
-//   }
-// }
+const GALLERY = document.getElementById('Gallery');
+// Gallery has a data attribute which holds a coma separated list of image URLs
+const IMG_ARR = GALLERY.dataset.gallerySrcList.split(',');
+const PREVIEW_IMG_LIST = document.querySelectorAll('img[data-gallery-src]'); // The page has 7 image slides in the HTML initially
 
-// async function receptionGallery() {
-function receptionGallery() {
-  const GALLERY_IMG_LIST = document.querySelectorAll('img[data-gallery-src]');
-
-  import('./sliders').then((({ default: initSlickSliders }) => initSlickSliders()))
-  // GALLERY_IMG_LIST.forEach((img, i) => imgObj[i] = img.dataset.gallerySrc);
-  // imgObj.list = GALLERY_IMG_LIST;
-  // imgObj.length = GALLERY_IMG_LIST.length;
-  // console.log(imgObj);
-
-  // for await (let key of imgObj) {
-  //   console.log(imgObj[key]);
-  // }
-  GALLERY_IMG_LIST.forEach(img => {
-    img.src = img.dataset.gallerySrc;
-    img.removeAttribute('data-gallery-src');
-  })
+function addRemainingImageSlides(imageArray) {
+  imageArray.forEach(src => {
+    const img = `<img src="${src}" alt="Photo from the 2021 KCC Foundation scholarship reception">`;
+    // Insert additional slides into both slider-instances
+    $('#galleryTrack').slick('slickAdd', img); // The `...slick('slickAdd')` method takes a string of HTML as 2nd arg
+    $('#galleryNav').slick('slickAdd', img);
+  });
 }
 
-export default receptionGallery;
+function receptionGallery() {
+  // 1.) Initialize slick immediately
+  //    (page has 2 slick sliders: 1 acts as the navigation for the other/main slider)
+  $('#galleryTrack').slick(slickParams.track);
+  $('#galleryNav').slick(slickParams.nav); // This slick instance is the navigation for a main slider (instead of indicator-dots)
+  //  2.) Lazy-load the slide images already in the slider
+  //     (only 7 slides are built into the page's HTML.)
+  let promises = [...PREVIEW_IMG_LIST].map(img => {
+    return new Promise((resolve, reject) => {
+      img.src = img.dataset.gallerySrc;
+      img.onerror = err => reject(err);
+      img.onload = () => {
+        img.removeAttribute('data-gallery-src');
+        resolve(img);
+      }
+    })
+  })
+  // 3.) After preview slides have loaded, the remaining
+  //      images/slides can be loaded & added to the carousel.
+  Promise.allSettled(promises)
+    .then(results => {
+      // results.forEach(result => console.log(result));
+      addRemainingImageSlides(IMG_ARR);
+    })
+}
+ 
+ export default receptionGallery;

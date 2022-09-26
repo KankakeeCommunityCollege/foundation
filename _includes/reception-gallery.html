@@ -5,27 +5,30 @@
         {{ page.gallery_title }}
       </h3>
     {% assign photos = site.static_files | where_exp: 'item', 'item.path contains "reception_photos"' %}
-    <div class="mx-auto" id="galleryTrack">
-      {% for photo in photos %}
-      <img
-        data-gallery-src="{{ photo.path }}"
-        src="{{ page.baseurl }}assets/img/placeholder_16to9.jpg"
-        height="394"
-        width="700"
-        class="img-fluid"
-        alt="Photo from the 2021 KCC Foundation scholarship reception">
-      {% endfor %}
-    </div>
-    <div id="galleryNav" class="my-3">
-      {% for photo in photos %}
-      <img
+    {% assign remaining_photos = photos | slice: 7, 23 %}
+    <div id="Gallery" data-gallery-src-list="{% for img in remaining_photos %}{{ img.path }}{% if forloop.last != true %},{% endif %}{% endfor %}">
+      <div class="mx-auto" id="galleryTrack">
+        {% for photo in photos limit: 7 %}
+        <img
           data-gallery-src="{{ photo.path }}"
           src="{{ page.baseurl }}assets/img/placeholder_16to9.jpg"
+          height="394"
+          width="700"
           class="img-fluid"
-          height="84"
-          width="150"
           alt="Photo from the 2021 KCC Foundation scholarship reception">
-      {% endfor %}
+        {% endfor %}
+      </div>
+      <div id="galleryNav" class="my-3">
+        {% for photo in photos limit: 7 %}
+        <img
+            data-gallery-src="{{ photo.path }}"
+            src="{{ page.baseurl }}assets/img/placeholder_16to9.jpg"
+            class="img-fluid"
+            height="84"
+            width="150"
+            alt="Photo from the 2021 KCC Foundation scholarship reception">
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>

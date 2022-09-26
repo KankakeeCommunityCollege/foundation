@@ -139,6 +139,8 @@ _options: # The CloudCannon options key
     hidden: true
   baseurl: # We don't want users changing these!!
     hidden: true
+  sheet_key:
+    hidden: true
   content:
     format: p h2 h3 h4 h5 h6 pre address div
     bold: true
