@@ -22,7 +22,6 @@ module.exports = {
   plugins,
   entry: {
     'main': './assets/js/src/all.js',
-    'table': './assets/js/table/table.js'
   },
   output: {
     filename: '[name].[fullhash].bundle.js',

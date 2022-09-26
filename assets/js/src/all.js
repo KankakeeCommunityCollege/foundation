@@ -43,6 +43,8 @@ window.addEventListener('load', () => {
   
   if (path == '/scholarships/') {
     window.setTimeout(() => loadModule('checkScholarshipApp'), 2e3);
+
+    import('../table/scholarshipSheetsAPI.js').then(({ default: start }) => gapi.load('client', start));
   }
 
   if (document.getElementById('galleryTrack')) loadModule('receptionGallery');
