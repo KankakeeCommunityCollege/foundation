@@ -4,8 +4,8 @@
 const APPLICATION_LINK = 'https://kcc.scholarships.ngwebsolutions.com/CMXAdmin/Cmx_Content.aspx?cpId=639';
 const SCHOLARSHIPS_MESSAGE = document.getElementById('scholarshipsMessage');
 
-function scholarshipsOpen() {
-  SCHOLARSHIPS_MESSAGE.innerHTML = `<p class="mb-4">
+function scholarshipOpenHandler(html) {
+  return html = `<p class="mb-4">
 <strong>The application is open:</strong><br>
   <a class="btn btn-primary btn-lg"
     href="${APPLICATION_LINK}"
@@ -15,26 +15,23 @@ function scholarshipsOpen() {
 </p>
 <div style="max-width: 800px;" class="alert alert-info mx-auto mb-5 text-left">
   <p class="mb-2"><strong>Awards will be announced on May 15.</strong> Applicants will be notified via email.
-  Scholarship recipients must be enrolled at KCC for the 2022-23 academic year to receive award.</p>
-  <p class="mb-0 text-center"><strong>Need Help?</strong> Contact Jen Zimmerman: <a href="tel:+18158028251">815-802-8251</a> or <a href=""mailto:jzimmerman@kcc.edu>jzimmerman@kcc.edu</a></p>
+  Scholarship recipients must be enrolled at KCC for the 2023-24 academic year to receive award.</p>
+  <p class="mb-0 text-center"><strong>Need Help?</strong> Contact the foundation office: <a href="tel:+18158028950">815-802-8950</a> or <a href=""mailto:kccfoundation@kcc.edu>kccfoundation@kcc.edu</a></p>
 </div>`;
 }
 
-function scholarshipsClosed() {
-  SCHOLARSHIPS_MESSAGE.innerHTML = `<p class="mb-4">
+function scholarshipClosedHandler(html) {
+  return html = `<p class="mb-4">
   <strong>The application is not open yet.</strong></p>`;
 }
 
-function checkDates() {
-  // const test = new Date('5/1/2021');
+function checkScholarshipApp() {
   const today = new Date();
   const month = today.getMonth() + 1;
+  const scholarshipAppIsOpen = (month < 5 || month >= 10);
+  const html = scholarshipAppIsOpen ? scholarshipOpenHandler(html) : scholarshipClosedHandler(html);
 
-  return month < 5 || month >= 10 ? true : false; // If current month is between Oct & May (when app is open) return true, otherwise false
-}
-
-function checkScholarshipApp() {
-  checkDates() ? scholarshipsOpen() : scholarshipsClosed();
+  SCHOLARSHIPS_MESSAGE.innerHTML = html;
 }
 
 export default checkScholarshipApp;
