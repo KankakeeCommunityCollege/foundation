@@ -39,8 +39,6 @@ window.addEventListener('load', () => {
   }
   if (path == '/giveday/') loadModule('copyToClipboard');
 
-  
-  
   if (path == '/scholarships/') {
     window.setTimeout(() => loadModule('checkScholarshipApp'), 2e3);
 
