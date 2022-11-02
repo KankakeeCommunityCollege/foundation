@@ -28,7 +28,7 @@ A. Foundation operations are funded through a combination of revenue from specia
 
 **Q. Do other colleges and universities charge gift fees?**
 
-A. A gift fee ranging from 3 to 6 percent is not uncommon at university and college foundations throughout the country.
+A. A gift fee ranging from 3% to 6% is not uncommon at university and college foundations throughout the country.
 
 **Q. The local non-profit organizations I support don't charge gift fees. What's the difference?**
 
