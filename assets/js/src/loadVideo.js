@@ -76,8 +76,10 @@ function buildVideoOnPageLoad(t0, videoContainer, ytLink, html) {
 function loadVideo() {
   // Bail-out if the element needed is missing
   if ( ! document.getElementById(VIDEO_PLACEHOLDER_ID) )
-    return;
+  return;
   
+  console.log(`Loaded!`);
+
   const PLACEHOLDER = document.getElementById(VIDEO_PLACEHOLDER_ID);
   const t0 = capturePerformanceTime();
   let html = createVideoElement(html, PLACEHOLDER.dataset);
