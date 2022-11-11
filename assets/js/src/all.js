@@ -25,13 +25,6 @@ document.addEventListener('DOMContentLoaded', () => removeNoJs(html));  // Leave
 window.addEventListener('load', () => {
   if (document.getElementById('shopSmileWrapper')) loadModule('shopSmile', 'shopSmileInit');
 
-  if (
-    path == '/giveday/' ||
-    path == '/give/employee-giving/' // If you need lazyLoading videos on a new page, ad the pathname here
-  ) {
-    loadModule('loadVideo');
-  }
-
   if (path == '/' || path == '/giveday/') {
     if (window.navigator.maxTouchPoints > 1 || window.matchMedia('(max-width: 767px)')) {  // Animate the SVG icons for mobile users who don't have :focus or :hover
       loadModule('animateIcons');
