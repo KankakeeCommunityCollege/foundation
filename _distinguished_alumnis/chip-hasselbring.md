@@ -1,7 +1,7 @@
 ---
 name: Chip Hasselbring
 year: '2021'
-portrait_image: /uploads/chip-hasselbring.jpg
+portrait_image: uploads/chip-hasselbring.jpg
 ---
 Walter “Chip” Hasselbring has established a successful career in the banking industry and has served as President, Chief Executive Officer and Director of Iroquois Federal and IF Bankcorp since 2015. He is also an avid and distinguished volunteer throughout the area.
 
