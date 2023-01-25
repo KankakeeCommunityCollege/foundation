@@ -13,9 +13,10 @@
   padding-left: 5px;
   position: absolute;
   top: 55%;
+  /* this width needs to be adjusted depending on the number of slides in the heading */
   // width: 10%; // 4-Slides – USE WIDTH = 10% FOR A SLIDER WITH 4x SLIDE-IMAGES!!
-  // width: 13%; // 3-Slides –  USE WIDTH = 13% FOR A SLIDER WITH 3x SLIDE-IMAGES!!
-  width: 18.5%; //  2-Slides – USE WIDTH = 18.5% FOR A SLIDER WITH 2x SLIDE-IMAGES!!
+  width: 13%; // 3-Slides –  USE WIDTH = 13% FOR A SLIDER WITH 3x SLIDE-IMAGES!!
+  // width: 18.5%; //  2-Slides – USE WIDTH = 18.5% FOR A SLIDER WITH 2x SLIDE-IMAGES!!
   z-index: 4444;
 }
 // ============================================================================ //
