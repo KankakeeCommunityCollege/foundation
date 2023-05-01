@@ -26,8 +26,12 @@ const closedMessage = `<p class="mb-4">
 
 function checkScholarshipApp() {
   const today = new Date();
+  
+  today.setHours(0, 0, 0, 0);
+
   const month = today.getMonth() + 1;
-  const scholarshipAppIsOpen = (month < 5 || month >= 10);
+  const day = today.getDate();
+  const scholarshipAppIsOpen = (month < 5 || month === 5 && day === 1 || month >= 10);
   const html = scholarshipAppIsOpen ? openMessage : closedMessage;
 
   SCHOLARSHIPS_MESSAGE.innerHTML = html;
