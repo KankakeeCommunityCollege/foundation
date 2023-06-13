@@ -42,8 +42,6 @@ sub-nav_links:
     link_href: 'alumni/distinguished-alumni-award'
   - link_text: 'Alumni Stories'
     link_href: 'alumni/alumni-stories'
-  - link_text: 'Alumni Events'
-    link_href: 'alumni/alumni-events'
   - link_text: 'Century Scholars'
     link_href: 'scholarships/century-scholars'
   - link_text: 'Create A Scholarship'
