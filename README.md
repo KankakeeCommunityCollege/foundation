@@ -1,35 +1,87 @@
-# KCC Foundation Site Development
+# KCC Foundation Website
 
-#### Jekyll + Gulp + Sass + Yarn + BrowserSync + ...
+> Jekyll + Webpack + Babel + Corejs + Sass + Autoprefixer + etc.
 
-Development of the new KCC Foundation site based off of design mockups
+A GitHub repo for the KCC Foundation website (<https://foundation.kcc.edu>.)
 
-## Requirements
-	- Jekyll - `$ gem install jekyll bundler`
-	- Bundler - `$ gem install bundler`
-	- Nodejs - I recommend using NVM (Node Version Manager): https://github.com/creationix/nvm
-	- .nvmrc file in this repo will make NVM use Node v8.9.4 (to avoid compatibility issues)
-		- Or, if you must - Use the Nodejs installer: https://nodejs.org/
-	- Gulp - `$ npm install --global gulp-cli` - mac users may need sudo
+## Prerequisites
+
+* [<abbr>RVM</abbr> (Ruby Version Manager)](https://rvm.io/) — See [Installing RVM](https://rvm.io/rvm/install):
+  * Install `ruby-2.6.3` via RVM: `rvm install ruby-2.6.3`
+  * Set `ruby-2.6.3` as default alias: `rvm alias default ruby-2.6.3`
+* [<abbr>NVM</abbr> (Node Version Manager)](https://github.com/nvm-sh/nvm):
+  * Every project has an `.nvmrc` file specifying the project's node version.
+  * Add the following bash function to your bash initialization files so that you don't have to run `nvm use` when you switch projects. **You must have `cowsay` installed via homebrew (`brew install cowsay`) for this to work**:
+  * ```bash
+    ## Use a local .nvmrc file if present
+    enter_directory() {
+      if [[ $PWD == $PREV_PWD ]]; then
+        return
+      fi
+
+      PREV_PWD=$PWD
+      [[ -f ".nvmrc" ]] && nvm use > /dev/null 2>&1 && nvm use | cowsay $n
+    }
+
+    export PROMPT_COMMAND=enter_directory
+    ```
+
 
 ## Installation
-	$ git clone https://github.com/KankakeeCommunityCollege/kcc-startup-template.git <project name>
-	$ cd <project name>
-	$ sh install.sh
+
+```bash
+git clone git@github.com:KankakeeCommunityCollege/foundation.git
+cd foundation
+bundle i && npm i
+
+## Or if you like the longer commands:
+bundle install && npm install
+```
 
 ## Development
-	$ gulp
+
+Use the following npm script (defined in `package.json`) to run a development build:
+
+```bash
+npm run development
+```
+
+**Do not push files created form a development build to GitHub.**
+
+The development build watches for file changes; use <kbd>control</kbd> + <kbd>c</kbd> to end the running processes.
+
+The development build injects the compiled CSS into `<style>` tags in the document's `<head>`. This improves the performance of the development build but is not suitable for production.
+
+A development build also creates a dev JS bundle which is better for debugging purposes and also not suitable for production.
 
 ## Production
 
+```bash
+npm run production
+```
+
+The production build also watches for file changes; use <kbd>control</kbd> + <kbd>c</kbd> to end the running processes.
+
 Production build minifies CSS and JavaScript and compresses image files.
 
-A gulp production build should be run before committing and pushing any CSS, JS, or new images to the Github repository.
+## JS Unit Testing
 
-Trying to push non-minified CSS and JS may result in merge conflicts.  If you have a merge conflict, especially on main.css or all.min.js, try running `$ gulp --production` before trying to push again
+```bash
+npm test
 
-	$ gulp --production
+# Or use the longer
+npm run test
+```
 
-## The gulpfile.js and gulpconfig.yml
+JS unit testing is accomplished using `vitest`.
 
-See the comments within gulpfile.js and gulpconfig.yml for detailed explanation of what happens on running `$ gulp` or `$ gulp --production`
+Test modules are found in the `assets/js/__tests__/` directory.
+
+Test modules should have the same name as the module they test but with a `.test` suffix before the file extension:
+* A test for `assets/js/src/<myModule>.js` would be `assets/js/__tests__/<myModule>.test.js`
+
+### `checkDate.test.js`
+
+If you make ***any*** changes to the module `assets/js/src/scholarshipApp/checkDate.js` you need to run the testing script (i.e. `npm run test`.)
+
+This test ensures the scholarship application will be made available from November 1 to May 1.
