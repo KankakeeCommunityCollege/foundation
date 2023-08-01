@@ -21,6 +21,7 @@
     "defaults"
   ],
   "scripts": {
+    "test": "vitest run",
     "production": "run-p jekyll-production webpack-production",
     "development": "run-p jekyll-development webpack-dev",
     "jekyll-production": "JEKYLL_ENV=production bundle exec jekyll serve --livereload",
@@ -46,6 +47,7 @@
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
     "url-loader": "^4.1.1",
+    "vitest": "^0.34.0",
     "webpack": "^5.36.1",
     "webpack-cli": "^4.6.0"
   },
