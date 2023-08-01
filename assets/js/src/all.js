@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
 
   if (path == '/scholarships/') {
     window.setTimeout(() => {
-      import('./checkScholarshipApp')
+      import('./scholarshipApp/checkScholarshipApp')
         .then(({ default: checkScholarshipApp }) => checkScholarshipApp());
     }, 2000);
 
