@@ -9,17 +9,34 @@ banner_alt:
 ---
 <main>
   <div class="container">
-
     <div class="row">
       <div class="col sub-nav__content--wrapper mt-3">
-        <div class="col-12 col-lg-4 float-left text-center">
-          <img src="{{ page.baseurl }}{{ page.banner }}" alt="{{ page.banner_alt }}" class="img-fluid banner" />
-        </div>
-        <div class="col-12 col-lg-8 float-right">
-          <div class="editable">
-            <p>The President's Circle Dinner will be Thursday, Nov. 9, 2023. Donors who supported the KCC Foundation with gifts totaling $1,000 or more in 2022 will be recognized.</p>
-            <p><a class="btn btn-primary" href="../../give/presidents-circle/">Learn About President's Circle</a></p>
+        <div class="row">
+          <div class="col-12 col-lg-4 text-center">
+            <img src="{{ page.baseurl }}{{ page.banner }}" alt="{{ page.banner_alt }}" class="img-fluid banner" />
           </div>
+          <div class="col-12 col-lg-8">
+            <div class="editable">
+              <p>The President's Circle Dinner will be Thursday, Nov. 9, 2023. Donors who supported the KCC Foundation with gifts totaling $1,000 or more in 2022 will be recognized.</p>
+              <p><a class="btn btn-primary" href="../../give/presidents-circle/">Learn About President's Circle</a></p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="d-flex justify-content-center">
+          <div id="bbox-root"></div>
+          <script type="text/javascript">
+            window.bboxInit = function () {
+              bbox.showForm('15e1979d-10a2-493d-9332-b07802f7f03f');
+            };
+            (function () {
+              var e = document.createElement('script'); e.async = true;
+              e.src = 'https://bbox.blackbaudhosting.com/webforms/bbox-min.js';
+              document.getElementsByTagName('head')[0].appendChild(e);
+            }());
+          </script>
         </div>
       </div>
     </div>
