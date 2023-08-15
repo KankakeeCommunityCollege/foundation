@@ -35,17 +35,20 @@ banner_alt:
         <br>
         <h3 class="typography__h3">RSVP</h3>
         <div class="d-flex justify-content-center">
-          <div id="bbox-root"></div>
-          <script type="text/javascript">
-            window.bboxInit = function () {
-              bbox.showForm('15e1979d-10a2-493d-9332-b07802f7f03f');
-            };
-            (function () {
-              var e = document.createElement('script'); e.async = true;
-              e.src = 'https://bbox.blackbaudhosting.com/webforms/bbox-min.js';
-              document.getElementsByTagName('head')[0].appendChild(e);
-            }());
+          <!-- Start form embed -->
+          <div id="blackbaud-registration-form"></div>
+          <script>
+            (function (d, s) {
+              var js, el = d.getElementsByTagName(s)[0];
+              window.BB_REG_FORM_ID = "2692fe7d-9df8-4c8b-810c-91583abd7ccf";
+              window.BB_REG_FORM_ENVIRONMENT_ID = "p-4LPPL9VvRECDnI6AYmbOpQ";
+              window.BB_REG_FORM_HEADER_HEIGHT = 0;  // If your page has a header/overlay, then you can set this value to your header height so that the payment form will scroll to the proper location when opened.
+              js = d.createElement(s);
+              js.src = "https://sky.blackbaudcdn.net/skyuxapps/registration-form/assets/online_registrations_form_loader_v4.330903d47b1fe743c0df4ede2a32c9c3.js";
+              el.parentNode.insertBefore(js, el);
+            })(document, "script");
           </script>
+          <!-- End form embed -->
         </div>
       </div>
     </div>
