@@ -11,7 +11,19 @@ banner_alt: The POWER of Scholarships - Kankakee Community College
   <div class="container mt-2">
     <div class="row">
       <div class="col sub-nav__content--wrapper">
-        <h2 class="blue-heading">{{ page.title }}</h2>
+        <div class="mb-3">
+          <div id="bbox-root" class="mx-auto"></div>
+          <script type="text/javascript">
+            window.bboxInit = function () {
+              bbox.showForm('cdf79a5e-5d2b-4f56-ae0a-b9754ccaf243');
+            };
+            (function () {
+              var e = document.createElement('script'); e.async = true;
+              e.src = 'https://bbox.blackbaudhosting.com/webforms/bbox-min.js';
+              document.getElementsByTagName('head')[0].appendChild(e);
+            }());
+          </script>
+        </div>
         <div class="text-center mb-3">
           <img
             src="{{ page.baseurl }}{{ page.banner }}"
@@ -33,19 +45,6 @@ banner_alt: The POWER of Scholarships - Kankakee Community College
             <strong>All proceeds benefit KCC students and programs.</strong><br>
             <strong>Tickets are limited.</strong>
           </p>
-        </div>
-        <div class="d-flex justify-content-center">
-          <div id="bbox-root" class="mx-auto"></div>
-          <script type="text/javascript">
-            window.bboxInit = function () {
-              bbox.showForm('cdf79a5e-5d2b-4f56-ae0a-b9754ccaf243');
-            };
-            (function () {
-              var e = document.createElement('script'); e.async = true;
-              e.src = 'https://bbox.blackbaudhosting.com/webforms/bbox-min.js';
-              document.getElementsByTagName('head')[0].appendChild(e);
-            }());
-          </script>
         </div>
       </div>
     </div>
