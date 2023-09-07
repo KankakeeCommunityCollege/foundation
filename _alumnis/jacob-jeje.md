@@ -2,7 +2,7 @@
 name: Jacob Jeje
 degree: Associate in General Studies & Occupational Certificate
 year: 2016
-order: 4
+order: 5
 portrait_image: uploads/jacob-jeje-photo.jpg
 quote: "It all comes down to passion, drive, and a long-term goal."
 ---
