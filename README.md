@@ -4,6 +4,10 @@
 
 A GitHub repo for the KCC Foundation website (<https://foundation.kcc.edu>.)
 
+This project's version of Ruby: `ruby-3.1.3`.
+
+-----
+
 ## Prerequisites
 
 * [<abbr>RVM</abbr> (Ruby Version Manager)](https://rvm.io/) — See [Installing RVM](https://rvm.io/rvm/install):
