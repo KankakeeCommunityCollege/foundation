@@ -84,33 +84,6 @@ slides:
   </div>
 </section>
 
-<!-- HIDDEN TEMPORARILY BY JOHN
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col stories__left-col--margin-top typography__col--heading-underline">
-        <h3 class="typography__red-h3 typography__red-h3--margin-btm">Upcoming Events</h3>
-      </div>
-      <div class="events__banner--wrapper">
-        <div class="events__banner-left--wrapper">
-          <img class="events__banner-left--title-img" src="{{ page.baseurl }}assets/img/swine-wine-dine-title.png" title="Swine Wine and Dine" alt="Swine Wine and Dine" />
-          <span class="events__date">Saturday, Aug. 25, 2018</span><br />
-          <span class="events__details">KCC Riverfront Campus &bull; Ticket price $125</span>
-          <div class="events__banner-left--angle-div"></div>
-
-        <div class="events__banner-right">
-        </div>
-        <a href="{{ page.baseurl }}events/swine-wine-and-dine/" class="btn btn-primary stories__btn-info--position">Learn More</a>
-
-
-
-
-
-
-
-
--->
-
 <section>
   <div class="container">
     <div class="row">
@@ -123,9 +96,7 @@ slides:
         <ol id="jsTeaseList" class="latest-news-widget__latest__tease-group">
           {% assign sorted = site.alumnis | sort: 'year' | reverse %}
           {% for alumni in sorted limit:4 %}
-
             <li class="latest-news-widget__latest__tease latest-news-widget__latest__tease--default latest-news-widget__latest__tease--has-image">
-            <!--  Tease is active   -->
               <a id="jsTeaseLink{{ forloop.index }}" class="latest-news-widget__latest__tease__link js-hp-latest-tease-link" href="{{ page.baseurl }}alumni/alumni-stories/#{{ alumni.name | replace: ' ', '-' | downcase }}" data-image="{{ alumni.portrait_image }}" data-image-alt="" data-tease-type="" data-index="{{ forloop.index0 }}" aria-hidden="false">
                 <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--default" style="background-image: url('{{ page.baseurl }}{{ alumni.portrait_image }}')">
                 </div>
@@ -136,7 +107,6 @@ slides:
               <p><button type="button" class="btn btn-primary alumni__btn">Read More</button></p>
             </a>
           </li>
-
           {% endfor %}
         </ol>
       </div>
