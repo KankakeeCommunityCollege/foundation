@@ -2,7 +2,7 @@
 name: Taylor Bradley
 degree: Associate in Applied Science
 year: 2018
-order: 2
+order: 3
 portrait_image: uploads/taylor-bradley_photo.jpg
 quote: "There’s so much more to know. I think I’ll go back and continue taking classes."
 ---
