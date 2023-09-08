@@ -7,7 +7,7 @@ portrait_image: uploads/alumni-stories_lydia.jpg
 quote: "The veteran’s assistance team at KCC is amazing. They made the process of using my VA benefit easy."
 ---
 
-**What was the path the led you to KCC?**
+**What was the path that led you to KCC?**
 {: .mb-1}
 
 I joined the Navy directly after graduating from Kankakee High School in 2010. I had a very active military career requiring me to move multiple times. I was stationed in numerous locations across the US and in Yokosuka Naval Base in Japan. In Japan, I met my husband Cesar Salgado, who was also in the US Navy. We were engaged after a few months and had two children by July of 2015 Just a few months after Cesar was honorably discharged, we learned he had kidney cancer at the age of 25. Now cancer free we continue to closely monitor his health. I moved to the active reserves as a Navy corpsman in 2016. Returning to Illinois in 2017 after full-time military life posed some challenges, but I was determined to meet them head on. I began working on the prerequisites for the Respiratory Therapist program at KCC. My husband also attended KCC at that time. I completed my associate in applied sciences with honors in the fall of 2019, just weeks after giving birth to my third child.
