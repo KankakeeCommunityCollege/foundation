@@ -34,4 +34,3 @@ function checkScholarshipApp() {
 }
 
 export default checkScholarshipApp;
-

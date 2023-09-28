@@ -122,10 +122,6 @@ p {
   font-weight: $secondaryfont-weight-bold;
 }
 
-.f-color {
-  color: $fa-color;  // Sets color for FontAwesome icons
-}
-
 .main-heading {
   color: $grey-heading;
   font-family: $secondaryfont-stack;
@@ -133,143 +129,17 @@ p {
   font-weight: $secondaryfont-weight-regular;
 }
 
-// Typography for Coaches sections on pages
-// ===========================================
-.coaches-heading {
-  color: $grey-heading;
-  font-family: $secondaryfont-stack;
-  font-size: 1.4em;
-  font-weight: $secondaryfont-weight-regular;
-  margin-left: 15px;
-}
-
-.coach-name {
-  color: $primary-red;
-  font-family: $secondaryfont-stack;
-  font-size: 1.5em;
-  font-weight: $secondaryfont-weight-bold;
-}
-
-.coach-title {
-  color: $grey-heading;
-  font-family: $secondaryfont-stack;
-  font-size: 1.2em;
-  font-weight: $secondaryfont-weight-black;
-}
-
 p.general-p {
   font-family: $basefont-stack;
   font-size: 1rem;
 }
 
-.news__heading {
-  color: $primary-red;
-  font-family: $secondaryfont-stack;
-  font-size: 1.2em;
-}
-
-.news__sub-heading {
-  color: #666;
-  font-family: $secondaryfont-stack;
-  font-size: .9em;
-  font-weight: $secondaryfont-weight-boldish;
-  text-transform: uppercase;
-}
-
-.news__paragraph {
-  color: #666;
-  font-family: $basefont-stack;
-  font-size: 1rem;
-}
-
-// ALERT TYPOGRAPHY SHIT HERE
+// ALERT TYPOGRAPHY
 // ==========================
 .alert__title {
   color: $primary-red;
   font-family: $secondaryfont-stack;
   font-size: 1.2em;
-}
-
-.typography__latest-news-widget__h2 {
-  border-bottom-color: $primary-red;
-  border-bottom-style: solid;
-  border-bottom-width: thick;
-  color: $primary-blue;
-  text-transform: uppercase;
-}
-
-.typography__newsroom-main-heading {
-  align-self: center;
-  color: $primary-blue;
-  display: inline;
-  font-family: eurostile,sans-serif;
-  font-size: 1.5rem;
-  font-style: italic;
-  font-weight: 700;
-  text-transform: uppercase;
-  vertical-align: middle;
-  transition-property: color;
-  transition-timing-function: ease;
-  transition-duration: .4s;
-  &:hover,
-  &:focus {
-    color: $primary-red;
-  }
-}
-
-@media screen and (min-width:360px) {
-  .typography__newsroom-main-heading {
-    font-size: 1.8rem;
-  }
-}
-
-@media screen and (min-width:410px) {
-  .typography__newsroom-main-heading {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (min-width:576px) {
-  .typography__newsroom-main-heading {
-    font-size: 2.3rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .typography__newsroom-main-heading {
-    font-size: 2.4rem;
-  }
-}
-
-@media screen and (min-width: 1500px) {
-  .typography__newsroom-main-heading {
-    font-size: 2.6rem;
-  }
-}
-
-.typography__latest-news-widget__rollup-list-h {
-  color: $black;
-}
-
-.latest-news-widget__latest__tease__link:focus .typography__latest-news-widget__rollup-list-h,
-.latest-news-widget__latest__tease__link:hover .typography__latest-news-widget__rollup-list-h,
-.latest-news-widget__latest__tease__number .tease-is-active  {
-  color: $primary-red;
-}
-
-.typography__upcoming-events {
-  color: $primary-blue;
-  font-family: $basefont-stack;
-  font-weight: $base-font-weigth-bold;
-  text-transform: uppercase;
-}
-
-.typography__social-accounts {
-  color: $primary-blue;
-}
-
-.typography__newsroom-heading {
-  font-family: $secondaryfont-weight-bold;
 }
 
 .red-heading {
@@ -525,4 +395,38 @@ ul.typography__larger-p li {
   letter-spacing: .125rem;
   margin-bottom: 0;
   padding-left: 45px;
+}
+
+.typography__footer-heading--long {
+  font-size: 1.75rem;
+}
+
+@media screen and (min-width: 360px) {
+  .typography__footer-heading--long {
+    font-size: 1.75rem
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .typography__footer-heading--long {
+    font-size: 2rem
+  }
+}
+
+@media screen and (min-width: 410px) {
+  .typography__footer-heading--long {
+    font-size: 2.2rem
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .typography__footer-heading--long {
+    font-size: 2rem
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .typography__footer-heading--long {
+    font-size: 2.2rem
+  }
 }
