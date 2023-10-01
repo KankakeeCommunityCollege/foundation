@@ -13,9 +13,9 @@ const openMessage = `<p class="mb-4">
   </p>
   <div style="max-width: 800px;" class="alert alert-info mx-auto mb-5 text-left">
     <p class="mb-2">
-      <strong>Awards will be announced on May 15.</strong>
+      <strong>Awards will be announced on June 1.</strong>
       Applicants will be notified via email.
-      Scholarship recipients must be enrolled at KCC for the 2023-24 academic year to receive award.
+      Scholarship recipients must be enrolled at KCC for the 2024-25 academic year to receive award.
     </p>
     <p class="mb-0 text-center">
       <strong>Need Help?</strong> Contact the foundation office: 
