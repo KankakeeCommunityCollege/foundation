@@ -1,0 +1,24 @@
+<!-- Open Graph meta tags for social media posts -->
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:title" content="{{ page.title }}">
+{% if page.social_description %}<meta property="og:description" content="{{ page.social_description }}">{% endif %}
+{% if page.social_image %}
+  {% assign first_char = page.social_image | slice: 0 %}
+  {% if first_char == '/' %}
+  {% assign image = page.social_image | remove_first: '/' %}
+{% else %}
+  {% assign image = page.social_image %}
+{% endif %}
+<meta property="og:image" content="{{ site.url }}/{{ image }}">
+<meta property="og:image:secure_url" content="{{ site.url }}/{{ image }}">
+{% if image contains '.JPG' or image contains '.jpg' or image contains '.jpeg' or image contains '.JPEG' %}
+<meta property="og:image:type" content="image/jpeg">
+{% elsif image contains '.PNG' or image contains '.png' %}
+<meta property="og:image:type" content="image/png">
+{% elsif image contains '.GIF' or image contains '.gif' %}
+<meta property="og:image:type" content="image/gif">
+{% elsif image contains '.SVG' or image contains '.svg' %}
+<meta property="og:image:type" content="image/svg+xml">
+{% endif %}
+<meta name="twitter:card" content="summary_large_image">
+{% endif %}

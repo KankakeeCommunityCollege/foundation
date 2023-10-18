@@ -18,3 +18,4 @@
     <link rel="preload" as="image" href="{{ page.baseurl }}{{ page.slides[0].image }}">
     {%- endif -%}
     {% if page.url == '/giveday/' %}{% include facebook-meta.html %}{% endif %}
+    {% if page.include_social_meta == true %}{% include social-meta.html %}{% endif %}
