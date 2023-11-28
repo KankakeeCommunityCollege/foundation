@@ -4,6 +4,7 @@ public-url: https://foundation.kcc.edu
 site_name: Foundation
 theme: kcc-gem-theme
 port: 3000
+# BUILD
 timezone: America/Chicago
 google-tag_key: GTM-KKZRJB5
 nav_links:
