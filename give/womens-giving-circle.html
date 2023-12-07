@@ -9,12 +9,27 @@ description: >-
   completing their degree. Funds can be used to assist with child care, health
   care, transportation, housing and other obstacles students may have to
   completing their degree.
+banner_image: 'uploads/womens-giving-impact-banner.jpg'
+banner_image_alt: >-
+  Women's giving circle, Jan. - Oct., 2023 in review. $10,300 in gifts given.
+  Students needs funded: car repairs, bus passes, housing, utilities, supplies,
+  tuition & fees, books, lab kits, exam fees, physicals, vaccines and background
+  checks (for health career program requirements). Grant assistance for 2nd year
+  students in need requires faculty referral and faculty mentor to keep students
+  on track to graduate. Kankakee Community College Foundation
+  - foundation.kcc.edu.
 ---
 
 <main>
   <div class="container">
     <div class="row">
       <div class="col sub-nav__content--wrapper mt-3">
+        {% if page.banner_image %}
+        <img
+          src="{{ page.baseurl }}{{ page.banner_image }}"
+          class="img-fluid mb-2"
+          alt="{{ page.banner_image_alt }}">
+        {% endif %}
         <div class="editable">
           <h3 class="blue-heading">Women&rsquo;s Giving Circle: Educate, Empower and Endeavor</h3>
           <h4 class="blue-heading-small">Grant assistance for second year students in need</h4>
