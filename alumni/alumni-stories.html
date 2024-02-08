@@ -49,14 +49,14 @@ description: ''
             <div class="tab-pane fade show active" id="{{ alumni_id }}" role="tabpanel" aria-labelledby="{{ alumni_id }}-tab">
               <img src="{{ alumni.baseurl }}{{ alumni.portrait_image }}" class="float-left img-fluid alumni__portrait" alt="Portrait of {{ alumni.name }}">
               <h3 class="blue-heading">{{ alumni.name }}</h3>
-              <p><strong>{% if alumni.degree and alumni.year %}{{ alumni.degree }}, {{ alumni.year }}{% elsif alumni.degree %}{{ alumni.degree }}{% endif %}</strong></p>
+              {% if alumni.degree %}<p><strong>{% if alumni.degree and alumni.year %}{{ alumni.degree }}, {{ alumni.year }}{% else %}{{ alumni.degree }}{% endif %}</strong></p>{% endif %}
               <p>{{ alumni.content }}</p>
             </div>
           {% else %}
             <div class="tab-pane fade" id="{{ alumni_id }}" role="tabpanel" aria-labelledby="{{ alumni_id }}-tab">
               <img src="{{ alumni.baseurl }}{{ alumni.portrait_image }}" class="float-left img-fluid alumni__portrait" alt="Portrait of {{ alumni.name }}">
               <h3 class="blue-heading">{{ alumni.name }}</h3>
-              <p><strong>{{ alumni.degree }}, {{ alumni.year }}</strong></p>
+              {% if alumni.degree %}<p><strong>{% if alumni.degree and alumni.year %}{{ alumni.degree }}, {{ alumni.year }}{% else %}{{ alumni.degree }}{% endif %}</strong></p>{% endif %}
               <p>{{ alumni.content }}</p>
             </div>
           {% endif %}

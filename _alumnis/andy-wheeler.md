@@ -2,7 +2,7 @@
 name: Andy Wheeler
 degree: Associate Degree
 year: 1996
-order: 9
+order: 14
 portrait_image: uploads/andy-wheeler.jpg
 quote: >-
   Go to community college first, before you drop tens of thousands of dollars
