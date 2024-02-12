@@ -34,10 +34,6 @@ _site
 
 # NodeJS stuffs
 node_modules/
-package-lock.json
-
-# Ignore gem lock to avoid mac/windows discrepencies
-Gemfile.lock
 
 # Ignore ruby-version file.
 ## `.ruby-version` file WILL BREAK CLOUDCANNON
