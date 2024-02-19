@@ -94,7 +94,7 @@ slides:
     <div class="row">
       <div class="col">
         <ol id="jsTeaseList" class="latest-news-widget__latest__tease-group">
-          {% assign sorted = site.alumnis | sort: 'year' | reverse %}
+          {% assign sorted = site.alumnis | sort: 'homepage_priority' %}
           {% for alumni in sorted limit:4 %}
             <li class="latest-news-widget__latest__tease latest-news-widget__latest__tease--default latest-news-widget__latest__tease--has-image">
               <a id="jsTeaseLink{{ forloop.index }}" class="latest-news-widget__latest__tease__link js-hp-latest-tease-link" href="{{ page.baseurl }}alumni/alumni-stories/#{{ alumni.name | replace: ' ', '-' | downcase }}" data-image="{{ alumni.portrait_image }}" data-image-alt="" data-tease-type="" data-index="{{ forloop.index0 }}" aria-hidden="false">

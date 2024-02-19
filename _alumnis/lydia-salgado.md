@@ -2,7 +2,7 @@
 name: Lydia Salgado
 degree: Associate in Applied Science - Respiratory Therapy
 year: 2019
-order: 2
+homepage_priority: 6
 portrait_image: uploads/alumni-stories_lydia.jpg
 quote: "The veteran’s assistance team at KCC is amazing. They made the process of using my VA benefit easy."
 ---

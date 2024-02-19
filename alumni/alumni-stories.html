@@ -12,7 +12,7 @@ description: ''
       <div class="col alumni__col">
         <nav>
           <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            {% assign sorted = site.alumnis | sort: 'order' %}
+            {% assign sorted = site.alumnis | sort: 'name' %}
             {% for alumni in sorted %}
             {% assign alumni_id = alumni.name | replace: ' ', '-' | replace: '&', 'and' | downcase | remove: '.' | remove: '(' | remove: ')' | remove: '/' | remove: "'" %}
               {% if forloop.first == true %}
@@ -47,17 +47,27 @@ description: ''
           {% assign alumni_id = alumni.name | replace: ' ', '-' | replace: '&', 'and' | downcase | remove: '.' | remove: '(' | remove: ')' | remove: '/' | remove: "'" %}
           {% if forloop.first == true %}
             <div class="tab-pane fade show active" id="{{ alumni_id }}" role="tabpanel" aria-labelledby="{{ alumni_id }}-tab">
-              <img src="{{ alumni.baseurl }}{{ alumni.portrait_image }}" class="float-left img-fluid alumni__portrait" alt="Portrait of {{ alumni.name }}">
-              <h3 class="blue-heading">{{ alumni.name }}</h3>
-              <p><strong>{% if alumni.degree and alumni.year %}{{ alumni.degree }}, {{ alumni.year }}{% elsif alumni.degree %}{{ alumni.degree }}{% endif %}</strong></p>
-              <p>{{ alumni.content }}</p>
+              <article>
+                <img src="{{ alumni.baseurl }}{{ alumni.portrait_image }}" class="float-left img-fluid alumni__portrait" alt="Portrait of {{ alumni.name }}">
+                <h3 class="blue-heading">{{ alumni.name }}</h3>
+                {% if alumni.degree %}<p><strong>{% if alumni.degree and alumni.year %}{{ alumni.degree }}, {{ alumni.year }}{% else %}{{ alumni.degree }}{% endif %}</strong></p>{% endif %}
+                <p>{{ alumni.content }}</p>
+                {% if alumni.interview_month_and_year %}
+                  <footer><p>{{ alumni.interview_month_and_year }}</p></footer>
+                {% endif %}
+              </article>
             </div>
           {% else %}
             <div class="tab-pane fade" id="{{ alumni_id }}" role="tabpanel" aria-labelledby="{{ alumni_id }}-tab">
-              <img src="{{ alumni.baseurl }}{{ alumni.portrait_image }}" class="float-left img-fluid alumni__portrait" alt="Portrait of {{ alumni.name }}">
-              <h3 class="blue-heading">{{ alumni.name }}</h3>
-              <p><strong>{{ alumni.degree }}, {{ alumni.year }}</strong></p>
-              <p>{{ alumni.content }}</p>
+              <article>
+                <img src="{{ alumni.baseurl }}{{ alumni.portrait_image }}" class="float-left img-fluid alumni__portrait" alt="Portrait of {{ alumni.name }}">
+                <h3 class="blue-heading">{{ alumni.name }}</h3>
+                {% if alumni.degree %}<p><strong>{% if alumni.degree and alumni.year %}{{ alumni.degree }}, {{ alumni.year }}{% else %}{{ alumni.degree }}{% endif %}</strong></p>{% endif %}
+                <p>{{ alumni.content }}</p>
+                {% if alumni.interview_month_and_year %}
+                  <footer><p>{{ alumni.interview_month_and_year }}</p></footer>
+                {% endif %}
+              </article>
             </div>
           {% endif %}
           {% endfor %}
