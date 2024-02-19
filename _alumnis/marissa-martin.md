@@ -1,5 +1,6 @@
 ---
 name: Marissa Martin
+sort_name: Martin Marissa
 degree:
 year:
 homepage_priority: 5

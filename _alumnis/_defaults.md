@@ -1,7 +1,9 @@
 ---
 name:
+sort_name:
 degree:
 year:
+homepage_priority:
 portrait_image:
 quote:
 ---

@@ -1,5 +1,6 @@
 ---
 name: Eric Beach
+sort_name: Beach Eric
 degree:
 year:
 homepage_priority: 3

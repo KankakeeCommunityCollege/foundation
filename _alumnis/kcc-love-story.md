@@ -1,5 +1,6 @@
 ---
 name: Scott Runyan & Taylor Roach
+sort_name: Runyan & Taylor Roach Scott
 degree:
 year:
 homepage_priority: 15

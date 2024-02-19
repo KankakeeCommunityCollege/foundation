@@ -1,5 +1,6 @@
 ---
 name: Cory Martin
+sort_name: Martin Cory
 degree:
 year:
 homepage_priority: 1

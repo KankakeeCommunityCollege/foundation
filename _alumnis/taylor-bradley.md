@@ -1,5 +1,6 @@
 ---
 name: Taylor Bradley
+sort_name: Bradley Taylor
 degree: Associate in Applied Science
 year: 2018
 homepage_priority: 7

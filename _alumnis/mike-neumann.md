@@ -1,5 +1,6 @@
 ---
 name: Mike Neumann
+sort_name: Neumann Mike
 degree: Associate in Applied Science
 year: 2016
 homepage_priority: 8

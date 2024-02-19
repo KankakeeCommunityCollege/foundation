@@ -1,5 +1,6 @@
 ---
 name: Lydia Salgado
+sort_name: Salgado Lydia
 degree: Associate in Applied Science - Respiratory Therapy
 year: 2019
 homepage_priority: 6

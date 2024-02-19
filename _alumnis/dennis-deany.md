@@ -1,5 +1,6 @@
 ---
 name: Dennis Deany
+sort_name: Deany Dennis
 degree:
 year:
 homepage_priority: 2

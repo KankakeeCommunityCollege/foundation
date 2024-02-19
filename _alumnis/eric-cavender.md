@@ -1,5 +1,6 @@
 ---
 name: Eric Cavender
+sort_name: Cavender Eric
 degree: Associate Degree
 year: 2010
 homepage_priority: 12
