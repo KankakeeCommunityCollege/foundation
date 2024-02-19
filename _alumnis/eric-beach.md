@@ -2,12 +2,13 @@
 name: Eric Beach
 degree:
 year:
-order: 3
+homepage_priority: 3
 portrait_image: uploads/alumni-stories_eric-beach.jpg
 quote: >-
   "It was the foundation and the experience of being at KCC that helped
   propel me to go on to finish my bachelor's degree and then pursue my
   master's degree."
+interview_month_and_year: December 2023
 ---
 
 From his initial days at Kankakee Community College (KCC) in the 1990s to his current influential role, Eric Beach’s story is a testament to the transformative power of higher education.

@@ -2,13 +2,14 @@
 name: Marissa Martin
 degree:
 year:
-order: 6
+homepage_priority: 5
 portrait_image: uploads/alumni-stories_marissa-martin.jpg
 quote: >-
   "KCC taught me to trust my instincts. It was a period of personal
   growth where I learned to make decisions based on what felt right
   for me, not necessarily what others expected. It was about finding
   my own personal path."
+interview_month_and_year: December 2023
 ---
 
 Marissa Martin's journey into higher education began with a strategic choice—selecting Kankakee Community College for its proximity, flexibility, and the glowing recommendations of friends and family. This decision became the foundation for both her personal and professional growth.

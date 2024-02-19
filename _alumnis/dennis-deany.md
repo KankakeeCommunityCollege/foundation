@@ -2,15 +2,14 @@
 name: Dennis Deany
 degree:
 year:
-order: 2
+homepage_priority: 2
 portrait_image: uploads/alumni-stories_dennis-deany.jpg
 quote: >-
   "You have to be a good servant to be a good leader. When you
   are serving your classmates at KCC, it will help you start the
   transformation into becoming a good leader."
+interview_month_and_year: December 2023
 ---
-
-<!-- **A Story of Perseverance: Dennis Deany's Inspiring Path from KCC to a Transformative Career** -->
 
 In the Deany household in Chebanse, college wasn't a common topic of conversation. Dennis Deany and his siblings changed that, and became the first generation in their family to pursue higher education.
 

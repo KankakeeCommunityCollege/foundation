@@ -2,12 +2,13 @@
 name: Moira Martin
 degree:
 year:
-order: 5
+homepage_priority: 4
 portrait_image: uploads/alumni-stories_moira-martin.jpg
 quote: >-
   "The support I received from the faculty at KCC was unparalleled.
   They went the extra mile, creating an environment where I felt
   valued and encouraged to overcome challenges."
+interview_month_and_year: November 2023
 ---
 
 Dr. Moira Martin, a chiropractor, attributes much of her career's foundation to Kankakee Community College.

@@ -2,7 +2,7 @@
 name: Mike Neumann
 degree: Associate in Applied Science
 year: 2016
-order: 9
+homepage_priority: 8
 portrait_image: uploads/mike-neumann-photo.jpg
 quote: "Get started and make corrections on the go."
 ---
