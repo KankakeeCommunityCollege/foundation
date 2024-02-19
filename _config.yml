@@ -35,8 +35,8 @@ sub-nav_links:
     link_href: 'about/foundation-board'
   - link_text: 'Alumni Event'
     link_href: 'events/alumni-event'
-  - link_text: 'Magic of Giving'
-    link_href: 'events/magic-of-giving'
+  - link_text: 'Blooming Ambition'
+    link_href: 'events/blooming-ambition'
   - link_text: 'Annual Scholarship Event'
     link_href: 'events/annual-scholarship-event'
   - link_text: "President's Circle Dinner"
