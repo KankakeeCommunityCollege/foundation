@@ -1,5 +1,6 @@
 ---
 name: Kaylynn Cole
+sort_name: Cole Kaylynn
 degree: Associate Degree
 year: 2014
 homepage_priority: 11

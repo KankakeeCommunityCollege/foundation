@@ -1,5 +1,6 @@
 ---
 name: Moira Martin
+sort_name: Martin Moira
 degree:
 year:
 homepage_priority: 4

@@ -12,7 +12,7 @@ description: ''
       <div class="col alumni__col">
         <nav>
           <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            {% assign sorted = site.alumnis | sort: 'name' %}
+            {% assign sorted = site.alumnis | sort_natural: 'sort_name' %}
             {% for alumni in sorted %}
             {% assign alumni_id = alumni.name | replace: ' ', '-' | replace: '&', 'and' | downcase | remove: '.' | remove: '(' | remove: ')' | remove: '/' | remove: "'" %}
               {% if forloop.first == true %}

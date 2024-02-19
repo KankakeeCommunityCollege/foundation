@@ -1,5 +1,6 @@
 ---
 name: Heidi Surprenant-Pommier
+sort_name: Surprenant-Pommier Heidi
 degree: Associate Degree
 year: 1991
 homepage_priority: 14

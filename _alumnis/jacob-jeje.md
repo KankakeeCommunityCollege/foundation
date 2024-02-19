@@ -1,5 +1,6 @@
 ---
 name: Jacob Jeje
+sort_name: Jeje Jacob
 degree: Associate in General Studies & Occupational Certificate
 year: 2016
 homepage_priority: 9

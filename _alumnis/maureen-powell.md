@@ -1,5 +1,6 @@
 ---
 name: Maureen Powell
+sort_name: Powell Maureen
 degree: Associate Degree
 year: 1985
 homepage_priority: 10

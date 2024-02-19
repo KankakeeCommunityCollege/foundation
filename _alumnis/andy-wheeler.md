@@ -1,5 +1,6 @@
 ---
 name: Andy Wheeler
+sort_name: Wheeler Andy
 degree: Associate Degree
 year: 1996
 homepage_priority: 13
