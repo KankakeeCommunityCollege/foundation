@@ -3,7 +3,7 @@ name: Dennis Deany
 sort_name: Deany Dennis
 degree:
 year:
-preview_priority: 2
+preview_priority: 3
 portrait_image: uploads/alumni-stories_dennis-deany.jpg
 quote: >-
   "You have to be a good servant to be a good leader. When you
