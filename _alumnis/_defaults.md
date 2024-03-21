@@ -3,7 +3,7 @@ name:
 sort_name:
 degree:
 year:
-homepage_priority:
+preview_priority:
 portrait_image:
 quote:
 ---

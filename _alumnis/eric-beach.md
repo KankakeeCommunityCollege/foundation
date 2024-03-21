@@ -3,7 +3,7 @@ name: Eric Beach
 sort_name: Beach Eric
 degree:
 year:
-homepage_priority: 3
+preview_priority: 3
 portrait_image: uploads/alumni-stories_eric-beach.jpg
 quote: >-
   "It was the foundation and the experience of being at KCC that helped

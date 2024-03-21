@@ -3,7 +3,7 @@ name: Marissa Martin
 sort_name: Martin Marissa
 degree:
 year:
-homepage_priority: 5
+preview_priority: 5
 portrait_image: uploads/alumni-stories_marissa-martin.jpg
 quote: >-
   "KCC taught me to trust my instincts. It was a period of personal
