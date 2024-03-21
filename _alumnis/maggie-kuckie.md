@@ -7,7 +7,7 @@ preview_priority: 1
 portrait_image: uploads/alumni-stories_maggie-kuckie_DSC_0309.jpg
 quote: >-
   “KCC provides the perfect transition from high school to the college&nbsp;environment.”
-interview_month_and_year:
+interview_month_and_year: November 2023
 ---
 
 Maggie Kuckie, owner of Spa Remedy in Bradley, Illinois, credits the start of her path to success to her time at Kankakee Community College. In business since 2014 with her husband, Jim, the spa is a testament to her belief in proactive wellness and the body’s ability to heal itself. The couple are driven by the desire to keep their community&nbsp;healthy.
