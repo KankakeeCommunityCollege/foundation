@@ -5,7 +5,7 @@ degree: Associate in Applied Science
 year: 2016
 preview_priority: 9
 portrait_image: uploads/mike-neumann-photo.jpg
-quote: "Get started and make corrections on the go."
+quote: Get started and make corrections on the go.
 ---
 
 A KCC business graduate, Mike never planned on owning his own business but today, he is the proud owner of Fit Body U, a thriving gym in Bourbonnais, IL.

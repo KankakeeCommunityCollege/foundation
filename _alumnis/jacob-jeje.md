@@ -5,7 +5,7 @@ degree: Associate in General Studies & Occupational Certificate
 year: 2016
 preview_priority: 10
 portrait_image: uploads/jacob-jeje-photo.jpg
-quote: "It all comes down to passion, drive, and a long-term goal."
+quote: It all comes down to passion, drive, and a long-term goal.
 ---
 
 Jacob relocated his family from Nigeria to New York for better opportunities and eventually, they settled in Illinois to be close to relatives. “I was working some crappy jobs, which I did not like. I thought about the American dream, that I could decide what I wanted to do, go to college, and get the training I needed to sustain myself and my family.”

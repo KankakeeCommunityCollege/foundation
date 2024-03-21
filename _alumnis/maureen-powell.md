@@ -5,7 +5,7 @@ degree: Associate Degree
 year: 1985
 preview_priority: 11
 portrait_image: uploads/maureen-linkedin_crop.jpg
-quote: "I applied to, visited, and was accepted by four-year universities.  When I graduated, though, I wasn’t ready to go away to school.  Fortunately, KCC was there."
+quote: I applied to, visited, and was accepted by four-year universities.  When I graduated, though, I wasn’t ready to go away to school.  Fortunately, KCC was there.
 ---
 
 <h4 class="blue-heading-small">What is your favorite memory of KCC?</h4>

@@ -6,10 +6,10 @@ year:
 preview_priority: 6
 portrait_image: uploads/alumni-stories_marissa-martin.jpg
 quote: >-
-  "KCC taught me to trust my instincts. It was a period of personal
+  KCC taught me to trust my instincts. It was a period of personal
   growth where I learned to make decisions based on what felt right
   for me, not necessarily what others expected. It was about finding
-  my own personal path."
+  my own personal path.
 interview_month_and_year: December 2023
 ---
 

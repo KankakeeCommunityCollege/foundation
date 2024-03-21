@@ -6,7 +6,7 @@ year:
 preview_priority: 2
 portrait_image: uploads/alumni-stories_cory-martin.jpg
 quote: >-
-  "KCC was the compass that guided me to discover my passion for working with my hands."
+  KCC was the compass that guided me to discover my passion for working with my hands.
 interview_month_and_year: November 2023
 ---
 

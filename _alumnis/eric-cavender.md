@@ -5,7 +5,7 @@ degree: Associate Degree
 year: 2010
 preview_priority: 13
 portrait_image: uploads/eric-cavendar.jpg
-quote: "KCC was one of the best decisions I have ever made."
+quote: KCC was one of the best decisions I have ever made.
 ---
 
 #### What is your favorite memory of KCC?

@@ -6,9 +6,9 @@ year:
 preview_priority: 5
 portrait_image: uploads/alumni-stories_moira-martin.jpg
 quote: >-
-  "The support I received from the faculty at KCC was unparalleled.
+  The support I received from the faculty at KCC was unparalleled.
   They went the extra mile, creating an environment where I felt
-  valued and encouraged to overcome challenges."
+  valued and encouraged to overcome challenges.
 interview_month_and_year: November 2023
 ---
 
