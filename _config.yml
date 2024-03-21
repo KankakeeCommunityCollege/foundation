@@ -124,6 +124,16 @@ exclude:
 uploads_dir: "uploads/" # specifies the default uploads directory for CloudCannon
 
 # CloudCannon configurations — (CC config always starts with an underscore "_")
+## CloudCannon collections_config: key for configuring all files in a collection
+collections_config:
+  alumnis:
+    _inputs:
+      preview_priority:
+        type: number
+        comment: Priority/order for showing up on the homepage
+      sort_name:
+        type: text
+        comment: Last name then first name (no comma)
 ## For custom helper comments in CloudCannon — these comments appear next to the front-matter setting they correspond to:
 _comments:
   layout: Do NOT modify layouts. It may break things.

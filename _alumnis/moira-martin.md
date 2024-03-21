@@ -3,7 +3,7 @@ name: Moira Martin
 sort_name: Martin Moira
 degree:
 year:
-homepage_priority: 4
+preview_priority: 4
 portrait_image: uploads/alumni-stories_moira-martin.jpg
 quote: >-
   "The support I received from the faculty at KCC was unparalleled.

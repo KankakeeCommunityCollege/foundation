@@ -34,15 +34,21 @@ slides:
               {% include svg/scholarship.html %}
             </a>
           </div>
-          <a class="links__no-underline" href="{{ page.baseurl }}scholarships/"><h4 class="typography__orange-h4">Scholarships</h4></a>
+          <a class="links__no-underline" href="{{ page.baseurl }}scholarships/">
+            <h4 class="typography__orange-h4">Scholarships</h4>
+          </a>
           <div class="row action-cards__text-wrapper">
             <div class="col align-self-center">
-              <h5 class="typography__h5 editable">
-                  Complete one online application to be considered for all eligible scholarships. Each year, $200,000 in scholarships are distributed among nearly 200 students by the KCC Foundation.
+              <h5 class="typography__h5--description editable">
+                  Complete one online application to be considered for all eligible scholarships.
+                  Each year, $200,000 in scholarships are distributed among nearly 200 students by
+                  the KCC&nbsp;Foundation.
               </h5>
             </div>
           </div>
-            <a href="{{ page.baseurl }}scholarships" id="applyNow" class="btn btn-primary">Learn More</a>
+            <a href="{{ page.baseurl }}scholarships" id="applyNow" class="btn btn-primary">
+              Learn More
+            </a>
         </div>
         <div class="col-md-4 text-center action-cards__col--margin-btm action-cards__col--give">
           <div class="impact__give">
@@ -51,11 +57,14 @@ slides:
                 {% include svg/give.html %}
               </a>
             </div>
-            <a href="{{ page.baseurl }}give/" class="links__no-underline"><h4 class="typography__orange-h4">Give</h4></a>
+            <a href="{{ page.baseurl }}give/" class="links__no-underline">
+              <h4 class="typography__orange-h4">Give</h4>
+            </a>
             <div class="row action-cards__text-wrapper">
               <div class="col align-self-center">
-                <h5 class="typography__h5 editable">
-                    When you give, you create opportunities for students, enhance academic programming and improve our campus. Click below to explore all giving options.
+                <h5 class="typography__h5--description editable">
+                    When you give, you create opportunities for students, enhance academic programming
+                    and improve our campus. Click below to explore all giving&nbsp;options.
                 </h5>
               </div>
             </div>
@@ -73,8 +82,9 @@ slides:
           </a>
           <div class="row action-cards__text-wrapper">
             <div class="col align-self-center">
-              <h5 class="typography__h5 editable">
-                  Make a difference in the lives of KCC students by volunteering! We are looking for volunteers to review scholarship applications and help out with events.
+              <h5 class="typography__h5--description editable">
+                  Make a difference in the lives of KCC students by volunteering! We are looking for
+                  volunteers to review scholarship applications and help out with&nbsp;events.
               </h5>
             </div>
           </div>
@@ -94,7 +104,7 @@ slides:
     <div class="row">
       <div class="col">
         <ol id="jsTeaseList" class="latest-news-widget__latest__tease-group">
-          {% assign sorted = site.alumnis | sort: 'homepage_priority' %}
+          {% assign sorted = site.alumnis | sort: 'preview_priority' %}
           {% for alumni in sorted limit:4 %}
             <li class="latest-news-widget__latest__tease latest-news-widget__latest__tease--default latest-news-widget__latest__tease--has-image">
               <a id="jsTeaseLink{{ forloop.index }}" class="latest-news-widget__latest__tease__link js-hp-latest-tease-link" href="{{ page.baseurl }}alumni/alumni-stories/#{{ alumni.name | replace: ' ', '-' | downcase }}" data-image="{{ alumni.portrait_image }}" data-image-alt="" data-tease-type="" data-index="{{ forloop.index0 }}" aria-hidden="false">
