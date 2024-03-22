@@ -6,9 +6,9 @@ year:
 preview_priority: 3
 portrait_image: uploads/alumni-stories_dennis-deany.jpg
 quote: >-
-  "You have to be a good servant to be a good leader. When you
+  You have to be a good servant to be a good leader. When you
   are serving your classmates at KCC, it will help you start the
-  transformation into becoming a good leader."
+  transformation into becoming a good leader.
 interview_month_and_year: December 2023
 ---
 

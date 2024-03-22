@@ -6,7 +6,7 @@ year:
 preview_priority: 1
 portrait_image: uploads/alumni-stories_maggie-kuckie_DSC_0309.jpg
 quote: >-
-  “KCC provides the perfect transition from high school to the college&nbsp;environment.”
+  KCC provides the perfect transition from high school to the college&nbsp;environment.
 interview_month_and_year: November 2023
 ---
 
