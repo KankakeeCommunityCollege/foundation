@@ -5,7 +5,7 @@ degree: Associate in Applied Science - Respiratory Therapy
 year: 2019
 preview_priority: 7
 portrait_image: uploads/alumni-stories_lydia.jpg
-quote: "The veteran’s assistance team at KCC is amazing. They made the process of using my VA benefit easy."
+quote: The veteran’s assistance team at KCC is amazing. They made the process of using my VA benefit easy.
 ---
 
 **What was the path that led you to KCC?**

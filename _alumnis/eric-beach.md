@@ -6,9 +6,9 @@ year:
 preview_priority: 4
 portrait_image: uploads/alumni-stories_eric-beach.jpg
 quote: >-
-  "It was the foundation and the experience of being at KCC that helped
+  It was the foundation and the experience of being at KCC that helped
   propel me to go on to finish my bachelor's degree and then pursue my
-  master's degree."
+  master's degree.
 interview_month_and_year: December 2023
 ---
 
