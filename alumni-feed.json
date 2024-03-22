@@ -4,7 +4,7 @@ layout: null
 {%- assign alumni_previews = site.alumnis | sort: 'preview_priority' -%}
 {
   "items": [
-    {%- for item in alumni_previews limit:6 %}
+    {%- for item in alumni_previews limit:4 %}
     {%- assign first_char = item.portrait_image | slice: 0 -%}
     {% if first_char == '/' %}
       {% assign image = item.portrait_image | remove_first: '/' | prepend: 'https://foundation.kcc.edu/' %}
