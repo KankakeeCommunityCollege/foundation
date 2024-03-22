@@ -4,6 +4,7 @@ sort_name:
 degree:
 year:
 preview_priority:
+preview_image:
 portrait_image:
 quote:
 ---

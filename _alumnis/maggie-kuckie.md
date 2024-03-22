@@ -4,6 +4,7 @@ sort_name: Kuckie Maggie
 degree:
 year:
 preview_priority: 1
+preview_image: uploads/alumni-stories_maggie-kuckie_ig-ad.jpg
 portrait_image: uploads/alumni-stories_maggie-kuckie_DSC_0309.jpg
 quote: >-
   KCC provides the perfect transition from high school to the college&nbsp;environment.

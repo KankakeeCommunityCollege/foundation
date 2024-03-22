@@ -4,6 +4,7 @@ sort_name: Martin Marissa
 degree:
 year:
 preview_priority: 6
+preview_image: uploads/alumni-stories_marissa-martin_fb-ad.jpg
 portrait_image: uploads/alumni-stories_marissa-martin.jpg
 quote: >-
   KCC taught me to trust my instincts. It was a period of personal

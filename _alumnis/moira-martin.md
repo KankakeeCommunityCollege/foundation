@@ -4,6 +4,7 @@ sort_name: Martin Moira
 degree:
 year:
 preview_priority: 5
+preview_image: uploads/alumni-stories_moira-martin_fb-ad.jpg
 portrait_image: uploads/alumni-stories_moira-martin.jpg
 quote: >-
   The support I received from the faculty at KCC was unparalleled.
