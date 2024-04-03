@@ -1,6 +1,7 @@
 title: "Kankakee Community College"
 url: https://foundation.kcc.edu
 public-url: https://foundation.kcc.edu
+canonical_baseurl: https://foundation.kcc.edu
 site_name: Foundation
 theme: kcc-gem-theme
 port: 3000
