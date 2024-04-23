@@ -8,10 +8,10 @@
  */
 import slickParams from './slickParams'; // Holds slick parameter objects for slick initialization 
 
-const GALLERY = document.getElementById('Gallery');
+const gallery = document.getElementById('Gallery');
 // Gallery has a data attribute which holds a coma separated list of image URLs
-const IMG_ARR = GALLERY.dataset.gallerySrcList.split(',');
-const PREVIEW_IMG_LIST = document.querySelectorAll('img[data-gallery-src]'); // The page has 7 image slides in the HTML initially
+const imgArray = gallery.dataset.gallerySrcList.split(',');
+const previewImgList = document.querySelectorAll('img[data-gallery-src]'); // The page has 7 image slides in the HTML initially
 
 function addRemainingImageSlides(imageArray) {
   imageArray.forEach(src => {
@@ -29,7 +29,7 @@ function receptionGallery() {
   $('#galleryNav').slick(slickParams.nav); // This slick instance is the navigation for a main slider (instead of indicator-dots)
   //  2.) Lazy-load the slide images already in the slider
   //     (only 7 slides are built into the page's HTML.)
-  let promises = [...PREVIEW_IMG_LIST].map(img => {
+  let promises = [...previewImgList].map(img => {
     return new Promise((resolve, reject) => {
       img.src = img.dataset.gallerySrc;
       img.onerror = err => reject(err);
@@ -44,7 +44,7 @@ function receptionGallery() {
   Promise.allSettled(promises)
     .then(results => {
       // results.forEach(result => console.log(result));
-      addRemainingImageSlides(IMG_ARR);
+      addRemainingImageSlides(imgArray);
     })
 }
  

@@ -52,6 +52,7 @@
     "webpack-cli": "^4.6.0"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "clipboard": "^2.0.8",
     "colors": "1.4.0",
     "core-js": "^3.6.5",

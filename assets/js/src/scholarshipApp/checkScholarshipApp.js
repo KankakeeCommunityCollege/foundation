@@ -1,12 +1,12 @@
 import { checkDate } from "./checkDate";
 // Custom JS to check if the scholarship application is open (Oct. 1 - May 1) and...
 // provide a link to the application if its available
-const APPLICATION_LINK = 'https://kcc.scholarships.ngwebsolutions.com/CMXAdmin/Cmx_Content.aspx?cpId=639';
-const SCHOLARSHIPS_MESSAGE = document.getElementById('scholarshipsMessage');
+const applicationLink = 'https://kcc.scholarships.ngwebsolutions.com/CMXAdmin/Cmx_Content.aspx?cpId=639';
+const scholarshipMessage = document.getElementById('scholarshipsMessage');
 const openMessage = `<p class="mb-4">
   <strong>The application is open:</strong><br>
     <a class="btn btn-primary btn-lg"
-      href="${APPLICATION_LINK}"
+      href="${applicationLink}"
       target="_blank"
       rel="noopener noreferrer">
       Apply for Scholarships</a>
@@ -30,7 +30,7 @@ function checkScholarshipApp() {
   const scholarshipAppIsOpen = checkDate(today);
   const html = scholarshipAppIsOpen ? openMessage : closedMessage;
 
-  SCHOLARSHIPS_MESSAGE.innerHTML = html;
+  scholarshipMessage.innerHTML = html;
 }
 
 export default checkScholarshipApp;

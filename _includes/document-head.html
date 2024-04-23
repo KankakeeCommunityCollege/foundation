@@ -10,15 +10,18 @@
     {%- if site.canonical_baseurl %}
     <link rel="canonical" href="{% if page.url == '/' %}{{ site.canonical_baseurl }}{% else %}{{ site.canonical_baseurl }}{{ page.url }}{% endif %}">
     {%- endif %}
+    {% include preconnect.html %}
+    <!-- ==============================
+      KCC GEM THEME
+      A Jekyll gem-based theme for Kankakee Community College's websites
+      Theme & theme's build-process coded and developed by Wesley Zajicek for KCC 2019-2020
+      Author: Wesley Zajicek | https://github.com/wdzajicek
+      -->
+    {% if site.humans_file == true %}
+    <!-- The human's, the human's!! -->
+    <link rel="author" type="text/plain" href="/humans.txt" />
+    {%- endif -%}
     <!-- Standard Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{page.baseurl}}favicon.ico" />
-    {%- if page.url == '/giveday/' -%}
-    <!-- preload the Give Day video_loading_image (i.e. video poster image) -->
-    <link rel="preload" as="image" href="{{ page.baseurl }}{{ page.video_loading_image }}">
-    {%- endif -%}
-    {%- if page.slides -%}
-    <!-- preload the first slider image -->
-    <link rel="preload" as="image" href="{{ page.baseurl }}{{ page.slides[0].image }}">
-    {%- endif -%}
+    <link rel="icon" type="image/x-icon" href="{{page.baseurl}}favicon.ico"/>
     {% if page.url == '/giveday/' %}{% include facebook-meta.html %}{% endif %}
     {% if page.include_social_meta == true %}{% include social-meta.html %}{% endif %}

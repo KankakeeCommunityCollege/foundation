@@ -1,4 +1,3 @@
-const SVG_QUERY = 'svg';
 let intersectionOptions = {
   threshold: 0.9
 }
@@ -10,7 +9,7 @@ function addAnimation(el, observer) {
 }
 
 function animateIcons() {
-  const svgList = document.querySelectorAll(SVG_QUERY);
+  const svgList = document.querySelectorAll('.svgAnimate');
   let callback = (entries, observer) => {
     entries.forEach(entry => {
       if (entry.intersectionRatio != 1 && entry.intersectionRatio > 0) {
@@ -20,6 +19,7 @@ function animateIcons() {
   };
   [...svgList].forEach(svg => {
     let observer = new IntersectionObserver(callback, intersectionOptions);
+
     observer.observe(svg);
   });
 }

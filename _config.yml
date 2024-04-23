@@ -3,7 +3,7 @@ url: https://foundation.kcc.edu
 public-url: https://foundation.kcc.edu
 canonical_baseurl: https://foundation.kcc.edu
 site_name: Foundation
-theme: kcc-gem-theme
+theme: kcc-gem-theme-original
 port: 3000
 # BUILD
 timezone: America/Chicago
@@ -48,7 +48,7 @@ sub-nav_links:
     link_href: 'alumni/alumni-stories'
   - link_text: 'Century Scholars'
     link_href: 'scholarships/century-scholars'
-  - link_text: 'Create A Scholarship'
+  - link_text: 'Create a Scholarship'
     link_href: scholarships/create-a-scholarship
   - link_text: "Employee Giving"
     link_href: 'give/employee-giving'
@@ -102,12 +102,7 @@ future: true
 # Build settings
 markdown: kramdown
 
-include:
-  - "_accordions/"
-  - "_tabs/"
-  - "_distinguished-alumnis/"
-  - "_alumnis/"
-  - "_contacts/"
+# include:
 
 exclude:
   - "node_modules"
@@ -122,6 +117,9 @@ exclude:
   - "/events/annual-fundraiser-gallery.txt"
   - "buildtools/"
   - "postcss.config.js"
+  - "look-for-deprecated-bs4-classes.mjs"
+  - "look-for-deprecated-bs4-js.mjs"
+
 uploads_dir: "uploads/" # specifies the default uploads directory for CloudCannon
 
 # CloudCannon configurations — (CC config always starts with an underscore "_")
