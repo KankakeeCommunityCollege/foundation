@@ -21,7 +21,7 @@ window.addEventListener('load', () => {
     window.setTimeout(() => {
       import('./scholarshipApp/checkScholarshipApp')
         .then(({ default: checkScholarshipApp }) => checkScholarshipApp());
-    }, 2000);
+    }, 1000);
 
     import('../table/scholarshipSheetsAPI.js')
       .then(({ default: start }) => gapi.load('client', start))
