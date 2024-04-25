@@ -3,9 +3,6 @@ accordion_page: Give
 card_heading: Administrative Gift Fees
 order: 7
 ---
-### Administrative Gift Fees
-{: .typography__h3}
-
 ##### Administrative Gift Fees at KCC Effective: July 1, 2018
 {: .typography__h5--theme}
 

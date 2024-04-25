@@ -1,3 +1,4 @@
+
 // Variables
 @import '0-tools/vars';
 @import '0-tools/bootstrap-overrides';
@@ -22,35 +23,25 @@
 @import '1-base/lists';
 
 // Modular components
-@import '2-modules/header';
 @import '2-modules/sliders';
-//@import '2-modules/global-nav';
-//@import '2-modules/local-nav';
 @import '2-modules/foundation-board';
-@import '2-modules/hero-slider';
 @import '2-modules/scholarship-table';
-@import '2-modules/tabbed-nav';
 @import '2-modules/stories';
 @import '2-modules/contacts';
 @import '2-modules/action-cards';
-@import '2-modules/events';
-@import '2-modules/shop-smile';
-//@import '2-modules/sub-nav';
 @import '2-modules/latest-news-widget';
 @import '2-modules/alumni';
 @import '2-modules/img-hover';
-@import '2-modules/facilities';
 @import '2-modules/banner';
 @import '2-modules/gallery';
-@import '2-modules/benefits';
 
 // Layout items
-// @import "3-layout/...";
+// @import '3-layout/...';
 @import '3-layout/positioning';
 @import '3-layout/cards';
 @import '3-layout/content';
 @import '3-layout/margins';
 
 // Page specific styling
-// @import "4-pages/...";
+// @import '4-pages/...';
 @import '4-pages/index/home';

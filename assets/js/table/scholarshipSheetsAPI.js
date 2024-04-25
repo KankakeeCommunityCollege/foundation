@@ -1,24 +1,27 @@
 import createTableElements from './createTableElements';
 
-const SCHOLARSHIP_COUNT = document.getElementById('scholarshipCount'); // Span element to hold the total number of scholarships (built into HTML)
-const SHEET_KEY = '1Md3rpN0k8fDNKYc5PJ6AspuZhd9pw0TePeNwgpsGGX4'; // ID of the Google Sheet
-const GAPI_PARAMS = {
+const scholarshipCount = document.getElementById('scholarshipCount'); // Span element to hold the total number of scholarships (built into HTML)
+const sheetKey = '1Md3rpN0k8fDNKYc5PJ6AspuZhd9pw0TePeNwgpsGGX4'; // ID of the Google Sheet
+// Configuration object for initializing Sheets API
+const apiParams = {
   'apiKey': 'AIzaSyCEBsbXfFcdbkASlg-PodD1rT_Fe3Nw62A',
   'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/sheets/v4/rest']
 };
-const SCHOLARSHIP_PARAMS = {
-  spreadsheetId: SHEET_KEY,
+// Config object for Sheets API call
+const scholarshipParams = {
+  spreadsheetId: sheetKey,
   range: 'Scholarships',
 }
-const COUNT_PARAMS = {
-  spreadsheetId: SHEET_KEY,
+// Config object for Sheets API call
+const countParams = {
+  spreadsheetId: sheetKey,
   range: 'Scholarship Count'
 }
 
 
 function start() {
-  gapi.client.init(GAPI_PARAMS).then(() => {
-    return gapi.client.sheets.spreadsheets.values.get(SCHOLARSHIP_PARAMS); // Fetch the spreadsheet of scholarships using Google API
+  gapi.client.init(apiParams).then(() => {
+    return gapi.client.sheets.spreadsheets.values.get(scholarshipParams); // Fetch the spreadsheet of scholarships using Google API
   }).then(response => {
     createTableElements(response); // Builds the table HTML and injects into page
   }).then(() => {
@@ -29,12 +32,12 @@ function start() {
   }).then(() => {
     document.querySelector('input[type="search"].form-control').setAttribute('placeholder', 'Search Scholarships...'); // Adjust the tables' search placeholder text
   }).then(() => {
-    return gapi.client.sheets.spreadsheets.values.get(COUNT_PARAMS); // Fetch the total number of scholarships 
+    return gapi.client.sheets.spreadsheets.values.get(countParams); // Fetch the total number of scholarships 
   }).then(response => {
     // `response.result.values` always holds a spreadsheets' content/data when using the `spreadsheets.values.get()` gapi method
     const COUNT = response.result.values[1][0]; // This gets the contents of the first cell of the second row which happens to hold the count-total
 
-    SCHOLARSHIP_COUNT.innerHTML = COUNT;
+    scholarshipCount.innerHTML = COUNT;
   }, err => console.error(`Execute error: ${err}`, err))
 }
 // Loads the JavaScript client library and invokes `start` afterwards.
