@@ -21,10 +21,14 @@ window.addEventListener('load', () => {
     window.setTimeout(() => {
       import('./scholarshipApp/checkScholarshipApp')
         .then(({ default: checkScholarshipApp }) => checkScholarshipApp());
-    }, 2000);
+    }, 1000);
 
     import('../table/scholarshipSheetsAPI.js')
-      .then(({ default: start }) => gapi.load('client', start));
+      .then(({ default: start }) => gapi.load('client', start))
+      .then(() => {
+        // Conditionally compile the BS5 pagination CSS for use in the scholarships page
+        import('../../scss/bootstrap-pagination.scss');
+      })
   }
 
   if (document.getElementById('galleryTrack')) {

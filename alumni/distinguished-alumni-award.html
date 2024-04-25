@@ -13,10 +13,10 @@ description: >-
     <div class="row">
       <div class="col alumni__col">
         <nav>
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <a class="nav-item nav-link jsTabLink active" id="john-fulton" data-toggle="tab" href="#john-fulton-tab" role="tab" aria-controls="john-fulton" aria-selected="true">
+          <div class="nav nav-tabs navTabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link jsTabLink active" id="john-fulton" data-bs-toggle="tab" href="#john-fulton-tab" role="tab" aria-controls="john-fulton" aria-selected="true">
               <span class="alumni__nav">
-                <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--small float-left" style="background-image: url('{{ page.baseurl }}uploads/John_Fulton_20121108_DSC_0141-med.jpg')">
+                <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--small float-start" style="background-image: url('{{ page.baseurl }}uploads/John_Fulton_20121108_DSC_0141-med.jpg')">
                 </div>
                 <h3 class="latest-news-widget__latest__tease__overline typography__latest-news-widget__rollup-list-h alumni__h3--width">John Fulton</h3>
               </span>
@@ -27,7 +27,7 @@ description: >-
             <a
              class="nav-item nav-link jsTabLink"
              id="{{ distinguished_alumni_id }}-tab"
-             data-toggle="tab"
+             data-bs-toggle="tab"
              href="#{{ distinguished_alumni_id }}"
              role="tab"
              aria-controls="{{ distinguished_alumni_id }}"
@@ -35,7 +35,7 @@ description: >-
               <span class="alumni__nav">
                 {% if distinguished_alumni.portrait_image %}
                 <div
-                 class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--small float-left mb-2"
+                 class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--small float-start mb-2"
                  style="background-image: url('{{ page.baseurl }}{{ distinguished_alumni.portrait_image }}')">
                 </div>
                 {% endif %}
@@ -59,7 +59,9 @@ description: >-
       <div class="col">
         <div class="tab-content alumni__tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="john-fulton-tab" role="tabpanel" aria-labelledby="john-fulton-tab">
-            <img src="{{ page.baseurl }}uploads/John_Fulton_20121108_DSC_0141-med.jpg" class="float-left img-fluid alumni__portrait" alt="Portrait of John Fulton">
+            <div class="text-center">
+              <img src="{{ page.baseurl }}uploads/John_Fulton_20121108_DSC_0141-med.jpg" class="float-sm-start img-fluid alumni__portrait" alt="Portrait of John Fulton">
+            </div>
             <h3 class="blue-heading">John Fulton Distinguished Alumni Award</h3>
             <p>Established in 2009, the John M. Fulton Distinguished Alumni Award is named for long-time KCC Alumni Association member John Fulton of Herscher. Fulton is a 1981 graduate of KCC, and earned two associate degrees, in business and general studies.</p>
             <p>As a decorated Vietnam War hero, a tireless advocate for veterans affairs, and for people with disabilities, a farmer, and friend, Fulton is a source of pride and inspiration for all of us at KCC.</p>
@@ -77,7 +79,9 @@ description: >-
           {% assign distinguished_alumni_id = distinguished_alumni.name | replace: ' ', '-' | downcase | remove: '.' | remove: '(' | remove: ')' | remove: '/' | remove: "'" %}
             <div class="tab-pane fade" id="{{ distinguished_alumni_id }}" role="tabpanel" aria-labelledby="{{ distinguished_alumni_id }}-tab">
               {% if distinguished_alumni.portrait_image %}
-              <img src="{{ distinguished_alumni.baseurl }}{{ distinguished_alumni.portrait_image }}" class="float-left img-fluid alumni__portrait" alt="Portrait of {{ distinguished_alumni.name }}">
+              <div class="text-center">
+                <img src="{{ distinguished_alumni.baseurl }}{{ distinguished_alumni.portrait_image }}" class="float-sm-start img-fluid alumni__portrait" alt="Portrait of {{ distinguished_alumni.name }}">
+              </div>
               {% endif %}
               <h3 class="blue-heading">{{ distinguished_alumni.name }}</h3>
               <p>{{ distinguished_alumni.content }}</p>
