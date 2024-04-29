@@ -1,6 +1,6 @@
-const PARENT = document.getElementById('scholarshipTable');
-const DEFAULT_NUMBER_OF_COLUMNS = 8; // Number of columns in the Google Sheet that the incoming data is being pulled from.
-const TH_CLASS_CONFIGURATION_OBJECT = { // Objects Key's correspond to the Sheet's heading row values. The key's value is set the the dataTables-plugin responsive-class to used for that column
+const parent = document.getElementById('scholarshipTable');
+const DEFAULT_NUM_OF_COLS = 8; // Number of columns in the Google Sheet that the incoming data is being pulled from.
+const thClassConfigObject = { // Objects Key's correspond to the Sheet's heading row values. The key's value is set the the dataTables-plugin responsive-class to used for that column
   'Other Special Requirements': 'none', // The `none` class only display's the info in the expandable "child row"
   'Demonstrate Financial Need': 'none',
   'Part Time/Full Time': 'none',
@@ -43,8 +43,8 @@ function createHeadingCells(tr, val) {
   const regEx = /\s/g;
   const replacement = '&nbsp;';
 
-  for (const key in TH_CLASS_CONFIGURATION_OBJECT) {
-    if (val === key) th.classList.add(TH_CLASS_CONFIGURATION_OBJECT[key]);
+  for (const key in thClassConfigObject) {
+    if (val === key) th.classList.add(thClassConfigObject[key]);
   }
 
   tr.append(th);
@@ -63,7 +63,7 @@ function createHeadingRow(thead, data) {
 
 function checkNumberOfCellsInRow(row) {
   let len = row.length; // Corresponds to the number of cells in the current row
-  let numberOfMissingDataItems = DEFAULT_NUMBER_OF_COLUMNS - len; // Each row should have 8 cells, unless one or more is left blank at the end of the row
+  let numberOfMissingDataItems = DEFAULT_NUM_OF_COLS - len; // Each row should have 8 cells, unless one or more is left blank at the end of the row
 
   if ( numberOfMissingDataItems !== 0 ) {
     for (let i = 0; i < numberOfMissingDataItems; i++) {
@@ -74,8 +74,8 @@ function checkNumberOfCellsInRow(row) {
 }
 
 function createCells(tr, val, i) {
-  const COLUMN_IS_RECIPIENT_OR_GPA = i === 1 || i === 4; // These two column get center alignment to make it layout nicer (first column = 0).
-  const COLUMN_IS_SPECIAL_REQUIREMENTS = i === 7; // # corresponds to last column in the Google Sheet (where first column is 0).
+  const COLUMN_IS_RECIPIENT_OR_GPA = (i === 1 || i === 4); // These two column get center alignment to make it layout nicer (first column = 0).
+  const COLUMN_IS_SPECIAL_REQUIREMENTS = (i === 7); // # corresponds to last column in the Google Sheet (where first column is 0).
   const td = document.createElement('td');
   const regEx = /(•\s)|(•)/g; // Regular expression to create a bulleted list effect in the "Other Special Requirements" column from the Google Sheet.
   const replacement = '<br>&bull;&nbsp;'; // Replace bullets with a hard-break + an HTML entity bullet.
@@ -103,7 +103,7 @@ function createBodyRow(tbody, data) { // 'data' is a row from the Sheet represen
 }
 
 function createTableElements(response) {
-  const table = createTableElement(PARENT);
+  const table = createTableElement(parent);
   const thead = createTableHeadingElement(table);
   const tbody = createTableBodyElement(table);
   // Handle the results here (response.result has the parsed body).
