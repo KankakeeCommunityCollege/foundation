@@ -17,12 +17,14 @@ window.addEventListener('load', () => {
     }
   }
 
-  if (path == '/scholarships/') {
+  if (document.getElementById('scholarshipsMessage')) {
     window.setTimeout(() => {
       import('./scholarshipApp/checkScholarshipApp')
         .then(({ default: checkScholarshipApp }) => checkScholarshipApp());
     }, 1000);
+  }
 
+  if (document.getElementById('scholarshipTable')) {
     import('../table/scholarshipSheetsAPI.js')
       .then(({ default: start }) => gapi.load('client', start))
       .then(() => {
