@@ -2,6 +2,23 @@
 layout: null
 ---
 {%- assign alumni_previews = site.alumnis | where_exp: 'item', 'item.preview_image != null' | sort: 'preview_priority' -%}
+{% if jekyll.environment == 'production' or jekyll.environment == 'publish' %}
+{ "items": [
+{%- for item in alumni_previews limit:6 -%}
+{%- assign first_char = item.portrait_image | slice: 0 -%}
+{%- if first_char == '/' -%}
+  {% assign image = item.portrait_image | remove_first: '/' | prepend: 'https://foundation.kcc.edu/' %}
+{% else %}
+  {% assign image = item.portrait_image | prepend: 'https://foundation.kcc.edu/' %}
+{%- endif -%}
+{%- assign preview_first_char = item.preview_image | slice: 0 -%}
+{%- if preview_first_char == '/' -%}
+  {% assign preview_image = item.preview_image | remove_first: '/' | prepend: 'https://foundation.kcc.edu/' %}
+{% else %}
+  {% assign preview_image = item.preview_image | prepend: 'https://foundation.kcc.edu/' %}
+{%- endif -%}
+    { "name": "{{ item.name }}", "image": "{{ image }}", "preview_image": "{{ preview_image }}", "quote": "{{ item.quote }}" }{% unless forloop.last %},{% endunless %}{%- endfor %}]}
+{% else %}
 {
   "items": [
     {%- for item in alumni_previews limit:6 %}
@@ -26,3 +43,4 @@ layout: null
     {%- endfor %}
   ]
 }
+{% endif %}

@@ -3,7 +3,7 @@ name: Mike Neumann
 sort_name: Neumann Mike
 degree: Associate in Applied Science
 year: 2016
-preview_priority: 9
+preview_priority: 10
 portrait_image: uploads/mike-neumann-photo.jpg
 quote: Get started and make corrections on the go.
 ---
