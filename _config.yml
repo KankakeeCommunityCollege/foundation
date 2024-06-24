@@ -127,6 +127,8 @@ uploads_dir: "uploads/" # specifies the default uploads directory for CloudCanno
 collections_config:
   alumnis:
     _inputs:
+      preview_image:
+        comment: 'Social media graphic from designers'
       preview_priority:
         type: number
         comment: Priority/order for showing up on the homepage
