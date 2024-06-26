@@ -9,7 +9,7 @@ portrait_image: uploads/alumni-stories_stephanie-newberry.jpg
 quote: >-
   I was a single parent of two children and KCC allowed me the
   opportunity to obtain a college degree at my own&nbsp;pace.
-interview_month_and_year:
+interview_month_and_year: December 2024
 ---
 
 KCC Staff Alumni<br>
