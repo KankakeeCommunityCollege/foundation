@@ -9,7 +9,7 @@ portrait_image: uploads/alumni-stories_nancy-schunke.jpg
 quote: >-
   Choosing KCC was the right decision for me due to its affordability,
   high-quality education, and&nbsp;flexibility.
-interview_month_and_year:
+interview_month_and_year: June 2024
 ---
 
 KCC Staff Alumni<br>
