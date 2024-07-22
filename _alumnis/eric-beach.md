@@ -3,7 +3,7 @@ name: Eric Beach
 sort_name: Beach Eric
 degree:
 year:
-preview_priority: 9
+preview_priority: 11
 preview_image: uploads/alumni-stories_eric-beach_ig-ad.jpg
 portrait_image: uploads/alumni-stories_eric-beach.jpg
 quote: >-
