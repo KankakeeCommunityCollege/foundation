@@ -3,13 +3,14 @@ name: Stephanie Newberry
 sort_name: Newberry Stephanie
 degree:
 year:
-preview_priority: 6
+preview_priority: 8
 preview_image:
 portrait_image: uploads/alumni-stories_stephanie-newberry.jpg
 quote: >-
   I was a single parent of two children and KCC allowed me the
   opportunity to obtain a college degree at my own&nbsp;pace.
 interview_month_and_year: December 2024
+staff_alumni: true
 ---
 
 KCC Staff Alumni<br>

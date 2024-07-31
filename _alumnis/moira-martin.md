@@ -3,7 +3,7 @@ name: Moira Martin
 sort_name: Martin Moira
 degree:
 year:
-preview_priority: 12
+preview_priority: 14
 preview_image: uploads/alumni-stories_moira-martin_fb-ad.jpg
 portrait_image: uploads/alumni-stories_moira-martin.jpg
 quote: >-
@@ -11,6 +11,7 @@ quote: >-
   They went the extra mile, creating an environment where I felt
   valued and encouraged to overcome challenges.
 interview_month_and_year: November 2023
+staff_alumni: false
 ---
 
 Dr. Moira Martin, a chiropractor, attributes much of her career's foundation to Kankakee Community College.

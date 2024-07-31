@@ -3,13 +3,14 @@ name: Christopher Both
 sort_name: Both Christopher
 degree:
 year:
-preview_priority: 3
+preview_priority: 5
 preview_image: uploads/alumni-stories_christopher-both_x-ad.jpg
 portrait_image: uploads/alumni-stories_christopher-both.jpg
 quote: >-
   I give credit to KCC for empowering me with the knowledge and skills
   I needed to reach my goal of helping my community&nbsp;thrive.
 interview_month_and_year: July 2024
+staff_alumni: false
 ---
 **From Family Tradition to Thriving Career: Christopher Both's Journey Starts at KCC**
 

@@ -3,13 +3,14 @@ name: Lisa Davis
 sort_name: Davis Lisa
 degree:
 year:
-preview_priority: 1
+preview_priority: 3
 preview_image:
 portrait_image: uploads/alumni-stories_lisa-davis.jpg
 quote: >-
   KCC offered the flexibility to work around my schedule
   thus making it easier for me to achieve my&nbsp;goals.
 interview_month_and_year: July 2024
+staff_alumni: true
 ---
 
 KCC Staff Alumni<br>

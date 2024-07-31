@@ -1,7 +1,7 @@
 ---
 layout: sub-nav
 baseurl: '../../'
-title: Alumni Stories
+title: Staff/Retiree Alumni Stories
 sub-nav_section: alumni
 description: ''
 ---
@@ -12,7 +12,7 @@ description: ''
       <div class="col alumni__col">
         <nav>
           <div class="nav nav-tabs navTabs" id="nav-tab" role="tablist">
-            {% assign sorted = site.alumnis | where_exp: 'item', 'item.staff_alumni == false' | sort_natural: 'sort_name' %}
+            {% assign sorted = site.alumnis | where_exp: 'item', 'item.staff_alumni == true' | sort_natural: 'sort_name' %}
             {% for alumni in sorted %}
             {% assign alumni_id = alumni.name | replace: ' ', '-' | replace: '&', 'and' | downcase | remove: '.' | remove: '(' | remove: ')' | remove: '/' | remove: "'" %}
               {% if forloop.first == true %}

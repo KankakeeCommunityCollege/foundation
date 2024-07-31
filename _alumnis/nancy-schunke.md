@@ -3,13 +3,14 @@ name: Nancy Schunke
 sort_name: Schunke Nancy
 degree:
 year:
-preview_priority: 5
+preview_priority: 7
 preview_image:
 portrait_image: uploads/alumni-stories_nancy-schunke.jpg
 quote: >-
   Choosing KCC was the right decision for me due to its affordability,
   high-quality education, and&nbsp;flexibility.
 interview_month_and_year: June 2024
+staff_alumni: true
 ---
 
 KCC Staff Alumni<br>

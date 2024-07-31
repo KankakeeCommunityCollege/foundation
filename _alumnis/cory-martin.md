@@ -3,12 +3,13 @@ name: Cory Martin
 sort_name: Martin Cory
 degree:
 year:
-preview_priority: 9
+preview_priority: 11
 preview_image: uploads/alumni-stories_cory-martin_x-ad.jpg
 portrait_image: uploads/alumni-stories_cory-martin.jpg
 quote: >-
   KCC was the compass that guided me to discover my passion for working with my hands.
 interview_month_and_year: November 2023
+staff_alumni: false
 ---
 
 Cory Martin's journey to success began at Kankakee Community College, where he discovered his passion for welding, leading to a fulfilling career. A proud KCC ’16 alum, Cory reflects on the pivotal role the college played in his life.
