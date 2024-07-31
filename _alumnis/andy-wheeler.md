@@ -3,12 +3,13 @@ name: Andy Wheeler
 sort_name: Wheeler Andy
 degree: Associate Degree
 year: 1996
-preview_priority: 21
+preview_priority: 23
 portrait_image: uploads/andy-wheeler.jpg
 quote: >-
   Go to community college first, before you drop tens of thousands of dollars
   figuring out that you don’t know what you want to do. Build your base, learn
   how to communicate professionally, and grow from there.
+staff_alumni: false
 ---
 
 At age 25, Andrew Wheeler came to KCC to get a fresh start professionally. As an adult student, Wheeler wanted to complete his associate degree while working and building a foundation for further education.

@@ -3,9 +3,10 @@ name: Mike Neumann
 sort_name: Neumann Mike
 degree: Associate in Applied Science
 year: 2016
-preview_priority: 16
+preview_priority: 18
 portrait_image: uploads/mike-neumann-photo.jpg
 quote: Get started and make corrections on the go.
+staff_alumni: false
 ---
 
 A KCC business graduate, Mike never planned on owning his own business but today, he is the proud owner of Fit Body U, a thriving gym in Bourbonnais, IL.

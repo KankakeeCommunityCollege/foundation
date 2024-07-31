@@ -3,7 +3,7 @@ name: Marissa Martin
 sort_name: Martin Marissa
 degree:
 year:
-preview_priority: 13
+preview_priority: 15
 preview_image: uploads/alumni-stories_marissa-martin_fb-ad.jpg
 portrait_image: uploads/alumni-stories_marissa-martin.jpg
 quote: >-
@@ -12,6 +12,7 @@ quote: >-
   for me, not necessarily what others expected. It was about finding
   my own personal path.
 interview_month_and_year: December 2023
+staff_alumni: false
 ---
 
 Marissa Martin's journey into higher education began with a strategic choice—selecting Kankakee Community College for its proximity, flexibility, and the glowing recommendations of friends and family. This decision became the foundation for both her personal and professional growth.

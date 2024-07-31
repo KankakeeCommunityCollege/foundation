@@ -3,7 +3,7 @@ name: Carla Kopp
 sort_name: Kopp Carla
 degree:
 year:
-preview_priority: 7
+preview_priority: 9
 preview_image: uploads/alumni-stories_carla-kopp_ig-ad.jpg
 portrait_image: uploads/alumni-stories_carla-kopp.jpg
 quote: >-
@@ -11,6 +11,7 @@ quote: >-
   After attending Kankakee Community College, she found the
   support and resources she needed to pursue her&nbsp;dreams.
 interview_month_and_year: May 2024
+staff_alumni: false
 ---
 
 **From Foster Care to Board Game Entrepreneur: Carla Kopp's Story of&nbsp;Inspiration**

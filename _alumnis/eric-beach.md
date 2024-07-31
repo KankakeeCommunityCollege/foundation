@@ -3,7 +3,7 @@ name: Eric Beach
 sort_name: Beach Eric
 degree:
 year:
-preview_priority: 11
+preview_priority: 13
 preview_image: uploads/alumni-stories_eric-beach_ig-ad.jpg
 portrait_image: uploads/alumni-stories_eric-beach.jpg
 quote: >-
@@ -11,6 +11,7 @@ quote: >-
   propel me to go on to finish my bachelor's degree and then pursue my
   master's degree.
 interview_month_and_year: December 2023
+staff_alumni: false
 ---
 
 From his initial days at Kankakee Community College (KCC) in the 1990s to his current influential role, Eric Beach’s story is a testament to the transformative power of higher education.

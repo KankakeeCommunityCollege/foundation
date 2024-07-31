@@ -3,7 +3,7 @@ name: Dennis Deany
 sort_name: Deany Dennis
 degree:
 year:
-preview_priority: 10
+preview_priority: 12
 preview_image: uploads/alumni-stories_dennis-deany_ig-ad.jpg
 portrait_image: uploads/alumni-stories_dennis-deany.jpg
 quote: >-
@@ -11,6 +11,7 @@ quote: >-
   are serving your classmates at KCC, it will help you start the
   transformation into becoming a good leader.
 interview_month_and_year: December 2023
+staff_alumni: false
 ---
 
 In the Deany household in Chebanse, college wasn't a common topic of conversation. Dennis Deany and his siblings changed that, and became the first generation in their family to pursue higher education.

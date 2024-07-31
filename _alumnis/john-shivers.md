@@ -3,12 +3,13 @@ name: John Shivers
 sort_name: Shivers John
 degree:
 year:
-preview_priority: 2
+preview_priority: 4
 preview_image:
 portrait_image: uploads/alumni-stories_john-shivers.jpg
 quote: >-
   KCC had everything I was looking for right at&nbsp;home.
 interview_month_and_year: July 2024
+staff_alumni: true
 ---
 
 KCC Staff Alumni<br>

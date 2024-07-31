@@ -3,7 +3,7 @@ name: Fawn Hendershott
 sort_name: Hendershott Fawn
 degree:
 year:
-preview_priority: 4
+preview_priority: 6
 preview_image: uploads/alumni-stories_fawn-hendershott_ig-ad.jpg
 portrait_image: uploads/alumni-stories_fawn-hendershott.jpg
 quote: >-
@@ -11,6 +11,7 @@ quote: >-
   my greater purpose. Without their nursing program, I wouldn't be
   where I am&nbsp;today.
 interview_month_and_year: July 2024
+staff_alumni: false
 ---
 **Fawn Hendershott Credits KCC For Giving Her a Second Chance at Life**
 
