@@ -31,11 +31,11 @@ My advice to any student on the journey of seeking education is to never give up
 
 **What is your role in your position?**
 
-I am currently a Financial Aid Specialist. 
+I am a Student Success Advisor.  In my role, I assist students in creating a realistic plan and selecting a program which aligns with their educational goals.
 
 **What is the most rewarding part of your job?**
 
-The most rewarding role is having the opportunity to guide and educate students on the financial aspect of achieving their educational goals. I enjoy hearing from students whom I have assisted and receiving feedback when they pass a test or complete a course.
+The most rewarding part of my job is having the opportunity to assist students in achieving their goals.  I enjoy hearing success stories and receiving feedback from students who have allowed me to be a part of their journey.
 
 **During your time working at KCC, what are some of the events or moments that are most memorable?**
 
