@@ -9,7 +9,7 @@ portrait_image: uploads/alumni-stories_lisa-davis.jpg
 quote: >-
   KCC offered the flexibility to work around my schedule
   thus making it easier for me to achieve my&nbsp;goals.
-interview_month_and_year: July 2024
+interview_month_and_year: August 2024
 staff_alumni: true
 ---
 
@@ -31,11 +31,11 @@ My advice to any student on the journey of seeking education is to never give up
 
 **What is your role in your position?**
 
-I am a Student Success Advisor.  In my role, I assist students in creating a realistic plan and selecting a program which aligns with their educational goals.
+I am a Student Success Advisor.  In my role, I assist students in creating a realistic plan and selecting a program which aligns with their educational&nbsp;goals.
 
 **What is the most rewarding part of your job?**
 
-The most rewarding part of my job is having the opportunity to assist students in achieving their goals.  I enjoy hearing success stories and receiving feedback from students who have allowed me to be a part of their journey.
+The most rewarding part of my job is having the opportunity to assist students in achieving their goals.  I enjoy hearing success stories and receiving feedback from students who have allowed me to be a part of their&nbsp;journey.
 
 **During your time working at KCC, what are some of the events or moments that are most memorable?**
 
