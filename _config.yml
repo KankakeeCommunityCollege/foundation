@@ -35,12 +35,12 @@ sub-nav_links:
     link_href: 'about/foundation-board'
   - link_text: Let's Party
     link_href: 'events/fall-fundraiser'
-  - link_text: 'Blooming Ambition'
-    link_href: 'events/blooming-ambition'
   - link_text: 'Annual Scholarship Event'
     link_href: 'events/annual-scholarship-event'
   - link_text: "President's Circle Dinner"
     link_href: 'events/presidents-circle-dinner'
+  - link_text: 'Blooming Ambition'
+    link_href: 'events/blooming-ambition'
   - link_text: 'Distinguished Alumni Award'
     link_href: 'alumni/distinguished-alumni-award'
   - link_text: 'Alumni Stories'
