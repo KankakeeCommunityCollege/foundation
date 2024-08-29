@@ -23,7 +23,7 @@ As a senior in high school, I wasn’t sure what I wanted to do. My parents enco
 
 **Why was KCC a good choice for you?**
 
-The small class sizes provided more individual attention from the professors. The college truly felt like a community that wanted me to succeed. There was student led organizations that I was able to join: TRIO, student council, and Phi Theta Kappa. I was also able to obtain a student worker position that worked around my class schedule. My first year at KCC, I was able to walk on to the softball team that received 3rd in the nation. KCC provides top notch professors, mentors, and couches. KCC set me up for success as I transferred to UIUC.  
+The small class sizes provided more individual attention from the professors. The college truly felt like a community that wanted me to succeed. There was student led organizations that I was able to join: TRIO, student council, and Phi Theta Kappa. I was also able to obtain a student worker position that worked around my class schedule. My first year at KCC, I was able to walk on to the softball team that received 3rd in the nation. KCC provides top notch professors, mentors, and coaches. KCC set me up for success as I transferred to UIUC.  
 
 **What advice would you give a student considering KCC?**
 
@@ -31,7 +31,7 @@ I have no regrets going to a community college first. I appreciate the opportuni
 
 **What is your role in your position?**
 
-I am a Respiratory Therapy Program Director and a Phi Theta Kappa advisor. I keep up with the reporting of our program to our accreditation body, CoARC. I instruct courses throughout the program, keep track of the budget, report our outcomes to the college, and get to collaborate with other health care program directors to provide a great experience for all students! For Phi Theta Kappa (PTK), I help facilitate meetings among PTK members, Encourage students to be involved and keep up with regional and leadership involvement opportunities.
+I am a Respiratory Therapy Program Director and a Phi Theta Kappa advisor. I keep up with the reporting of our program to our accreditation body, CoARC. I instruct courses throughout the program, keep track of the budget, report our outcomes to the college, and get to collaborate with other health care program directors to provide a great experience for all students! For Phi Theta Kappa (PTK), I help facilitate meetings among PTK members, encourage students to be involved and keep up with regional and leadership involvement opportunities.
 
 **What is the most rewarding part of your job?**
 
