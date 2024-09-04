@@ -3,7 +3,7 @@ name: Quoc Luong
 sort_name: Luong Quoc
 degree:
 year:
-preview_priority: 1
+preview_priority: 2
 preview_image: uploads/alumni-stories_quoc-luong_x-ad.jpg
 portrait_image: uploads/alumni-stories_quoc-luong.jpg
 quote: >-
