@@ -1,30 +1,33 @@
 title: "Kankakee Community College"
-url: https://foundation.kcc.edu
-public-url: https://foundation.kcc.edu
-canonical_baseurl: https://foundation.kcc.edu
+url: https://www.kcc.edu/foundation
+public-url: https://www.kcc.edu
+canonical_baseurl: https://www.kcc.edu/foundation
 site_name: Foundation
-theme: kcc-gem-theme-original
+theme: kcc-gem-theme
 port: 3000
 timezone: America/Chicago
 google-tag_key: GTM-KKZRJB5
+subsection_title: "KCC Foundation"
+theme_config: false
+core_site: false
 nav_links:
   - link_text: About
-    link_href: 'about'
+    link_href: 'about/'
     button: false
   - link_text: Events
-    link_href: 'events'
+    link_href: 'events/'
     button: false
   - link_text: Alumni
-    link_href: 'alumni'
+    link_href: 'alumni/'
     button: false
   - link_text: Scholarships
-    link_href: 'scholarships'
+    link_href: 'scholarships/'
     button: false
   - link_text: Contact
     link_href: '#contact'
     button: false
   - link_text: Give
-    link_href: 'give'
+    link_href: 'give/'
     button: true
 #  - link_text: Example External Link
 #    link_href: 'https://example-external-link.com'
@@ -32,33 +35,33 @@ nav_links:
 #    external: true  <---- #### Add the `external: true` key & value to make an external link ####
 sub-nav_links:
   - link_text: 'Foundation Board'
-    link_href: 'about/foundation-board'
+    link_href: 'about/foundation-board/'
   - link_text: 'Annual Scholarship Event'
-    link_href: 'events/annual-scholarship-event'
+    link_href: 'events/annual-scholarship-event/'
   - link_text: "President's Circle Dinner"
-    link_href: 'events/presidents-circle-dinner'
+    link_href: 'events/presidents-circle-dinner/'
   - link_text: "Women's Giving Circle"
-    link_href: 'events/womens-giving-circle'
+    link_href: 'events/womens-giving-circle/'
   - link_text: Let's Party
-    link_href: 'events/fall-fundraiser'
+    link_href: 'events/fall-fundraiser/'
   - link_text: 'Distinguished Alumni Award'
-    link_href: 'alumni/distinguished-alumni-award'
+    link_href: 'alumni/distinguished-alumni-award/'
   - link_text: 'Alumni Stories'
-    link_href: 'alumni/alumni-stories'
+    link_href: 'alumni/alumni-stories/'
   - link_text: 'Staff/Retiree Alumni Stories'
-    link_href: 'alumni/staff-stories'
+    link_href: 'alumni/staff-stories/'
   - link_text: 'Century Scholars'
-    link_href: 'scholarships/century-scholars'
+    link_href: 'scholarships/century-scholars/'
   - link_text: 'Create a Scholarship'
-    link_href: scholarships/create-a-scholarship
+    link_href: scholarships/create-a-scholarship/
   - link_text: "Employee Giving"
-    link_href: 'give/employee-giving'
+    link_href: 'give/employee-giving/'
   - link_text: "Planned Giving"
-    link_href: 'give/planned-giving'
+    link_href: 'give/planned-giving/'
   - link_text: "President's Circle"
-    link_href: 'give/presidents-circle'
+    link_href: 'give/presidents-circle/'
   - link_text: "Women's Giving Circle"
-    link_href: 'give/womens-giving-circle'
+    link_href: 'give/womens-giving-circle/'
 
 collections:
   photos:
