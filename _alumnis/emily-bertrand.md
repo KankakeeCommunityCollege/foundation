@@ -10,7 +10,7 @@ quote: >-
   KCC was a great way to start my continuing education. It introduced
   me to how higher-level education was structured, easing the transition
   from high school to&nbsp;college.
-interview_month_and_year:
+interview_month_and_year: March 2024
 staff_alumni: false
 ---
 **Alumni Spotlight: A Journey of Growth and Teaching Excellence**
