@@ -39,8 +39,8 @@ sub-nav_links:
     link_href: 'events/presidents-circle-dinner'
   - link_text: "Women's Giving Circle"
     link_href: 'events/womens-giving-circle'
-  - link_text: Let's Party
-    link_href: 'events/fall-fundraiser'
+  - link_text: Alumni Event
+    link_href: 'events/alumni-event'
   - link_text: 'Distinguished Alumni Award'
     link_href: 'alumni/distinguished-alumni-award'
   - link_text: 'Alumni Stories'
