@@ -22,6 +22,7 @@
   ],
   "scripts": {
     "test": "vitest run",
+    "increment-alumni": "node increment-alumni-priority.mjs",
     "production": "run-p jekyll-production webpack-production",
     "development": "run-p jekyll-development webpack-dev",
     "jekyll-production": "JEKYLL_ENV=production bundle exec jekyll serve --livereload",

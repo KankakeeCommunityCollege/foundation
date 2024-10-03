@@ -120,6 +120,7 @@ exclude:
   - "postcss.config.js"
   - "look-for-deprecated-bs4-classes.mjs"
   - "look-for-deprecated-bs4-js.mjs"
+  - "increment-alumni-priority.mjs"
 
 uploads_dir: "uploads/" # specifies the default uploads directory for CloudCannon
 
