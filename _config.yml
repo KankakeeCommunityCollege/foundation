@@ -102,7 +102,7 @@ collections:
         comment: Social media ad graphic - save as 600 by 600 px.
       staff_alumni:
         type: checkbox
-        comment: staff alumni show up on the staff-stories page. Non-staff alumni show up on the alumni-stories page.
+        comment: Staff alumni show up on the staff-stories page. Non-staff alumni show up on the alumni-stories page.
   accordions:
     output: false
   contacts:
