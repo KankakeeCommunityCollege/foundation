@@ -67,6 +67,42 @@ collections:
     output: false
   alumnis:
     output: false
+    _inputs:
+      sort_name:
+        type: text
+        comment: Last name followed by first name.
+        context:
+          open: false
+          title: Help
+          icon: help
+          content: |
+            Do not include a comma. Example for Jane Doe: "Doe Jane".
+      quote:
+        type: textarea
+        show_count: true
+        comment: Must be 185 characters or less (including spaces).
+        context:
+          open: false
+          title: Help
+          icon: help
+          content: |
+            Quote from the alumni is shown on the homepage rollup.
+      preview_priority:
+        type: number
+        comment: Priority of 1-4 will show up on the homepage rollup and 1-6 on KCC about page.
+        context:
+          open: false
+          title: Help
+          icon: help
+          content: |
+            Lowest number is shown first.
+      portrait_image:
+        comment: Photo cropped to 3:4 (width:height) save as 450 by 600 px.
+      preview_image:
+        comment: Social media ad graphic - save as 600 by 600 px.
+      staff_alumni:
+        type: boolean
+        comment: staff alumni show up on the staff-stories page. Non-staff alumni show up on the alumni-stories page.
   accordions:
     output: false
   contacts:
