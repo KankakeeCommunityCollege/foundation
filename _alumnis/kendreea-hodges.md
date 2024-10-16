@@ -3,11 +3,11 @@ name: Kendreea Hodges
 sort_name: Hodges Kendreea
 degree:
 year:
-preview_priority: 1
+preview_priority: 2
 preview_image: uploads/alumni-stories_kendreea-hodges_ad.jpg
 portrait_image: uploads/alumni-stories_kendreea-hodges.jpg
 quote: >-
-  I chose KCC because it allowed me to stay local and give back to my&nbsp;community
+  I chose KCC because it allowed me to stay local and give back to my&nbsp;community.
 interview_month_and_year: July 2024
 staff_alumni: false
 ---
