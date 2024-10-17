@@ -33,8 +33,6 @@ nav_links:
 sub-nav_links:
   - link_text: 'Foundation Board'
     link_href: 'about/foundation-board'
-  - link_text: 'Annual Scholarship Event'
-    link_href: 'events/annual-scholarship-event'
   - link_text: "President's Circle Dinner"
     link_href: 'events/presidents-circle-dinner'
   - link_text: "Women's Giving Circle"
