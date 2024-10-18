@@ -3,7 +3,7 @@ name: Jackie Montemayer
 sort_name: Montemayer Jackie
 degree:
 year:
-preview_priority: 7
+preview_priority: 8
 preview_image:
 portrait_image: uploads/alumni-stories_jackie-montemayer.jpg
 quote: >-
