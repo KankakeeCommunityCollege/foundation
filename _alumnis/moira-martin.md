@@ -3,7 +3,7 @@ name: Moira Martin
 sort_name: Martin Moira
 degree:
 year:
-preview_priority: 21
+preview_priority: 22
 preview_image: uploads/alumni-stories_moira-martin_fb-ad.jpg
 portrait_image: uploads/alumni-stories_moira-martin.jpg
 quote: >-
