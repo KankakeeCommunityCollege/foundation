@@ -20,7 +20,7 @@ After graduating from high school, Jacob McCleary felt overwhelmed by the cost o
 Jacob then turned his attention to Kankakee Community College.
 
 "I chose KCC because I knew I could receive a quality education for a fraction of the cost of a four-year university" said Jacob. "Then when I received a scholarship to play soccer at KCC, it affirmed that I had made the right decision." 
-Jacob started at KCC in Summer 2016. He earned a transfer degree with a 4.0 grade point average in 2018. He said KCC offered exceptional academic instruction and a supportive community that nurtured his personal and professional growth. 
+Jacob started at KCC in Summer 2016. He earned a transfer degree with a 4.0 grade point average in 2018. He said KCC offered exceptional academic instruction and a supportive community that nurtured his personal and professional&nbsp;growth. 
 
 English professors like Mary Steichen and Amy Porter left a lasting impression with genuine mentorship and support as well as unwavering dedication, he said. 
 
