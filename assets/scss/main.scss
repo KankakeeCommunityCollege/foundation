@@ -1,48 +1,47 @@
 
 // Variables
-@import '0-tools/vars';
-@import '0-tools/bootstrap-overrides';
-@import '0-tools/black-baud_overrides';
-@import '0-tools/overrides';
-@import '0-tools/no-js';
-@import '0-tools/print';
+@use '0-tools/bootstrap-overrides';
+@use '0-tools/black-baud_overrides';
+@use '0-tools/overrides';
+@use '0-tools/no-js';
+@use '0-tools/print';
 
 // Base items
-@import '1-base/body';
-@import '1-base/typography';
-@import '1-base/links';
-@import '1-base/buttons';
-@import '1-base/content-typography';
-@import '1-base/tables';
-@import '1-base/img';
-@import '1-base/blackbaud-overrides';
-@import '1-base/borders';
-@import '1-base/svg';
-@import '1-base/video';
-@import '1-base/clipboard';
-@import '1-base/blockquote';
-@import '1-base/lists';
+@use '1-base/body';
+@use '1-base/typography';
+@use '1-base/links';
+@use '1-base/buttons';
+@use '1-base/content-typography';
+@use '1-base/tables';
+@use '1-base/img';
+@use '1-base/blackbaud-overrides';
+@use '1-base/borders';
+@use '1-base/svg';
+@use '1-base/video';
+@use '1-base/clipboard';
+@use '1-base/blockquote';
+@use '1-base/lists';
 
 // Modular components
-@import '2-modules/sliders';
-@import '2-modules/foundation-board';
-@import '2-modules/scholarship-table';
-@import '2-modules/stories';
-@import '2-modules/contacts';
-@import '2-modules/action-cards';
-@import '2-modules/latest-news-widget';
-@import '2-modules/alumni';
-@import '2-modules/img-hover';
-@import '2-modules/banner';
-@import '2-modules/gallery';
+@use '2-modules/sliders';
+@use '2-modules/foundation-board';
+@use '2-modules/scholarship-table';
+@use '2-modules/stories';
+@use '2-modules/contacts';
+@use '2-modules/action-cards';
+@use '2-modules/latest-news-widget';
+@use '2-modules/alumni';
+@use '2-modules/img-hover';
+@use '2-modules/banner';
+@use '2-modules/gallery';
 
 // Layout items
-// @import '3-layout/...';
-@import '3-layout/positioning';
-@import '3-layout/cards';
-@import '3-layout/content';
-@import '3-layout/margins';
+// @use '3-layout/...';
+@use '3-layout/positioning';
+@use '3-layout/cards';
+@use '3-layout/content';
+@use '3-layout/margins';
 
 // Page specific styling
-// @import '4-pages/...';
-@import '4-pages/index/home';
+// @use '4-pages/...';
+@use '4-pages/index/home';
