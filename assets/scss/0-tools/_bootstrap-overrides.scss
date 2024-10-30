@@ -1,3 +1,5 @@
+@use '../0-tools/vars' as *;
+
 .nav-pills .nav-link {
   color: $grey-7;
   border-style: solid;
