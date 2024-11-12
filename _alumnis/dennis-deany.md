@@ -3,7 +3,7 @@ name: Dennis Deany
 sort_name: Deany Dennis
 degree:
 year:
-preview_priority: 20
+preview_priority: 21
 preview_image: uploads/alumni-stories_dennis-deany_ig-ad.jpg
 portrait_image: uploads/alumni-stories_dennis-deany.jpg
 quote: >-
