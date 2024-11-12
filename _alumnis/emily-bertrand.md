@@ -3,7 +3,7 @@ name: Emily Bertrand
 sort_name: Bertrand Emily
 degree:
 year:
-preview_priority: 5
+preview_priority: 6
 preview_image: uploads/alumni-stories_emily-bertrand_ad.jpg
 portrait_image: uploads/alumni-stories_emily-bertrand.jpg
 quote: >-
