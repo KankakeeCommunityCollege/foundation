@@ -3,7 +3,7 @@ name: Jennifer Goudreau
 sort_name: Goudreau Jennifer
 degree:
 year:
-preview_priority: 7
+preview_priority: 8
 preview_image:
 portrait_image: uploads/alumni-stories_jennifer-goudreau.jpg
 quote: >-
