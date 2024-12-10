@@ -1,0 +1,51 @@
+<div class="row editor-link">
+  <div class="col editor-link mb-3">
+    <a href="cloudcannon:collections/_accordions/" class="btn btn-success editor-button">Edit Accordions Collection</a>
+  </div>
+</div>
+<div id="accordion" class="accordion pt-2 pb-3 mb-3">
+{% assign sorted = site.alumnis | where_exp: 'item', 'item.staff_alumni == false' | sort_natural: 'sort_name' %}
+{% for alumni in sorted %}
+  {% assign alumni_id = alumni.name | replace: ' ', '-' | replace: '&', 'and' | downcase | remove: '.' | remove: '(' | remove: ')' | remove: '/' | remove: "'" %}
+  {% assign first_char = alumni.portrait_image | slice: 0 %}
+  {% if first_char == '/' %}
+    {% assign portrait = alumni.portrait_image | remove_first: '/' %}
+  {% else %}
+    {% assign portrait = alumni.portrait_image %}
+  {% endif %}
+  <div class="card">
+    <div class="card-header px-0" id="card-header-{{ alumni_id }}">
+      <h2 class="mb-0 accordion__typography--card-header accordion__typography--hover">
+        <button
+          class="btn btn-link buttons__no-decoration accordion__button accordion__button--alumni{% if forloop.first != true %} collapsed{% endif %}{% if forloop.first == true and page.accordion_expanded == false %} collapsed{% endif %}"
+          type="button" data-bs-target="#{{ alumni_id }}" data-bs-toggle="collapse"
+          aria-expanded="{% if forloop.first == true and page.accordion_expanded != false %}true{% else %}false{% endif %}"
+          aria-controls="{{ alumni_id }}">
+          {{ alumni.name }}
+          <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--small float-end" style="background-image: url('{{ page.baseurl }}{{ portrait }}')"></div>
+        </button>
+      </h2>
+    </div>
+    <div id="{{ alumni_id }}"
+      class="collapse links__offset{% if forloop.first == true and page.accordion_expanded != false %} show{% endif %}"
+      data-bs-parent="#accordion"
+      aria-labelledby="card-header-{{ alumni_id }}">
+      <div class="card-body">
+        <!-- Editor Link -->
+        <a href="cloudcannon:collections/{{ item.path }}" class="btn btn-success mb-4 editor-button">Edit This Accordion Item</a>
+        <article>
+          <div class="text-center">
+            <img src="{{ page.baseurl }}{{ portrait }}" class="float-sm-start img-fluid alumni__portrait" alt="{{ alumni.name }}">
+          </div>
+          <h3 class="blue-heading">{{ alumni.name }}</h3>
+          {% if alumni.degree %}<p><strong>{% if alumni.degree and alumni.year %}{{ alumni.degree }}, {{ alumni.year }}{% else %}{{ alumni.degree }}{% endif %}</strong></p>{% endif %}
+          <p>{{ alumni.content }}</p>
+          {% if alumni.interview_month_and_year %}
+            <footer><p>{{ alumni.interview_month_and_year }}</p></footer>
+          {% endif %}
+        </article>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
