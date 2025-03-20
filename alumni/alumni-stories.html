@@ -14,7 +14,7 @@ description: ''
           <div class="nav nav-tabs navTabs" id="nav-tab" role="tablist">
           {% assign sorted = site.alumnis | where_exp: 'item', 'item.staff_alumni == false' | sort_natural: 'sort_name' %}
           {% for alumni in sorted %}
-            {% assign alumni_id = alumni.name | replace: ' ', '-' | replace: '&', 'and' | downcase | remove: '.' | remove: '(' | remove: ')' | remove: '/' | remove: "'" %}
+            {% assign alumni_id = alumni.name | replace: ' ', '-' | replace: '&', 'and' | replace: 'ñ', 'n' | downcase | remove: '.' | remove: '(' | remove: ')' | remove: '/' | remove: "'" %}
             {% assign first_char = alumni.portrait_image | slice: 0 %}
             {% if first_char == '/' %}
               {% assign portrait = alumni.portrait_image | remove_first: '/' %}
@@ -50,7 +50,7 @@ description: ''
       <div class="col">
         <div class="tab-content alumni__tab-content" id="nav-tabContent">
           {% for alumni in sorted %}
-          {% assign alumni_id = alumni.name | replace: ' ', '-' | replace: '&', 'and' | downcase | remove: '.' | remove: '(' | remove: ')' | remove: '/' | remove: "'" %}
+          {% assign alumni_id = alumni.name | replace: ' ', '-' | replace: '&', 'and' | replace: 'ñ', 'n' | downcase | remove: '.' | remove: '(' | remove: ')' | remove: '/' | remove: "'" %}
           {% assign first_char = alumni.portrait_image | slice: 0 %}
           {% if first_char == '/' %}
             {% assign portrait = alumni.portrait_image | remove_first: '/' %}

@@ -3,7 +3,7 @@ name: Sarah Dobin
 sort_name: Dobin Sarah
 degree:
 year:
-preview_priority: 4
+preview_priority: 5
 preview_image:
 portrait_image: uploads/alumni-stories_sarah-dobin.jpg
 quote: >-
