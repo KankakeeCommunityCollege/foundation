@@ -4,7 +4,7 @@ sort_name: Peña Crystal
 degree:
 year:
 preview_priority: 1
-preview_image:
+preview_image: uploads/alumni-stories_crystal-pena-ad.jpg
 portrait_image: uploads/alumni-stories_crystal-pena.jpg
 quote: >-
   When they say 'start here, finish anywhere,' they truly mean it. KCC ensured my credits
