@@ -3,7 +3,7 @@ name: Rebecca Sherry
 sort_name: Sherry Rebecca
 degree:
 year:
-preview_priority: 13
+preview_priority: 14
 preview_image: uploads/alumni-stories_rebecca-sherry_ad.jpg
 portrait_image: uploads/alumni-stories_rebecca-sherry.jpg
 quote: >-
