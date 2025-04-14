@@ -1,6 +1,6 @@
 ---
-name: Crystal Pena
-sort_name: Pena Crystal
+name: Crystal Peña
+sort_name: Peña Crystal
 degree:
 year:
 preview_priority: 1

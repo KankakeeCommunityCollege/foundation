@@ -115,7 +115,7 @@ slides:
             <a
               id="jsTeaseLink{{ forloop.index }}"
               class="latest-news-widget__latest__tease__link js-hp-latest-tease-link"
-              href="{{ page.baseurl }}{{ path }}#{{ alumni.name | replace: ' ', '-' | downcase }}"
+              href="{{ page.baseurl }}{{ path }}#{{ alumni.name | replace: 'ñ', 'n' | replace: ' ', '-' | downcase }}"
             >
               <div
                 class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--default"
