@@ -3,7 +3,7 @@ name: Lisa Davis
 sort_name: Davis Lisa
 degree:
 year:
-preview_priority: 7
+preview_priority: 17
 preview_image:
 portrait_image: uploads/alumni-stories_lisa-davis.jpg
 quote: >-

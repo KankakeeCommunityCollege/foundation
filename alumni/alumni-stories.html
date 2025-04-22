@@ -6,33 +6,39 @@ sub-nav_section: alumni
 description: ''
 ---
 
-<main>
+<main id="content">
   <div class="container mt-3">
     <div class="row">
       <div class="col alumni__col">
         <nav>
           <div class="nav nav-tabs navTabs" id="nav-tab" role="tablist">
-            {% assign sorted = site.alumnis | where_exp: 'item', 'item.staff_alumni == false' | sort_natural: 'sort_name' %}
-            {% for alumni in sorted %}
-            {% assign alumni_id = alumni.name | replace: ' ', '-' | replace: '&', 'and' | downcase | remove: '.' | remove: '(' | remove: ')' | remove: '/' | remove: "'" %}
-              {% if forloop.first == true %}
-              <a class="nav-item nav-link jsTabLink active" id="{{ alumni_id }}-tab" data-bs-toggle="tab" href="#{{ alumni_id }}" role="tab" aria-controls="{{ alumni_id }}" aria-selected="true">
-                <span class="alumni__nav">
-                  <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--small float-start" style="background-image: url('{{ page.baseurl }}{{ alumni.portrait_image }}')">
-                  </div>
-                  <h3 class="latest-news-widget__latest__tease__overline typography__latest-news-widget__rollup-list-h alumni__h3--width">{{ alumni.name }}</h3>
-                </span>
-                </a>
-              {% else %}
-                <a class="nav-item nav-link jsTabLink" id="{{ alumni_id }}-tab" data-bs-toggle="tab" href="#{{ alumni_id }}" role="tab" aria-controls="{{ alumni_id }}" aria-selected="false">
-                  <span class="alumni__nav">
-                    <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--small float-start" style="background-image: url('{{ page.baseurl }}{{ alumni.portrait_image }}')">
-                    </div>
-                    <h3 class="latest-news-widget__latest__tease__overline typography__latest-news-widget__rollup-list-h alumni__h3--width">{{ alumni.name }}</h3>
-                  </span>
-                  </a>
-                {% endif %}
-              {% endfor %}
+          {% assign sorted = site.alumnis | where_exp: 'item', 'item.staff_alumni == false' | sort_natural: 'sort_name' %}
+          {% for alumni in sorted %}
+            {% assign alumni_id = alumni.name | replace: ' ', '-' | replace: '&', 'and' | replace: 'ñ', 'n' | downcase | remove: '.' | remove: '(' | remove: ')' | remove: '/' | remove: "'" %}
+            {% assign first_char = alumni.portrait_image | slice: 0 %}
+            {% if first_char == '/' %}
+              {% assign portrait = alumni.portrait_image | remove_first: '/' %}
+            {% else %}
+              {% assign portrait = alumni.portrait_image %}
+            {% endif %}
+            {% if forloop.first == true %}
+            <a class="nav-item nav-link jsTabLink active" id="{{ alumni_id }}-tab" data-bs-toggle="tab" href="#{{ alumni_id }}" role="tab" aria-controls="{{ alumni_id }}" aria-selected="true">
+              <span class="alumni__nav">
+                <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--small float-start" style="background-image: url('{{ page.baseurl }}{{ portrait }}')">
+                </div>
+                <h3 class="latest-news-widget__latest__tease__overline typography__latest-news-widget__rollup-list-h alumni__h3--width">{{ alumni.name }}</h3>
+              </span>
+            </a>
+            {% else %}
+            <a class="nav-item nav-link jsTabLink" id="{{ alumni_id }}-tab" data-bs-toggle="tab" href="#{{ alumni_id }}" role="tab" aria-controls="{{ alumni_id }}" aria-selected="false">
+              <span class="alumni__nav">
+                <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--small float-start" style="background-image: url('{{ page.baseurl }}{{ portrait }}')">
+                </div>
+                <h3 class="latest-news-widget__latest__tease__overline typography__latest-news-widget__rollup-list-h alumni__h3--width">{{ alumni.name }}</h3>
+              </span>
+            </a>
+            {% endif %}
+          {% endfor %}
           </div>
         </nav>
       </div>
@@ -44,12 +50,18 @@ description: ''
       <div class="col">
         <div class="tab-content alumni__tab-content" id="nav-tabContent">
           {% for alumni in sorted %}
-          {% assign alumni_id = alumni.name | replace: ' ', '-' | replace: '&', 'and' | downcase | remove: '.' | remove: '(' | remove: ')' | remove: '/' | remove: "'" %}
+          {% assign alumni_id = alumni.name | replace: ' ', '-' | replace: '&', 'and' | replace: 'ñ', 'n' | downcase | remove: '.' | remove: '(' | remove: ')' | remove: '/' | remove: "'" %}
+          {% assign first_char = alumni.portrait_image | slice: 0 %}
+          {% if first_char == '/' %}
+            {% assign portrait = alumni.portrait_image | remove_first: '/' %}
+          {% else %}
+            {% assign portrait = alumni.portrait_image %}
+          {% endif %}
           {% if forloop.first == true %}
             <div class="tab-pane fade show active" id="{{ alumni_id }}" role="tabpanel" aria-labelledby="{{ alumni_id }}-tab">
               <article>
                 <div class="text-center">
-                  <img src="{{ alumni.baseurl }}{{ alumni.portrait_image }}" class="float-sm-start img-fluid alumni__portrait" alt="Portrait of {{ alumni.name }}">
+                  <img src="{{ page.baseurl }}{{ portrait }}" class="float-sm-start img-fluid alumni__portrait" alt="{{ alumni.name }}">
                 </div>
                 <h3 class="blue-heading">{{ alumni.name }}</h3>
                 {% if alumni.degree %}<p><strong>{% if alumni.degree and alumni.year %}{{ alumni.degree }}, {{ alumni.year }}{% else %}{{ alumni.degree }}{% endif %}</strong></p>{% endif %}
@@ -63,7 +75,7 @@ description: ''
             <div class="tab-pane fade" id="{{ alumni_id }}" role="tabpanel" aria-labelledby="{{ alumni_id }}-tab">
               <article>
                 <div class="text-center">
-                  <img src="{{ alumni.baseurl }}{{ alumni.portrait_image }}" class="float-sm-start img-fluid alumni__portrait" alt="Portrait of {{ alumni.name }}">
+                  <img src="{{ page.baseurl }}{{ portrait }}" class="float-sm-start img-fluid alumni__portrait" alt="{{ alumni.name }}">
                 </div>
                 <h3 class="blue-heading">{{ alumni.name }}</h3>
                 {% if alumni.degree %}<p><strong>{% if alumni.degree and alumni.year %}{{ alumni.degree }}, {{ alumni.year }}{% else %}{{ alumni.degree }}{% endif %}</strong></p>{% endif %}

@@ -1,3 +1,5 @@
+@use '../0-tools/vars' as *;
+
 h2.typography__h2 {
   color: $color-grey-heading;
   font-family: $font-family-headings;

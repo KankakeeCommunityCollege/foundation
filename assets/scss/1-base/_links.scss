@@ -1,3 +1,5 @@
+@use '../0-tools/vars' as *;
+
 .blue-link {
   color: $primary-blue;
   font-family: $secondaryfont-stack;
