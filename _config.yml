@@ -1,15 +1,12 @@
 title: "Kankakee Community College"
-url: https://www.kcc.edu/foundation
-public-url: https://www.kcc.edu
-canonical_baseurl: https://www.kcc.edu/foundation
+url: https://foundation.kcc.edu
+public-url: https://foundation.kcc.edu
+canonical_baseurl: https://foundation.kcc.edu
 site_name: Foundation
-theme: kcc-gem-theme
+theme: kcc-gem-theme-original
 port: 3000
 timezone: America/Chicago
 google-tag_key: GTM-KKZRJB5
-subsection_title: "KCC Foundation"
-theme_config: false
-core_site: false
 nav_links:
   - link_text: About
     link_href: 'about/'
@@ -37,29 +34,29 @@ sub-nav_links:
   - link_text: 'Foundation Board'
     link_href: 'about/foundation-board'
   - link_text: "President's Circle Dinner"
-    link_href: 'events/presidents-circle-dinner/'
+    link_href: 'events/presidents-circle-dinner'
   - link_text: "Women's Giving Circle"
     link_href: 'events/womens-giving-circle'
   - link_text: Alumni Event
     link_href: 'events/alumni-event'
   - link_text: 'Distinguished Alumni Award'
-    link_href: 'alumni/distinguished-alumni-award/'
+    link_href: 'alumni/distinguished-alumni-award'
   - link_text: 'Alumni Stories'
-    link_href: 'alumni/alumni-stories/'
+    link_href: 'alumni/alumni-stories'
   - link_text: 'Staff/Retiree Alumni Stories'
-    link_href: 'alumni/staff-stories/'
+    link_href: 'alumni/staff-stories'
   - link_text: 'Century Scholars'
-    link_href: 'scholarships/century-scholars/'
+    link_href: 'scholarships/century-scholars'
   - link_text: 'Create a Scholarship'
-    link_href: scholarships/create-a-scholarship/
+    link_href: scholarships/create-a-scholarship
   - link_text: "Employee Giving"
-    link_href: 'give/employee-giving/'
+    link_href: 'give/employee-giving'
   - link_text: "Planned Giving"
-    link_href: 'give/planned-giving/'
+    link_href: 'give/planned-giving'
   - link_text: "President's Circle"
-    link_href: 'give/presidents-circle/'
+    link_href: 'give/presidents-circle'
   - link_text: "Women's Giving Circle"
-    link_href: 'give/womens-giving-circle/'
+    link_href: 'give/womens-giving-circle'
 
 collections:
   photos:
