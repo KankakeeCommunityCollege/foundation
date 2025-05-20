@@ -3,7 +3,7 @@ name: Mia Arseneau
 sort_name: Arseneau Mia
 degree:
 year:
-preview_priority: 9
+preview_priority: 10
 preview_image: uploads/alumni-stories_mia-arseneau_ad.jpg
 portrait_image: uploads/alumni-stories_mia-arseneau.jpg
 quote: >-

@@ -3,7 +3,7 @@ name: Rodney Peña Jr.
 sort_name: Peña Rodney
 degree:
 year:
-preview_priority: 2
+preview_priority: 3
 preview_image: uploads/alumni-stories_rodney-pena_ad.jpg
 portrait_image: uploads/alumni-stories_rodney-pena.jpg
 quote: >-
