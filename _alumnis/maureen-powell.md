@@ -3,7 +3,7 @@ name: Maureen Powell
 sort_name: Powell Maureen
 degree: Associate Degree
 year: 1985
-preview_priority: 35
+preview_priority: 36
 portrait_image: uploads/maureen-linkedin_crop.jpg
 quote: >-
   I applied to, visited, and was accepted by four-year universities.

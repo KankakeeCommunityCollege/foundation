@@ -3,7 +3,7 @@ name: Maggie Kuckie
 sort_name: Kuckie Maggie
 degree:
 year:
-preview_priority: 26
+preview_priority: 27
 preview_image: uploads/alumni-stories_maggie-kuckie_ig-ad.jpg
 portrait_image: uploads/alumni-stories_maggie-kuckie_DSC_0309.jpg
 quote: >-
