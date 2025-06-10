@@ -3,7 +3,7 @@ name: Eric Cavender
 sort_name: Cavender Eric
 degree: Associate Degree
 year: 2010
-preview_priority: 38
+preview_priority: 39
 portrait_image: uploads/eric-cavendar.jpg
 quote: KCC was one of the best decisions I have ever made.
 staff_alumni: false
