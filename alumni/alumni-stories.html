@@ -22,7 +22,7 @@ description: ''
               {% assign portrait = alumni.portrait_image %}
             {% endif %}
             {% if forloop.first == true %}
-            <button class="nav-item nav-link jsTabLink active" id="{{ alumni_id }}-tab" data-bs-toggle="tab" data-bs-target="#{{ alumni_id }}" type="button" role="tab" aria-controls="{{ alumni_id }}" aria-selected="true">
+            <button class="nav-item nav-link jsTabLink active text-start" id="{{ alumni_id }}-tab" data-bs-toggle="tab" data-bs-target="#{{ alumni_id }}" type="button" role="tab" aria-controls="{{ alumni_id }}" aria-selected="true">
               <span class="alumni__nav">
                 <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--small float-start" style="background-image: url('{{ page.baseurl }}{{ portrait }}')">
                 </div>
@@ -30,7 +30,7 @@ description: ''
               </span>
             </button>
             {% else %}
-            <button class="nav-item nav-link jsTabLink" id="{{ alumni_id }}-tab" data-bs-toggle="tab" data-bs-target="#{{ alumni_id }}" type="button" role="tab" aria-controls="{{ alumni_id }}" aria-selected="false">
+            <button class="nav-item nav-link jsTabLink text-start" id="{{ alumni_id }}-tab" data-bs-toggle="tab" data-bs-target="#{{ alumni_id }}" type="button" role="tab" aria-controls="{{ alumni_id }}" aria-selected="false">
               <span class="alumni__nav">
                 <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--small float-start" style="background-image: url('{{ page.baseurl }}{{ portrait }}')">
                 </div>
