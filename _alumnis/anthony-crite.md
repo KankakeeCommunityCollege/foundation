@@ -3,7 +3,7 @@ name: Anthony Crite
 sort_name: Crite Anthony
 degree:
 year:
-preview_priority: 10
+preview_priority: 11
 preview_image: uploads/alumni-stories_anthony-crite_ad.jpg
 portrait_image: uploads/alumni-stories_anthony-crite.jpg
 quote: >-
