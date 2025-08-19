@@ -3,7 +3,7 @@ name: Liz Lutz
 sort_name: Lutz Liz
 degree:
 year:
-preview_priority: 2
+preview_priority: 4
 preview_image: uploads/alumni-stories_liz-lutz-ad.jpg
 portrait_image: uploads/alumni-stories_liz-lutz.jpg
 quote: >-
