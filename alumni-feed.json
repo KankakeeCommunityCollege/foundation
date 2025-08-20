@@ -45,6 +45,3 @@ layout: null
   ]
 }
 {% endif %}
-{%- comment -%}
-<!-- comment -->
-{%- endcomment -%}
