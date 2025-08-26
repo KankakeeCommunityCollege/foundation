@@ -22,11 +22,18 @@
       <div class="col-md-6 contacts__col-bottom-margin">
         <div itemscope itemtype="https://schema.org/Person" class="row">
           <div class="col-4 contacts__col--img">
-            {% if contact.portrait_image != 'none' %}<img
+            {% if contact.portrait_image != 'none' %}
+            {% assign first_char = contact.portrait_image | slice: 0 %}
+            {% if first_char == '/' %}
+              {% assign image = contact.portrait_image | remove_first: '/' %}
+            {% else %}
+              {% assign image = contact.portrait_image %}
+            {% endif %}
+            <img
               src="{{ page.baseurl }}assets/img/placeholder_square.jpg"
               height="150px"
               width="150px"
-              data-src="{{ page.baseurl }}{{ contact.portrait_image }}"
+              data-src="{{ page.baseurl }}{{ image }}"
               alt="Photo of {{ contact.name }}"
               class="img-fluid contacts__portrait"
               itemprop="image"
@@ -73,11 +80,18 @@
         </button>
       </div>
       <div class="modal-body">
-        {% if contact.portrait_image != 'For departments with no contact photos, do not change this field.' and contact.portrait_image != 'none' %}<img
+        {% if contact.portrait_image != 'For departments with no contact photos, do not change this field.' and contact.portrait_image != 'none' %}
+        {% assign first_char = contact.portrait_image | slice: 0 %}
+        {% if first_char == '/' %}
+          {% assign image = contact.portrait_image | remove_first: '/' %}
+        {% else %}
+          {% assign image = contact.portrait_image %}
+        {% endif %}
+        <img
           src="{{ page.baseurl }}assets/img/placeholder_square.jpg"
           height="150px"
           width="150px"
-          data-src="{{ page.baseurl }}{{ contact.portrait_image }}"
+          data-src="{{ page.baseurl }}{{ image }}"
           class="img-fluid float-left mr-2 mb-2"
           alt="Photo of {{ contact.name }} KCC's {{ contact.contacts_title }}"
         >{% endif %}
