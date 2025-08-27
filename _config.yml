@@ -2,6 +2,7 @@ title: "Kankakee Community College"
 url: https://www.kcc.edu/foundation
 public-url: https://www.kcc.edu
 canonical_baseurl: https://www.kcc.edu/foundation
+sitemap_baseurl: https://www.kcc.edu/foundation # Used to prefix the page URLs in sitemap.xml
 site_name: Foundation
 theme: kcc-gem-theme
 port: 3000
