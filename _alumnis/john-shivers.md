@@ -3,7 +3,7 @@ name: John Shivers
 sort_name: Shivers John
 degree:
 year:
-preview_priority: 25
+preview_priority: 26
 preview_image:
 portrait_image: uploads/alumni-stories_john-shivers.jpg
 quote: >-

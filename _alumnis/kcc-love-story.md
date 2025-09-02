@@ -3,7 +3,7 @@ name: Scott Runyan & Taylor Roach
 sort_name: Runyan & Taylor Roach Scott
 degree:
 year:
-preview_priority: 46
+preview_priority: 47
 portrait_image: uploads/story_thumb.jpg
 quote:
 staff_alumni: false
