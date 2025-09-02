@@ -3,7 +3,7 @@ name: Marissa Martin
 sort_name: Martin Marissa
 degree:
 year:
-preview_priority: 36
+preview_priority: 37
 preview_image: uploads/alumni-stories_marissa-martin_fb-ad.jpg
 portrait_image: uploads/alumni-stories_marissa-martin.jpg
 quote: >-
