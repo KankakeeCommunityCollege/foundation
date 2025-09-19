@@ -4,7 +4,7 @@ sort_name: Murrell Ocqua
 degree:
 year:
 preview_priority: 2
-preview_image:
+preview_image: uploads/alumni-stories_ocqua-murrell_ad.jpg
 portrait_image: uploads/alumni-stories_ocqua-murrell_IMG_3640.jpg
 quote: >-
   The professors, the classmates, the atmosphere—it all made me feel like I&nbsp;belonged.
