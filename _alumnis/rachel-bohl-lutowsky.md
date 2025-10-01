@@ -3,7 +3,7 @@ name: Rachel Bohl Lutowsky
 sort_name: Bohl Lutowsky Rachel
 degree:
 year:
-preview_priority: 5
+preview_priority: 6
 preview_image: uploads/alumni-stories_rachel-b-l_ad.jpg
 portrait_image: uploads/alumni-stories_rachel-b-l.jpg
 quote: >-

@@ -3,7 +3,7 @@ name: Jacob McCleary
 sort_name: McCleary Jacob
 degree:
 year:
-preview_priority: 17
+preview_priority: 18
 preview_image: uploads/alumni-stories_jacob-mccleary_ad.jpg
 portrait_image: uploads/alumni-stories_jacob-mccleary.jpg
 quote: >-
