@@ -3,7 +3,7 @@ name: Ocqua Murrell
 sort_name: Murrell Ocqua
 degree:
 year:
-preview_priority: 2
+preview_priority: 4
 preview_image: uploads/alumni-stories_ocqua-murrell_ad.jpg
 portrait_image: uploads/alumni-stories_ocqua-murrell_IMG_3640.jpg
 quote: >-

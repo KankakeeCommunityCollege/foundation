@@ -3,7 +3,7 @@ name: Raeven Carroll
 sort_name: Carroll Raeven
 degree:
 year:
-preview_priority: 17
+preview_priority: 19
 preview_image: uploads/alumni-stories_raeven-carroll_ad.jpg
 portrait_image: uploads/alumni-stories_raeven-carroll.jpg
 quote: >-
