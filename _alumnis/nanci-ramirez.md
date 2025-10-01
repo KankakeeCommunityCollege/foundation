@@ -3,7 +3,7 @@ name: Nanci Ramirez
 sort_name: Ramirez Nanci
 degree:
 year:
-preview_priority: 8
+preview_priority: 9
 preview_image: uploads/alumni-stories_nanci-ramirez-ad.jpg
 portrait_image: uploads/alumni-stories_nanci-ramirez.jpg
 quote: >-
