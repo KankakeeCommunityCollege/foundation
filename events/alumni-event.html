@@ -4,18 +4,29 @@ baseurl: ../../
 title: Alumni Event
 sub-nav_section: events
 description:
+banner:
+  image: /uploads/holiday-alumni-brunch-2025.jpg
+  alt_text: Holiday brunch banner
+  width: 700
+  height: 394
 ---
 <main id="content">
   <div class="container mt-2">
     <div class="row">
       <div class="col sub-nav__content--wrapper">
         <div class="text-center">
+          {% assign first_char = page.banner.image | slice: 0 %}
+          {% if first_char == '/' %}
+            {% assign banner = page.banner.image | remove_first: '/' | prepend: page.baseurl %}
+          {% else %}
+            {% assign banner = page.banner.image | prepend: page.baseurl %}
+          {% endif %}
           <img
-            src="{{ page.baseurl }}uploads/events_holiday-brunch-graphic.jpg"
+            src="{{ banner }}"
             class="img-fluid mb-2"
-            height="394"
-            width="700"
-            alt="Holiday brunch banner with three snow covered pine trees">
+            height="{{ page.banner.height }}"
+            width="{{ page.banner.width }}"
+            alt="{{ page.banner.alt_text | replace: '"', '&quot;' }}">
         </div>
         <div class="editable">
           <p>
