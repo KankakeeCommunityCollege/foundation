@@ -3,7 +3,7 @@ name: Mary Bass
 sort_name: Bass Mary
 degree:
 year:
-preview_priority: 5
+preview_priority: 6
 preview_image: uploads/alumni-stories_mary-bass_ad.jpg
 portrait_image: uploads/alumni-stories_mary-bass.jpg
 quote: >-
