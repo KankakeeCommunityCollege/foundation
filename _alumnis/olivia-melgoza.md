@@ -8,7 +8,7 @@ preview_image:
 portrait_image: uploads/alumni-stories_olivia-melgoza.jpg
 quote: >-
   KCC is a wonderful place to grow, learn, and prepare for your future.
-interview_month_and_year:
+interview_month_and_year: November 2025
 staff_alumni: true
 ---
 KCC Staff Alumni<br>
