@@ -3,7 +3,7 @@ name: Amy Nugent
 sort_name: Nugent Amy
 degree:
 year:
-preview_priority: 10
+preview_priority: 11
 preview_image: uploads/alumni-stories_amy-nugent-ad.jpg
 portrait_image: uploads/alumni-stories_amy-nugent.jpg
 quote: >-

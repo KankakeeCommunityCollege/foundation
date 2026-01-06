@@ -3,7 +3,7 @@ name: Lindy Casey
 sort_name: Casey Lindy
 degree:
 year:
-preview_priority: 3
+preview_priority: 4
 preview_image: uploads/alumni-stories_lindy-casey_ad.jpg
 portrait_image: uploads/alumni-stories_lindy-casey.jpg
 quote: >-
