@@ -3,7 +3,7 @@ name: LeAnne Mazur
 sort_name: Mazur LeAnne
 degree:
 year:
-preview_priority: 12
+preview_priority: 13
 preview_image: uploads/alumni-stories_lmazur-ad.jpg
 portrait_image: uploads/alumni-stories_lmazur.jpg
 quote: >-

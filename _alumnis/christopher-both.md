@@ -3,7 +3,7 @@ name: Christopher Both
 sort_name: Both Christopher
 degree:
 year:
-preview_priority: 31
+preview_priority: 32
 preview_image: uploads/alumni-stories_christopher-both_x-ad.jpg
 portrait_image: uploads/alumni-stories_christopher-both.jpg
 quote: >-
