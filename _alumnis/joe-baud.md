@@ -3,11 +3,11 @@ name: Joe Baud
 sort_name: Baud Joe
 degree:
 year:
-preview_priority: 1
+preview_priority: 2
 preview_image: uploads/alumni-stories_joe-baud_ad.jpg
 portrait_image: uploads/alumni-stories_joe-baud.jpg
 quote: >-
-  The quality at KCC is top tier. People underestimate community collges, but the professors are
+  The quality at KCC is top tier. People underestimate community colleges, but the professors are
   knowledgeable, the support is personal, and you get a strong education without the high cost.
 interview_month_and_year: November 2025
 staff_alumni: false
