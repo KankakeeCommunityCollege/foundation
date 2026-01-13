@@ -3,7 +3,7 @@ name: Kelli Jandura
 sort_name: Jandura Kelli
 degree:
 year:
-preview_priority: 29
+preview_priority: 30
 preview_image:
 portrait_image: uploads/alumni-stories_kelli-jandura.jpg
 quote: >-
