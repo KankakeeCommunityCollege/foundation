@@ -3,7 +3,7 @@ name: McCall Schunke
 sort_name: Schunke McCall
 degree:
 year:
-preview_priority: 5
+preview_priority: 6
 preview_image: uploads/alumni-stories_mccall-schunke_ad.jpg
 portrait_image: uploads/alumni-stories_mccall-schunke.jpg
 quote: >-

@@ -3,7 +3,7 @@ name: Carla Kopp
 sort_name: Kopp Carla
 degree:
 year:
-preview_priority: 36
+preview_priority: 37
 preview_image: uploads/alumni-stories_carla-kopp_ig-ad.jpg
 portrait_image: uploads/alumni-stories_carla-kopp.jpg
 quote: >-
