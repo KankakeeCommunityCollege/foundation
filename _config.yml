@@ -6,7 +6,6 @@ sitemap_baseurl: https://www.kcc.edu/foundation # Used to prefix the page URLs i
 site_name: Foundation
 theme: kcc-gem-theme
 port: 3000
-# BUILD
 timezone: America/Chicago
 google-tag_key: GTM-KKZRJB5
 subsection_title: "KCC Foundation"
@@ -160,6 +159,8 @@ exclude:
   - "pa11y.sh"
   - "pa11y.*.json"
   - "pa11y-log.*.txt"
+  - "pa11y-ci.sh"
+  - "pa11y-ci-log.*.txt"
   - "look-for-deprecated-bs4-classes.mjs"
   - "look-for-deprecated-bs4-js.mjs"
   - "look-for-string-in-project-files.mjs"
