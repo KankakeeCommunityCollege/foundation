@@ -7,15 +7,15 @@ layout: null
 {%- for item in alumni_previews limit:6 -%}
 {%- assign first_char = item.portrait_image | slice: 0 -%}
 {%- if first_char == '/' -%}
-  {% assign image = item.portrait_image | remove_first: '/' | prepend: 'https://foundation.kcc.edu/' %}
+  {% assign image = item.portrait_image | remove_first: '/' | prepend: 'https://www.kcc.edu/foundation/' %}
 {% else %}
-  {% assign image = item.portrait_image | prepend: 'https://foundation.kcc.edu/' %}
+  {% assign image = item.portrait_image | prepend: 'https://www.kcc.edu/foundation/' %}
 {%- endif -%}
 {%- assign preview_first_char = item.preview_image | slice: 0 -%}
 {%- if preview_first_char == '/' -%}
-  {% assign preview_image = item.preview_image | remove_first: '/' | prepend: 'https://foundation.kcc.edu/' %}
+  {% assign preview_image = item.preview_image | remove_first: '/' | prepend: 'https://www.kcc.edu/foundation/' %}
 {% else %}
-  {% assign preview_image = item.preview_image | prepend: 'https://foundation.kcc.edu/' %}
+  {% assign preview_image = item.preview_image | prepend: 'https://www.kcc.edu/foundation/' %}
 {%- endif -%}
     { "name": "{{ item.name | replace: '&', 'and' | replace: 'ñ', 'n' | remove: '.' | remove: '(' | remove: ')' | remove: '/' | remove: "'" }}", "image": "{{ image }}", "preview_image": "{{ preview_image }}", "quote": "{{ item.quote }}", "staff_alumni": {{ item.staff_alumni }} }{% unless forloop.last %},{% endunless %}{%- endfor %}]}
 {%- else -%}
@@ -24,15 +24,15 @@ layout: null
     {%- for item in alumni_previews limit:6 %}
     {%- assign first_char = item.portrait_image | slice: 0 -%}
     {% if first_char == '/' %}
-      {% assign image = item.portrait_image | remove_first: '/' | prepend: 'https://foundation.kcc.edu/' %}
+      {% assign image = item.portrait_image | remove_first: '/' | prepend: 'https://www.kcc.edu/foundation/' %}
     {% else %}
-      {% assign image = item.portrait_image | prepend: 'https://foundation.kcc.edu/' %}
+      {% assign image = item.portrait_image | prepend: 'https://www.kcc.edu/foundation/' %}
     {% endif %}
     {%- assign preview_first_char = item.preview_image | slice: 0 -%}
     {% if preview_first_char == '/' %}
-      {% assign preview_image = item.preview_image | remove_first: '/' | prepend: 'https://foundation.kcc.edu/' %}
+      {% assign preview_image = item.preview_image | remove_first: '/' | prepend: 'https://www.kcc.edu/foundation/' %}
     {% else %}
-      {% assign preview_image = item.preview_image | prepend: 'https://foundation.kcc.edu/' %}
+      {% assign preview_image = item.preview_image | prepend: 'https://www.kcc.edu/foundation/' %}
     {% endif %}
     {
       "name": "{{ item.name | replace: '&', 'and' | replace: 'ñ', 'n' | remove: '.' | remove: '(' | remove: ')' | remove: '/' | remove: "'" }}",
