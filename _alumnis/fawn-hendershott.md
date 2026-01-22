@@ -3,7 +3,7 @@ name: Fawn Hendershott
 sort_name: Hendershott Fawn
 degree:
 year:
-preview_priority: 34
+preview_priority: 35
 preview_image: uploads/alumni-stories_fawn-hendershott_ig-ad.jpg
 portrait_image: uploads/alumni-stories_fawn-hendershott.jpg
 quote: >-
