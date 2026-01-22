@@ -47,3 +47,8 @@ table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before,
   border-color: rgba(0,0,0,.5);
   border-right-color: transparent;
 }
+
+.alert-info a:not(.btn),
+.alert-info a.btn-link {
+  color: #0261ee;
+}
