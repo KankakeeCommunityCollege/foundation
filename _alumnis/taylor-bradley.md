@@ -3,7 +3,7 @@ name: Taylor Bradley
 sort_name: Bradley Taylor
 degree: Associate in Applied Science
 year: 2018
-preview_priority: 45
+preview_priority: 46
 portrait_image: uploads/taylor-bradley_photo.jpg
 quote: There’s so much more to know. I think I’ll go back and continue taking classes.
 staff_alumni: false

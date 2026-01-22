@@ -3,7 +3,7 @@ name: Nancy Schunke
 sort_name: Schunke Nancy
 degree:
 year:
-preview_priority: 35
+preview_priority: 36
 preview_image:
 portrait_image: uploads/alumni-stories_nancy-schunke.jpg
 quote: >-
