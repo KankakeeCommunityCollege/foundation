@@ -1,0 +1,1070 @@
+##############################
+##     Pa11y CI results     ##
+##############################
+
+##     Running Pa11y CI:
+##         DATETIME: 2026-01-22T13_04_18
+##         SITEMAP:  https://www.kcc.edu/foundation/pa11y-ci-sitemap.xml
+
+
+Running Pa11y on 29 URLs:
+ > https://www.kcc.edu/foundation/404.html - 0 errors
+ > https://www.kcc.edu/foundation/events/alumni-event/ - 0 errors
+ > https://www.kcc.edu/foundation/alumni/alumni-stories/ - 0 errors
+ > https://www.kcc.edu/foundation/events/annual-scholarship-event/ - 0 errors
+ > https://www.kcc.edu/foundation/events/blooming-ambition/ - 0 errors
+ > https://www.kcc.edu/foundation/scholarships/century-scholars/ - 0 errors
+ > https://www.kcc.edu/foundation/give/form/century-scholars/ - 0 errors
+ > https://www.kcc.edu/foundation/scholarships/create-a-scholarship/ - 0 errors
+ > https://www.kcc.edu/foundation/alumni/distinguished-alumni-award/ - 16 errors
+ > https://www.kcc.edu/foundation/give/form/employee-giving/ - 0 errors
+ > https://www.kcc.edu/foundation/give/employee-giving/ - 0 errors
+ > https://www.kcc.edu/foundation/events/fall-fundraiser/ - 0 errors
+ > https://www.kcc.edu/foundation/about/foundation-board/ - 0 errors
+ > https://www.kcc.edu/foundation/give/form/general/ - 0 errors
+ > https://www.kcc.edu/foundation/giveday/ - 2 errors
+ > https://www.kcc.edu/foundation/about/ - 0 errors
+ > https://www.kcc.edu/foundation/events/ - 0 errors
+ > https://www.kcc.edu/foundation/give/ - 0 errors
+ > https://www.kcc.edu/foundation/alumni/ - 0 errors
+ > https://www.kcc.edu/foundation/ - 13 errors
+ > https://www.kcc.edu/foundation/give/planned-giving/ - 0 errors
+ > https://www.kcc.edu/foundation/events/presidents-circle-dinner/ - 0 errors
+ > https://www.kcc.edu/foundation/give/form/presidents-circle/ - 0 errors
+ > https://www.kcc.edu/foundation/give/presidents-circle/ - 0 errors
+ > https://www.kcc.edu/foundation/scholarships/ - 102 errors
+ > https://www.kcc.edu/foundation/events/special-events/ - 0 errors
+ > https://www.kcc.edu/foundation/alumni/staff-stories/ - 0 errors
+ > https://www.kcc.edu/foundation/events/womens-giving-circle/ - 0 errors
+ > https://www.kcc.edu/foundation/give/womens-giving-circle/ - 0 errors
+
+Errors in https://www.kcc.edu/foundation/alumni/distinguished-alumni-award/:
+
+ ✅ WZ Fixed on 1/22/26
+   * Changed text color to #707070 against a #f8f9fa background color gives a contrast ratio of 4.69:1
+     which is sufficient for AA large and small text (the element qualifies as small text).
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 2.7:1. Recommendation:  change text colour to #252525.
+
+   (#yamei-rohlfs-tab > span > h4)
+
+
+ ✅ WZ Fixed on 1/22/26
+   * Changed text color to #707070 against a #f8f9fa background color gives a contrast ratio of 4.69:1
+     which is sufficient for AA large and small text (the element qualifies as small text).
+   <h4 class="typography__alumni-year">2025</h4>
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 2.7:1. Recommendation:  change text colour to #252525.
+
+   (#eric-peterson-tab > span > h4)
+
+   <h4 class="typography__alumni-year">2024</h4>
+
+ ✅ WZ Fixed on 1/22/26
+   * Changed text color to #707070 against a #f8f9fa background color gives a contrast ratio of 4.69:1
+     which is sufficient for AA large and small text (the element qualifies as small text).
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 2.7:1. Recommendation:  change text colour to #252525.
+
+   (#tocarra-eldridge-robinson-tab > span > h4)
+
+   <h4 class="typography__alumni-year">2023</h4>
+
+ ✅ WZ Fixed on 1/22/26
+   * Changed text color to #707070 against a #f8f9fa background color gives a contrast ratio of 4.69:1
+     which is sufficient for AA large and small text (the element qualifies as small text).
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 2.7:1. Recommendation:  change text colour to #252525.
+
+   (#the-honorable-michael-j-kick-tab > span > h4)
+
+   <h4 class="typography__alumni-year">2022</h4>
+
+ ✅ WZ Fixed on 1/22/26
+   * Changed text color to #707070 against a #f8f9fa background color gives a contrast ratio of 4.69:1
+     which is sufficient for AA large and small text (the element qualifies as small text).
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 2.7:1. Recommendation:  change text colour to #252525.
+
+   (#chip-hasselbring-tab > span > h4)
+
+   <h4 class="typography__alumni-year">2021</h4>
+
+ ✅ WZ Fixed on 1/22/26
+   * Changed text color to #707070 against a #f8f9fa background color gives a contrast ratio of 4.69:1
+     which is sufficient for AA large and small text (the element qualifies as small text).
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 2.7:1. Recommendation:  change text colour to #252525.
+
+   (#dr-vicki-gardner-tab > span > h4)
+
+   <h4 class="typography__alumni-year">2020</h4>
+
+ ✅ WZ Fixed on 1/22/26
+   * Changed text color to #707070 against a #f8f9fa background color gives a contrast ratio of 4.69:1
+     which is sufficient for AA large and small text (the element qualifies as small text).
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 2.7:1. Recommendation:  change text colour to #252525.
+
+   (#dale-piggush-tab > span > h4)
+
+   <h4 class="typography__alumni-year">2019</h4>
+
+ ✅ WZ Fixed on 1/22/26
+   * Changed text color to #707070 against a #f8f9fa background color gives a contrast ratio of 4.69:1
+     which is sufficient for AA large and small text (the element qualifies as small text).
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 2.7:1. Recommendation:  change text colour to #252525.
+
+   (#maureen-powell-tab > span > h4)
+
+   <h4 class="typography__alumni-year">2018</h4>
+
+ ✅ WZ Fixed on 1/22/26
+   * Changed text color to #707070 against a #f8f9fa background color gives a contrast ratio of 4.69:1
+     which is sufficient for AA large and small text (the element qualifies as small text).
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 2.7:1. Recommendation:  change text colour to #252525.
+
+   (#donald-rehmer-tab > span > h4)
+
+   <h4 class="typography__alumni-year">2017</h4>
+
+ ✅ WZ Fixed on 1/22/26
+   * Changed text color to #707070 against a #f8f9fa background color gives a contrast ratio of 4.69:1
+     which is sufficient for AA large and small text (the element qualifies as small text).
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 2.7:1. Recommendation:  change text colour to #252525.
+
+   (#robert-de-oliveira-tab > span > h4)
+
+   <h4 class="typography__alumni-year">2016</h4>
+
+ ✅ WZ Fixed on 1/22/26
+   * Changed text color to #707070 against a #f8f9fa background color gives a contrast ratio of 4.69:1
+     which is sufficient for AA large and small text (the element qualifies as small text).
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 2.7:1. Recommendation:  change text colour to #252525.
+
+   (#jordan-arseneau-tab > span > h4)
+
+   <h4 class="typography__alumni-year">2015</h4>
+
+ ✅ WZ Fixed on 1/22/26
+   * Changed text color to #707070 against a #f8f9fa background color gives a contrast ratio of 4.69:1
+     which is sufficient for AA large and small text (the element qualifies as small text).
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 2.7:1. Recommendation:  change text colour to #252525.
+
+   (#barbara-decker-tab > span > h4)
+
+   <h4 class="typography__alumni-year">2014</h4>
+
+ ✅ WZ Fixed on 1/22/26
+   * Changed text color to #707070 against a #f8f9fa background color gives a contrast ratio of 4.69:1
+     which is sufficient for AA large and small text (the element qualifies as small text).
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 2.7:1. Recommendation:  change text colour to #252525.
+
+   (#steven-depasquale-tab > span > h4)
+
+   <h4 class="typography__alumni-year">2013</h4>
+
+ ✅ WZ Fixed on 1/22/26
+   * Changed text color to #707070 against a #f8f9fa background color gives a contrast ratio of 4.69:1
+     which is sufficient for AA large and small text (the element qualifies as small text).
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 2.7:1. Recommendation:  change text colour to #252525.
+
+   (#cathy-boicken-tab > span > h4)
+
+   <h4 class="typography__alumni-year">2012</h4>
+
+ ✅ WZ Fixed on 1/22/26
+   * Changed text color to #707070 against a #f8f9fa background color gives a contrast ratio of 4.69:1
+     which is sufficient for AA large and small text (the element qualifies as small text).
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 2.7:1. Recommendation:  change text colour to #252525.
+
+   (#dominic-surprenant-tab > span > h4)
+
+   <h4 class="typography__alumni-year">2011</h4>
+
+ ✅ WZ Fixed on 1/22/26
+   * Changed text color to #707070 against a #f8f9fa background color gives a contrast ratio of 4.69:1
+     which is sufficient for AA large and small text (the element qualifies as small text).
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 2.7:1. Recommendation:  change text colour to #252525.
+
+   (#jenny-dinelli-tab > span > h4)
+
+   <h4 class="typography__alumni-year">2010</h4>
+
+Errors in https://www.kcc.edu/foundation/giveday/:
+ 
+ ✅ WZ Fixed on 1/22/26:
+   * Change button text to #fff against #0051A7 for a 7.67:1 contrast ratio
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 3:1, but text in this element has a contrast
+   ratio of 1.2:1. Recommendation:  change background to #001022.
+
+   (#content > section:nth-child(1) > div > div > div:nth-child(8) > div > div
+   > a)
+
+   <a href="../give/form/general/" class="btn btn-primary buttons__bolder
+   buttons__large mb-2">Donate Now</a>
+
+ ✅ WZ Fixed on 1/22/26:
+   * Change button text to #fff against #0051A7 for a 7.67:1 contrast ratio
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 3:1, but text in this element has a contrast
+   ratio of 1.2:1. Recommendation:  change background to #001022.
+
+   (#content > section:nth-child(3) > div > div > div > div > a)
+
+   <a href="../give/form/general/" class="btn btn-primary buttons__bolder
+   buttons__large mb-2">Donate Now</a>
+
+Errors in https://www.kcc.edu/foundation/:
+
+ ✅ WZ Fixed on 1/22/26:
+    * Change heading color to #C67806 against a #FCF1D6 background for a 3.06:1 ratio which
+      is sufficient for Level AA Large text which the headings are.
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 3:1, but text in this element has a contrast
+   ratio of 1.88:1. Recommendation:  change text colour to #030200.
+
+   (#content > div > div:nth-child(3) > div:nth-child(1) > a:nth-child(2) > h4)
+
+   <h4 class="typography__orange-h4">Scholarships</h4>
+
+ ✅ WZ Fixed on 1/22/26:
+    * Change heading color to #C67806 against a #FCF1D6 background for a 3.06:1 ratio which
+      is sufficient for Level AA Large text which the headings are.
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 3:1, but text in this element has a contrast
+   ratio of 1.88:1. Recommendation:  change text colour to #030200.
+
+   (#content > div > div:nth-child(3) > div:nth-child(2) > div > a:nth-child(2)
+   > h4)
+
+   <h4 class="typography__orange-h4">Give</h4>
+
+ ✅ WZ Fixed on 1/22/26:
+    * Change heading color to #C67806 against a #FCF1D6 background for a 3.06:1 ratio which
+      is sufficient for Level AA Large text which the headings are.
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 3:1, but text in this element has a contrast
+   ratio of 1.88:1. Recommendation:  change text colour to #030200.
+
+   (#content > div > div:nth-child(3) > div:nth-child(3) > a:nth-child(2) > h4)
+
+   <h4 class="typography__orange-h4">Volunteer</h4>
+
+ ✅ WZ Fixed on 1/22/26:
+  * Change link color to #006ad6 against #FCF1D6 for a 7.93:1 ratio.
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 4.43:1. Recommendation:  change background to #fef3d8.
+
+   (#homePage > section:nth-child(8) > section > div:nth-child(2) >
+   div:nth-child(2) > div:nth-child(1) > div > div:nth-child(2) > p >
+   a:nth-child(1))
+
+   <a href="tel:18158028256" class="links__darker-link"
+   itemprop="telephone">815-802-8256</a>
+
+ ✅ WZ Fixed on 1/22/26:
+  * Change link color to #006ad6 against #FCF1D6 for a 7.93:1 ratio.
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 4.43:1. Recommendation:  change background to #fef3d8.
+
+   (#homePage > section:nth-child(8) > section > div:nth-child(2) >
+   div:nth-child(2) > div:nth-child(1) > div > div:nth-child(2) > p >
+   a:nth-child(3))
+
+   <a class="links__darker-link" target="_blank"
+   href="https://secure.jotform.com/90435102482954?to[first]=Kari&amp;to[last]=Nugent&amp;submitEmail=knugent%40kcc.edu"
+   itemprop="url">Email</a>
+
+ ✅ WZ Fixed on 1/22/26:
+  * Change link color to #006ad6 against #FCF1D6 for a 7.93:1 ratio.
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 4.43:1. Recommendation:  change background to #fef3d8.
+
+   (#homePage > section:nth-child(8) > section > div:nth-child(2) >
+   div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > p >
+   a:nth-child(1))
+
+   <a href="tel:18158028252" class="links__darker-link"
+   itemprop="telephone">815-802-8252</a>
+
+ ✅ WZ Fixed on 1/22/26:
+  * Change link color to #006ad6 against #FCF1D6 for a 7.93:1 ratio.
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 4.43:1. Recommendation:  change background to #fef3d8.
+
+   (#homePage > section:nth-child(8) > section > div:nth-child(2) >
+   div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > p >
+   a:nth-child(3))
+
+   <a class="links__darker-link" target="_blank"
+   href="https://secure.jotform.com/90435102482954?to[first]=Dawn&amp;to[last]=Graveline&amp;submitEmail=dgraveline%40kcc.edu"
+   itemprop="url">Email</a>
+
+ ✅ WZ Fixed on 1/22/26:
+  * Change link color to #006ad6 against #FCF1D6 for a 7.93:1 ratio.
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 4.43:1. Recommendation:  change background to #fef3d8.
+
+   (#homePage > section:nth-child(8) > section > div:nth-child(2) >
+   div:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > p >
+   a:nth-child(1))
+
+   <a href="tel:18158028287" class="links__darker-link"
+   itemprop="telephone">815-802-8287</a>
+
+ ✅ WZ Fixed on 1/22/26:
+  * Change link color to #006ad6 against #FCF1D6 for a 7.93:1 ratio.
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 4.43:1. Recommendation:  change background to #fef3d8.
+
+   (#homePage > section:nth-child(8) > section > div:nth-child(2) >
+   div:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > p >
+   a:nth-child(3))
+
+   <a class="links__darker-link" target="_blank"
+   href="https://secure.jotform.com/90435102482954?to[first]=Katie&amp;to[last]=Henry&amp;submitEmail=cohenry%40kcc.edu"
+   itemprop="url">Email</a>
+
+ ✅ WZ Fixed on 1/22/26:
+  * Change link color to #006ad6 against #FCF1D6 for a 7.93:1 ratio.
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 4.43:1. Recommendation:  change background to #fef3d8.
+
+   (#homePage > section:nth-child(8) > section > div:nth-child(2) >
+   div:nth-child(2) > div:nth-child(4) > div > div:nth-child(2) > p >
+   a:nth-child(1))
+
+   <a href="tel:18158028253" class="links__darker-link"
+   itemprop="telephone">815-802-8253</a>
+
+ ✅ WZ Fixed on 1/22/26:
+  * Change link color to #006ad6 against #FCF1D6 for a 7.93:1 ratio.
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 4.43:1. Recommendation:  change background to #fef3d8.
+
+   (#homePage > section:nth-child(8) > section > div:nth-child(2) >
+   div:nth-child(2) > div:nth-child(4) > div > div:nth-child(2) > p >
+   a:nth-child(3))
+
+   <a class="links__darker-link" target="_blank"
+   href="https://secure.jotform.com/90435102482954?to[first]=Stephanie&amp;to[last]=Pizzoferrato&amp;submitEmail=spizzoferrato%40kcc.edu"
+   itemprop="url">Email</a>
+
+ ✅ WZ Fixed on 1/22/26:
+  * Change link color to #006ad6 against #FCF1D6 for a 7.93:1 ratio.
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 4.43:1. Recommendation:  change background to #fef3d8.
+
+   (#homePage > section:nth-child(8) > section > div:nth-child(2) >
+   div:nth-child(2) > div:nth-child(5) > div > div:nth-child(2) > p >
+   a:nth-child(1))
+
+   <a href="tel:18158028784" class="links__darker-link"
+   itemprop="telephone">815-802-8784</a>
+
+ ✅ WZ Fixed on 1/22/26:
+  * Change link color to #006ad6 against #FCF1D6 for a 7.93:1 ratio.
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 4.43:1. Recommendation:  change background to #fef3d8.
+
+   (#homePage > section:nth-child(8) > section > div:nth-child(2) >
+   div:nth-child(2) > div:nth-child(5) > div > div:nth-child(2) > p >
+   a:nth-child(3))
+
+   <a class="links__darker-link" target="_blank"
+   href="https://secure.jotform.com/90435102482954?to[first]=Nancy&amp;to[last]=Schunke&amp;submitEmail=nschunke%40kcc.edu"
+   itemprop="url">Email</a>
+
+Errors in https://www.kcc.edu/foundation/scholarships/:
+
+ ✅ WZ Fixed on 1/22/26:
+  * Change link color to #0261ee against #CFF4FC background for a 4.56:1 ratio.
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 3.86:1. Recommendation:  change background to #fff.
+
+   (#scholarshipsMessage > div > p:nth-child(2) > a:nth-child(2))
+
+   <a href="tel:+18158028287">815-802-8287</a>
+
+ ✅ WZ Fixed on 1/22/26:
+  * Change link color to #0261ee against #CFF4FC background for a 4.56:1 ratio.
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 3.86:1. Recommendation:  change background to #fff.
+
+   (#scholarshipsMessage > div > p:nth-child(2) > a:nth-child(3))
+
+   <a href="" mailto:khenry@kcc.edu="">khenry@kcc.edu</a>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(1) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(1) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(2) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(2) > td:nth-child(5))
+
+   <td align="center">2.75</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(3) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(3) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(4) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(4) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(5) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(5) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(6) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(6) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(7) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(7) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(8) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(8) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(9) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(9) > td:nth-child(5))
+
+   <td align="center">N/A</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(10) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(10) > td:nth-child(5))
+
+   <td align="center">3</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(11) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(11) > td:nth-child(5))
+
+   <td align="center">N/A</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(12) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(12) > td:nth-child(5))
+
+   <td align="center">3</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(13) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(13) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(14) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(14) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(15) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(15) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(16) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(16) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(17) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(17) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(18) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(18) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(19) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(19) > td:nth-child(5))
+
+   <td align="center">3</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(20) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(20) > td:nth-child(5))
+
+   <td align="center">3</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(21) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(21) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(22) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(22) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(23) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(23) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(24) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(24) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(25) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(25) > td:nth-child(5))
+
+   <td align="center">2</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(26) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(26) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(27) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(27) > td:nth-child(5))
+
+   <td align="center">3</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(28) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(28) > td:nth-child(5))
+
+   <td align="center">3</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(29) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(29) > td:nth-child(5))
+
+   <td align="center">2</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(30) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(30) > td:nth-child(5))
+
+   <td align="center">3</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(31) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(31) > td:nth-child(5))
+
+   <td align="center">3</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(32) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(32) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(33) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(33) > td:nth-child(5))
+
+   <td align="center">3</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(34) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(34) > td:nth-child(5))
+
+   <td align="center">2</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(35) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(35) > td:nth-child(5))
+
+   <td align="center">3</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(36) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(36) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(37) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(37) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(38) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(38) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(39) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(39) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(40) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(40) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(41) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(41) > td:nth-child(5))
+
+   <td align="center">3</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(42) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(42) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(43) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(43) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(44) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(44) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(45) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(45) > td:nth-child(5))
+
+   <td align="center">N/A</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(46) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(46) > td:nth-child(5))
+
+   <td align="center">3</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(47) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(47) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(48) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(48) > td:nth-child(5))
+
+   <td align="center">3</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(49) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(49) > td:nth-child(5))
+
+   <td align="center">2</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(50) > td:nth-child(2))
+
+   <td align="center" class="sorting_1">1</td>
+
+ • Align attributes .
+
+   (#responsiveTable > tbody > tr:nth-child(50) > td:nth-child(5))
+
+   <td align="center">2.5</td>
+
+✘ 25/29 URLs passed
