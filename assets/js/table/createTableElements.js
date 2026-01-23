@@ -81,7 +81,7 @@ function createCells(tr, val, i) {
   const replacement = '<br>&bull;&nbsp;'; // Replace bullets with a hard-break + an HTML entity bullet.
 
   if ( COLUMN_IS_RECIPIENT_OR_GPA ) {
-    td.setAttribute('align', 'center');
+    td.classList.add('text-center');
   }
 
   if (COLUMN_IS_SPECIAL_REQUIREMENTS) {
