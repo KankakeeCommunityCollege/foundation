@@ -49,6 +49,8 @@ sub-nav_links:
     link_href: 'alumni/alumni-stories/'
   - link_text: 'Staff/Retiree Alumni Stories'
     link_href: 'alumni/staff-stories/'
+  - link_text: 'FAQ'
+    link_href: 'scholarships/faq/'
   - link_text: 'Century Scholars'
     link_href: 'scholarships/century-scholars/'
   - link_text: 'Create a Scholarship'
