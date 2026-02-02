@@ -21,7 +21,7 @@ But the path wasn’t easy.
 
 "I initially planned to join the Marine Corps, but when that path didn’t feel right, I had to rethink everything," Ocqua said. "My father wasn’t willing to pay for college, so I needed an affordable, high-quality option. KCC became that bridge, allowing me to build a strong foundation without drowning in debt."
 
-Her sister, Aquila Stewart, worked at KCC and introduced Ocqua to Susan LaMore, a mentor who changed her trajectory.
+Her sister, Akilah Stewart, worked at KCC and introduced Ocqua to Susan LaMore, a mentor who changed her trajectory.
 
 "Susan didn’t just help me get into the Baccalaureate Scholars program—she made it possible,” Ocqua said. “I had missed the deadline, but when a spot opened, she fought to get me in and ensured I had the support to succeed. That changed my life."
 
