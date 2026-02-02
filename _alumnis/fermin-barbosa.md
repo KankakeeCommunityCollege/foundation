@@ -3,7 +3,7 @@ name: Fermin Barbosa
 sort_name: Barbosa Fermin
 degree:
 year:
-preview_priority: 19
+preview_priority: 20
 preview_image:
 portrait_image: uploads/alumni-stories_fermin-barbosa.jpg
 quote: >-

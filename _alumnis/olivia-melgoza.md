@@ -3,7 +3,7 @@ name: Olivia Melgoza
 sort_name: Melgoza Olivia
 degree:
 year:
-preview_priority: 4
+preview_priority: 5
 preview_image:
 portrait_image: uploads/alumni-stories_olivia-melgoza.jpg
 quote: >-
