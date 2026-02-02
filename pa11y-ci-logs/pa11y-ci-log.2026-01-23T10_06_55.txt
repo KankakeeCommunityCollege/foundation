@@ -1,0 +1,113 @@
+##############################
+##     Pa11y CI results     ##
+##############################
+
+##     Running Pa11y CI:
+##         DATETIME: 2026-01-23T10_06_55
+##         SITEMAP:  https://www.kcc.edu/foundation/pa11y-ci-sitemap.xml
+
+
+Running Pa11y on 29 URLs:
+ > https://www.kcc.edu/foundation/404.html - 0 errors
+ > https://www.kcc.edu/foundation/events/alumni-event/ - 0 errors
+ > https://www.kcc.edu/foundation/alumni/alumni-stories/ - 0 errors
+ > https://www.kcc.edu/foundation/events/annual-scholarship-event/ - 0 errors
+ > https://www.kcc.edu/foundation/events/blooming-ambition/ - 0 errors
+ > https://www.kcc.edu/foundation/scholarships/century-scholars/ - 0 errors
+ > https://www.kcc.edu/foundation/give/form/century-scholars/ - 0 errors
+ > https://www.kcc.edu/foundation/scholarships/create-a-scholarship/ - 0 errors
+ > https://www.kcc.edu/foundation/alumni/distinguished-alumni-award/ - 0 errors
+ > https://www.kcc.edu/foundation/give/form/employee-giving/ - 4 errors
+ > https://www.kcc.edu/foundation/give/employee-giving/ - 0 errors
+ > https://www.kcc.edu/foundation/events/fall-fundraiser/ - 0 errors
+ > https://www.kcc.edu/foundation/about/foundation-board/ - 0 errors
+ > https://www.kcc.edu/foundation/give/form/general/ - 0 errors
+ > https://www.kcc.edu/foundation/giveday/ - 0 errors
+ > https://www.kcc.edu/foundation/about/ - 0 errors
+ > https://www.kcc.edu/foundation/events/ - 0 errors
+ > https://www.kcc.edu/foundation/give/ - 0 errors
+ > https://www.kcc.edu/foundation/alumni/ - 0 errors
+ > https://www.kcc.edu/foundation/ - 0 errors
+ > https://www.kcc.edu/foundation/give/planned-giving/ - 0 errors
+ > https://www.kcc.edu/foundation/events/presidents-circle-dinner/ - 0 errors
+ > https://www.kcc.edu/foundation/give/form/presidents-circle/ - 3 errors
+ > https://www.kcc.edu/foundation/give/presidents-circle/ - 0 errors
+ > https://www.kcc.edu/foundation/scholarships/ - 0 errors
+ > https://www.kcc.edu/foundation/events/special-events/ - 0 errors
+ > https://www.kcc.edu/foundation/alumni/staff-stories/ - 0 errors
+ > https://www.kcc.edu/foundation/events/womens-giving-circle/ - 0 errors
+ > https://www.kcc.edu/foundation/give/womens-giving-circle/ - 0 errors
+
+Errors in https://www.kcc.edu/foundation/give/form/employee-giving/:
+
+ • This fieldset element does not have a name available to an accessibility
+   API. Valid names are: legend element, aria-label undefined, aria-labelledby
+   undefined.
+
+   (#bboxdonation_divForm > div:nth-child(7) > fieldset)
+
+   <fieldset> <legend></legend> ...</fieldset>
+
+ • This fieldset element does not have a name available to an accessibility
+   API. Valid names are: legend element, aria-label undefined, aria-labelledby
+   undefined.
+
+   (#bboxdonation_divForm > div:nth-child(10) > fieldset)
+
+   <fieldset> <legend> ...</fieldset>
+
+ • This textarea element does not have a name available to an accessibility
+   API. Valid names are: label element, title undefined, aria-label undefined,
+   aria-labelledby undefined.
+
+   (#g-recaptcha-response-100000)
+
+   <textarea id="g-recaptcha-response-100000" name="g-recaptcha-response"
+   class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px
+   solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none;
+   display: none;"></textarea>
+
+ • This form field should be labelled in some way. Use the label element
+   (either with a "for" attribute or wrapped around the form field), or
+   "title", "aria-label" or "aria-labelledby" attributes as appropriate.
+
+   (#g-recaptcha-response-100000)
+
+   <textarea id="g-recaptcha-response-100000" name="g-recaptcha-response"
+   class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px
+   solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none;
+   display: none;"></textarea>
+
+Errors in https://www.kcc.edu/foundation/give/form/presidents-circle/:
+
+ • This fieldset element does not have a name available to an accessibility
+   API. Valid names are: legend element, aria-label undefined, aria-labelledby
+   undefined.
+
+   (#bboxdonation_divForm > div:nth-child(9) > fieldset)
+
+   <fieldset> <legend> ...</fieldset>
+
+ • This textarea element does not have a name available to an accessibility
+   API. Valid names are: label element, title undefined, aria-label undefined,
+   aria-labelledby undefined.
+
+   (#g-recaptcha-response-100000)
+
+   <textarea id="g-recaptcha-response-100000" name="g-recaptcha-response"
+   class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px
+   solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none;
+   display: none;"></textarea>
+
+ • This form field should be labelled in some way. Use the label element
+   (either with a "for" attribute or wrapped around the form field), or
+   "title", "aria-label" or "aria-labelledby" attributes as appropriate.
+
+   (#g-recaptcha-response-100000)
+
+   <textarea id="g-recaptcha-response-100000" name="g-recaptcha-response"
+   class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px
+   solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none;
+   display: none;"></textarea>
+
+✘ 27/29 URLs passed
