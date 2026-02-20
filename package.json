@@ -61,5 +61,8 @@
     "colors": "1.4.0",
     "core-js": "^3.6.5",
     "regenerator-runtime": "^0.14.1"
+  },
+  "overrides": {
+    "ajv": "^8.18.0"
   }
 }
