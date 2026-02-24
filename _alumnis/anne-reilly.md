@@ -4,7 +4,7 @@ sort_name: Reilly Anne
 degree:
 year:
 preview_priority: 1
-preview_image:
+preview_image: uploads/alumni-stories_anne-reilly_ad.jpg
 portrait_image: uploads/alumni-stories_anne-reilly.jpg
 quote: >-
   KCC provides a solid foundation for wherever you want to go.
