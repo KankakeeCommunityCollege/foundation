@@ -3,7 +3,7 @@ name: Leah Love
 sort_name: Love Leah
 degree:
 year:
-preview_priority: 19
+preview_priority: 20
 preview_image: uploads/alumni-stories_leah-love_ad.jpg
 portrait_image: uploads/alumni-stories_leah-love.jpg
 quote: >-

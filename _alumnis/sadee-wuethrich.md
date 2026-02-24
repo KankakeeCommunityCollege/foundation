@@ -3,7 +3,7 @@ name: Sadee Wuethrich
 sort_name: Wuethrich Sadee
 degree:
 year:
-preview_priority: 1
+preview_priority: 2
 preview_image: uploads/alumni-stories_sadee-wuethrich_ad.jpg
 portrait_image: uploads/alumni-stories_sadee-wuethrich.jpg
 quote: >-

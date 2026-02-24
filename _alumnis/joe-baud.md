@@ -3,7 +3,7 @@ name: Joe Baud
 sort_name: Baud Joe
 degree:
 year:
-preview_priority: 4
+preview_priority: 5
 preview_image: uploads/alumni-stories_joe-baud_ad.jpg
 portrait_image: uploads/alumni-stories_joe-baud.jpg
 quote: >-
