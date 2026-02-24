@@ -3,7 +3,7 @@ name: Cristian Salazar
 sort_name: Salazar Cristian
 degree:
 year:
-preview_priority: 2
+preview_priority: 3
 preview_image: uploads/alumni-stories_cristian-salazar_ad.jpg
 portrait_image: uploads/alumni-stories_cristian-salazar.jpg
 quote: >-

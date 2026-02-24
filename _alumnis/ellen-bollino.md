@@ -3,7 +3,7 @@ name: Ellen Bollino
 sort_name: Bollino Ellen
 degree:
 year:
-preview_priority: 6
+preview_priority: 7
 preview_image: uploads/alumni-stories_ellen-bollino_ad.jpg
 portrait_image: uploads/alumni-stories_ellen-bollino.jpg
 quote: >-
