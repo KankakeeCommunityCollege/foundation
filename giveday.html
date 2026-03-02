@@ -17,26 +17,61 @@ description: >-
   <section class="benefits__blue-section">
     <div class="container-fluid px-0">
       <div class="container">
-        {% comment %}
-        <div class="positioning__iframe-wrapper">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/ehnj2ebDefA?rel=0&autoplay=1"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-        {% endcomment %}
-        <h3 class="typography__large-h4 text-center mb-0 mt-3">GIVE DAY</h3>
-        <h4 class="benefits__typography--h5 text-center mb-4">#strongtogether</h4>
-        <p class="typography__larger-p">GIVE DAY is the one day that alumni, families, students, staff, faculty, and friends
-          unite to support one common goal: supporting KCC's mission—Enhancing Quality of Life through Learning.</p>
-        <p class="typography__larger-p"><strong>100% of your gift will have a direct and immediate impact on KCC students.</strong></p>
-        <p class="typography__larger-p">We sincerely hope that you consider helping make KCC&apos;s GIVE DAY a success. Any gift, no matter what the size, can change lives.</p>
+        <h3 class="typography__large-h4 text-center mb-0 mt-3">
+          GIVE DAY<br>
+          March 19, 2026
+        </h3>
 
+        <ul class="nav nav-tabs navTabs" id="myTab" role="tablist" aria-label="Give Day 2026 video and transcript">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="video-tab" data-bs-toggle="tab" data-bs-target="#video-tab-pane" type="button" role="tab" aria-controls="video-tab-pane" aria-selected="true">Video</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="transcript-tab" data-bs-toggle="tab" data-bs-target="#transcript-tab-pane" type="button" role="tab" aria-controls="transcript-tab-pane" aria-selected="false">Transcript</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="video-tab-pane" role="tabpanel" aria-labelledby="video-tab" tabindex="0">
+            <div class="positioning__iframe-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/NwIeLdfS7ZU?autoplay=1&mute=1&playlist=NwIeLdfS7ZU&loop=1"
+                title="Watch our 2026 KCC Give Day promotional video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="tab-pane fade mt-3 mb-5" id="transcript-tab-pane" role="tabpanel" aria-labelledby="transcript-tab" tabindex="0">
+            <h4 class="typography__h4">Transcript: KCC Give Day Promotional Video</h4>
+            <p><strong>Audio:</strong> [An energetic, driving drum rhythm plays throughout.]</p>
+            <p><strong>Visual Style:</strong> A high-energy montage of campus life and hands-on learning. Scenes include aerial views of the summer campus and students training in various fields: working on a semi-truck, practicing emergency medical care, welding, automotive repair, and working on a solar panel installation. The video concludes with smiling graduates in caps and gowns.</p>
+            <p><strong>On-screen text:</strong> "One day to give. One day together. Help students succeed. Give back.</p>
+            <p>One day to make a difference and change lives. One day to help students keep pace and lift up leaders of tomorrow.</p>
+            <p>One day—KCC Give Day. Let's show The Power of Community.</p>
+            <p>KCC Give Day. Donate."</p>
+            <p><strong>Closing Logo:</strong> "Kankakee Community College—The Power of Community."</p>
+          </div>
+        </div>
+        <h4 class="benefits__typography--h6 text-uppercase">One Day can Change Students’ Lives</h4>
+        <p class="typography__larger-p">
+          On <strong>March 19</strong>, the entire Kankakee Community College community comes together for <strong>Give Day</strong> — 24-hours of generosity that fuels opportunity, removes barriers, and helps students succeed.
+        </p>
+        <p class="typography__larger-p">Every gift — no matter the size — makes an immediate impact.</p>
+        <p class="typography__larger-p"><strong>Give today and help students thrive.</strong></p>
+
+        <div class="text-center mb-5">
+          <a
+            href="{{ page.baseurl }}give/form/general/"
+            class="btn btn-primary buttons__bolder buttons__large mb-2"
+          >Donate Now</a>
+        </div>
+        
+
+        {% comment %}
         <div class="row mt-5 text-center">
           <div class="col-12 coll-sm-12 offset-lg-2 col-lg-8 mb-3 svg__animation--col">
             {% include svg/icon-emergency-assistance-fund.html %}
@@ -47,7 +82,9 @@ description: >-
               be there to help.</h6>
           </div>
         </div>
+        {% endcomment %}
 
+        {% comment %}
         <div class="row my-2 py-2">
           <div class="col">
 
@@ -66,7 +103,7 @@ description: >-
             {% include giveday-contact.html %}
           </div>
         </div>
-
+        {% endcomment %}
 
 
       </div>
@@ -76,6 +113,18 @@ description: >-
     <div class="container">
       <div class="row">
         <div class="col">
+          <h4 class="benefits__typography--h6 text-uppercase">Your Gift. Your Choice. Your Impact.</h4>
+        <p class="typography__larger-p">Give Day donors can direct their support to the area that matters most to them:</p>
+        <ul class="typography__larger-p">
+          <li><strong>Student Success Fund</strong> — supporting students where the need is greatest</li>
+          <li><strong>Food Pantry</strong> — helping students focus on learning, not hunger</li>
+          <li><strong>EDI Center</strong> — fostering belonging, connection, and opportunity</li>
+          <li><strong>Alumni Scholarship</strong> — opening doors through financial support</li>
+          <li><strong>Or any program or area you choose</strong></li>
+        </ul>
+        <p class="typography__larger-p">When you give, you help ensure every student has the resources to learn, grow, and reach their goals.</p>
+
+          {% comment %}
           <h5 class="typography__larger-h5 text-center mb-4">Student Success Stories</h5>
           <p class="typography__larger-p text-center"><strong>When you donate to KCC GIVE DAY #strongtogether, you will
               be a part of a student&apos;s success&nbsp;story:</strong></p>
@@ -122,6 +171,8 @@ description: >-
               </blockquote>
             </div>
           </div>
+          {% endcomment %}
+          
         </div>
       </div>
     </div>
@@ -131,20 +182,38 @@ description: >-
       <div class="row my-2 py-2">
         <div class="col">
 
-          <div class="text-center">
-            <a
-              href="{{ page.baseurl }}give/form/general/"
-              class="btn btn-primary buttons__bolder buttons__large mb-2"
-            >Donate Now</a>
-          </div>
-          <p class="typography__larger-p mt-3">The Kankakee Community College Foundation is a 501c3 organization.
-            <strong>All
-              donations are tax deductible.</strong></p>
-          <p class="typography__larger-p">Checks can be made payable to the <strong>Kankakee Community College
-              Foundation</strong>. Please send to: <strong>KCC Foundation, 100 College Drive, Kankakee, IL
-              60901</strong>
+          <h4 class="benefits__typography--h6 text-uppercase">Why It Matters</h4>
+          <p class="typography__larger-p">Students don’t succeed alone. Behind every graduate is a community that believed in them. Be a part of students’ success stories like these.</p>
+          <p class="typography__larger-p">
+            <em>“Every bit of support makes it easier to focus on school and keep moving forward.”</em><br>
+            <strong>— KCC current student testimonial</strong>
           </p>
-          {% include giveday-contact.html %}
+          <p class="typography__larger-p">
+            <em>“The food pantry helped me stay enrolled in classes.”</em><br>
+            <strong>-	KCC current student testimonial</strong>
+          </p>
+          <p class="typography__larger-p">
+            <em>“KCC really set me up for success.”</em><br>
+            <strong>— Jakob Knox, ‘21</strong>
+          </p>
+          <p class="typography__larger-p">
+            <em>“The EDI Center was a welcoming space where I could engage in meaningful conversations and meet people from diverse backgrounds.”</em><br>
+            <strong>— Mia Arseneau, ‘24</strong>
+          </p>
+          <p class="typography__larger-p">
+            <em>“KCC is where I learned the importance of giving back … I use my education to make a difference in my community.”</em><br>
+            <strong>— Dale Piggush, ‘75</strong>
+          </p>
+          <p class="typography__larger-p">
+            <em>“I’m incredibly grateful for the financial support … it was a truly special and memorable experience.”</em><br>
+            <strong>— Yamei Rohlfs, ‘19</strong>
+          </p>
+          <p class="typography__larger-p">
+            <em>“KCC set the foundation for achieving my greater purpose. Without their nursing program, I wouldn’t be where I am today. KCC helped me navigate life’s challenges, and it can do the same for you.”</em><br>
+            <strong>— Fawn Hendershot, ‘12</strong>
+          </p>
+          <p class="typography__larger-p">Your generosity creates more stories like these — stories of confidence, opportunity, and impact.</p>
+
           </p>
         </div>
       </div>
@@ -153,6 +222,18 @@ description: >-
   <section class="container my-3 py-3">
     <div class="row">
       <div class="col">
+
+        <h4 class="benefits__typography--h6 text-uppercase">Be Part of the Momentum</h4>
+          <p class="typography__larger-p">You’re not just making a gift — you’re joining a movement of alumni, employees, and community members who believe in the Power of Community.</p>
+          <p class="typography__larger-p">Together, we can:</p>
+          <ul class="typography__larger-p">
+            <li>Remove financial barriers</li>
+            <li>Expand opportunities</li>
+            <li>Strengthen our community</li>
+          </ul>
+
+
+          {% comment %}
         <h5 class="typography__larger-h5 text-center mb-0">Spread the Word</h5>
         <div class="text-center mb-3">
           <img
@@ -193,7 +274,7 @@ description: >-
             #strongtogether</li>
           <li>You don&apos;t have to give a lot, every little bit counts. www.kcc.edu/giveday #strongtogether</li>
         </ul>
-
+        {% endcomment %}
 
 
 
@@ -204,11 +285,35 @@ description: >-
   <div class="container mt-5">
     <div class="row">
       <div class="col">
-        <p><span class="typography__larger-p"><em>&ldquo;Our lives begin to end the day we become silent about things
-              that matter.&rdquo;</em></span> - Martin Luther King Jr.</p>
+
+        <h4 class="benefits__typography--h6 text-uppercase">Make Your Gift Today</h4>
+        <p class="typography__larger-p">Help students take the next step toward their future.</p>
+        <div class="text-center">
+            <a
+              href="{{ page.baseurl }}give/form/general/"
+              class="btn btn-primary buttons__bolder buttons__large mb-2"
+            >Donate Now</a>
+          </div>
+          <p class="typography__larger-p mt-3">The Kankakee Community College Foundation is a 501c3 organization.
+            <strong>All
+              donations are tax deductible.</strong></p>
+          <p class="typography__larger-p">Checks can be made payable to the <strong>Kankakee Community College
+              Foundation</strong>. Please send to: <strong>KCC Foundation, 100 College Drive, Kankakee, IL
+              60901</strong>
+          </p>
+          {% include giveday-contact.html %}
+
+
+          {% comment %}
+          <p><span class="typography__larger-p"><em>&ldquo;Our lives begin to end the day we become silent about things
+            that matter.&rdquo;</em></span> - Martin Luther King Jr.</p>
+          {% endcomment %}
+
       </div>
     </div>
   </div>
+  
+  {% comment %}
   <div class="container-fluid">
     <div class="row">
       <div class="col">
@@ -224,4 +329,6 @@ description: >-
       </div>
     </div>
   </div>
+  {% endcomment %}
+
 </main>
