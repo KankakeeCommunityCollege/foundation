@@ -81,7 +81,7 @@ description: >-
             <div class="tab-pane fade" id="{{ distinguished_alumni_id }}" role="tabpanel" aria-labelledby="{{ distinguished_alumni_id }}-tab" tabindex="0">
               {% if distinguished_alumni.portrait_image %}
               <div class="text-center">
-                <img src="{{ distinguished_alumni.baseurl }}{{ distinguished_alumni.portrait_image }}" class="float-sm-start img-fluid alumni__portrait" alt="Portrait of {{ distinguished_alumni.name }}">
+                <img src="{{ page.baseurl }}{{ distinguished_alumni.portrait_image }}" class="float-sm-start img-fluid alumni__portrait" alt="Portrait of {{ distinguished_alumni.name }}">
               </div>
               {% endif %}
               <h3 class="blue-heading">{{ distinguished_alumni.name }}</h3>
