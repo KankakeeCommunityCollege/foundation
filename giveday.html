@@ -8,6 +8,51 @@ description: >-
   GIVE DAY is the one day that alumni, families, students, staff, faculty, and friends 
   unite to support one common goal: supporting the Kankakee Community College Mission—enhancing
   the quality of life through learning.
+testimonials:
+  - portrait: /assets/img/placeholder_square.jpg
+    portrait_alt_text: 
+    quote: >-
+      Every bit of support makes it easier to focus on school and keep moving forward.
+    name: KCC current student testimonial
+    year:
+  - portrait: /assets/img/placeholder_square.jpg
+    portrait_alt_text: 
+    quote: >-
+      The food pantry helped me stay enrolled in classes.
+    name: KCC current student testimonial
+    year:
+  - portrait: /uploads/giveday_jakob-knox.jpg
+    portrait_alt_text: Jakob Knox
+    quote: >-
+      KCC really set me up for success.
+    name: Jakob Knox, '21
+    year:
+  - portrait: /uploads/giveday_marseneau.jpg
+    portrait_alt_text:
+    quote: >-
+      The EDI Center was a welcoming space where I could engage in meaningful conversations and meet people from diverse
+      backgrounds.
+    name: Mia Arseneau, '24
+    year:
+  - portrait: /assets/img/placeholder_square.jpg
+    portrait_alt_text: 
+    quote: >-
+      KCC is where I learned the importance of giving back … I use my education to make a difference in my community.
+    name: Dale Piggush, '75
+    year:
+  - portrait: /assets/img/placeholder_square.jpg
+    portrait_alt_text: 
+    quote: >-
+      I'm incredibly grateful for the financial support … it was a truly special and memorable experience.
+    name: Yamei Rohlfs, '19
+    year:
+  - portrait: /uploads/giveday_fhendershott.jpg
+    portrait_alt_text: 
+    quote: >-
+      KCC set the foundation for achieving my greater purpose. Without their nursing program, I wouldn't be where I am today.
+      KCC helped me navigate life's challenges, and it can do the same for you.
+    name: Fawn Hendershot, '12
+    year:
 ---
 
 {% include facebook-javascript.html %}
@@ -60,7 +105,7 @@ description: >-
           </h3>
           <p class="typography__large-h4-sub-heading">March 19, 2026</p>
         </hgroup>
-        <h4 class="typography__h3 typography--2rem">One Day can Change Students’ Lives</h4>
+        <h4 class="typography__h3 typography--2rem">One Day can Change Students' Lives</h4>
         <p class="typography__larger-p">
           On <strong>March 19</strong>, the entire Kankakee Community College community comes together for <strong>Give Day</strong> — 24-hours of generosity that fuels opportunity, removes barriers, and helps students succeed.
         </p>
@@ -363,6 +408,9 @@ description: >-
           <h4 class="typography__h3 typography--2rem">Why It Matters</h4>
           <p class="typography__larger-p mb-5">Students don’t succeed alone. Behind every graduate is a community that believed in them. Be a part of students’ success stories like these.</p>
 
+          {% include testimonials-template.html %}
+          
+          {% comment %}
           <div class="px-4">
             <p class="typography__larger-p mb-5">
               <em>“Every bit of support makes it easier to focus on school and keep moving forward.”</em><br>
@@ -393,6 +441,7 @@ description: >-
               <strong class="ms-4">— Fawn Hendershot, ‘12</strong>
             </p>
           </div>
+          {% endcomment %}
 
           <p class="typography__larger-p mb-5">Your generosity creates more stories like these — stories of confidence, opportunity, and impact.</p>
 
