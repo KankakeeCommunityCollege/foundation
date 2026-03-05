@@ -80,7 +80,7 @@ testimonials:
               </div>
             </div>
             <div class="tab-pane fade pt-5 pb-5 px-4 bg-white" id="transcript-tab-pane" role="tabpanel" aria-labelledby="transcript-tab" tabindex="0">
-              <h4 class="typography__h4">Transcript: KCC Give Day Promotional Video</h4>
+              <h3 class="typography__h4">Transcript: KCC Give Day Promotional Video</h3>
               <p><strong>Audio:</strong> [An energetic, driving drum rhythm plays throughout.]</p>
               <p><strong>Visual Style:</strong> A high-energy montage of campus life and hands-on learning. Scenes include aerial views of the summer campus and students training in various fields: working on a semi-truck, practicing emergency medical care, welding, automotive repair, and working on a solar panel installation. The video concludes with smiling graduates in caps and gowns.</p>
               <p><strong>On-screen text:</strong> "One day to give. One day together. Help students succeed. Give back.</p>
@@ -99,13 +99,16 @@ testimonials:
             </li>
           </ul><!-- End tab interface -->
         </div>
-        <hgroup class="text-center mb-5">
-          <h3 class="typography__large-h4 mb-0">
-            GIVE DAY
-          </h3>
-          <p class="typography__large-h4-sub-heading">March 19, 2026</p>
-        </hgroup>
-        <h4 class="typography__h3 typography--2rem">One Day can Change Students' Lives</h4>
+        <div class="text-center my-4">
+          <img
+            src="{{ page.baseurl }}uploads/giveday_2026-graphic-banner.jpg"
+            class="img-fluid"
+            width="1500px"
+            height="437px"
+            alt="KCC Give Day - March 19, 2026."
+          >
+        </div>
+        <h3 class="typography__h3 text-center typography--2rem">One Day Can Change Students' Lives</h3>
         <p class="typography__larger-p">
           On <strong>March 19</strong>, the entire Kankakee Community College community comes together for <strong>Give Day</strong> — 24-hours of generosity that fuels opportunity, removes barriers, and helps students succeed.
         </p>
@@ -118,42 +121,6 @@ testimonials:
             class="btn btn-primary buttons__bolder buttons__large mb-2"
           >Donate Now</a>
         </div>
-        
-
-        {% comment %}
-        <div class="row mt-5 text-center">
-          <div class="col-12 coll-sm-12 offset-lg-2 col-lg-8 mb-3 svg__animation--col">
-            {% include svg/icon-emergency-assistance-fund.html %}
-            <h5 class="benefits__typography--h6 my-4">GIVE DAY FUND</h5>
-            <h6 class="typography__h5">Funds will be used to address students&apos; emerging needs. For example, many students need
-              technology like laptops or personal WiFi, others need emergency assistance for things that financial aid won&apos;t cover,
-              some face food insecurity and other personal hardships. Whatever the need, your contribution to the GIVE DAY fund will
-              be there to help.</h6>
-          </div>
-        </div>
-        {% endcomment %}
-
-        {% comment %}
-        <div class="row my-2 py-2">
-          <div class="col">
-
-            <div class="text-center mb-5">
-              <a
-                href="{{ page.baseurl }}give/form/general/"
-                class="btn btn-primary buttons__bolder buttons__large mb-2"
-              >Donate Now</a>
-            </div>
-            <p class="typography__larger-p mt-3">The Kankakee Community College Foundation is a 501c3 organization.
-              <strong>All
-                donations are tax deductible.</strong></p>
-            <p class="typography__larger-p">Checks can be made payable to the <strong>Kankakee Community College
-                Foundation</strong>. Please send to: <strong>KCC Foundation, 100 College Drive, Kankakee, IL
-                60901</strong></p>
-            {% include giveday-contact.html %}
-          </div>
-        </div>
-        {% endcomment %}
-
 
       </div>
     </div>
@@ -162,8 +129,8 @@ testimonials:
     <div class="container">
       <div class="row">
         <div class="col">
-          <h4 class="typography__h3 typography--2rem">Your Gift. Your Choice. Your Impact.</h4>
-          <p class="typography__larger-p">Give Day donors can direct their support to the area that matters most to them:</p>
+          <h3 class="typography__h3 typography--2rem text-center">Your Gift. Your Choice. Your Impact.</h3>
+          <p class="typography__larger-p"><strong>Give Day donors can direct their support to the area that matters most to them:</strong></p>
 
           <div class="row">
             <div class="col-12 col-md-6 col-lg-4 mb-3 d-flex flex-column flex-fill">
@@ -177,8 +144,11 @@ testimonials:
                         C26,32,26,34.2,26,34.2V36z"/>
                     </svg>
                   </div>
-                  <h5 class="typography__h4">Student Success Fund</h5>
-                  <p>Supporting students where the need is greatest.</p>
+                  <h4 class="typography__h4">Student Success Fund</h4>
+                  <p><strong>Supporting students where the need is greatest.</strong></p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="{{ page.baseurl }}give/form/general/" class="btn btn-primary text-center">Donate Now</a>
                 </div>
               </div>
             </div>
@@ -214,8 +184,11 @@ testimonials:
                       <rect class="svg__none" width="200" height="200" />
                     </svg>
                   </div>
-                  <h5 class="typography__h4">Food Pantry</h5>
+                  <h4 class="typography__h4">Food Pantry</h4>
                   <p>Helping students focus on learning, not hunger.</p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="{{ page.baseurl }}give/form/general/" class="btn btn-primary text-center">Donate Now</a>
                 </div>
               </div>
             </div>
@@ -231,8 +204,11 @@ testimonials:
                       height="115px"
                       alt="">
                   </div>
-                  <h5 class="typography__h4">EDI Center</h5>
+                  <h4 class="typography__h4">EDI Center</h4>
                   <p>Fostering belonging, connection, and opportunity.</p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="{{ page.baseurl }}give/form/general/" class="btn btn-primary text-center">Donate Now</a>
                 </div>
               </div>
             </div>
@@ -302,8 +278,11 @@ testimonials:
                       c0-2.971-0.826-5.116-1.981-6.685l-20.305,8.996L19.904,39.217z" />
                     </svg>
                   </div>
-                  <h5 class="typography__h4">Alumni Scholarship</h5>
+                  <h4 class="typography__h4">Alumni Scholarship</h4>
                   <p>Opening doors through financial support.</p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="{{ page.baseurl }}give/form/general/" class="btn btn-primary text-center">Donate Now</a>
                 </div>
               </div>
             </div>
@@ -317,8 +296,11 @@ testimonials:
                       <path d="M18,13c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S20.76,13,18,13z M19.65,20.35l-2.15-2.15V15h1v2.79l1.85,1.85 L19.65,20.35z" />
                     </svg>
                   </div>
-                  <h5 class="typography__h4">Student Professional Development</h5>
+                  <h4 class="typography__h4">Student Professional Development</h4>
                   <p>Supporting students with professional growth experiences like attending conferences or studying abroad.</p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="{{ page.baseurl }}give/form/general/" class="btn btn-primary text-center">Donate Now</a>
                 </div>
               </div>
             </div>
@@ -338,8 +320,11 @@ testimonials:
                       <rect class="svg__none" width="150" height="150"/>
                     </svg>
                   </div>
-                  <h5 class="typography__h4">You Choose</h5>
+                  <h4 class="typography__h4">You Choose</h4>
                   <p>Or any program or area you choose.</p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="{{ page.baseurl }}give/form/general/" class="btn btn-primary text-center">Donate Now</a>
                 </div>
               </div>
             </div>
@@ -405,8 +390,10 @@ testimonials:
       <div class="row my-2 py-2">
         <div class="col">
 
-          <h4 class="typography__h3 typography--2rem">Why It Matters</h4>
-          <p class="typography__larger-p mb-5">Students don’t succeed alone. Behind every graduate is a community that believed in them. Be a part of students’ success stories like these.</p>
+          <h3 class="typography__h3 typography--2rem text-center">Why It Matters</h3>
+          <p class="typography__larger-p mb-5">
+            <strong>Students don’t succeed alone. Behind every graduate is a community that believed in them. Be a part of students’ success stories like these.</strong>
+          </p>
 
           {% include testimonials-template.html %}
           
@@ -443,7 +430,7 @@ testimonials:
           </div>
           {% endcomment %}
 
-          <p class="typography__larger-p mb-5">Your generosity creates more stories like these — stories of confidence, opportunity, and impact.</p>
+          <p class="typography__larger-p mb-5 mt-5">Your generosity creates more stories like these — stories of confidence, opportunity, and impact.</p>
 
           </p>
         </div>
@@ -454,60 +441,16 @@ testimonials:
     <div class="row">
       <div class="col">
 
-        <h4 class="typography__h3 typography--2rem">Be Part of the Momentum</h4>
-          <p class="typography__larger-p">You’re not just making a gift — you’re joining a movement of alumni, employees, and community members who believe in the Power of Community.</p>
+        <h3 class="typography__h3 typography--2rem text-center">Be Part of the Momentum</h3>
+          <p class="typography__larger-p">
+            <strong>You’re not just making a gift — you’re joining a movement of alumni, employees, and community members who believe in the Power of Community.</strong>
+          </p>
           <p class="typography__larger-p">Together, we can:</p>
           <ul class="typography__larger-p">
             <li>Remove financial barriers</li>
             <li>Expand opportunities</li>
             <li>Strengthen our community</li>
           </ul>
-
-
-          {% comment %}
-        <h5 class="typography__larger-h5 text-center mb-0">Spread the Word</h5>
-        <div class="text-center mb-3">
-          <img
-            src="{{ page.baseurl }}uploads/give-day-FB-1080x566.png"
-            class="img-fluid"
-            alt="Banner with the KCC cavalier mascot and stylized text that reads 'Aug. 27, GIVE DAY #strongtogether'"
-          >
-        </div>
-        <div class="col mb-2 d-flex justify-content-center">
-          <div
-            class="fb-like me-2 fb__transform"
-            data-href="https://foundation.kcc.edu/giveday/"
-            data-width=""
-            data-layout="button"
-            data-show-faces="false"
-            data-action="like"
-            data-size="large"
-            data-share="true"
-          >
-          </div>
-          <a
-            class="twitter-share-button buttons__transform"
-            href="https://twitter.com/intent/tweet"
-            data-text="KCC  GIVE DAY - August 27, 2021 #strongtogether"
-            data-url="https://foundation.kcc.edu/giveday/"
-            data-size="large"
-          >Tweet</a>
-        </div>
-        <p class="typography__larger-p">Help us spread the word and support KCC students and initiatives. On November 18,
-          please use your social media and/or text messages with the hashtag #strongtogether to share information on
-          GIVE DAY.</p>
-
-        <p class="typography__larger-p">The following are a few sample Facebook posts:</p>
-        <ul class="typography__larger-p">
-          <li>It&apos;s finally here! Today is the day to make a gift to Kankakee Community College. Help us show the world
-            that we are #strongtogether</li>
-          <li>Every gift matters! Don&apos;t forget to visit www.kcc.edu/giveday and show the world that we are
-            #strongtogether</li>
-          <li>You don&apos;t have to give a lot, every little bit counts. www.kcc.edu/giveday #strongtogether</li>
-        </ul>
-        {% endcomment %}
-
-
 
       </div>
     </div>
@@ -517,8 +460,8 @@ testimonials:
     <div class="container">
       <div class="row my-2 py-2">
         <div class="col">
-          <h4 class="typography__h3 typography--2rem">Make Your Gift Today</h4>
-          <p class="typography__larger-p">Help students take the next step toward their future.</p>
+          <h3 class="typography__h3 typography--2rem text-center">Make Your Gift Today</h3>
+          <p class="typography__larger-p"><strong>Help students take the next step toward their future.</strong></p>
           <div class="text-center">
             <a
               href="{{ page.baseurl }}give/form/general/"
