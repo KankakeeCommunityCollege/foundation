@@ -1,0 +1,26 @@
+// =======================================  //
+// Modifications and additions to BS5 tabs  //
+// =======================================  //
+
+// A class to reverse some of the BS5 tab styling for positioning the tabs a long the bottom:
+// Wrap the BS5 tab markup with a div.tabs--bottom-tabs element and swap the markup order so that
+//  the tab-list elements are after the tabpanel elements.
+.tabs--bottom-tabs {
+  .nav-tabs { // Swap the top and bottom borders
+    border-bottom: none;
+    border-top: 1px solid #b1b1b1;
+  }
+  .nav-tabs .nav-link { // Swap the top and bottom border colors
+    border-top-color: #b1b1b1;
+    border-bottom-color: #e5e8ed;
+  }
+  .nav-tabs .nav-link.active { // Swap top and bottom border colors for the active tab too
+    border-color: #fff #b1b1b1 #b1b1b1;
+  }
+  .nav-tabs .nav-link { // Make the bottom-left and bottom-right corners rounded (instead of the top)
+    border-bottom-left-radius: var(--bs-nav-tabs-border-radius);
+    border-bottom-right-radius: var(--bs-nav-tabs-border-radius);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}

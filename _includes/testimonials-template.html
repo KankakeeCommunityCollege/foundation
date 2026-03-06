@@ -1,0 +1,63 @@
+{% for item in page.testimonials %}
+{% assign first_char = item.portrait | slice: 0 %}
+{% if first_char == '/' %}
+  {% assign image = item.portrait | remove_first: '/' %}
+{% else %}
+  {% assign image = item.portrait %}
+{% endif %}
+{% if item.portrait_alt_text %}
+  {% assign alt_text = item.portrait_alt_text %}
+{% else %}
+  {% assign alt_text = item.name %}
+{% endif %}
+{% capture even_odd_cycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+{% if even_odd_cycle == 'odd' %}
+<div class="row{% if forloop.first != true %} benefits__row--pad{% endif %} mb-5 mb-lg-0">
+  <div class="col-12 col-md-4 text-center my-auto">
+    <img
+      src="{{ page.baseurl }}assets/img/placeholder_square.jpg"
+      data-src="{{ page.baseurl }}{{ image }}"
+      class="benefits__borders--circle-img img-fluid rounded-circle"
+      height="284px"
+      width="284px"
+      alt="{{ alt_text }}">
+  </div>
+  <div class="col-12 col-md-8 align-self-center">
+    <p class="benefits__typography--student-p">
+      <em>
+        {% if page.exclude_testimonials_html_quotes %}
+        {{ item.quote }}
+        {% else %}
+        &ldquo;{{ item.quote }}&rdquo;
+        {% endif %}
+      </em>
+    </p>
+    <span class="benefits__typography--img-cap ms-4">&mdash;&nbsp;{{ item.name }}{% if item.year %} - {{ item.year }}{% endif %}</span>
+  </div>
+</div>
+{% else %}
+<div class="row benefits__row--pad mb-5 mb-lg-0">
+  <div class="col-12 col-md-8 order-2 order-md-1 align-self-center">
+    <p class="benefits__typography--student-p">
+      <em>
+        {% if page.exclude_testimonials_html_quotes %}
+        {{ item.quote }}
+        {% else %}
+        &ldquo;{{ item.quote }}&rdquo;
+        {% endif %}
+      </em>
+    </p>
+    <span class="benefits__typography--img-cap ms-4">&mdash;&nbsp;{{ item.name }}{% if item.year %} - {{ item.year }}{% endif %}</span>
+  </div>
+  <div class="col-12 col-md-4 text-center order-1 order-md-2 my-auto">
+    <img
+      src="{{ page.baseurl }}assets/img/placeholder_square.jpg"
+      data-src="{{ page.baseurl }}{{ image }}"
+      class="benefits__borders--circle-img img-fluid rounded-circle"
+      height="284px"
+      width="284px"
+      alt="{{ alt_text }}">
+  </div>
+</div>
+{% endif %}
+{% endfor %}

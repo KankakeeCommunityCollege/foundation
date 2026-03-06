@@ -1,5 +1,39 @@
 @use '../0-tools/vars' as *;
 
+.svg__blue,
+.svg__blue--clean {
+  fill: $primary-blue;
+}
+
+.svg__red {
+  fill: $primary-red;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  .svg__blue,
+  .svg__blue--clean {
+    stroke: #fff;
+    stroke-width: 1px;
+  }
+
+  .svg__blue {
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, .75));
+  }
+}
+
+.svg__blue-gray {
+  fill: #7a8fa7;
+}
+
+.svg__gray-blue {
+  fill: #c0cbd4;
+}
+
+.svg__none {
+  fill: none;
+}
+
 .svg {
   height: 200px;
   max-width: 100%;

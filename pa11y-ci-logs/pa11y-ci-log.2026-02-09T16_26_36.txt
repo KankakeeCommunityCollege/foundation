@@ -1,0 +1,292 @@
+##############################
+##     Pa11y CI results     ##
+##############################
+
+##     Running Pa11y CI:
+##         DATETIME: 2026-02-09T16_26_36
+##         SITEMAP:  https://www.kcc.edu/foundation/pa11y-ci-sitemap.xml
+
+
+Running Pa11y on 30 URLs:
+ > https://www.kcc.edu/foundation/404.html#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/events/alumni-event/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/alumni/alumni-stories/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/events/annual-scholarship-event/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/events/blooming-ambition/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/scholarships/century-scholars/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/give/form/century-scholars/#please-open-all-accordions - 4 errors
+ > https://www.kcc.edu/foundation/scholarships/create-a-scholarship/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/alumni/distinguished-alumni-award/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/give/form/employee-giving/#please-open-all-accordions - 4 errors
+ > https://www.kcc.edu/foundation/give/employee-giving/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/events/fall-fundraiser/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/scholarships/faq/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/about/foundation-board/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/give/form/general/#please-open-all-accordions - 14 errors
+ > https://www.kcc.edu/foundation/giveday/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/about/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/events/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/give/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/alumni/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/give/planned-giving/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/events/presidents-circle-dinner/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/give/form/presidents-circle/#please-open-all-accordions - 4 errors
+ > https://www.kcc.edu/foundation/give/presidents-circle/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/scholarships/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/events/special-events/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/alumni/staff-stories/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/events/womens-giving-circle/#please-open-all-accordions - 0 errors
+ > https://www.kcc.edu/foundation/give/womens-giving-circle/#please-open-all-accordions - 0 errors
+
+Errors in https://www.kcc.edu/foundation/give/form/century-scholars/#please-open-all-accordions:
+
+ • This fieldset element does not have a name available to an accessibility
+   API. Valid names are: legend element, aria-label undefined, aria-labelledby
+   undefined.
+
+   (#bboxdonation_divForm > div:nth-child(9) > fieldset)
+
+   <fieldset> <legend> ...</fieldset>
+
+ • This textarea element does not have a name available to an accessibility
+   API. Valid names are: label element, title undefined, aria-label undefined,
+   aria-labelledby undefined.
+
+   (#g-recaptcha-response-100000)
+
+   <textarea id="g-recaptcha-response-100000" name="g-recaptcha-response"
+   class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px
+   solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none;
+   display: none;"></textarea>
+
+ • This form field should be labelled in some way. Use the label element
+   (either with a "for" attribute or wrapped around the form field), or
+   "title", "aria-label" or "aria-labelledby" attributes as appropriate.
+
+   (#g-recaptcha-response-100000)
+
+   <textarea id="g-recaptcha-response-100000" name="g-recaptcha-response"
+   class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px
+   solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none;
+   display: none;"></textarea>
+
+ • Iframe element requires a non-empty title attribute that identifies the
+   frame.
+
+   (#bbox_reCAPTCHA > iframe)
+
+   <iframe style="display: none;"></iframe>
+
+Errors in https://www.kcc.edu/foundation/give/form/employee-giving/#please-open-all-accordions:
+
+ • This fieldset element does not have a name available to an accessibility
+   API. Valid names are: legend element, aria-label undefined, aria-labelledby
+   undefined.
+
+   (#bboxdonation_divForm > div:nth-child(7) > fieldset)
+
+   <fieldset> <legend></legend> ...</fieldset>
+
+ • This fieldset element does not have a name available to an accessibility
+   API. Valid names are: legend element, aria-label undefined, aria-labelledby
+   undefined.
+
+   (#bboxdonation_divForm > div:nth-child(10) > fieldset)
+
+   <fieldset> <legend> ...</fieldset>
+
+ • This textarea element does not have a name available to an accessibility
+   API. Valid names are: label element, title undefined, aria-label undefined,
+   aria-labelledby undefined.
+
+   (#g-recaptcha-response-100000)
+
+   <textarea id="g-recaptcha-response-100000" name="g-recaptcha-response"
+   class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px
+   solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none;
+   display: none;"></textarea>
+
+ • This form field should be labelled in some way. Use the label element
+   (either with a "for" attribute or wrapped around the form field), or
+   "title", "aria-label" or "aria-labelledby" attributes as appropriate.
+
+   (#g-recaptcha-response-100000)
+
+   <textarea id="g-recaptcha-response-100000" name="g-recaptcha-response"
+   class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px
+   solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none;
+   display: none;"></textarea>
+
+Errors in https://www.kcc.edu/foundation/give/form/general/#please-open-all-accordions:
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 4.09:1. Recommendation:  change text colour to #050505.
+
+   (#bboxdonation_gift_lblHeadingDonation)
+
+   <label id="bboxdonation_gift_lblHeadingDonation"
+   class="BBFormFieldLabelEdit">Donation</label>
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 4.09:1. Recommendation:  change text colour to #050505.
+
+   (#bboxdonation_recurrence_lblHeadingRecurrence)
+
+   <label id="bboxdonation_recurrence_lblHeadingRecurrence"
+   class="BBFormFieldLabelEdit">Recurring Gift</label>
+
+ • This select element does not have a name available to an accessibility API.
+   Valid names are: label element, title undefined, aria-label undefined,
+   aria-labelledby undefined.
+
+   (#bboxdonation_recurrence_ddFrequency)
+
+   <select name="bboxdonation$recurrence$ddFrequency"
+   id="bboxdonation_recurrence_ddFrequency" class="BBFormSelectList"> <option
+   value="2" optionid="0...</select>
+
+ • This form field should be labelled in some way. Use the label element
+   (either with a "for" attribute or wrapped around the form field), or
+   "title", "aria-label" or "aria-labelledby" attributes as appropriate.
+
+   (#bboxdonation_recurrence_ddFrequency)
+
+   <select name="bboxdonation$recurrence$ddFrequency"
+   id="bboxdonation_recurrence_ddFrequency" class="BBFormSelectList"> <option
+   value="2" optionid="0...</select>
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 4.09:1. Recommendation:  change text colour to #050505.
+
+   (#bboxdonation_designation_lblHeadingDesignation)
+
+   <label id="bboxdonation_designation_lblHeadingDesignation"
+   class="BBFormFieldLabelEdit">Designation</label>
+
+ • This fieldset element does not have a name available to an accessibility
+   API. Valid names are: legend element, aria-label undefined, aria-labelledby
+   undefined.
+
+   (#bboxdonation_divForm > div:nth-child(9) > fieldset)
+
+   <fieldset> <legend></legend> ...</fieldset>
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 4.09:1. Recommendation:  change text colour to #050505.
+
+   (#bboxdonation_billing_lblHeadingContact)
+
+   <label id="bboxdonation_billing_lblHeadingContact"
+   class="BBFormFieldLabelEdit">Billing Address</label>
+
+ • This fieldset element does not have a name available to an accessibility
+   API. Valid names are: legend element, aria-label undefined, aria-labelledby
+   undefined.
+
+   (#bboxdonation_divForm > div:nth-child(11) > fieldset)
+
+   <fieldset> <legend> ...</fieldset>
+
+ • This element has insufficient contrast at this conformance level. Expected a
+   contrast ratio of at least 4.5:1, but text in this element has a contrast
+   ratio of 4.09:1. Recommendation:  change text colour to #050505.
+
+   (#bboxdonation_tribute_lblHeadingTribute)
+
+   <label id="bboxdonation_tribute_lblHeadingTribute"
+   class="BBFormFieldLabelEdit">Tribute Gift</label>
+
+ • This select element does not have a name available to an accessibility API.
+   Valid names are: label element, title undefined, aria-label undefined,
+   aria-labelledby undefined.
+
+   (#bboxdonation_tribute_ddTributeTypes)
+
+   <select name="bboxdonation$tribute$ddTributeTypes"
+   id="bboxdonation_tribute_ddTributeTypes" class="BBFormSelectList"> <option
+   value="387">In Honor ...</select>
+
+ • This form field should be labelled in some way. Use the label element
+   (either with a "for" attribute or wrapped around the form field), or
+   "title", "aria-label" or "aria-labelledby" attributes as appropriate.
+
+   (#bboxdonation_tribute_ddTributeTypes)
+
+   <select name="bboxdonation$tribute$ddTributeTypes"
+   id="bboxdonation_tribute_ddTributeTypes" class="BBFormSelectList"> <option
+   value="387">In Honor ...</select>
+
+ • This textarea element does not have a name available to an accessibility
+   API. Valid names are: label element, title undefined, aria-label undefined,
+   aria-labelledby undefined.
+
+   (#g-recaptcha-response-100000)
+
+   <textarea id="g-recaptcha-response-100000" name="g-recaptcha-response"
+   class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px
+   solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none;
+   display: none;"></textarea>
+
+ • This form field should be labelled in some way. Use the label element
+   (either with a "for" attribute or wrapped around the form field), or
+   "title", "aria-label" or "aria-labelledby" attributes as appropriate.
+
+   (#g-recaptcha-response-100000)
+
+   <textarea id="g-recaptcha-response-100000" name="g-recaptcha-response"
+   class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px
+   solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none;
+   display: none;"></textarea>
+
+ • Iframe element requires a non-empty title attribute that identifies the
+   frame.
+
+   (#bbox_reCAPTCHA > iframe)
+
+   <iframe style="display: none;"></iframe>
+
+Errors in https://www.kcc.edu/foundation/give/form/presidents-circle/#please-open-all-accordions:
+
+ • This fieldset element does not have a name available to an accessibility
+   API. Valid names are: legend element, aria-label undefined, aria-labelledby
+   undefined.
+
+   (#bboxdonation_divForm > div:nth-child(9) > fieldset)
+
+   <fieldset> <legend> ...</fieldset>
+
+ • This textarea element does not have a name available to an accessibility
+   API. Valid names are: label element, title undefined, aria-label undefined,
+   aria-labelledby undefined.
+
+   (#g-recaptcha-response-100000)
+
+   <textarea id="g-recaptcha-response-100000" name="g-recaptcha-response"
+   class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px
+   solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none;
+   display: none;"></textarea>
+
+ • This form field should be labelled in some way. Use the label element
+   (either with a "for" attribute or wrapped around the form field), or
+   "title", "aria-label" or "aria-labelledby" attributes as appropriate.
+
+   (#g-recaptcha-response-100000)
+
+   <textarea id="g-recaptcha-response-100000" name="g-recaptcha-response"
+   class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px
+   solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none;
+   display: none;"></textarea>
+
+ • Iframe element requires a non-empty title attribute that identifies the
+   frame.
+
+   (#bbox_reCAPTCHA > iframe)
+
+   <iframe style="display: none;"></iframe>
+
+✘ 26/30 URLs passed
