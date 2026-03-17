@@ -27,8 +27,8 @@
     "development": "run-p jekyll-development webpack-dev",
     "jekyll-production": "JEKYLL_ENV=production bundle exec jekyll serve --livereload",
     "jekyll-development": "bundle exec jekyll serve --livereload",
-    "webpack-production": "npx webpack --watch --node-env production",
-    "webpack-dev": "npx webpack --watch --node-env development",
+    "webpack-production": "npx webpack --watch --mode production",
+    "webpack-dev": "npx webpack --watch --mode development",
     "browserslist": "npx browserslist@latest --update-db",
     "test:pa11y": "bash pa11y.sh",
     "test:pa11y-ci": "bash pa11y-ci.sh",
@@ -53,7 +53,7 @@
     "url-loader": "^4.1.1",
     "vitest": "^3.0.5",
     "webpack": "^5.102.1",
-    "webpack-cli": "^6.0.1"
+    "webpack-cli": "^7.0.2"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
