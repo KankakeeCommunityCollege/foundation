@@ -168,6 +168,8 @@ exclude:
   - "look-for-deprecated-bs4-js.mjs"
   - "look-for-string-in-project-files.mjs"
   - "increment-alumni-priority.mjs"
+  - "events/blooming-ambition.html"
+  - "blooming_ambition_photos/"
 
 uploads_dir: "uploads/" # specifies the default uploads directory for CloudCannon
 
