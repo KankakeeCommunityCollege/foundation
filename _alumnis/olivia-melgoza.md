@@ -3,7 +3,7 @@ name: Olivia Melgoza
 sort_name: Melgoza Olivia
 degree:
 year:
-preview_priority: 6
+preview_priority: 7
 preview_image:
 portrait_image: uploads/alumni-stories_olivia-melgoza.jpg
 quote: >-
@@ -35,7 +35,7 @@ I am an Administrative Assistant for TRIO (Talent Search, Upward Bound, and Stud
 
 The most rewarding part of my job at KCC is knowing I play a role in helping students reach their goals. I value the strong sense of community and the opportunities to build meaningful connections with both students and coworkers.
 
-**During your time working at KCC, what are some of the events or moments the at are most memorable?**
+**During your time working at KCC, what are some of the events or moments that are most memorable?**
 
 Some of my favorite memories are the team events and going on cultural trips with TRIO Talent Search, Upward Bound, or TRIO SSS. Having been a student in the same program I now work for makes these experiences even more meaningful. I really enjoy connecting with students, coworkers, and the community.
 

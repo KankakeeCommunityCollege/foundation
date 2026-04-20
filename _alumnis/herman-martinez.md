@@ -3,7 +3,7 @@ name: Herman Martinez
 sort_name: Martinez Herman
 degree:
 year:
-preview_priority: 4
+preview_priority: 5
 preview_image: uploads/alumni-stories_herman-martinez_ad.jpg
 portrait_image: uploads/alumni-stories_herman-martinez.jpg
 quote: >-
@@ -36,7 +36,7 @@ I am responsible for ensuring that the maintenance department operates smoothly 
 
 The opportunity to grow professionally and academically.
 
-**During your time working at KCC, what are some of the events or moments the at are most memorable?**
+**During your time working at KCC, what are some of the events or moments that are most memorable?**
 
 One of the most memorable events was seeing all four of my daughters and my spouse walk the stage to proudly receive their KCC degrees.
 
