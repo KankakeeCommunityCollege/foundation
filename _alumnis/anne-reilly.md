@@ -3,7 +3,7 @@ name: Anne Reilly
 sort_name: Reilly Anne
 degree:
 year:
-preview_priority: 1
+preview_priority: 2
 preview_image: uploads/alumni-stories_anne-reilly_ad.jpg
 portrait_image: uploads/alumni-stories_anne-reilly.jpg
 quote: >-
@@ -39,6 +39,6 @@ I am a Professor of Nursing. I teach theory and clinical for the CNA program. I 
 
 I love to see students grow and become successful as kind, professional CNAs.
 
-**During your time working at KCC, what are some of the events or moments the at are most memorable?**
+**During your time working at KCC, what are some of the events or moments that are most memorable?**
 
 One of the most meaningful parts of my role is watching students interact with patients during clinicals and seeing their confidence grow. Giving students their completion letters at the end of the semester is a proud moment, but what stays with me most is when a student sincerely says, “Thank you.” I always respond, “You did this—I was here to guide you,” because their growth and success belong to them.
