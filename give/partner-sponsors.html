@@ -1,0 +1,45 @@
+---
+layout: sub-nav
+baseurl: ../../
+title: Partner Sponsors
+sub-nav_section: give
+accordion_expanded: true
+description: >-
+  KCC Foundation provides numerous ways for you to donate to KCC and support
+  students, faculty and staff. Consider donating today.
+banner: uploads/alumni-1.jpg
+banner_alt:
+---
+
+<main id="content">
+  <div class="container">
+    <div class="row">
+      <div class="col sub-nav__content--wrapper">
+        <h2 class="typography__h2 mb-3">{{ page.title }}</h2>
+        {% if page.banner_image %}
+        <img
+          src="{{ page.baseurl }}{{ page.banner_image }}"
+          class="img-fluid mb-2"
+          alt="{{ page.banner_image_alt }}"
+        >
+        {% endif %}
+        <div class="editable">
+        </div>
+        <div class="col positioning__bbForm--centered">
+          <div id="bbox-root"></div>
+          <script type="text/javascript">
+            window.bboxInit = function () {
+              bbox.showForm('9eb119dd-ac4c-4291-a74a-697d1a0ac0a8');
+            };
+            (function () {
+              var e = document.createElement('script'); e.async = true;
+              e.src = 'https://bbox.blackbaudhosting.com/webforms/bbox-min.js';
+              document.getElementsByTagName('head')[0].appendChild(e);
+            }());
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
