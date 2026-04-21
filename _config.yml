@@ -55,6 +55,8 @@ sub-nav_links:
     link_href: 'scholarships/century-scholars/'
   - link_text: 'Create a Scholarship'
     link_href: scholarships/create-a-scholarship/
+  - link_text: 'Partner Sponsors'
+    link_href: 'give/partner-sponsors/'
   - link_text: "Employee Giving"
     link_href: 'give/employee-giving/'
   - link_text: "Planned Giving"
