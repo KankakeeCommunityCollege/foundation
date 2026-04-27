@@ -21,15 +21,20 @@
     "defaults"
   ],
   "scripts": {
-    "test": "vitest run",
-    "increment-alumni": "node increment-alumni-priority.mjs",
+    "dev": "run-p jekyll-development webpack-dev",
+    "build": "run-s webpack-build jekyll-build",
+    "preview": "run-p jekyll-production webpack-production",
     "production": "run-p jekyll-production webpack-production",
     "development": "run-p jekyll-development webpack-dev",
     "jekyll-production": "JEKYLL_ENV=production bundle exec jekyll serve --livereload",
     "jekyll-development": "bundle exec jekyll serve --livereload",
+    "jekyll-build": "JEKYLL_ENV=production bundle exec jekyll build",
     "webpack-production": "npx webpack --watch --mode production",
     "webpack-dev": "npx webpack --watch --mode development",
+    "webpack-build": "npx webpack --mode production",
     "browserslist": "npx browserslist@latest --update-db",
+    "increment-alumni": "node increment-alumni-priority.mjs",
+    "test": "vitest run",
     "test:pa11y": "bash pa11y.sh",
     "test:pa11y-ci": "bash pa11y-ci.sh",
     "test:pa11y-ci-log": "bash pa11y-ci.sh -o"
