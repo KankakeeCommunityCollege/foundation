@@ -3,7 +3,7 @@ name: Herman Martinez
 sort_name: Martinez Herman
 degree:
 year:
-preview_priority: 5
+preview_priority: 6
 preview_image: uploads/alumni-stories_herman-martinez_ad.jpg
 portrait_image: uploads/alumni-stories_herman-martinez.jpg
 quote: >-
