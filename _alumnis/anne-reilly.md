@@ -3,7 +3,7 @@ name: Anne Reilly
 sort_name: Reilly Anne
 degree:
 year:
-preview_priority: 2
+preview_priority: 3
 preview_image: uploads/alumni-stories_anne-reilly_ad.jpg
 portrait_image: uploads/alumni-stories_anne-reilly.jpg
 quote: >-

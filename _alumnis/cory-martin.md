@@ -3,7 +3,7 @@ name: Cory Martin
 sort_name: Martin Cory
 degree:
 year:
-preview_priority: 43
+preview_priority: 44
 preview_image: uploads/alumni-stories_cory-martin_x-ad.jpg
 portrait_image: uploads/alumni-stories_cory-martin.jpg
 quote: >-
