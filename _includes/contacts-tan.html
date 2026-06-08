@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
       <div class="col mt-1 home__col--heading-underline home__col--heading-underline-tan">
-        <h3 id="contact" class="typography__section--heading margins__heading--btm links__offset">Contacts</h3>
+        <h2 id="contact" class="typography__section--heading margins__heading--btm links__offset">Contacts</h2>
       </div>
     </div>
   </div>
@@ -40,8 +40,14 @@
             />{% endif %}
           </div>
           <div class="col-8">
-            <h5 class="typography__contacts--name notranslate" itemprop="name">{{ contact.name }}</h5>
-            {% if contact.contacts_title %}<h6 class="typography__contacts--title" itemprop="jobTitle">{{ contact.contacts_title }}</h6>{% endif %}
+            {% if contact.contacts_title and contact.contacts_title != '' %}
+            <hgroup>
+              <h3 class="typography__contacts--name notranslate" itemprop="name">{{ contact.name }}</h3>
+              <p class="typography__contacts--title typography--heading-line-height" itemprop="jobTitle">{{ contact.contacts_title }}</p>
+            </hgroup>
+            {% else %}
+            <h3 class="typography__contacts--name notranslate" itemprop="name">{{ contact.name }}</h3>
+            {% endif %}
             <p class="notranslate">
               {% if contact.phone %}<a href="tel:1{{ contact.phone | remove: '-' }}" class="links__darker-link" itemprop="telephone">{{ contact.phone }}</a><br>{% endif %}
               {% if contact.email %}<a class="links__darker-link" target="_blank" href="https://secure.jotform.com/90435102482954?to[first]={{ first }}&amp;to[last]={{ last }}&amp;submitEmail={{ contact.email | remove: '@kcc.edu' }}%40kcc.edu" itemprop="url">Email</a><br>{% endif %}
@@ -53,8 +59,14 @@
       </div>
       {% else %}
       <div itemscope itemtype="https://schema.org/Person" class="col-sm-6 col-md-4 mb-3">
-        <h5 class="typography__contacts--name notranslate" itemprop="name">{{ contact.name }}</h5>
-        {% if contact.contacts_title %}<h6 class="typography__contacts--title" itemprop="jobTitle">{{ contact.contacts_title }}</h6>{% endif %}
+        {% if contact.contacts_title and contact.contacts_title != '' %}
+        <hgroup>
+          <h3 class="typography__contacts--name notranslate" itemprop="name">{{ contact.name }}</h3>
+          <p class="typography__contacts--title typography--heading-line-height" itemprop="jobTitle">{{ contact.contacts_title }}</p>
+        </hgroup>
+        {% else %}
+        <h3 class="typography__contacts--name notranslate" itemprop="name">{{ contact.name }}</h3>
+        {% endif %}
         <p class="notranslate">
           {% if contact.phone %}<a href="tel:1{{ contact.phone | remove: '-' }}" class="links__darker-link" itemprop="telephone">{{ contact.phone }}</a><br>{% endif %}
           {% if contact.email %}<a class="links__darker-link" target="_blank" href="https://secure.jotform.com/90435102482954?to[first]={{ first }}&amp;to[last]={{ last }}&amp;submitEmail={{ contact.email | remove: '@kcc.edu' }}%40kcc.edu" itemprop="url">Email</a><br>{% endif %}
@@ -74,7 +86,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="typography__h6" id="{{ contact.name | downcase | replace: ' ', '-' | remove: '.' | remove: '/' | remove: "'" | remove: '’' }}-label">{{ contact.name }} Bio</h5>
+        <h3 class="typography__h6" id="{{ contact.name | downcase | replace: ' ', '-' | remove: '.' | remove: '/' | remove: "'" | remove: '’' }}-label">{{ contact.name }} Bio</h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -95,8 +107,14 @@
           class="img-fluid float-left mr-2 mb-2"
           alt="Photo of {{ contact.name }} KCC's {{ contact.contacts_title }}"
         >{% endif %}
-        <h5 class="typography__contacts--name notranslate">{{ contact.name }}</h5>
-        {% if contact.contacts_title %}<h6 class="typography__contacts--title">{{ contact.contacts_title }}</h6>{% endif %}
+        {% if contact.contacts_title and contact.contacts_title != '' %}
+        <hgroup>
+          <h4 class="typography__contacts--name notranslate" itemprop="name">{{ contact.name }}</h4>
+          <p class="typography__contacts--title typography--heading-line-height" itemprop="jobTitle">{{ contact.contacts_title }}</p>
+        </hgroup>
+        {% else %}
+        <h4 class="typography__contacts--name notranslate" itemprop="name">{{ contact.name }}</h4>
+        {% endif %}
         {{ contact.content }}
       </div>
       <div class="modal-footer">

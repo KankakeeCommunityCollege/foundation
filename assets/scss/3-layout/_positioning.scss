@@ -3,6 +3,12 @@
 // Positioning Styles
 // ==========================================
 
+@media screen and (min-width: 992px) {
+  .positioning__offset-global-header {
+    padding-top: 180px;
+  }
+}
+
 .position__img--center {
   margin-bottom: 15px;
   margin-left: auto;
