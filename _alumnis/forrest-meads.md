@@ -7,7 +7,8 @@ preview_priority: 1
 preview_image: uploads/alumni-stories_forrest-meads_ad.jpg
 portrait_image: uploads/alumni-stories_forrest-meads.jpg
 quote: >-
-  KCC's program gave mea  foot in the door. Not just in medicine but in understanding systems and people.
+  KCC's program gave me a  foot in the door. Not just in medicine but in
+  understanding systems and people.
 interview_month_and_year: January 2026
 staff_alumni: false
 ---
