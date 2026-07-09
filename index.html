@@ -4,9 +4,8 @@ homepage: true
 baseurl: ./
 title: Home
 description: >-
-  The Kankakee Community College Foundation helps secure funds for scholarships,
-  programs and other educational opportunities for students, faculty and staff.
-  Donate today to KCC Foundation to help students achieve.
+  The Kankakee Community College Foundation supports scholarships, programs and
+  student opportunities. Explore scholarships, ways to give and volunteer.
 scholarships_available: true
 slides:
   - image: uploads/thumbnail_opt.jpg
@@ -114,15 +113,8 @@ slides:
             {% assign path = 'alumni/alumni-stories' %}
           {% endif %}
           <li class="latest-news-widget__latest__tease latest-news-widget__latest__tease--default latest-news-widget__latest__tease--has-image">
-            <a
-              id="jsTeaseLink{{ forloop.index }}"
-              class="latest-news-widget__latest__tease__link js-hp-latest-tease-link"
-              href="{{ page.baseurl }}{{ path }}#{{ alumni.name | replace: 'ñ', 'n' | replace: ' ', '-' | downcase }}"
-            >
-              <div
-                class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--default"
-                style="background-image: url('{{ page.baseurl }}{{ alumni.portrait_image }}')"
-              ></div>
+            <a id="jsTeaseLink{{ forloop.index }}" class="latest-news-widget__latest__tease__link js-hp-latest-tease-link" href="{{ page.baseurl }}{{ path }}#{{ alumni.name | replace: 'ñ', 'n' | replace: ' ', '-' | downcase }}">
+              <div class="latest-news-widget__latest__tease__img-mod latest-news-widget__latest__tease__img-mod--default" style="background-image: url('{{ page.baseurl }}{{ alumni.portrait_image }}')"></div>
               <div class="latest-news-widget__latest__tease__hgroup">
                 <p class="typography__stories--quote typography--heading-line-height mb-1">{{ alumni.quote }}</p>
                 <h3 class="latest-news-widget__latest__tease__overline typography__latest-news-widget__rollup-list-h">
