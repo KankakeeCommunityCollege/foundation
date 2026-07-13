@@ -73,9 +73,9 @@ _inputs:
   <h1 class="visually-hidden">KCC Foundation Events</h1>
 
   {% for event in page.events %}
-  <div class="row mb-5" data-cms-bind="#events.[{{ forloop.index0 }}]">
+  <div class="row my-4" data-cms-bind="#events.[{{ forloop.index0 }}]">
     <div class="col-md-4 img-wrapper">
-      <a class="img-link" data-cms-bind="event_link" href="{{ page.baseurl }}{{ event.event_link }}" aria-label="View details for {{ event.event_title | strip_html | escape }}">
+      <a class="img-link border" data-cms-bind="event_link" href="{{ page.baseurl }}{{ event.event_link }}" aria-label="View details for {{ event.event_title | strip_html | escape }}">
         {% assign first_char = event.event_thumb_image | slice: 0 %}
         {% if first_char == '/' %}
           {% assign thumb = event.event_thumb_image | remove_first: '/' %}
@@ -103,6 +103,7 @@ _inputs:
       </a>
     </div>
   </div>
+  <hr>
   {% endfor %}
 
   {%- comment -%}
