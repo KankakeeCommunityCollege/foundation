@@ -29,3 +29,6 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
     {% if page.url == '/giveday/' %}{% include facebook-meta.html %}{% endif %}
     {% if page.include_social_meta == true %}{% include social-meta.html %}{% endif %}
+    {% if site.cloudcannon %}
+      <script src="https://cdn.cloudcannon.com/cms-bindings.js" defer></script>
+    {% endif %}
