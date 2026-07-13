@@ -37,11 +37,17 @@ nav_links:
 sub-nav_links:
   - link_text: 'Foundation Board'
     link_href: 'about/foundation-board'
-  - link_text: "President's Circle Dinner"
-    link_href: 'events/presidents-circle-dinner/'
+  - link_text: 'Scholarship Event'
+    link_href: 'events/annual-scholarship-event/'
+  - link_text: "Let's Party!"
+    link_href: 'events/fall-fundraiser/'
+  - link_text: "President's Circle Premier"
+    link_href: 'events/presidents-circle-premier/'
   - link_text: "Women's Giving Circle"
     link_href: 'events/womens-giving-circle'
-  - link_text: Alumni Event
+  - link_text: "President's Circle Reception"
+    link_href: 'events/presidents-circle-reception/'
+  - link_text: Employee-Alumni Brunch
     link_href: 'events/alumni-event'
   - link_text: 'Distinguished Alumni Award'
     link_href: 'alumni/distinguished-alumni-award/'
