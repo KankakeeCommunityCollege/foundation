@@ -37,7 +37,7 @@ nav_links:
 sub-nav_links:
   - link_text: 'Foundation Board'
     link_href: 'about/foundation-board'
-  - link_text: 'Scholarship Event'
+  - link_text: 'Annual Scholarship Event'
     link_href: 'events/annual-scholarship-event/'
   - link_text: "Let's Party!"
     link_href: 'events/fall-fundraiser/'
