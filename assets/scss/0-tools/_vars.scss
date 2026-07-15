@@ -39,6 +39,12 @@ $font-family-sans-serif: // BOOTSTRAP'S BASE FONT
   // Emoji fonts
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 
+// USE THIS STYLE OF FONT-FAMILY VARIABLE (and not the ones above)
+// There's no guessing about which font it is
+// Font family's above are kept for support of older code
+$font-family-roboto: 'Roboto', sans-serif;
+$font-family-open-sans: 'Open Sans', sans-serif;
+
 //Image path for most of global style sheet
 $imagedir:'/assets/img/';
 

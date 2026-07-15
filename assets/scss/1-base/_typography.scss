@@ -452,3 +452,12 @@ ul.typography__larger-p li {
 .typography--2rem {
   font-size: 2rem;
 }
+
+.typography__event-date {
+  color: $primary-red;
+  font-size: .9rem;
+  font-family: $font-family-open-sans;
+  font-weight: 700;
+  margin-bottom: .25rem;
+  text-transform: uppercase;
+}
