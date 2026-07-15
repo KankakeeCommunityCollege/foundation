@@ -25,7 +25,10 @@
     <!-- The human's, the human's!! -->
     <link rel="author" type="text/plain" href="/humans.txt" />
     {%- endif -%}
-    <!-- Standard Favicon -->
-    <link rel="icon" type="image/svg+xml" href="{{page.baseurl}}favicon.svg"/>
+    <!-- SVG favicon (`favicon.ico` remains at domain root for fallback) -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
     {% if page.url == '/giveday/' %}{% include facebook-meta.html %}{% endif %}
     {% if page.include_social_meta == true %}{% include social-meta.html %}{% endif %}
+    {% if site.cloudcannon %}
+      <script src="https://cdn.cloudcannon.com/cms-bindings.js" defer></script>
+    {% endif %}

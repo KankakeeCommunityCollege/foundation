@@ -4,108 +4,107 @@ baseurl: '../'
 title: Events
 sub-nav_section: events
 description: ''
+events:
+  - event_date: 2026-08-05
+    event_title: Annual Scholarship Event
+    event_description: >-
+      <p>At the Annual Scholarship Event, scholarship recipients and those who donated to their scholarship have the opportunity
+      to meet.</p>
+    event_link: events/annual-scholarship-event/
+    event_thumb_image: /uploads/scholarship-breakfast_2019.png
+    event_thumb_alt-text: The Power of Scholarships - Kankakee Community College Foundation.
+  - event_date: 2026-09-12
+    event_title: Let's Party!
+    event_description: >-
+      <p>Let's Party will be a fun evening of dinner, drinks and dancing on September 12, 2026.</p>
+    event_link: events/fall-fundraiser/
+    event_thumb_image: /uploads/events_lets-party-2025.jpg
+    event_thumb_alt-text: Let's Party! KCC Foundation's Fall Fundraiser
+#  - event_date: 2026-09-24
+#    event_title: President's Circle Premier
+#    event_description: >-
+#      <p>KCC&rsquo;s President&rsquo;s Circle recognizes donors who have contributed annual gifts of $1,000 or more. These
+#      gifts&mdash;in the form of annual donations, endowed scholarships, planned endowments and support for the
+#      college&rsquo;s capital development&mdash;make a lasting impact for KCC students.</p>
+#    event_link: events/presidents-circle-premier/
+#    event_thumb_image: /uploads/presidents-circle.png
+#    event_thumb_alt-text: KCC President's Circle logo
+  - event_date: 2026-10-13
+    event_title: Women's Giving Circle
+    event_description: >-
+      <p>The Women's Giving Circle brings together inspiring women to support KCC students nearing graduation but facing
+      financial obstacles that could hinder completing their&nbsp;degrees.</p>
+    event_link: events/womens-giving-circle/
+    event_thumb_image: /uploads/womens-giving-circle_logo_16x9.jpg
+    event_thumb_alt-text: Educate, Empower, Endeavor - KCC Foundation Women's Giving Circle.
+  - event_date: 2026-11-05
+    event_title: President's Circle Reception
+    event_description: >-
+      <p>KCC&rsquo;s President&rsquo;s Circle recognizes donors who have contributed annual gifts of $1,000 or more. These
+      gifts&mdash;in the form of annual donations, endowed scholarships, planned endowments and support for the
+      college&rsquo;s capital development&mdash;make a lasting impact for KCC students.</p>
+    event_link: events/presidents-circle-reception/
+    event_thumb_image: /uploads/presidents-circle.png
+    event_thumb_alt-text: KCC President's Circle logo
+  - event_date: 2026-12-10
+    event_title: Employee-Alumni Brunch
+    event_description: >-
+      <p>The Employee Retiree Alumni Brunch will be on Thursday, December 10, 2026.</p>
+    event_link: events/alumni-event/
+    event_thumb_image: /uploads/holiday-alumni-brunch-2025_thumb.jpg
+    event_thumb_alt-text: Green and red holiday themed graphic that says 'Holiday Brunch' in stylized font.
+#  - event_date: 
+#    event_title: 
+#    event_description: >-
+#      
+#    event_link: events/alumni-event/
+#    event_thumb_image: 
+#    event_thumb_alt-text: 
+_inputs:
+  events[*].event_description:
+    type: html
+    label: "Event Description"
+    comment: "Supports bold, links, lists, and basic formatting."
+    options:
+      # Optional: Limit the WYSIWYG toolbar options to keep things clean
+      toolbar: [bold, italic, link, bulleted-list, ordered-list, undo, redo]
 ---
 <div class="container sub-nav__content--wrapper mt-3">
   <h1 class="visually-hidden">KCC Foundation Events</h1>
 
-  {% comment %}
-  <div class="row mb-4">
+  {% for event in page.events %}
+  <div class="row my-4" data-cms-bind="#events.[{{ forloop.index0 }}]">
     <div class="col-md-4 img-wrapper">
-      <a class="img-link" href="{{page.baseurl}}events/fall-fundraiser/">
-        <div class="thumb-caption"></div>
-        <div class="img-hover">
-        </div>
-        <img class="img-fluid img-ease img-hover--border editable" src="../uploads/events_lets-party-2025.jpg" alt="Let's Party! KCC Foundation's Fall Fundraiser" />
+      <a class="img-link border" data-cms-bind="event_link" href="{{ page.baseurl }}{{ event.event_link }}" aria-label="View details for {{ event.event_title | strip_html | escape }}">
+        {% assign first_char = event.event_thumb_image | slice: 0 %}
+        {% if first_char == '/' %}
+          {% assign thumb = event.event_thumb_image | remove_first: '/' %}
+        {% else %}
+          {% assign thumb = event.event_thumb_image %}
+        {% endif %}
+        <img data-cms-bind="event_thumb_image" class="img-fluid img-ease" src="{{ page.baseurl }}{{ thumb }}" alt="{{ event.event_thumb_alt-text | replace: '"', '&quot;' }}" />
       </a>
     </div>
     <div class="col-md-8">
-      <p class="mb-md-0 mt-2 editable">
-        Let's Party will be a fun evening of dinner, drinks and dancing on September 20, 2025.
-      </p>
-    </div>
-  </div>
-  {% endcomment %}
-
-  <div class="row mb-4">
-    <div class="col-md-4 img-wrapper">
-      <a class="img-link" href="{{page.baseurl}}events/annual-scholarship-event/">
-        <div class="thumb-caption">
-          <!-- Removed WZ 9/3/2019
-          Annual Scholarship Event
-          -->
-        </div>
-        <div class="img-hover">
-        </div>
-        <img class="img-fluid img-ease editable" src="../uploads/scholarship-breakfast_2019.png" alt="Photo of the 2016 Century Scholarhip Dinner" />
+      <hgroup>
+        <p class="typography__event-date">
+          <time data-cms-bind="event_date" datetime="{{ event.event_date | date: "%Y-%m-%d" }}">{{ event.event_date | date: "%A, %B %d, %Y" }}</time>
+        </p>
+        <h2 data-cms-bind="event_title" class="typography__h2">{{ event.event_title }}</h2>
+      </hgroup>
+      <div class="mb-md-0 mt-2" data-cms-bind="event_description">
+        {{ event.event_description }}
+      </div>
+      <a class="btn btn-primary img-btn" 
+          data-cms-bind="event_link" 
+          href="{{ page.baseurl }}{{ event.event_link }}"
+          aria-label="View details for {{ event.event_title | strip_html | escape }}">
+        View Event Details
       </a>
     </div>
-    <div class="col-md-8">
-      <p class="mb-md-0 mt-2 editable">
-        At the annual Scholarship Event, scholarship recipients and those who donated to their scholarship have the opportunity to meet.
-      </p>
-    </div>
   </div>
-
-  <div class="row mb-4">
-    <div class="col-md-4 img-wrapper">
-      <a class="img-link" href="{{page.baseurl}}events/alumni-event/">
-        <div class="thumb-caption"></div>
-        <div class="img-hover">
-        </div>
-        <img
-          class="img-fluid img-ease img-hover--border editable"
-          src="../uploads/holiday-alumni-brunch-2025_thumb.jpg"
-          alt="Holiday Brunch"
-        />
-      </a>
-    </div>
-    <div class="col-md-8">
-      <p class="mb-md-0 mt-2 editable">
-        The Employee Retiree Alumni Brunch was held on Thursday, December 11, 2025.
-      </p>
-    </div>
-  </div>
-
-  <div class="row mb-4">
-    <div class="col-md-4 img-wrapper">
-      <a class="img-link" href="{{page.baseurl}}events/presidents-circle-dinner">
-        <div class="thumb-caption"><!-- 
-          President's Circle Dinner
-          -->
-        </div>
-        <div class="img-hover">
-        </div>
-        <img class="img-fluid img-ease" src="{{page.baseurl}}uploads/presidents-circle.png" alt="Presidents Circle banner" />
-      </a>
-    </div>
-    <div class="col-md-8">
-      <p class="mb-md-0 mt-2 editable">
-        KCC&rsquo;s President&rsquo;s Circle recognizes donors who have contributed annual gifts of $1,000 or more. These gifts&mdash;in the form of annual donations, endowed scholarships, planned endowments and support for the college&rsquo;s capital development&mdash;make a lasting impact for KCC students.
-      </p>
-    </div>
-  </div>
-
-  <div class="row mb-4">
-    <div class="col-md-4 img-wrapper">
-      <a class="img-link border" href="{{page.baseurl}}events/womens-giving-circle/">
-        <div class="thumb-caption">
-        </div>
-        <div class="img-hover">
-        </div>
-        <img
-          class="img-fluid img-ease"
-          src="{{page.baseurl}}uploads/womens-giving-circle_logo_16x9.jpg"
-          alt="Educate, Empower, Endeavor. KCC Foundation Women's Giving Circle."
-        >
-      </a>
-    </div>
-    <div class="col-md-8">
-      <p class="mb-md-0 mt-2 editable">
-        The Women's Giving Circle brings together inspiring women to support KCC students nearing graduation but facing
-        financial obstacles that could hinder completing their&nbsp;degrees.
-      </p>
-    </div>
-  </div>
+  <hr>
+  {% endfor %}
 
   {%- comment -%}
   <div class="row mb-4">
