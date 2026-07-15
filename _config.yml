@@ -41,8 +41,8 @@ sub-nav_links:
     link_href: 'events/annual-scholarship-event/'
   - link_text: "Let's Party!"
     link_href: 'events/fall-fundraiser/'
-  - link_text: "President's Circle Premier"
-    link_href: 'events/presidents-circle-premier/'
+#  - link_text: "President's Circle Premier"
+#    link_href: 'events/presidents-circle-premier/'
   - link_text: "Women's Giving Circle"
     link_href: 'events/womens-giving-circle'
   - link_text: "President's Circle Reception"
