@@ -3,7 +3,7 @@ name: Forrest Meads
 sort_name: Meads Forrest
 degree:
 year:
-preview_priority: 1
+preview_priority: 2
 preview_image: uploads/alumni-stories_forrest-meads_ad.jpg
 portrait_image: uploads/alumni-stories_forrest-meads.jpg
 quote: >-
