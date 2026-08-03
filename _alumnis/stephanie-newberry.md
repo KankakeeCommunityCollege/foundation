@@ -14,7 +14,7 @@ staff_alumni: true
 ---
 
 KCC Staff Alumni<br>
-Specialist, Physical Plant Department<br>
+Specialist, Physical Plant Department (now Campus Operations)<br>
 ’96 KCC Graduate
 
 **How did you decide KCC was right for you?**
@@ -31,7 +31,7 @@ KCC has an AMAZING support system! The staff members go above and beyond to see 
 
 **What is your role in your position?**
 
-I am the mailroom supervisor for the Physical Plant Department. My duties shipping and receiving, USPS mailing, Key control, vehicle reservations and many other duties.
+I am the mailroom supervisor for the Physical Plant Department (now Campus Operations). My duties shipping and receiving, USPS mailing, Key control, vehicle reservations and many other duties.
 
 **What is the most rewarding part of your job?**
 
