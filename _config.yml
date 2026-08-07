@@ -37,8 +37,6 @@ nav_links:
 sub-nav_links:
   - link_text: 'Foundation Board'
     link_href: 'about/foundation-board'
-  - link_text: 'Annual Scholarship Event'
-    link_href: 'events/annual-scholarship-event/'
   - link_text: "Let's Party!"
     link_href: 'events/fall-fundraiser/'
 #  - link_text: "President's Circle Premier"
@@ -49,6 +47,8 @@ sub-nav_links:
     link_href: 'events/presidents-circle-reception/'
   - link_text: Employee-Alumni Brunch
     link_href: 'events/alumni-event'
+  - link_text: 'Annual Scholarship Event'
+    link_href: 'events/annual-scholarship-event/'
   - link_text: 'Distinguished Alumni Award'
     link_href: 'alumni/distinguished-alumni-award/'
   - link_text: 'Alumni Stories'
