@@ -40,7 +40,7 @@ social_description: >-
           <p class="typography__alert mb-0">You need to enable JavaScript on this site to check if the application is open.</p>
         </div>
         <p class="mb-2">Checking if application is open...</p>
-        <div class="spinner-border" role="status">
+        <div class="spinner-border" role="status" aria-live="polite" aria-atomic="true">
           <span class="visually-hidden">Loading...</span>
         </div>
       </div>
@@ -100,8 +100,8 @@ social_description: >-
     <div class="col">
       <p><strong>Click the </strong> <span class="scholarship-table__key--plus-sign">+</span> <strong>icon next to a scholarship to see more information</strong></p>
       <div id="scholarshipTable" class="scholarship-table">
-        <div class="loader">
-          <img src="{{ page.baseurl }}assets/img/loader.gif" class="loader__img" alt="Content loading..." />
+        <div class="text-center" role="status" aria-live="polite" aria-atomic="true">
+          <img src="{{ page.baseurl }}assets/img/loader.min.svg" class="loader loader--animate" alt="Loading scholarship listing..." />
         </div>
       </div>
     </div>
