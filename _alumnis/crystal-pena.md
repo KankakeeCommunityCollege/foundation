@@ -3,7 +3,7 @@ name: Crystal Peña
 sort_name: Peña Crystal
 degree:
 year:
-preview_priority: 21
+preview_priority: 22
 preview_image: uploads/alumni-stories_crystal-pena-ad.jpg
 portrait_image: uploads/alumni-stories_crystal-pena.jpg
 quote: >-

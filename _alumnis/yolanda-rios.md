@@ -3,7 +3,7 @@ name: Yolanda Rios
 sort_name: Rios Yolanda
 degree:
 year:
-preview_priority: 1
+preview_priority: 2
 preview_image: uploads/alumni-stories_yolanda-rios_ad.jpg
 portrait_image: uploads/alumni-stories_yolanda-rios.jpg
 quote: >-
