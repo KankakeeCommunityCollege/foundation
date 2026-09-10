@@ -3,7 +3,7 @@ name: Kylie Orvis
 sort_name: Orvis Kylie
 degree:
 year:
-preview_priority: 3
+preview_priority: 4
 preview_image: uploads/alumni-stories_kylie-orvis-ad.jpg
 portrait_image: uploads/alumni-stories_kylie-orvis.jpg
 quote: >-
