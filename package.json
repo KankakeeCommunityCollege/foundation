@@ -35,7 +35,7 @@
     "webpack-build": "npx webpack --mode production",
     "browserslist": "npx browserslist@latest --update-db",
     "increment-alumni": "node increment-alumni-priority.mjs",
-    "test": "vitest run",
+    "test:js": "vitest run",
     "test:pa11y": "bash pa11y.sh",
     "test:pa11y-ci": "bash pa11y-ci.sh",
     "test:pa11y-ci-log": "bash pa11y-ci.sh -o"
@@ -57,7 +57,7 @@
     "sass-loader": "^17.0.0",
     "style-loader": "^4.0.0",
     "url-loader": "^4.1.1",
-    "vitest": "^4.1.4",
+    "vitest": "^5.0.1",
     "webpack": "^5.102.1",
     "webpack-cli": "^7.0.2"
   },
