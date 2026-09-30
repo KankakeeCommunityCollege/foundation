@@ -21,7 +21,7 @@ window.addEventListener('load', () => {
     window.setTimeout(() => {
       import('./scholarshipApp/checkScholarshipApp')
         .then(({ default: checkScholarshipApp }) => checkScholarshipApp());
-    }, 1000);
+    }, 500);
   }
 
   if (document.getElementById('scholarshipTable')) {
