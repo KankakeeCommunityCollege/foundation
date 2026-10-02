@@ -3,7 +3,7 @@ name: Max Dumas
 sort_name: Dumas Max
 degree:
 year:
-preview_priority: 17
+preview_priority: 18
 preview_image: uploads/alumni-stories_max-dumas-ad.jpg
 portrait_image: uploads/alumni-stories_max-dumas.jpg
 quote: >-

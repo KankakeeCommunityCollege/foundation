@@ -3,7 +3,7 @@ name: Stephanie Newberry
 sort_name: Newberry Stephanie
 degree:
 year:
-preview_priority: 43
+preview_priority: 44
 preview_image:
 portrait_image: uploads/alumni-stories_stephanie-newberry.jpg
 quote: >-

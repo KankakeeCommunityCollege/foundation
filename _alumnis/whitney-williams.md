@@ -3,7 +3,7 @@ name: Whitney Williams
 sort_name: Williams Whitney
 degree:
 year:
-preview_priority: 1
+preview_priority: 2
 preview_image: uploads/alumni-stories_whitney-williams_ad.jpg
 portrait_image: uploads/alumni-stories_whitney-williams.jpg
 quote: >-
