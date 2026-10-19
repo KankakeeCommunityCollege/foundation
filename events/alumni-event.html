@@ -15,7 +15,7 @@ banner:
   <div class="row">
     <div class="col sub-nav__content--wrapper">
       <h1 class="typography__h1">{{ page.title }}</h1>
-      <div class="text-center">
+      <div class="text-center mb-3">
         {% assign first_char = page.banner.image | slice: 0 %}
         {% if first_char == '/' %}
           {% assign banner = page.banner.image | remove_first: '/' | prepend: page.baseurl %}
@@ -34,9 +34,8 @@ banner:
           The Employee Retiree Alumni Brunch will be on Thursday, December 10, 2026.
         </p>
       </div>
-      {% comment %}
       <!-- Start form embed -->
-      <script src="https://sky.blackbaudcdn.net/static/reg-form-loader/5/main.js"></script>
+      <script src=https://sky.blackbaudcdn.net/static/reg-form-loader/5/main.js></script>
       <!--
         If you embed multiple forms on your page, only copy one of the <script> lines.
         Otherwise, multiple copies of the form will appear.
@@ -44,9 +43,9 @@ banner:
       <div
         data-blackbaud-registration-form
         data-blackbaud-registration-form-envid="p-4LPPL9VvRECDnI6AYmbOpQ"
-        data-blackbaud-registration-form-id="b7143f53-3350-41ec-ac9d-ec6ab6de0ae3"
+        data-blackbaud-registration-form-id="1be4fa68-8704-45b2-b8e1-67b4652ffedf"
         data-blackbaud-registration-form-zone="usa"
-        data-blackbaud-registration-form-header-height="0"
+        data-blackbaud-registration-form-header-height="169"
       >
         <!--
           If your page has a header/overlay, then you can set this
@@ -56,7 +55,6 @@ banner:
         -->
       </div>
       <!-- End form embed -->
-      {% endcomment %}
     </div>
   </div>
 </div>
