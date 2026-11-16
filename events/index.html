@@ -14,6 +14,13 @@ events:
 #    event_link: events/presidents-circle-premier/
 #    event_thumb_image: /uploads/presidents-circle.png
 #    event_thumb_alt-text: KCC President's Circle logo
+  - event_date: 2026-12-10
+    event_title: Employee-Alumni Brunch
+    event_description: >-
+      <p>The Employee Retiree Alumni Brunch will be on Thursday, December 10, 2026.</p>
+    event_link: events/alumni-event/
+    event_thumb_image: /uploads/events_alumni-brunch-2026_thumb.jpg
+    event_thumb_alt-text: 'Alumni Holiday Brunch: A Celebration of Seasons banner with hanging navy blue and gold snowflakes.'
   - event_date: 2026-11-05
     event_title: President's Circle Reception
     event_description: >-
@@ -23,28 +30,6 @@ events:
     event_link: events/presidents-circle-reception/
     event_thumb_image: /uploads/presidents-circle.png
     event_thumb_alt-text: KCC President's Circle logo
-  - event_date: 2026-12-10
-    event_title: Employee-Alumni Brunch
-    event_description: >-
-      <p>The Employee Retiree Alumni Brunch will be on Thursday, December 10, 2026.</p>
-    event_link: events/alumni-event/
-    event_thumb_image: /uploads/holiday-alumni-brunch-2025_thumb.jpg
-    event_thumb_alt-text: Green and red holiday themed graphic that says 'Holiday Brunch' in stylized font.
-  - event_date: 2026-08-05
-    event_title: Annual Scholarship Event
-    event_description: >-
-      <p>At the Annual Scholarship Event, scholarship recipients and those who donated to their scholarship have the opportunity
-      to meet.</p>
-    event_link: events/annual-scholarship-event/
-    event_thumb_image: /uploads/scholarship-breakfast_2019.png
-    event_thumb_alt-text: The Power of Scholarships - Kankakee Community College Foundation.
-  - event_date: 2026-09-12
-    event_title: Let's Party!
-    event_description: >-
-      <p>Let's Party was a fun evening of dinner, drinks and dancing on September 12, 2026.</p>
-    event_link: events/fall-fundraiser/
-    event_thumb_image: /uploads/2026_lets-party_thumb.jpg
-    event_thumb_alt-text: Let's Party! KCC Foundation's Annual Fundraiser
   - event_date: 2026-10-13
     event_title: Women's Giving Circle
     event_description: >-
@@ -53,6 +38,21 @@ events:
     event_link: events/womens-giving-circle/
     event_thumb_image: /uploads/womens-giving-circle_logo_16x9.jpg
     event_thumb_alt-text: Educate, Empower, Endeavor - KCC Foundation Women's Giving Circle.
+  - event_date: 2026-09-12
+    event_title: Let's Party!
+    event_description: >-
+      <p>Let's Party was a fun evening of dinner, drinks and dancing on September 12, 2026.</p>
+    event_link: events/fall-fundraiser/
+    event_thumb_image: /uploads/2026_lets-party_thumb.jpg
+    event_thumb_alt-text: Let's Party! KCC Foundation's Annual Fundraiser
+  - event_date: 2026-08-05
+    event_title: Annual Scholarship Event
+    event_description: >-
+      <p>At the Annual Scholarship Event, scholarship recipients and those who donated to their scholarship have the opportunity
+      to meet.</p>
+    event_link: events/annual-scholarship-event/
+    event_thumb_image: /uploads/scholarship-breakfast_2019.png
+    event_thumb_alt-text: The Power of Scholarships - Kankakee Community College Foundation.
 #  - event_date: 
 #    event_title: 
 #    event_description: >-
@@ -75,7 +75,7 @@ _inputs:
   {% for event in page.events %}
   <div class="row my-4" data-cms-bind="#events.[{{ forloop.index0 }}]">
     <div class="col-md-4 img-wrapper">
-      <a class="img-link border" data-cms-bind="event_link" href="{{ page.baseurl }}{{ event.event_link }}" aria-label="View details for {{ event.event_title | strip_html | escape }}">
+      <a class="img-link border shadow-sm" data-cms-bind="event_link" href="{{ page.baseurl }}{{ event.event_link }}" aria-label="View details for {{ event.event_title | strip_html | escape }}">
         {% assign first_char = event.event_thumb_image | slice: 0 %}
         {% if first_char == '/' %}
           {% assign thumb = event.event_thumb_image | remove_first: '/' %}
